@@ -1,0 +1,12 @@
+{
+  "name": "stubbleman",
+  "version": "0.3.0",
+  "dependencies": {
+    "jquery": "~1.11.3",
+    "breakpoint-sass": "~2.6.1",
+    "jrespond": "*"
+  },
+  "devDependencies": {
+    "jquery": "~2.2.0"
+  }
+}

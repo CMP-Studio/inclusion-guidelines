@@ -1,0 +1,26 @@
+@include breakpoint-set('to ems',true);
+
+// override if you want to provide a fixed-width stylesheet
+$legacy-support-for-ie8: false;
+
+//it's ok to put px values in here if you've set "to ems" to "true"!
+
+$bp-xxs: 280px;
+$bp-xs: 400px;
+$bp-s: 500px;
+$bp-m: 600px;
+
+//use when you are not changing the styles based on navigation or sidebar
+$bp-l: 700px; 
+
+//only use contextually with navigation switches from desktop to mobile
+$bp-nav: $bp-l;
+
+//only use contextually with sidebar switches
+$bp-sidebar: $bp-l;
+$bp-xl: 960px;
+$bp-xxl: 1100px;
+$bp-full: 1400px;
+
+// media query for hi-resolution displays
+$breakpoint-hi-res: 2 device-pixel-ratio;

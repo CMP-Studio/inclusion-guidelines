@@ -1,0 +1,38 @@
+-# Depending on where you are (homepage or 'internal' page), assign a class to the body element
+- bodyclass = (current_path == "index.html") ? 'home' : 'internal'
+!!! 5
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+%html.no-js{ :lang => "en" }
+  <!--<![endif]-->
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
+    %title
+      = current_page.data.title || "Site Name"
+    %meta{:content => "", :name => "description"}
+    %meta{:content => "", :name => "keywords"}
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
+    = stylesheet_link_tag 'main'
+    = javascript_include_tag 'vendor/modernizr.js'
+    / :javascript
+    /   (function(d) {
+    /     var config = {
+    /       kitId: '#{settings.typekit_id}',
+    /       scriptTimeout: 3000
+    /     },
+    /     h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    /   })(document);
+  %body{:class => bodyclass}
+
+    = partial "partials/_site-header"
+
+    %main.main-content{role: 'main'}
+      .container
+        = yield
+
+    = partial "partials/_site-footer"
+
+    = javascript_include_tag 'all.js'

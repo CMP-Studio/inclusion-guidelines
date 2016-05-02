@@ -1,0 +1,134 @@
+.mobile-navigation {
+  @include pie-clearfix;
+  //Specifically using breakpoint nav here because it is contextually appropriate.
+  //In almost all other cases, you should use breakpoint large.
+  @include breakpoint($bp-nav) {
+    display: none;
+  }
+}
+
+.menu-trigger, .utility-trigger {
+  border: 1px solid $border-color;
+  background-color: transparent;
+  color: $link-color;
+  font-size: 1.25em;
+  padding: 0.5em;;
+  margin: 0;
+  width: 48%;
+  float: right;
+
+  &:hover, &:focus {
+    cursor: pointer;
+  }
+}
+
+.utility-trigger {
+  margin-right: 2%;
+}
+
+.menu-trigger {
+
+}
+
+.site-header .container {
+  position: relative;
+}
+
+.primary-navigation, .utility-navigation {
+  display: none;
+  clear: both;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+
+  @include breakpoint($bp-nav) {
+    display: block;
+  }
+
+  ul {
+    background-color: $background-color-subtle;
+    padding: 1em 0;
+
+    @include breakpoint($bp-nav) {
+      background-color: inherit;
+      padding: 0;
+    }
+  }
+
+  li {
+    text-align: center;
+    padding-top: 1em;
+    margin-top: 1em;
+    border-top: 1px solid $border-color;
+
+    @include breakpoint($bp-nav) {
+      display: inline-block;
+      @include divider-none;
+      text-align: left;
+    }
+
+    &:first-of-type {
+      padding-top: 0;
+      margin-top: 0;
+      border-top: 0 none;
+    }
+  }
+}
+
+.primary-navigation {
+  @include breakpoint($bp-nav) {
+    ul {
+      li {
+        color: white !important;
+        margin-right: 1em;
+        padding-bottom: 0.5em;
+
+        &.last {
+          margin-right: 0;
+        }
+
+        a {
+          color: $text-color;
+        }
+      }
+    }
+  }
+}
+
+// use for things like user login/logout, other top-level, but lesser important links in header.
+.utility-navigation {
+  @include breakpoint($bp-nav) {
+    padding-top: 0;
+    position: absolute;
+    top: 2em;
+    right: 0;
+    font-size: 0.8em;
+  }
+
+  li {
+    @include breakpoint($bp-nav) {
+      margin-left: 0.75em;
+    }
+  }
+}
+
+///// Secondary Navigation on internal pages
+
+.secondary-navigation {
+  @include title-face;
+  border: 1px solid $border-color;
+  padding: 1em 0.5em 0.5em 0.5em;
+  margin-bottom: 1.5em;
+
+  ul {
+    margin: 0;
+
+    li {
+      @include divider-top;
+      list-style-type: none;
+    }
+
+    ul li {
+      padding-left: 1em;
+    }
+  }
+}

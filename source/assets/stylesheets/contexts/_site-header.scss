@@ -1,0 +1,19 @@
+.site-header {
+  @include pie-clearfix;
+
+  .site-name {
+    @include heading-4;
+    padding-top: 1em;
+    display: inline-block;
+    float: left;
+
+    @include breakpoint($bp-xxl) {
+      @include heading-2;
+      padding-top: 0.5em;
+    }
+  }
+
+  .mobile-navigation {
+    float: right;
+  }
+}

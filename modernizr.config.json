@@ -1,0 +1,26 @@
+{
+  "minify": false,
+  "options": [
+    "html5shiv",
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/svg",
+    "test/css/rgba",
+    "test/css/animations",
+    "test/css/backgroundsize",
+    "test/css/calc",
+    "test/css/checked",
+    "test/css/flexbox",
+    "test/css/flexboxlegacy",
+    "test/css/flexboxtweener",
+    "test/css/flexwrap",
+    "test/css/transforms",
+    "test/css/transforms3d",
+    "test/css/transitions",
+    "test/css/vhunit",
+    "test/css/vmaxunit",
+    "test/css/vminunit",
+    "test/forms/placeholder"
+  ]
+}

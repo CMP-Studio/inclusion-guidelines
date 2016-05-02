@@ -1,0 +1,14 @@
+---
+button_id:
+button_classes:
+button_text: "Button"
+button_disabled:
+---
+
+- attrs = {}
+- attrs[:class] = button_classes if button_classes
+- attrs[:id] = button_id if button_id
+- attrs[:disabled] = button_disabled if button_disabled
+
+%button{attrs}
+	= button_text

@@ -1,0 +1,16 @@
+---
+button_id:
+button_classes:
+button_text: "Icon Button"
+button_disabled:
+button_icon:
+---
+
+- attrs = {}
+- attrs[:class] = button_classes if button_classes
+- attrs[:id] = button_id if button_id
+- attrs[:disabled] = button_disabled if button_disabled
+
+%button{attrs}
+	%span{class: button_icon}
+	= button_text

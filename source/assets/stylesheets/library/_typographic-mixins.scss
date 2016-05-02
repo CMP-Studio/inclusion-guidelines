@@ -1,0 +1,79 @@
+// typographic mixins and extends
+
+@mixin copy-face {
+  font-family: georgia, "Times New Roman", times, serif;
+  font-weight: normal;
+}
+
+@mixin title-face {
+  font-family: arial, "helvetica neue", helvetica, sans-serif;
+  font-weight: bold;
+}
+
+@mixin link {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: $link-color-hover;
+    text-decoration: underline;
+  }
+}
+
+@mixin link-reverse {
+  color: $background-color-subtle;
+  &:hover, &:focus {
+    color: $background-color;
+    text-decoration: none;
+  }
+}
+
+@mixin heading-link {
+  color: $heading-color;
+  text-decoration: none;
+
+  &:hover, &:focus {
+    color: darken($heading-color, 15%);
+    text-decoration: underline;
+  }
+}
+
+@mixin heading {
+  @include title-face;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: $heading-color;
+  a {
+    @include heading-link;
+  }
+}
+
+@mixin heading-1 {
+  @include heading;
+  font-size: 2.5em;
+}
+
+@mixin heading-2 {
+  @include heading;
+  font-size: 1.8em;
+}
+
+@mixin heading-3 {
+  @include heading;
+  font-size: 1.4em;
+}
+
+@mixin heading-4 {
+  @include heading;
+  font-size: 1.2em;
+}
+
+@mixin heading-5 {
+  @include heading;
+  font-size: 1em;
+}
+
+@mixin heading-6 {
+  @include heading;
+  font-size: 0.875em;
+}

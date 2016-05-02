@@ -1,0 +1,146 @@
+// site-wide form styles
+
+// get rid of "default" iOS button styling for submit buttons
+input[type=submit] {
+  appearance: none;
+}
+
+input[type="submit"],
+button[type="submit"] {
+  @include button-form;
+}
+
+input[type="search"],
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+input[type="url"],
+textarea {
+  padding: 0.9em 1em;
+  border-radius: 2px 2px;
+  color: $text-color;
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  max-width: 500px;
+  border: 1px $border-color solid;
+}
+
+select {
+  height: 3em;
+  line-height: 2.5em;
+  border: 1px solid $border-color;
+  width: 100%;
+}
+
+form label {
+  display: block;
+}
+
+fieldset {
+  margin-bottom: 1em;
+
+  legend {
+    @include title-face;
+    margin-bottom: 0.35em;
+  }
+}
+
+
+///// Form Layout
+
+form .input {
+  margin-bottom: 1em;
+}
+
+.legend-text {
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.two-up {
+  @include clearfix;
+  > .input {
+    @include column(6);
+    margin-right: 0;
+    margin-left: $gutter-width;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+}
+
+.two-up-wider {
+  @include clearfix;
+  @include breakpoint($bp-s) {
+    > .input {
+      @include column(6);
+      margin-right: 0;
+      margin-left: $gutter-width;
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.three-up {
+  @include clearfix;
+
+  .input {
+    @include column(4);
+    margin-right: 0;
+    margin-left: $gutter-width;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
+  &.zip-city-state {
+    // general input is the city
+    .input {
+      @include column(7);
+      @include breakpoint($bp-s) {
+        @include column(6);
+      }
+      // first child is the zip
+      &:first-child {
+        @include column(12);
+        @include last;
+        @include breakpoint($bp-s) {
+          @include column(3);
+        }
+      }
+      // select is the state
+      // .state may be a text field for certain countries
+      &.select, .state {
+        @include column(5);
+        @include last;
+        @include breakpoint($bp-s) {
+          @include column(3);
+          @include last;
+        }
+      }
+    }
+  }
+}
+
+.three-up-wider {
+  @include clearfix;
+
+  .input {
+    @include breakpoint($bp-s) {
+      @include column(4);
+      margin-right: 0;
+      margin-left: $gutter-width;
+
+      &:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

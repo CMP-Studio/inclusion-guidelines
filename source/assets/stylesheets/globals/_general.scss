@@ -1,0 +1,160 @@
+// styles not specific to any particular site page.
+// place things like "general" paragraph styles, heading styles, base list styles, etc. here.
+
+// if you're calling the container mixin, you can define a custom max-width
+// otherwise, the max-width's default value is 81.25em (1300px)
+//.container {
+//  @include container(70em);
+//}
+
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  // change your max-width like so:
+  // @include container(68.75em);
+  // default max-width is 81.25em (1300px)
+  @include container;
+  width: 95%;
+}
+
+html {
+  background-color: $footer-color;
+}
+
+.main-content {
+  @include pie-clearfix;
+  padding-bottom: 1em;
+  background-color: $background-color;
+  padding-top: 1em;
+
+  .constrained {
+    max-width: 40em;
+    margin: 0 auto 0 auto;
+  }
+}
+
+
+// General Typographic Styles
+//////////////////////////////////////
+
+body {
+  @include copy-face;
+  color: $text-color;
+  line-height: 1.4;
+}
+
+////////// Block-level Elements
+
+p {
+  margin-bottom: 1em;
+}
+
+ul, ol {
+  li li {
+    font-size: inherit;
+  }
+}
+
+// In Main Content Area
+
+.primary {
+  ul, ol {
+    margin: 0 0 0.5em 2em;
+    li {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  ul {
+    list-style: disc;
+    margin-top: 0.5em;
+  }
+
+  ol {
+    list-style: decimal;
+  }
+}
+
+///// Headings
+
+h1 {
+  @include heading-1;
+}
+
+h2 {
+  @include heading-2;
+}
+
+h3 {
+  @include heading-3;
+}
+
+h4 {
+  @include heading-4;
+}
+
+h5 {
+  @include heading-5;
+}
+
+h6 {
+  @include heading-6;
+}
+
+////////// Inline Elements
+
+a {
+  @include link;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+em, i {
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.button {
+  @include button;
+}
+
+.button-highlight {
+  @include button-highlight;
+}
+
+.button-subtle {
+  @include button-subtle;
+}
+
+.button-reverse {
+  @include button-reverse;
+}
+
+.button-wrapper {
+  display: inline-block;
+
+  .note {
+    display: block;
+    text-align: center;
+    margin-top: 0.35em;
+  }
+}
+
+// Other elements
+//////////////////////////////////////
+
+.screenreader-text {
+  @include screenreader-text;
+}
+
+.not-visually-hidden {
+  @include not-visually-hidden;
+}
