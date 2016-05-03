@@ -24,14 +24,23 @@ html {
 }
 
 .main-content {
+  display: flex;
   @include pie-clearfix;
-  padding-bottom: 1em;
   background-color: $background-color;
-  padding-top: 1em;
 
   .constrained {
     max-width: 40em;
     margin: 0 auto 0 auto;
+  }
+
+  .aside-nav {
+    @include column(3);
+    display: block;
+  }
+
+  .primary-content {
+    @include column(9);
+    @include last;
   }
 }
 

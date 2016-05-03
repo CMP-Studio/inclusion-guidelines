@@ -1,24 +1,56 @@
 ---
 title: Welcome to Stubbleman
 ---
+.aside-nav
+  %aside.side-nav{:role => "navigation", :"aria-label" => "Side Navigation"}
+    %ul.side-nav-group
+      %li.side-nav-item
+        %a{:href => "/"} Semantic HTML
+      %li.side-nav-item
+        %a{:href => "/"} Font and Font Size
+      %li.side-nav-item
+        %a{:href => "/"} Contrast and Color
+      %li.side-nav-item
+        %a{:href => "/"} Forms and Form Validation
+      %li.side-nav-item
+        %a{:href => "/"} ARIA
+      %li.side-nav-item
+        %a{:href => "/"} Images
+      %li.side-nav-item
+        %a{:href => "/"} Audio/Video
+      %li.side-nav-item
+        %a{:href => "/"} Blinking, Parallax
+      %li.side-nav-item
+        %a{:href => "/"} Errors, Warnings, Modals
+      %li.side-nav-item
+        %a{:href => "/"} Buttons
+      %li.side-nav-item
+        %a{:href => "/"} Tables
+      %li.side-nav-item
+        %a{:href => "/"} Skip Link
+      %li.side-nav-item
+        %a{:href => "/"} Navigation/Mobile Navigation
+      %li.side-nav-item
+        %a{:href => "/"} Accordions/Tabs
+      %li.side-nav-item
+        %a{:href => "/"} Tools &amp; Resources
+/ %a{:href => "#", :"aria-hidden" => "true"} Lol
+.primary-content
+  %h2.page-title
+    The Stubbleman is Watching
 
-%h2.page-title
-  The Stubbleman is Watching
-
-:code
-  # lang: html
-
-  <h1>The Most Important Headline</h1>
-  <article class="article-intro">
-    <p>Here's a paragraph</p>
-    <a class="read-more" href="/more.html">Read More</a>
-  </div>
+  :code
+    # lang: html
+    <h1>The Most Important Headline</h1>
+    <article class="article-intro">
+      <p>Here's a paragraph</p>
+      <a class="read-more" href="/more.html">Read More</a>
+    </div>
 
 
-:code
-  # lang: css
-
-  .read-more {
-    color: black;
-    text-decoration: underline;
-  }
+  :code
+    # lang: css
+    .read-more {
+      color: black;
+      text-decoration: underline;
+    }

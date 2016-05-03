@@ -1,0 +1,21 @@
+.aside-nav {
+  position: relative;
+  &:before {
+    content: "";
+    color: lighten($text-color-subtle, 8%);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -2000px;
+    width: 2000px;
+    background-color: lighten($text-color-subtle, 8%);
+  }
+
+  a {
+    display: block;
+    padding: 0.75em;
+    border: blue;
+    background-color: lighten($text-color-subtle, 8%);
+    text-decoration: none;
+  }
+}
