@@ -39,6 +39,7 @@
 # end
 
 activate :patterns
+activate :syntax, :line_numbers => true
 
 # Reload the browser automatically whenever files change
 configure :development do
