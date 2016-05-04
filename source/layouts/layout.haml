@@ -11,7 +11,7 @@
     %meta{:charset => "utf-8"}/
     %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
     %title
-      = current_page.data.title || "Site Name"
+      = current_page.data.title || "A11y Guidelines"
     %meta{:content => "", :name => "description"}
     %meta{:content => "", :name => "keywords"}
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
@@ -31,7 +31,8 @@
     = partial "partials/_site-header"
 
     %main.main-content{role: 'main'}
-      .container
+      .container.accesibility-content
+        = partial "partials/_aside-nav"
         = yield
 
     = partial "partials/_site-footer"

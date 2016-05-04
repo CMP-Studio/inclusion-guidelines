@@ -1,5 +1,6 @@
 
-var $menuTrigger = $('.menu-trigger'),
+var $menuTrigger = $('.side-nav-trigger'),
+    $triggerWord = $('.trigger-status'),
     $primaryMenu = $('.primary-navigation'),
     $utilityTrigger = $('.utility-trigger'),
     $utilityMenu = $('.utility-navigation');
@@ -12,18 +13,31 @@ function toggleTriggerClass() {
   }
 };
 
+function toggleTriggerWord() {
+  if ($triggerWord.hasClass('closed')) {
+    $triggerWord.removeClass('closed');
+    $triggerWord.addClass('open');
+    $triggerWord.html('Close');
+  } else {
+    $triggerWord.removeClass('open');
+    $triggerWord.addClass('closed');
+    $triggerWord.html('Open');
+  }
+};
+
 function toggleMenuClass() {
   if (!$primaryMenu.hasClass('is-visible')) {
     $primaryMenu.addClass('is-visible');
   } else {
     $primaryMenu.removeClass('is-visible');
   }
-}
+};
 
 function toggleMenu() {
   $menuTrigger.on("click", function(e){
     toggleTriggerClass();
     toggleMenuClass();
+    toggleTriggerWord();
     $primaryMenu.slideToggle("fast");
     // if utilityMenu is NOT visible, do nothing.
     if (!$utilityMenu.is(':visible')) {

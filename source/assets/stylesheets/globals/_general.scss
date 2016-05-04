@@ -24,7 +24,6 @@ html {
 }
 
 .main-content {
-  display: flex;
   @include pie-clearfix;
   background-color: $background-color;
 
@@ -33,14 +32,24 @@ html {
     margin: 0 auto 0 auto;
   }
 
+  .accesibility-content {
+    display: flex;
+  }
+
   .aside-nav {
-    @include column(3);
-    display: block;
+    @include breakpoint ($bp-sidebar) {
+      @include column(3);
+      display: block;
+    }
   }
 
   .primary-content {
-    @include column(9);
-    @include last;
+    //flex: none;
+    padding: 1.3em 0em;
+    @include breakpoint ($bp-sidebar) {
+      @include column(9);
+      @include last;
+    }
   }
 }
 
@@ -162,6 +171,15 @@ img {
 
 .screenreader-text {
   @include screenreader-text;
+
+  &:focus {
+    color: $background-color;
+    display: inline-block;
+    height: auto;
+    width: auto;
+    position: static;
+    margin: auto;
+  }
 }
 
 .not-visually-hidden {

@@ -1,0 +1,28 @@
+---
+title: ARIA | Accessibility Guidelines
+---
+.primary-content{:id => "content"}
+  %h2.page-title
+    ARIA
+
+  %p ARIA (Assistive Rich Internet Applications), is a spec from the W3C and was created to improve accessibility of applications by providing extra information to screen readers via HTML attributes. Screen readers work with regular HTML, but adding ARIA can provide screen reader users with more context and greater interactivity with content. ARIA has no effect on how elements are displayed or behave in browsers. It does not add new functionality, and is meant to act only as an extra descriptive layer for screen readers.
+
+  %h3 ARIA Attributes
+  %p ARIA attributes are predefined in the spec and are divided into two categories: roles and states & properties.
+
+  %h3 ARIA Roles
+  %p An ARIA role is added via a role=”<ROLE TYPE>” attribute and does not change for an element once it is set. There are four categories of ARIA roles:
+  %ul
+    %li Landmark
+    %li Document
+    %li Widget
+    %li Abstract
+
+  %h3 States & Properties
+  %p ARIA states and properties are often used to support ARIA roles that exist on a page. Properties often describe relationships with other elements and for the most part, do not change once they’re set.
+  %p States are more dynamic and are typically updated with JavaScript as a user interacts with a page. Screen readers are notified when attributes change and can announce these changes to users after an interaction takes place.
+  %p ARIA-HIDDEN: From the a11y chatroom: ‘It’s specifically useful if for some reason you can’t display:none or visibility:hidden something but need to prevent users of [Assistive Technologies] from accessing it.  [For example] like when a modal dialog is open, if you could use an aria-hidden on the rest of the page, that’s kinda nice.”
+  
+  
+  %h3 More Resouces
+ 

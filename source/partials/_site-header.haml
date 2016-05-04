@@ -1,11 +1,11 @@
 %header.site-header
   .container
     %h1.site-name
-      Site Name
+      A11y Guidelines
 
     %section.mobile-navigation
-      %button.menu-trigger
-        %span.icon-menu
-        %span.trigger-text Menu
+      %button.side-nav-trigger{:"aria-label" => "Mobile Navigation Trigger Button"}
+        %span.trigger-status.closed Open
+        Accessibility Resources
 
     = partial 'partials/primary-navigation'

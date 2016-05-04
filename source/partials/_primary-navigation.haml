@@ -1,5 +1,20 @@
-%nav.primary-navigation{role: "navigation"}
+%a{:href => "#content", :id => "skip-nav", :class => "screenreader-text"}
+  Skip to Content
+
+%nav.primary-navigation{role: "navigation", :"aria-label" => "Mobile Accesibility Navigation Dropdown"}
   %ul.navigation-item-group
-    %li.nav-item= link_to 'Top', '#'
-    %li.nav-item= link_to 'Level', '#'
-    %li.nav-item= link_to 'Navigation', '#'
+    %li.nav-item= link_to 'Semantic HTML', '/'
+    %li.nav-item= link_to 'Font &amp; Font Size', '/font'
+    %li.nav-item= link_to 'Contrast &amp; Color', '/color'
+    %li.nav-item= link_to 'Forms and Form Validation', '/forms'
+    %li.nav-item= link_to 'ARIA', '/aria'
+    %li.nav-item= link_to 'Images', '/images'
+    %li.nav-item= link_to 'Audio/Video', '#'
+    %li.nav-item= link_to 'Blinking, Parallax Effects', '#'
+    %li.nav-item= link_to 'Errors, Warnings, Modals', '/alerts-dialogs'
+    %li.nav-item= link_to 'Buttons', '/buttons'
+    %li.nav-item= link_to 'Tables', '/tables'
+    %li.nav-item= link_to 'Skip Link', '/skip-link'
+    %li.nav-item= link_to 'Navigation/Mobile Navigation', '/navigation'
+    %li.nav-item= link_to 'Accordions/Tabs', '/accordions-tabs'
+    %li.nav-item= link_to 'Tools &amp; Resources', '/resources'

@@ -26,10 +26,6 @@
   margin-right: 2%;
 }
 
-.menu-trigger {
-
-}
-
 .site-header .container {
   position: relative;
 }
@@ -39,10 +35,6 @@
   clear: both;
   padding-top: 1em;
   padding-bottom: 0.5em;
-
-  @include breakpoint($bp-nav) {
-    display: block;
-  }
 
   ul {
     background-color: $background-color-subtle;
@@ -108,6 +100,14 @@
     @include breakpoint($bp-nav) {
       margin-left: 0.75em;
     }
+  }
+}
+
+.side-nav-trigger {
+  display: block;
+  @include button;
+  @include breakpoint($bp-sidebar) {
+    display: none;
   }
 }
 
