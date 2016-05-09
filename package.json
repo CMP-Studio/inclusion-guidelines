@@ -1,6 +1,6 @@
 {
-  "name": "",
-  "version": "0.3.0",
+  "name": "a11y-guidelines",
+  "version": "1.0.0",
   "description": "",
   "author": "Bearded <info@bearded.com>",
   "scripts": {
@@ -10,7 +10,7 @@
   "devDependencies": {
     "babel-cli": "^6.5.1",
     "babel-core": "^6.5.2",
-    "bower": "^1.5.2",
+    "bower": "^1.7.7",
     "fs-extra": "^0.26.5",
     "globby": "^4.0.0",
     "grunticon-lib": "^1.0.4",

@@ -1,6 +1,6 @@
 {
-  "name": "stubbleman",
-  "version": "0.3.0",
+  "name": "a11y-guidelines",
+  "version": "1.0.0",
   "dependencies": {
     "jquery": "~1.11.3",
     "breakpoint-sass": "~2.6.1",
