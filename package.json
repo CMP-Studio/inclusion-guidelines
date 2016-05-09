@@ -7,7 +7,7 @@
     "icons": "rimraf source/assets/grunticon/production/* && babel-node tasks/icons.js",
     "modernizr": "rimraf source/javascripts/vendor/modernizr.js && babel-node tasks/build-modernizr.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "babel-cli": "^6.5.1",
     "babel-core": "^6.5.2",
     "bower": "^1.7.7",
