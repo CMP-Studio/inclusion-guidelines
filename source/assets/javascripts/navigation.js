@@ -8,8 +8,10 @@ var $menuTrigger = $('.side-nav-trigger'),
 function toggleTriggerClass() {
   if (!$menuTrigger.hasClass('is-active')) {
     $menuTrigger.addClass('is-active');
+    $menuTrigger.attr("aria-expanded","true");
   } else {
     $menuTrigger.removeClass('is-active');
+    $menuTrigger.attr("aria-expanded","false");
   }
 };
 
@@ -28,6 +30,7 @@ function toggleTriggerWord() {
 function toggleMenuClass() {
   if (!$primaryMenu.hasClass('is-visible')) {
     $primaryMenu.addClass('is-visible');
+    $primaryMenu.focus();
   } else {
     $primaryMenu.removeClass('is-visible');
   }

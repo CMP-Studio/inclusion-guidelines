@@ -22,7 +22,37 @@ title: ARIA | Accessibility Guidelines
   %p ARIA states and properties are often used to support ARIA roles that exist on a page. Properties often describe relationships with other elements and for the most part, do not change once they’re set.
   %p States are more dynamic and are typically updated with JavaScript as a user interacts with a page. Screen readers are notified when attributes change and can announce these changes to users after an interaction takes place.
   %p ARIA-HIDDEN: From the a11y chatroom: ‘It’s specifically useful if for some reason you can’t display:none or visibility:hidden something but need to prevent users of [Assistive Technologies] from accessing it.  [For example] like when a modal dialog is open, if you could use an aria-hidden on the rest of the page, that’s kinda nice.”
+
+  %h3 ARIA Labels
+  %p From Google Accessibility: “It is not always practical or desirable to have visible labels for all of your objects. For example, there might only be enough space in your toolbar for a printer icon without a visible “Print” label. In cases like this, you should use the aria-label attribute to provide text labels so that users of screen readers and other adaptive technologies can understand what the object is used for.”
+
+  %p In cases where we use a x, or X as a close button, it is especially important to have an Aria label of “Close button” as a screenreader will otherwise read ‘multiplication’ or ‘X’.
+
+  %h3 ARIA Hidden
+  %p From the a11y chatroom: ‘It’s specifically useful if for some reason you can’t display:none or visibility:hidden something but need to prevent users of [Assistive Technologies] from accessing it.  [For example] like when a modal dialog is open, if you could use an aria-hidden on the rest of the page, that’s kinda nice.”
+
+  %p From Google Accesibility tutorial: (If you are making a div a button, use role=button) and “Although it has already been added to the code below, you should add tabindex="0" when applying this to your own website. This makes the [div] button focusable. You need to handle key events such as spaceand enter as well.” 
+
+  %p For accordions, or toggleable menus, it is a good idea to toggle between aria-hidden, expanded class for things.  The main button that expands things should toggle aria-expanded states, while the content toggles between aria-hidden states.
+
+  %h3 ARIA-activedescendant
+  %p Used with autofill search suggestions.
+  
+  %h3 ARIA checked
+  %p Use with checkboxes.  Can set to true, false or mixed state.
+
+  %h3 ARIA Live
+  %p Identify dynamic content, that is changing, on a page. Attributes are off, polite, and assertive.  “When you are developing web applications, consider if there are certain scenarios in which you would want the screen reader to notify the user of updates to another part of the page. For example, if your user receives an instant message from someone, and they are in the middle of listening to an email, you need to decide if it is better to (1) automatically take the user away from the email and read the chat message, or (2) wait until the user is finished with that section and then jump to the chat message”.
+
+  %p “Live regions are unique because they can do this without changing focus to that element. There are two types of live regions: polite and assertive”.
+
+  %p “When an element uses the polite attribute, the screen reader is able to finish reading what it was focused on before it reads the updated live region. With an assertive attribute, the screen reader interrupts what it is doing to read the updated live region.”
+
+  %p In general, I’d believe it would be best not to have lots of stuff changing on a page all at once -- this seems as though it would the user experience even more hectic and confusing.
+
   
   
   %h3 More Resouces
+  %a{:href => "https://www.w3.org/TR/wai-aria/states_and_properties#aria-activedescendant"} Using ARIA-activedescendant
+  %a{:href => "https://www.w3.org./WAI/PF/aria-practices/#liveprops"} ARIA live properties
  

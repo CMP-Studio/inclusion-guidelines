@@ -1,10 +1,12 @@
 %header.site-header
   .container
+    %a{:href => "#content", :id => "skip-nav", :class => "screenreader-text"} Skip to Content
+
     %h1.site-name
-      A11y Guidelines
+      %a{:href => "/"} A11y Guidelines
 
     %section.mobile-navigation
-      %button.side-nav-trigger{:"aria-label" => "Mobile Navigation Trigger Button"}
+      %button.side-nav-trigger{ :"aria-expanded" => "false"}
         %span.trigger-status.closed Open
         Accessibility Resources
 

@@ -105,7 +105,20 @@
 
 .side-nav-trigger {
   display: block;
-  @include button;
+  border: 1px solid $text-color-subtle;
+  background-color: transparent;
+  color: $text-color-subtle;
+  padding: 0em;
+  margin-top: 1.3em;
+  margin-bottom: 0.25em;
+  padding: 0.5em;
+  border-radius: 5px;
+  float: right;
+
+  &:hover, &:focus {
+    cursor: pointer;
+  }
+
   @include breakpoint($bp-sidebar) {
     display: none;
   }

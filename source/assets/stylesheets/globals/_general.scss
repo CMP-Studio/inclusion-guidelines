@@ -44,7 +44,6 @@ html {
   }
 
   .primary-content {
-    //flex: none;
     padding: 1.3em 0em;
     @include breakpoint ($bp-sidebar) {
       @include column(9);

@@ -4,6 +4,24 @@ title: Skip Link | Accessibility Guidelines
 .primary-content{:id => "content"}
   %h2.page-title
     Skip Link
+
+  %p This useful accessibility tool, or hack even, should go right after he body tag, (thus it is the first thing a keyboard user would tab to).  
+
+  %p Format your skip link as follows, allowing a user to skip all navigation and right to the main content:
+
+  :code
+    # lang: html
+    <a id=’skip-nav’ class=’screenreader-text’ href=’#main-content’>
+      Skip Navigation or Skip to Content
+    </a>
+
+  %p And then below in the main content you would have an id that is tied to the skip link's href:
+  
+  :code
+    # lang: html
+    <main role=’main’ id=’main-content’> 
+      Content here.
+    </main>
   
   %h3 More Resouces
  
