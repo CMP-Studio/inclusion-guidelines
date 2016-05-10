@@ -9,6 +9,15 @@ title: Buttons | Accessibility Guidelines
   %p If you want a user to trigger JavaScript functionality, then you should use a button.
 
   %p If you want a user to navigate to a new page, or to a different target on the same page, you should use an anchor element (a tag). If there is any kind of href that you can put on that link, definitely use an anchor element - even if you override that behavior with JavaScript.
+
+  %p If you must use a different HTML element to do the same functionality as a button, make sure you include role='button' like the following:
+
+  :code 
+    # lang: html
+    <div role='button'>
+      Open Modal
+    </div>
+    #without this role, a screenreader will not tell the user that the div can be clicked on
   
-  %h3 More Resouces
+  %h3 More Resources
  

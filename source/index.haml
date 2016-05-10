@@ -5,7 +5,9 @@ title: Semantic HTML | Accessibility Guidelines
   %h2.page-title
     Semantic HTML
 
-  %p When a screenreader, or any sort of assistive device scans a web page, all it gets information about is the DOM.  No styles or javascript will be read by a screenreader.  Good, structural, and semantic HTML is the key starting point towards good accessibility practices.  
+  %p When a screenreader, or any sort of assistive device scans a web page, all it gets information about is the DOM.  No styles or javascript will be read by a screenreader.  Good, structural, and semantic HTML is the key starting point towards good accessibility practices. 
+
+  %p Additionally, many screenreaders have functionality that allows a user to select to read only the headings on the page, or only the links.  Giving precedence to the way headings and links are written is also a significant way we can make web browsing easier for these users.
   
   /%a{:href => "#", :"aria-hidden" => "true"} Lol
   %p HTML5 introduced several new semantic elements representing logical sections or components of a web app or document. None of the new elements actually “do” anything by themselves, but they provide a nicer way for web authors to define various parts of a document, and open the door for user agents and assistive technologies to use this information to enable alternate ways of viewing and navigating a page.
@@ -24,21 +26,23 @@ title: Semantic HTML | Accessibility Guidelines
     All of the other HTML elements should be used to tell the browser what functional purpose your content serves. These other HTML elements provide meaning to the browser and assistive technology about what you’re saying on your website, so you should choose them based on what the content is - not based on how they look with graphics.
 
 
-  :code
-    # lang: html
-    <h1>The Most Important Headline</h1>
-    <article class="article-intro">
-      <p>Here's a paragraph</p>
-      <a class="read-more" href="/more.html">Read More</a>
-    </div>
+  / :code
+  /   # lang: html
+  /   <h1>The Most Important Headline</h1>
+  /   <article class="article-intro">
+  /     <p>Here's a paragraph</p>
+  /     <a class="read-more" href="/more.html">Read More</a>
+  /   </div>
 
 
-  :code
-    # lang: css
-    .read-more {
-      color: black;
-      text-decoration: underline;
-    }
+  / :code
+  /   # lang: css
+  /   .read-more {
+  /     color: black;
+  /     text-decoration: underline;
+  /   }
 
-  %h3 More Resouces
-  %a{:href => "http://simplyaccessible.com/article/pitfalls-info-relationships/"} Three common accessibility pitfalls for developers
+  %h3 More Resources
+  %ul
+    %li
+      %a{:href => "http://simplyaccessible.com/article/pitfalls-info-relationships/"} Three common accessibility pitfalls for developers
