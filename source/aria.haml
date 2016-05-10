@@ -18,10 +18,77 @@ title: ARIA | Accessibility Guidelines
     %li Widget
     %li Abstract
 
+  %h4 Lankmark ARIA Roles
+  %p Landmark ARIA Roles are used to give users of assistive technology a better way to navigate and identify the different parts of a web page.  The different landmark roles you can use are as follows, copied from the #{link_to 'W3C Wiki Page', 'https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page'}.
+
+  %ul
+    %li banner: A region that contains the prime heading or internal title of a page.
+    %li complementary: Any section of the document that supports the main content, yet is separate and meaningful on its own.
+    %li contentinfo: A region that contains information about the parent document such as copyrights and links to privacy statements.
+    %li form: A region of the document that represents a collection of form-associated elements, some of which can represent editable values that can be submitted to a server for processing.
+    %li main: Main content in a document. In almost all cases a page will have only one role="main".
+    %li navigation: A collection of links suitable for use when navigating the document or related documents.
+    %li search: The search tool of a Web document.
+    %li application: A region declared as a web application, as opposed to a web document. (note: The role of application should only be used with caution because it gives a signal to screen reading software to turn off normal web navigation controls. Simple widgets should generally not be given the application role, nor should an entire web page be given the application role, unless it is not to be used at all like a web page, and not without much user testing with assistive technology.)
+
+  %h4 Document ARIA Roles
+  %p Document roles describe the structure of the content on the page, as opposed to the structure of the actual page, which landmark roles describe. The roles that are starred seem the most commonly used, and useful to think about including in your HTML.
+  %ul
+    %li article*: A section of a page that consists of a composition that forms an independent part of a document, page, or site.
+    %li columnheader
+    %li definition*: A definition of a term or concept.
+    %li directory
+    %li document
+    %li group*: A set of user interface objects which are not intended to be included in a page summary or table of contents by assistive technologies.
+    %li heading*: A heading for a section of the page.
+    %li img
+    %li list
+    %li listitem
+    %li math
+    %li note
+    %li presentation
+    %li region
+    %li row
+    %li rowgroup
+    %li rowheader
+    %li separator
+    %li toolbar
+
+  %h4 Widget ARIA Roles
+  %p Widget Roles are used to describe what are often javascript-based interfaces, or more complicated parts of the interface that often act in similar way across all web pages. The roles that are starred seem the most commonly used, and useful to think about including in your HTML.
+  %ul
+    %li alert*: A message with important, and usually time-sensitive, information. See related alertdialog and status.
+    %li alertdialog*: A type of dialog that contains an alert message, where initial focus goes to an element within the dialog. See related alert and dialog.
+    %li button*: An input that allows for user-triggered actions when clicked or pressed.
+    %li checkbox*: A checkable input that has three possible values: true, false, or mixed.
+    %li dialog*: A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response. See related alertdialog.
+    %li gridcell
+    %li link
+    %li log
+    %li marquee
+    %li menuitem
+    %li menuitemcheckbox
+    %li menuitemradio
+    %li option
+    %li progressbar
+    %li radio*: A checkable input in a group of radio roles, only one of which can be checked at a time.
+    %li scrollbar
+    %li slider
+    %li spinbutton
+    %li status
+    %li tab*: A grouping label providing a mechanism for selecting the tab content that is to be rendered to the user.
+    %li tabpanel*: A container for the resources associated with a tab, where each tab is contained in a tablist.
+    %li textbox*: Input that allows free-form text as its value.
+    %li timer
+    %li tooltip
+    %li treeitem
+
+  %h4 Abstract ARIA Roles
+  %p Abstract aria roles are the basis of how the other ARIA roles are defined.  These are not to be used in HTML.?
+
   %h3 States & Properties
   %p ARIA states and properties are often used to support ARIA roles that exist on a page. Properties often describe relationships with other elements and for the most part, do not change once they’re set.
   %p States are more dynamic and are typically updated with JavaScript as a user interacts with a page. Screen readers are notified when attributes change and can announce these changes to users after an interaction takes place.
-  %p ARIA-HIDDEN: From the a11y chatroom: ‘It’s specifically useful if for some reason you can’t display:none or visibility:hidden something but need to prevent users of [Assistive Technologies] from accessing it.  [For example] like when a modal dialog is open, if you could use an aria-hidden on the rest of the page, that’s kinda nice.”
 
   %h3 ARIA Labels
   %p From Google Accessibility: “It is not always practical or desirable to have visible labels for all of your objects. For example, there might only be enough space in your toolbar for a printer icon without a visible “Print” label. In cases like this, you should use the aria-label attribute to provide text labels so that users of screen readers and other adaptive technologies can understand what the object is used for.”

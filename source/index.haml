@@ -4,6 +4,8 @@ title: Semantic HTML | Accessibility Guidelines
 .primary-content{:id => "content"}
   %h2.page-title
     Semantic HTML
+
+  %p When a screenreader, or any sort of assistive device scans a web page, all it gets information about is the DOM.  No styles or javascript will be read by a screenreader.  Good, structural, and semantic HTML is the key starting point towards good accessibility practices.  
   
   /%a{:href => "#", :"aria-hidden" => "true"} Lol
   %p HTML5 introduced several new semantic elements representing logical sections or components of a web app or document. None of the new elements actually “do” anything by themselves, but they provide a nicer way for web authors to define various parts of a document, and open the door for user agents and assistive technologies to use this information to enable alternate ways of viewing and navigating a page.
