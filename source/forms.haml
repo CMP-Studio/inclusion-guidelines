@@ -57,6 +57,21 @@ title: Forms | Accessibility Guidelines
       outline: none;
     }
 
+  %form
+    %fieldset
+      %legend Personal Information
+      %label{:for => "full-name"}
+        Full Name
+        %span.required (required)
+        %span.error-message You must input a real name.
+      %input{:type => "text", :'required'=> "", :'id' => 'full-name', :'pattern' => '\w+'}/
+      %label{:for => "email"}
+        Email
+        %span.required (required)
+        %span.error-message The email address you entered is not valid.
+      %input{:type => "email", :'required'=> "", :'id' => 'email'}/
+      %button{:type => "submit"} Submit
+
   %h3 More Resources
   %ul
     %li

@@ -28,6 +28,24 @@ textarea {
   border: 1px $border-color solid;
 }
 
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:valid {
+  box-shadow: 0 0 5px 1px lightgreen;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+
+.error-message {
+  color: red;
+  font-style: italic;
+  display: none;
+}
+
 select {
   height: 3em;
   line-height: 2.5em;
