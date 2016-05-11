@@ -8,12 +8,14 @@ title: Alerts &amp; Modals | Accessibility Guidelines
   %h3 Alerts
   %p From US Standards: "Use the ARIA role="alert" to inform assistive technologies of a time-sensitive and important message that is not interactive. If the message is interactive, use the alertdialog role instead."
 
+  %p Do not visually hide alert messages on the page and then make them visible when they are needed. Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
+
   :code 
     # lang: html
-    <div class="usa-alert usa-alert-warning">
+     <div class="usa-alert usa-alert-error" role="alert">
       <div class="usa-alert-body">
-        <h3 class="usa-alert-heading">Warning Status</h3>
-        <p class="usa-alert-text">This is time sensitive material!</p>
+        <h3 class="usa-alert-heading">Error/Alert Status</h3>
+        <p class="usa-alert-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
       </div>
     </div>
 

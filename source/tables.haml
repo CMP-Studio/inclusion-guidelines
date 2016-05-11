@@ -10,6 +10,12 @@ title: Tables | Accessibility Guidelines
   %p A critical step toward creating an accessible data table is to designate row and column headers. The th element is used to mark up these headers, and should never be empty. Headers can also make use of the scope attribute, which identifies whether a table header is a column header or a row header.
 
   %p The thead and tfoot elements define header and footer rows for tables, but provide no accessibility functionality and are generally only of use when a long table is printed. There is no harm in using these elements for table styling or other reasons, but they do not provide any added accessibility benefits.
+
+  %p Simple tables can have two levels of headers. Each header cell should have scope='col' or scope='row'.
+
+  %p Complex tables are tables with more than two levels of headers. Each header should be given a unique id and each data cell should have a headers attribute with each related header cell’s id listed.
+
+  %p When adding a title to a table, include it in a <caption> tag inside of the <table> element.
   
   %h3 More Resources
  
