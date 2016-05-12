@@ -3,3 +3,4 @@
 //= require responders
 //= require navigation
 //= require modal
+//= require accordion

@@ -1,6 +1,5 @@
 .modal-wrapper {
   display: none;
-  z-index: 100;
   @include breakpoint($bp-l) {
     height: 100%;
     width: 100%;

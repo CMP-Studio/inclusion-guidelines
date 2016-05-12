@@ -5,6 +5,27 @@ title: Accordions &amp; Tabs | Accessibility Guidelines
   %h2.page-title
     Accordions &amp; Tabs
 
+  %h3 Accordions
+  %p Here is an example adapted from the US Design Standards.
+
+  .accordion-example
+
+    %ul.accordion-controls{:'aria-label'=>'Accordion Control Group Buttons'}
+      %li
+        %button{:'aria-controls'=>'content-1', :'aria-expanded'=>'false', :'id'=>'accordion-control-1'} Apples
+        #content-1{:'aria-hidden'=>'true'} 
+          %p Apples are a fine fruit often associated with good health, and fewer doctor's appointments.
+          %p Ex. An apple a day keeps the doctor away.
+      %li
+        %button{:'aria-controls'=>'content-2', :'aria-expanded'=>'false', :'id'=>'accordion-control-2'} Lemons
+        #content-2{:'aria-hidden'=>'true'}
+          %p Lemons are good with almost anything, yet are often have a negative connotation when used in conversation.
+          %p The bread from the french bakery is normally very good, but the one we bought today was a lemon.
+      %li
+        %button{:'aria-controls'=>'content-3', :'aria-expanded'=>'false', :'id'=>'accordion-control-3'} Kiwis
+        #content-3{:'aria-hidden'=>'true'}
+          %p Kiwis are a fun, under-appreciated fruit.
+
   %p Simply Accessible, a web firm which specializes in accessibility, recently released a controversial article about how to make tabs accessible.  In it, they note they are doing things a bit differently"
 
   %blockquote

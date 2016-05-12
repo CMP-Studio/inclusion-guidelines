@@ -30,11 +30,14 @@
 
     = partial "partials/_site-header"
 
-    %main.main-content{role: 'main'}
-      .container.accesibility-content
-        = partial "partials/_aside-nav"
-        = yield
-
+    - if not current_resource.data.is_different
+      %main.main-content{role: 'main'}
+        .container.accesibility-content
+          = partial "partials/_aside-nav"
+          = yield
+    - else
+      =yield
+      
     = partial "partials/_site-footer"
 
     = javascript_include_tag 'all.js'

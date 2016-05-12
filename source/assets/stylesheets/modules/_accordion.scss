@@ -1,0 +1,29 @@
+.accordion-example {
+  .accordion-controls {
+    li {
+      list-style-type: none;
+    }
+    button {
+      background-color: lighten($text-color, 10%);
+      max-width: 800px;
+      width: 50%;
+      color: $background-color;
+      border: none;
+      border-radius: 3px;
+      font-size: 2em;
+      margin: 0.5em 0em;
+      transition: background-color 0.7s ease-in;
+      &:focus, &:hover {
+        background-color: $text-color;
+        cursor: pointer;
+      }
+    }
+    @for $i from 1 through 3 {
+      #content-#{$i} {
+        max-width: 800px;
+        width: 50%;
+        display: none;
+      }
+    }
+  }
+}
