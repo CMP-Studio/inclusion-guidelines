@@ -1,0 +1,32 @@
+.modal-wrapper {
+  display: none;
+  z-index: 100;
+  @include breakpoint($bp-l) {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(128,128,128, 0.6);
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 10em;
+  }
+  .modal-content {
+    background-color: $background-color;
+    padding: 2em;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    @include breakpoint ($bp-l) {
+      position: static;
+      height: auto;
+      margin: 0 auto;
+      max-width: 500px;
+    }
+  }
+}

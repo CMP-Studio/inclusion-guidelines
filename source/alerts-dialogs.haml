@@ -46,6 +46,17 @@ title: Alerts &amp; Modals | Accessibility Guidelines
   :code 
     # lang: javascript
     $('confirm-button').focus();
+
+  %h3 Examples
+  %h4 Modal
+
+  %button.modal-button Open Modal
+  .modal-wrapper{:'tabindex'=>'-1'}
+    .modal-content{:'aria-hidden' => 'true', :'role' => 'dialog', :'aria-labelledby' => 'modalTitle', :'aria-describedby'=>'modalDescription'}
+      .screenreader-text{:'id'=>'modalDescription'} Beginning of dialog window. It begins with a heading 1 called &quot;Interesting Modal Title&quot;. Escape will cancel and close the window. 
+      %h1{:'id'=>'modalTitle'} Interesting Modal Title
+      %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut maxime voluptatibus fuga odit dignissimos quo quia dolor ipsam aliquid, at dicta incidunt numquam eius provident. Ratione, alias quaerat laborum dolor.
+      %button.close-modal Close Modal
   
   %h3 More Resources
   %ul
