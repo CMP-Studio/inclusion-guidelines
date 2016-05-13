@@ -38,6 +38,5 @@ function checkOthers(elem) {
   }
 };
 
-
-
+//call this function on page load
 accordionToggle();

@@ -5,11 +5,101 @@ title: Accordions &amp; Tabs | Accessibility Guidelines
   %h2.page-title
     Accordions &amp; Tabs
 
+  %p Accordions and tabs are both common design structures used to organize and hide content, so as not to overwhelm the user.  Accordions and tabs are also both web structures that require JS to show/hide things based on a user click event.
+
+  %p The key to making accordions and tabs accessible is to toggle some aria properties and states on user click or focus events (aria-hidden, aria-expanded).  The examples below will show the HTML structure and JS behavior required to make our examples work and explain each part in detail.
+
   %h3 Accordions
-  %p Here is an example adapted from the US Design Standards.
+
+  %p For this example, buttons are used so they are tab-able by keyboard and screenreader users.
+
+  %p Each button has a unique name for aria-controls=’content-{#}’ that associates the button control to the appropriate content region by referencing that element’s id.
+
+  %p Each button also has an aria-expanded attribute that is set to true if the content associated with it is shown, or false if the content is hidden.
+
+  %p Each content area has an aria-hidden attribute set to either true or false. When true, the element (and all children) are neither visible or perceivable, and assistive technologies will skip this content.  However, if the content areas are being set between display: none and display: block, screenreaders will most likely not read it anyways and aria-hidden attributes may be unecessary.
+
+  %p *This example took considerable input and research from the US Standards Design Pattern library for Accordions, which can be found #{link_to 'here', 'https://standards.usa.gov/accordions/'}.
+
+  :code 
+    # lang: html
+    # HTML
+    <div class="accordion-example">
+      <ul aria-label="Accordion Control Group Buttons" class="accordion-controls">
+        <li>
+          <button aria-controls="content-1" aria-expanded="false" id="accordion-control-1">Apples</button>
+          <div aria-hidden="true" id="content-1">
+            <p>Apples are a fine fruit often associated with good health, and fewer doctor's appointments.</p>
+            <p>Ex. An apple a day keeps the doctor away.</p>
+          </div>
+        </li>
+
+        <li>
+          <button aria-controls="content-2" aria-expanded="false" id="accordion-control-2">Lemons</button>
+          <div aria-hidden="true" id="content-2">
+            <p>Lemons are good with almost anything, yet are often have a negative connotation when used in conversation.</p>
+            <p>Ex. The bread from the french bakery is normally very good, but the one we bought today was a lemon.</p>
+          </div>
+        </li>
+
+        <li>
+          <button aria-controls="content-3" aria-expanded="false" id="accordion-control-3">Kiwis</button>
+          <div aria-hidden="true" id="content-3">
+            <p>Kiwis are a fun, under-appreciated fruit.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  :code 
+    # lang: javascript
+    # JavaScript
+    var accordionButtons = $('.accordion-controls li button');
+
+    function accordionToggle() {
+      $('.accordion-controls li button').on('click', function(e) {
+        $control = $(this);
+
+        accordionContent = $control.attr('aria-controls');
+        checkOthers($control[0]);
+
+        isAriaExp = $control.attr('aria-expanded');
+        newAriaExp = (isAriaExp == "false") ? "true" : "false";
+        $control.attr('aria-expanded', newAriaExp);
+
+        isAriaHid = $('#' + accordionContent).attr('aria-hidden');
+        if (isAriaHid == "true") {
+          $('#' + accordionContent).attr('aria-hidden', "false");
+          $('#' + accordionContent).css('display', 'block');
+        } else {
+          $('#' + accordionContent).attr('aria-hidden', "true");
+          $('#' + accordionContent).css('display', 'none');
+        }
+      });
+    };
+
+    function checkOthers(elem) {  
+      for (var i=0; i<accordionButtons.length; i++) {
+        if (accordionButtons[i] == elem) {
+          return;
+        }
+        else {
+          if (($(accordionButtons[i]).attr('aria-expanded')) == 'true') {
+            $(accordionButtons[i]).attr('aria-expanded', 'false');
+            content = $(accordionButtons[i]).attr('aria-controls');
+            $('#' + content).attr('aria-hidden', 'true');
+            $('#' + content).css('display', 'none');
+          }
+        }
+      }
+    };
+
+    //call this function on page load
+    accordionToggle();
+    
+  %h3 Live example
 
   .accordion-example
-
     %ul.accordion-controls{:'aria-label'=>'Accordion Control Group Buttons'}
       %li
         %button{:'aria-controls'=>'content-1', :'aria-expanded'=>'false', :'id'=>'accordion-control-1'} Apples
@@ -20,11 +110,13 @@ title: Accordions &amp; Tabs | Accessibility Guidelines
         %button{:'aria-controls'=>'content-2', :'aria-expanded'=>'false', :'id'=>'accordion-control-2'} Lemons
         #content-2{:'aria-hidden'=>'true'}
           %p Lemons are good with almost anything, yet are often have a negative connotation when used in conversation.
-          %p The bread from the french bakery is normally very good, but the one we bought today was a lemon.
+          %p Ex. The bread from the french bakery is normally very good, but the one we bought today was a lemon.
       %li
         %button{:'aria-controls'=>'content-3', :'aria-expanded'=>'false', :'id'=>'accordion-control-3'} Kiwis
         #content-3{:'aria-hidden'=>'true'}
           %p Kiwis are a fun, under-appreciated fruit.
+
+  %h3 Tabs
 
   %p Simply Accessible, a web firm which specializes in accessibility, recently released a controversial article about how to make tabs accessible.  In it, they note they are doing things a bit differently"
 
