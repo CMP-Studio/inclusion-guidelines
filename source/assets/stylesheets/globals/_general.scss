@@ -33,7 +33,9 @@ html {
   }
 
   .accesibility-content {
-    display: flex;
+     @include breakpoint ($bp-sidebar) {
+      display: flex;
+    }
   }
 
   .aside-nav {

@@ -1,7 +1,10 @@
 .aside-nav {
   position: relative;
   background-color: $background-color-subtle;
-  padding-top: 1.3em;
+  @include breakpoint($bp-sidebar) {
+    padding-top: 1.3em;
+  }
+  
   &:before {
     @include breakpoint($bp-sidebar) {
       content: "";
