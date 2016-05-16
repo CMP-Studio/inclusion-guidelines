@@ -1,29 +1,29 @@
 .aside-nav {
   position: relative;
-  background-color: lighten($text-color-subtle, 8%);
+  background-color: $background-color-subtle;
   padding-top: 1.3em;
   &:before {
     @include breakpoint($bp-sidebar) {
       content: "";
-      color: lighten($text-color-subtle, 8%);
       height: 100%;
       position: absolute;
       top: 0;
       left: -2000px;
       width: 2000px;
-      background-color: lighten($text-color-subtle, 8%);
+      background-color: $background-color-subtle;
     }
   }
 
   a {
     display: none;
+    color: $accent-color;
     @include breakpoint($bp-sidebar) {
       display: block;
       padding: 0.75em;
-      background-color: lighten($text-color-subtle, 8%);
+      background-color: $background-color-subtle;
       text-decoration: none;
       &:hover, &:focus {
-        background-color:$text-color-subtle;
+        background-color:darken($background-color-subtle, 8%);
       }
     }
   }

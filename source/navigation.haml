@@ -1,95 +1,93 @@
 ---
 title: Navigation | Accessibility Guidelines
 ---
-.primary-content{:id => "content"}
-  %h2.page-title
-    Horizontal &amp; Mobile Navigation
+%h2.page-title
+  Horizontal &amp; Mobile Navigation
 
-  %h3 Some requirements of accessible navigation:
+%h3 Some requirements of accessible navigation:
 
-  %p Code the navigation so that pressing the tab key moves focus from link to link in the navigation, even when the navigation has collapsed into an accordion.
-  %p On small screens: when collapsed into an accordion, the navigation should also meet the accessibility requirements outlined in the "Accordion" section.
+%p Code the navigation so that pressing the tab key moves focus from link to link in the navigation, even when the navigation has collapsed into an accordion.
+%p On small screens: when collapsed into an accordion, the navigation should also meet the accessibility requirements outlined in the "Accordion" section.
 
-  %p I will give two different examples of how you can make navigation accessible.  I've taken bits and pieces from many very respected accessibility sources, including the #{link_to 'the Perkins School for the Blind site', 'http://www.perkins.org/#'} to see how to make the most accessible mobile navigation.  I've also included code from #{link_to 'Simply Accessible', 'http://simplyaccessible.com/contact/'} to show how they do their regular desktop horizontal navigation.
+%p I will give two different examples of how you can make navigation accessible.  I've taken bits and pieces from many very respected accessibility sources, including the #{link_to 'the Perkins School for the Blind site', 'http://www.perkins.org/#'} to see how to make the most accessible mobile navigation.  I've also included code from #{link_to 'Simply Accessible', 'http://simplyaccessible.com/contact/'} to show how they do their regular desktop horizontal navigation.
 
-  %h3 Responsive, Mobile Navigation (that's accessible!)
+%h3 Responsive, Mobile Navigation (that's accessible!)
 
-  %p For navigation that moves to mobile navigation, with perhaps a display: none nav list, it is actually not commonly accepted to use aria-hidden attributes anymore.  I asked someone in the a11y slack room, and they told me that “if you’re already [applying display: none; to] stuff, you generally won’t need [aria-hidden] anyway.”
+%p For navigation that moves to mobile navigation, with perhaps a display: none nav list, it is actually not commonly accepted to use aria-hidden attributes anymore.  I asked someone in the a11y slack room, and they told me that “if you’re already [applying display: none; to] stuff, you generally won’t need [aria-hidden] anyway.”
 
-  %p Marshall Norman, from Sparkbox, also recommends putting an aria-label such as 'Mobile Navigation Button' if you are only using a hamburger icon on your site to signify a mobile navigation.  If you are just using a button with text on it like: 'Menu' or 'Open Menu', you will not need an aria-label.  A good thing to keep in mind is that if you use an aria-label on a button or HTML element, a screenreader will often only read the aria-label of the element, and not the actual text.
+%p Marshall Norman, from Sparkbox, also recommends putting an aria-label such as 'Mobile Navigation Button' if you are only using a hamburger icon on your site to signify a mobile navigation.  If you are just using a button with text on it like: 'Menu' or 'Open Menu', you will not need an aria-label.  A good thing to keep in mind is that if you use an aria-label on a button or HTML element, a screenreader will often only read the aria-label of the element, and not the actual text.
 
-  %p The mobile navigation example you see below is code used for this site. I do not use any aria-hidden attributes on anything because I am hiding things with CSS display: none property, which is generally not read by screenreaders.
+%p The mobile navigation example you see below is code used for this site. I do not use any aria-hidden attributes on anything because I am hiding things with CSS display: none property, which is generally not read by screenreaders.
+
+:code
+  # lang: html
+  <section class="mobile-navigation">
+    <button class="side-nav-trigger" aria-expanded="false"> #I use JS to toggle between an aria-expanded=false/true here
+      <span class="trigger-status closed">Open</span> #I use JS to toggle between 'Open' and 'Close' here
+      Accessibility Resources
+    </button>
+  </section>
+
+  <nav class="primary-navigation" role="navigation" aria-label="Mobile Accesibility Navigation Dropdown">
+    <ul class="navigation-item-group">
+      <li class="nav-item"><a href='/'>Semantic HTML</a></li>
+      <li class="nav-item"><a href='/font'>Font & Font Size</a></li>
+      <li class="nav-item"><a href='/color'>Contrast & Color</a></li>
+    </ul>
+  </nav>
+
+:code
+  # lang: javascript
+  # Here are the two functions I call to toggle between aria-expanded states
+  # and also toggle between having the word 'Open/Close' on the trigger button
   
-  :code
-    # lang: html
-    <section class="mobile-navigation">
-      <button class="side-nav-trigger" aria-expanded="false"> #I use JS to toggle between an aria-expanded=false/true here
-        <span class="trigger-status closed">Open</span> #I use JS to toggle between 'Open' and 'Close' here
-        Accessibility Resources
-      </button>
-    </section>
+  var $menuTrigger = $('.side-nav-trigger'),
+  $triggerWord = $('.trigger-status');
 
-    <nav class="primary-navigation" role="navigation" aria-label="Mobile Accesibility Navigation Dropdown">
-      <ul class="navigation-item-group">
-        <li class="nav-item"><a href='/'>Semantic HTML</a></li>
-        <li class="nav-item"><a href='/font'>Font & Font Size</a></li>
-        <li class="nav-item"><a href='/color'>Contrast & Color</a></li>
-      </ul>
-    </nav>
+  function toggleTriggerClass() {
+    if (!$menuTrigger.hasClass('is-active')) {
+      $menuTrigger.addClass('is-active');
+      $menuTrigger.attr("aria-expanded","true");
+    } else {
+      $menuTrigger.removeClass('is-active');
+      $menuTrigger.attr("aria-expanded","false");
+    }
+  };
 
-  :code
-    # lang: javascript
-    # Here are the two functions I call to toggle between aria-expanded states
-    # and also toggle between having the word 'Open/Close' on the trigger button
-    
-    var $menuTrigger = $('.side-nav-trigger'),
-    $triggerWord = $('.trigger-status');
+  function toggleTriggerWord() {
+    if ($triggerWord.hasClass('closed')) {
+      $triggerWord.removeClass('closed');
+      $triggerWord.addClass('open');
+      $triggerWord.html('Close');
+    } else {
+      $triggerWord.removeClass('open');
+      $triggerWord.addClass('closed');
+      $triggerWord.html('Open');
+    }
+  };
 
-    function toggleTriggerClass() {
-      if (!$menuTrigger.hasClass('is-active')) {
-        $menuTrigger.addClass('is-active');
-        $menuTrigger.attr("aria-expanded","true");
-      } else {
-        $menuTrigger.removeClass('is-active');
-        $menuTrigger.attr("aria-expanded","false");
-      }
-    };
+%h3 Simply Accessible Horizontal Nav
 
-    function toggleTriggerWord() {
-      if ($triggerWord.hasClass('closed')) {
-        $triggerWord.removeClass('closed');
-        $triggerWord.addClass('open');
-        $triggerWord.html('Close');
-      } else {
-        $triggerWord.removeClass('open');
-        $triggerWord.addClass('closed');
-        $triggerWord.html('Open');
-      }
-    };
+%p For a horizontal nav, things are a bit simpler, and all you really need to make sure you have is a nav element and list of links.  See the following for an example.  Here, Simply Accessible has chosen not to use the navigation aria landmark in favor of only using the nav HTML tag.
 
-  %h3 Simply Accessible Horizontal Nav
+:code
+  # lang: html
+  <nav class="primary-nav primary-nav--narrow">
+    <ul>
+      <li><a href="/our-work/">Our work</a></li>
+      <li><a href="/articles/">Articles</a></li>
+      <li><a href="/about/">About us</a></li>
+      <li><a href="/events/">Events</a></li>
+      <li class="primary-nav__active"><a href="/contact/">Contact<span class="visuallyhidden"> (current section)</span></a></li>
+    </ul>
+  </nav>
 
-  %p For a horizontal nav, things are a bit simpler, and all you really need to make sure you have is a nav element and list of links.  See the following for an example.  Here, Simply Accessible has chosen not to use the navigation aria landmark in favor of only using the nav HTML tag.
 
-  :code
-    # lang: html
-    <nav class="primary-nav primary-nav--narrow">
-      <ul>
-        <li><a href="/our-work/">Our work</a></li>
-        <li><a href="/articles/">Articles</a></li>
-        <li><a href="/about/">About us</a></li>
-        <li><a href="/events/">Events</a></li>
-        <li class="primary-nav__active"><a href="/contact/">Contact<span class="visuallyhidden"> (current section)</span></a></li>
-      </ul>
-    </nav>
-
-  
-  %h3 More Resources
-  %ul
-    %li
-      %a{:href => "http://seesparkbox.com/foundry/ethically_accessible"} Ethically Accessible Article by Marshall Norman
-    %li
-      %a{:href => "http://simplyaccessible.com/"} Simply Accessible's Website
-    %li
-      %a{:href => "http://www.perkins.org/"} Perkins School for the Blind
- 
+%h3 More Resources
+%ul
+  %li
+    %a{:href => "http://seesparkbox.com/foundry/ethically_accessible"} Ethically Accessible Article by Marshall Norman
+  %li
+    %a{:href => "http://simplyaccessible.com/"} Simply Accessible's Website
+  %li
+    %a{:href => "http://www.perkins.org/"} Perkins School for the Blind

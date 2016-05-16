@@ -1,30 +1,28 @@
 ---
 title: Skip Link | Accessibility Guidelines
 ---
-.primary-content{:id => "content"}
-  %h2.page-title
-    Skip Link
+%h2.page-title
+  Skip Link
 
-  %p This useful accessibility tool, should go right after the body tag, (thus it is the first thing a keyboard user would tab to).  
-  %p  To try this yourself, just refresh this page and then without clicking anything, hit your tab key once -- you should immediately be focused on white the Skip to Content link that is on the top of every page of this website.
+%p This useful accessibility tool, should go right after the body tag, (thus it is the first thing a keyboard user would tab to).  
+%p  To try this yourself, just refresh this page and then without clicking anything, hit your tab key once -- you should immediately be focused on white the Skip to Content link that is on the top of every page of this website.
 
-  %p Format your skip link as follows, allowing a user to skip all navigation and right to the main content:
+%p Format your skip link as follows, allowing a user to skip all navigation and right to the main content:
 
-  :code
-    # lang: html
-    <a id=’skip-nav’ class=’screenreader-text’ href=’#main-content’>
-      Skip Navigation or Skip to Content
-    </a>
+:code
+  # lang: html
+  <a id=’skip-nav’ class=’screenreader-text’ href=’#main-content’>
+    Skip Navigation or Skip to Content
+  </a>
 
-  %p And then below in the main content you would have an id that is tied to the skip link's href:
-  
-  :code
-    # lang: html
-    <main role=’main’ id=’main-content’> 
-      Content here.
-    </main>
-  
-  %p The Starbucks website, as of May 2016, was using three different skip links: Skip to Main Navigation, Skip to Main Content, and Skip to Footer. Try tabbing around #{link_to 'here', 'http://www.starbucks.com/'} the website to see for yourself.
-  
-  %h3 More Resources
- 
+%p And then below in the main content you would have an id that is tied to the skip link's href:
+
+:code
+  # lang: html
+  <main role=’main’ id=’main-content’> 
+    Content here.
+  </main>
+
+%p The Starbucks website, as of May 2016, was using three different skip links: Skip to Main Navigation, Skip to Main Content, and Skip to Footer. Try tabbing around #{link_to 'here', 'http://www.starbucks.com/'} the website to see for yourself.
+
+%h3 More Resources

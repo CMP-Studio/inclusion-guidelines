@@ -16,6 +16,7 @@
     %meta{:content => "", :name => "keywords"}
     %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
     = stylesheet_link_tag 'main'
+    %link{:rel => "stylesheet", :href => "https://fonts.googleapis.com/css?family=Merriweather:300,300italic,400,700,400italic,700italic", :'type' => 'text/css'}/
     = stylesheet_link_tag 'syntax-highlighting'
     = javascript_include_tag 'vendor/modernizr.js'
     / :javascript
@@ -34,7 +35,8 @@
       %main.main-content{role: 'main'}
         .container.accesibility-content
           = partial "partials/_aside-nav"
-          = yield
+          .primary-content{:id => "content"}
+            = yield
     - else
       =yield
       
