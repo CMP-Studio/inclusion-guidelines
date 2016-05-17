@@ -24,10 +24,7 @@ function accordionToggle() {
 
 function checkOthers(elem) {  
   for (var i=0; i<accordionButtons.length; i++) {
-    if (accordionButtons[i] == elem) {
-      return;
-    }
-    else {
+    if (accordionButtons[i] != elem) {
       if (($(accordionButtons[i]).attr('aria-expanded')) == 'true') {
         $(accordionButtons[i]).attr('aria-expanded', 'false');
         content = $(accordionButtons[i]).attr('aria-controls');
