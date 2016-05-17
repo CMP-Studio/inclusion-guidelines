@@ -5,9 +5,8 @@
     }
     button {
       background-color: lighten($text-color, 10%);
-      max-width: 800px;
-      width: 50%;
-      color: $background-color;
+      max-width: 500px;
+      width: 100%;
       border: none;
       border-radius: 3px;
       font-size: 2em;
@@ -20,10 +19,20 @@
     }
     @for $i from 1 through 3 {
       #content-#{$i} {
-        max-width: 800px;
-        width: 50%;
+        max-width: 500px;
+        width: 100%;
         display: none;
       }
+    }
+    
+    #accordion-control-1 {
+      background-color: #EF1610;
+    }
+    #accordion-control-2 {
+      background-color: #EFE847;
+    }
+    #accordion-control-3 {
+      background-color: #0BEF56;
     }
   }
 }

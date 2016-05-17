@@ -1,5 +1,5 @@
 ---
-title: Alerts &amp; Modals | Accessibility Guidelines
+title: Modals | Accessibility Guidelines
 is_different: true
 ---
 .modal-wrapper{:'aria-hidden' => 'true', :'role' => 'dialog', :'aria-labelledby' => 'modalTitle', :'aria-describedby'=>'modalDescription'}
@@ -13,22 +13,6 @@ is_different: true
   .container.accesibility-content
     = partial "partials/_aside-nav"
     .primary-content{:id => "content"}
-      %h2.page-title
-        Alerts &amp; Modals
-
-      %h3 Alerts
-      %p From US Standards: "Use the ARIA role="alert" to inform assistive technologies of a time-sensitive and important message that is not interactive. If the message is interactive, use the alertdialog role instead."
-
-      %p Do not visually hide alert messages on the page and then make them visible when they are needed. Users of older assistive technologies may still be able to perceive the alert messages even if they are not currently applicable.
-
-      :code 
-        # lang: html
-         <div class="usa-alert usa-alert-error" role="alert">
-          <div class="usa-alert-body">
-            <h3 class="usa-alert-heading">Error/Alert Status</h3>
-            <p class="usa-alert-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
-          </div>
-        </div>
 
       %h3 Modals (Dialog Windows)
       %p This example shows an instance where the modal is open, and a screenreader cannot interact with the overlay behind the modal--only the modal itself (basically we’re just toggling the aria hidden attribute for both the modal and the overlay-content on a change).
@@ -58,8 +42,7 @@ is_different: true
         # lang: javascript
         $('confirm-button').focus();
 
-      %h3 Examples
-      %h4 Modal
+      %h3 Live Example
 
       %button.modal-button Open Modal
       
