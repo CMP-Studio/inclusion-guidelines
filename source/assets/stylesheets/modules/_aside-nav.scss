@@ -17,17 +17,32 @@
     }
   }
 
-  a {
-    display: none;
-    color: $accent-color;
-    @include breakpoint($bp-sidebar) {
-      display: block;
-      padding: 0.75em;
-      background-color: $background-color-subtle;
-      text-decoration: none;
-      &:hover, &:focus {
-        background-color:darken($background-color-subtle, 8%);
+  .side-nav-item {
+    &.active {
+      a {
+        background-color: darken($background-color-subtle, 8%);
       }
+    }
+    a {
+      display: none;
+      color: $accent-color;
+      @include breakpoint($bp-sidebar) {
+        display: block;
+        padding: 0.75em 0.25em;
+        background-color: $background-color-subtle;
+        text-decoration: none;
+        &:hover, &:focus {
+          background-color:darken($background-color-subtle, 13%);
+        }
+        &.active {
+          background-color: darken($background-color-subtle, 18%); 
+        }
+      }
+    }
+  }
+  .side-nav-inner-item {
+    a {
+      padding-left: 1.5em;
     }
   }
 }

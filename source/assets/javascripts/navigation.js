@@ -3,7 +3,8 @@ var $menuTrigger = $('.side-nav-trigger'),
     $triggerWord = $('.trigger-status'),
     $primaryMenu = $('.primary-navigation'),
     $utilityTrigger = $('.utility-trigger'),
-    $utilityMenu = $('.utility-navigation');
+    $utilityMenu = $('.utility-navigation'),
+    asideNavList = $('.side-nav .side-nav-inner-item a');
 
 function toggleTriggerClass() {
   if (!$menuTrigger.hasClass('is-active')) {
@@ -128,5 +129,18 @@ jRes.addFunc({
   }
 });
 
+function getPathName() {
+  path = location.pathname;
+  console.log(path);
+  console.log(asideNavList);
+  for (var i=0; i<asideNavList.length; i++) {
+    if (asideNavList[i].pathname ==  path) {
+      $(asideNavList[i]).addClass('active');
+      $(asideNavList[i]).parent().parent().parent().addClass('active');
+    }
+  }
+};
+
+getPathName();
 toggleUtilityMenu();
 toggleMenu();

@@ -5,7 +5,7 @@ title: Buttons | Accessibility Guidelines
   Buttons
 
 %h3 Use buttons to signal actions.
-%p Avoid using <div> or <img> tags to create buttons. Screen readers don't automatically know either is a usable button.
+%p Avoid using div or img tags to create buttons. Screen readers don't automatically know either is a usable button.
 %p When styling links to look like buttons, remember that screen readers handle links slightly differently than they do buttons. Pressing the Space key triggers a button, but pressing the Enter key triggers a link.
 
 %h3 When to use
@@ -28,5 +28,9 @@ title: Buttons | Accessibility Guidelines
     Open Modal
   </div>
   #without this role, a screenreader will not tell the user that the div can be clicked on
+
+:code 
+  # lang: html
+  <input type=’button’> Click me </input>
 
 %h3 More Resources
