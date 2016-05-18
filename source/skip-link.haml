@@ -23,6 +23,27 @@ title: Skip Link | Accessibility Guidelines
     Content here.
   </main>
 
+%p This screenreader SASS mixin we have created can be used on many things you might like for only users of AT to be able to focus on, and not be seen by sighted users.  The skip link, however, should always have this type of styling.
+
+:code
+  # lang: scss
+  .screenreader-text {
+    position: absolute;
+    left: -999px;
+    width:1px;
+    height: 1px;
+    top: auto;
+
+    &:focus {
+      color: $background-color;
+      display: inline-block;
+      height: auto;
+      width: auto;
+      position: static;
+      margin: auto;
+    }
+  }
+
 %p The Starbucks website, as of May 2016, was using three different skip links: Skip to Main Navigation, Skip to Main Content, and Skip to Footer. Try tabbing around #{link_to 'here', 'http://www.starbucks.com/'} the website to see for yourself.
 
 %h3 More Resources
