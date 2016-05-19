@@ -131,8 +131,6 @@ jRes.addFunc({
 
 function getPathName() {
   path = location.pathname;
-  console.log(path);
-  console.log(asideNavList);
   for (var i=0; i<asideNavList.length; i++) {
     if (asideNavList[i].pathname ==  path) {
       $(asideNavList[i]).addClass('active');
