@@ -3,8 +3,8 @@
 source 'https://rubygems.org'
 ruby '2.3.0'
 
-gem "middleman", "~>3.3.11"
-gem "middleman-livereload", "~> 3.1.0"
+gem "middleman", "~>3.3.12"
+gem "middleman-livereload", "~> 3.4.6"
 gem "middleman-patterns", "~> 0.2"
 gem "middleman-autoprefixer", "~> 2.4.4"
 gem "middleman-syntax", "~> 2.1.0"
