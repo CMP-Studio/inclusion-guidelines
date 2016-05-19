@@ -4,3 +4,4 @@
 //= require navigation
 //= require modal
 //= require accordion
+//= require forms

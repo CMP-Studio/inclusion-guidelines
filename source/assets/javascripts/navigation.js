@@ -1,4 +1,3 @@
-
 var $menuTrigger = $('.side-nav-trigger'),
     $triggerWord = $('.trigger-status'),
     $primaryMenu = $('.primary-navigation'),
