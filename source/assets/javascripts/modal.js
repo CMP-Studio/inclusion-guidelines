@@ -27,7 +27,6 @@ function setModalClose() {
 
 function deflectFocus() {
   $mainContent.on('focusin.modalOpen', function(e) {
-    console.log('deflect focus working');
     $modalClose.focus();
   });
 };
