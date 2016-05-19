@@ -10,7 +10,9 @@
     right: 0;
     bottom: 0;
     padding-top: 10em;
+    z-index: 2;
   }
+
   .modal-content {
     background-color: $background-color;
     padding: 2em;
