@@ -5,3 +5,4 @@
 //= require modal
 //= require accordion
 //= require forms
+//= require tabs
