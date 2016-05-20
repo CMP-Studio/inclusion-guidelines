@@ -13,11 +13,11 @@ title: Navigation | Accessibility Guidelines
 
 %h3 Responsive, Mobile Navigation (that's accessible!)
 
-%p For navigation that moves to mobile navigation, with perhaps a display: none nav list, it is actually not commonly accepted to use aria-hidden attributes anymore.  I asked someone in the a11y slack room, and they told me that “if you’re already [applying display: none; to] stuff, you generally won’t need [aria-hidden] anyway.”
+%p For navigation that moves to mobile navigation, with perhaps a <code class="inline-snippet">display: none;</code> nav list, it is actually not commonly accepted to use aria-hidden attributes anymore.  I asked someone in the a11y slack room, and they told me that “if you’re already [applying display: none; to] stuff, you generally won’t need [aria-hidden] anyway.”
 
 %p Marshall Norman, from Sparkbox, also recommends putting an aria-label such as 'Mobile Navigation Button' if you are only using a hamburger icon on your site to signify a mobile navigation.  If you are just using a button with text on it like: 'Menu' or 'Open Menu', you will not need an aria-label.  A good thing to keep in mind is that if you use an aria-label on a button or HTML element, a screenreader will often only read the aria-label of the element, and not the actual text.
 
-%p The mobile navigation example you see below is code used for this site. I do not use any aria-hidden attributes on anything because I am hiding things with CSS display: none property, which is generally not read by screenreaders.
+%p The mobile navigation example you see below is code used for this site. I do not use any <code class="inline-snippet">aria-hidden</code> attributes on anything because I am hiding things with CSS <code class="inline-snippet">display: none;</code> property, which is generally not read by screenreaders.
 
 :code
   # lang: html
@@ -40,7 +40,7 @@ title: Navigation | Accessibility Guidelines
   # lang: javascript
   # Here are the two functions I call to toggle between aria-expanded states
   # and also toggle between having the word 'Open/Close' on the trigger button
-  
+
   var $menuTrigger = $('.side-nav-trigger'),
   $triggerWord = $('.trigger-status');
 
