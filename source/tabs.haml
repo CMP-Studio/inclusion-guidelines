@@ -10,12 +10,12 @@ title: Tabs | Accessibility Guidelines
   Some of the non-visual users in our studies used the links list functionality in their screen reader software. When they did, the links with role="tab" within the role="tablist" element didn’t show up in the list. These elements have moved to a list of ARIA elements-—a relatively new piece of functionality in screen readers, and one that some folks weren’t familiar with. So, these users weren’t able to find any of the content contained in the inactive tabs.
 
   Also, many sighted keyboard users were frustrated when the ability to tab to each individual tab was removed through the use of tabindex="-1". People often weren’t aware of the arrow key shortcuts that replace the tabbing interaction they’d normally use to move between links/interactive elements. This includes people who use magnification tools with their screen reader (like ZoomText).
-  
+
 %cite Jeff Smith, Simply Accessible
 
 :code
   # lang: html
-  <div id="tabs">
+  <div class="tabbed-content">
       <ul class="tabsList">
           <li class="current"><a href="#ipa" id="tab-ipa" aria-selected="true">India Pale Ale (IPA)</a></li>
           <li><a href="#gueuze" id="tab-gueuze" aria-selected="false">Gueuze</a></li>
@@ -44,9 +44,32 @@ title: Tabs | Accessibility Guidelines
   # and this allows us to focus in on heading for content navigated to.
 
   tabPanel.children("h2").attr("tabindex", -1).focus();
-  
+
 %p.unsure I still don't completely understand the use of aria-selected here. I also wonder about the difference between aria selected and aria expanded.
 
+.tabbed-content
+  %ul.tabs-list
+    %li.current
+      - aria_attrs = {:selected => true, :controls => '#ipa', :expanded => true}
+      %a#tab-ipa{href: '#ipa', :aria => aria_attrs}
+        India Pale Ale (IPA)
+    %li
+      - aria_attrs = {:selected => false, :controls => '#gueuze', :expanded => false}
+      %a#tab-gueuze{href: '#gueuze', :aria => aria_attrs}
+        Gueuze
+    %li
+      - aria_attrs = {:selected => false, :controls => '#imperial-stout', :expanded => false}
+      %a#tab-imperial-stout{href: '#imperial-stout', :'aria-selected' => true}
+        Imperial Stout
+
+  .tab-panel{:aria => {:hidden => false, :labelledby => 'tab-ipa'}}
+    %h2#ipa India Pale Ale (IPA)
+
+  .tab-panel{:aria => {:hidden => true, :labelledby => 'tab-gueuze'}}
+    %h2#gueuze Gueuze
+
+  .tab-panel{:aria => {:hidden => true, :labelledby => 'tab-imperial-stout'}}
+    %h2#imperial-stout Imperial Stout
 
 %h3 More Resources
 %ul
