@@ -1,11 +1,10 @@
 ---
 title: Skip Link | Accessibility Guidelines
 ---
-%h2.page-title
-  Skip Link
+%h2.page-title Skip Link
 
-%p This useful accessibility tool, should go right after the body tag, (thus it is the first thing a keyboard user would tab to).  
-%p  To try this yourself, just refresh this page and then without clicking anything, hit your tab key once -- you should immediately be focused on white the Skip to Content link that is on the top of every page of this website.
+%p This useful accessibility tool, should go right after the opening <code class="inline-snippet">body</code> tag, (thus it is the first thing a keyboard user would tab to).
+%p To try this yourself, just refresh this page and then without clicking anything, hit your tab key once -- you should immediately be focused on white the Skip to Content link that is on the top of every page of this website.
 
 %p Format your skip link as follows, allowing a user to skip all navigation and right to the main content:
 
@@ -19,11 +18,11 @@ title: Skip Link | Accessibility Guidelines
 
 :code
   # lang: html
-  <main role=’main’ id=’main-content’> 
+  <main role=’main’ id=’main-content’>
     Content here.
   </main>
 
-%p This screenreader SASS mixin we have created can be used on many things you might like for only users of AT to be able to focus on, and not be seen by sighted users.  The skip link, however, should always have this type of styling.
+%p This screenreader Sass mixin we have created can be used on many things you might like for only users of AT to be able to focus on, and not be seen by sighted users.  The skip link, however, should always have this type of styling.
 
 :code
   # lang: scss
