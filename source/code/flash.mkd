@@ -1,0 +1,26 @@
+---
+title: Flash | Accessibility Guidelines
+---
+
+## Flash
+
+### Best Practices
+
+We highly recommend moving away from Flash.  In addition to many mobile and touch devices no longer supporting flash, it also comes with all and more of the accessibility issues that come with using HTML5.
+
+Web AIM writes:
+
+> "[N]early all Flash content on the web poses notable accessibility issues for many users with disabilities."
+
+> -Sep 24, 2013
+
+While it is possible to create accessible Flash content, moving to HTML5 might ensure that your content will be available to wider audience, and more maintainable with future technologies.
+
+### Tools &amp; Resources
+
+* [https://www.w3.org/TR/WCAG20-TECHS/flash](https://www.w3.org/TR/WCAG20-TECHS/flash)
+
+* [http://webaim.org/techniques/flash/](http://webaim.org/techniques/flash/)
+
+* [http://www.adobe.com/accessibility/products/flash.html](http://www.adobe.com/accessibility/products/flash.html)
+

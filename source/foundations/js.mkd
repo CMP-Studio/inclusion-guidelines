@@ -1,0 +1,27 @@
+## JavaScript
+### JavaScript Accessibility Issues
+JavaScript allows developers to add increased interaction, information processing, and control in web-based content. However, JavaScript can also introduce accessibility issues. These issues may include:
+
+* **Navigation**. Inability or difficulty navigating using a keyboard or assistive technology.
+* **Hidden content**. Presentation of content or functionality that is not accessible to assistive technologies.
+* **User control**. Lack of user control over automated content changes.
+* **Confusion/Disorientation**. Altering or disabling the normal functionality of the user agent (browser) or triggering events that the user may not be aware of.
+
+A web page containing JavaScript will typically be fully accessible if the functionality of the script is device independent (does not require only a mouse or only a keyboard) and the information (content) is available to assistive technologies. Unfortunately, there is no easy fix that can be applied to solve all accessibility problems associated with JavaScript. The only way to ensure JavaScript accessibility is by evaluating each pages that utilizes scripting and devising a unique solution to any accessibility problem found.
+
+#### JavaScript that does not impact accessibility
+Just because JavaScript is utilized on a page does not mean that the page is inaccessible. In many cases, JavaScript can be used to increase accessibility. Additional information, warnings, or instructions can be given to users through JavaScript prompts. For instance, under the Section 508 guidelines of United States law and the Web Content Accessibility Guidelines, a user must be notified when a timed response is required and given sufficient time to indicate more time is required. Such functionality would be difficult with HTML alone.
+
+JavaScript is sometimes used to create visual interface elements that do not affect accessibility. JavaScript is commonly used for image rollovers or other visual-only modifications, where one image is replaced with another when the mouse is placed above it; for example, when a navigation item changes to display a shadow, glow, or highlight when the user mouses over it.
+
+Such uses of JavaScript do not need additional accessibility features incorporated because important content is not displayed or functionality introduced by such scripting.
+
+### JavaScript Reliance
+It is a common misconception that people with disabilities don't have or 'do' JavaScript, and thus, that it's acceptable to have inaccessible scripted interfaces, so long as it is accessible with JavaScript disabled. A 2012 survey by WebAIM of screen reader users found that 98.6% of respondents had JavaScript enabled. The numbers are even higher for users with low vision or motor disabilities. In short, people with disabilities will experience scripting, so scripted content must be made natively accessible.
+
+Accessibility guidelines also require scripted interfaces to be accessible. While WCAG 1.0 from 1999 required that pages be functional and accessible with scripting disabled, WCAG 2.0 and all other modern guidelines allow you to require JavaScript, but the scripted content or interactions must be compliant with the guidelines.
+
+It is important to keep in mind, however, that some users do disable JavaScript or may be using technologies that don't support or fully support scripting. If your web page or application requires scripting, ensure that you account for users without JavaScript. While this does not necessarily mean that all functionality must work without scripting (though this would clearly be optimal), if it does not work without scripting, you must avoid a confusing or non-functional presentation that may appear to function, but does not because of lack of JavaScript support.
+
+### Tools & Resources
+* [WebAIM - Accessible JavaScript](http://webaim.org/techniques/javascript/)

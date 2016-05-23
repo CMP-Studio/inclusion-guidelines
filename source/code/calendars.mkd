@@ -1,0 +1,36 @@
+---
+title: Calendars | Accessibility Guidelines
+---
+
+## Calendars
+
+On most museum websites, it seems like there are two general types of calendars:
+
+1. An inline list generated view of events which you can filter by clicking on a month (which generally is a link).
+
+2. A table-based calendar that filters by clicking on a certain day or month.
+
+### Best Practices
+
+#### Inline Calendar
+
+* Think of different ways to clarify how to filter the results for events. Having a heading that clearly states: 'Filter by month,' could really help and then the different links or buttons for months available directly below that.
+
+* Also, make sure you add a proper heading to each result. Many screen readers have the functionality to tell a user what different headings or links are on the page, and the ability to use that function would probably make a user’s experience that much easier.
+
+#### Table Based Calendar
+
+* Refer to our table section for best practices.
+
+* Think about if your calendar can be presented differently, and if a table truly is the best way for users of all abilities, to select a date or time period.
+
+* Here are a few calendars tools which claim to be accessible, but we have not tested yet:
+
+  - [http://mootools.net/forge/p/accessible_datepicker](http://mootools.net/forge/p/accessible_datepicker)
+  - [https://www.joedolson.com/my-calendar/sample-calendar/](https://www.joedolson.com/my-calendar/sample-calendar/)
+  - [http://accessibility.athena-ict.com/aria/examples/datepicker2.shtml](http://accessibility.athena-ict.com/aria/examples/datepicker2.shtml)
+  - [http://amsul.ca/pickadate.js/](http://amsul.ca/pickadate.js/) (does not claim to be accessible, but has some accessibility tools built in like labels and extra titles that can be added).
+
+### Tools &amp; Resources
+
+* [https://www.joedolson.com/my-calendar/sample-calendar/](https://www.joedolson.com/my-calendar/sample-calendar/)
