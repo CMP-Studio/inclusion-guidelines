@@ -1,0 +1,16 @@
+---
+title: Typography | Accessibility Guidelines
+---
+<h2 class ='page-title'>Typography</h2>
+
+### Best Practices
+* <span class="text-bold">Alignment</span>: Flush left for each line to make the text easier to read.
+* <span class="text-bold">Size</span>: Except for captions and images of text, text should be able to be resized without assistive technology up to 200% without loss of content or functionality.
+* <span class="text-bold">Font size and weight</span>: The larger the font and wider the stroke, the more legible it will be with lower contrast. W3C recommends starting at 18pt regular weight, or 14pt bold text.
+* <span class="text-bold">Line length</span>: A readable line length is between 50 and 75 characters per line, with 66 characters considered the ideal. Text with more space between lines can have somewhat longer length.
+* <span class="text-bold">Spacing</span>: White space makes it easier for the user to know what to read and where to begin. Spacing between typographic elements should be open enough to feel light, but close enough to establish a proper relationship between elements.
+
+### More Resources
+* <a href='https://standards.usa.gov/visual-style/#text-accessibility'>US Standards Text Accessibility</a>
+* <a href='http://a11yproject.com/posts/what-is-color-contrast'>What is Color Contrast?</a>
+* <a href='https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html'>W3C Resize Text</a>
