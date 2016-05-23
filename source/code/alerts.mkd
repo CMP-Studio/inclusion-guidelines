@@ -1,0 +1,39 @@
+---
+title: Alerts | Accessibility Guidelines
+---
+
+## Alerts
+
+Alerts are often boxes of text that can pop up on a web page or be present during a certain time period. Alerts can be very similar to modals, in that they prompt a user to do some action.  Additionally, alerts are good for informing a user of time sensitive information (e.g. the tickets in their cart will be expiring soon).
+
+Alerts should be used sparingly, and only as needed. A good instance of an alert is if a user tried to use a form and inputs incorrect information -- an alert can pop up at the top of the form and help them understand why their input is incorrect. (This does not replace doing inline form validation--see our forms section for more).
+
+### Best Practices
+
+* Use alerts for a good reason. Make sure the information you are presenting in an alert warrants taking away your user's attention from what they are doing (i.e. for errors, warnings, and validations).
+
+* Use polite language in the alert.
+
+  - Ex. Please include a valid email address, making sure that you use '@.'
+
+* Think about allowing the alert to be dismissed if possible. This means making an accessible button with a clear 'Close' or 'Cancel' functionality.
+
+* For a time sensitive alert, use ARIA `role='alert'`.
+
+* For an alert that is not time sensitive, but that contains an important prompt or piece of information for the user, use ARIA `role='alertdialog'`. (The definition of the ARIA `role='dialog'` is: "an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response").
+
+* Alerts should not be visually hidden if they are not being used. If you do not want a screen reader to pick up an alert, use the `aria-hidden='true'` attribute and/or `{display: none;}`.
+
+```html
+<div class="usa-alert usa-alert-error" role="alert">
+  <div class="usa-alert-body">
+    <h3 class="usa-alert-heading">Error/Alert Status</h3>
+    <p class="usa-alert-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+  </div>
+</div>
+```
+
+### Tools &amp; Resources
+* https://www.w3.org/TR/wai-aria-practices/#aria_ex -common practices keyboard users expect
+* https://www.w3.org/TR/wai-aria/roles#widget_roles
+* https://standards.usa.gov/alerts/

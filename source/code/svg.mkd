@@ -1,0 +1,49 @@
+---
+title: SVG | Accessibility Guidelines
+---
+
+## SVG
+
+SVG (Scalable Vector Graphics) seems to be the future of web graphics. A vector-based, XML formatted image, SVGs are not dependent on resolution and are easily re-sized without degradation.  SVGs can be easily manipulated and animated with CSS and/or JavaScript.  SVG is thus great for responsive design and decreases page load time (as opposed to using JPG, JPEG, PNG, etc.). While SVG is not entirely supported by some IE browsers and Android/Windows phone native browsers, all points to the fact that it will be soon.
+
+### Best Practices
+
+#### SVG included in an `img` tag
+
+* Including an SVG in an `img` tag is no different than including a regular image--always use an `alt` tag for SVGs that are important!
+
+* Additionally, since SVG is new type of image format, you must also include an ARIA `role='image'` since some screen readers will skip over the alt tag for SVGs without that `role` (specifically iOS VoiceOver).
+
+* If the SVG is decorative, use an empty `alt=''`.
+
+<Code Snippet>
+
+#### Inline SVG
+
+* In the output XML for the SVG, include a title tag directly below the svg tag.
+
+* The title for an SVG should be brief, much like an alt tag for an image.
+
+* In the SVG tag, include an `aria-labelledby` attribute that points to the title tag.
+
+  - Ex.: `<svg aria-labelledby='title'> <title id='title' lang='en'>Red Rectangle</title> </svg>`
+
+* If there is more than one shape, it can be a good idea to include a title tag for each shape group.
+
+* Including a `<desc>` tag (description), in addition to a title tag, is very helpful for users of AT.
+
+* On his site, Dudley Storey writes that '`<desc>` is a longer description of the SVG element, containing its purpose or design.'
+
+* Example of `desc` tag: 'Bar chart showing company sales by country, in millions of dollars (US).'
+
+* If your inline SVG is decorative, however, you do not need to include any of these attributes.
+
+<Code Snippet>
+
+<Live Example>
+
+### Tools &amp; Resources
+
+* [http://thenewcode.com/1026/Making-SVG-Accessible](http://thenewcode.com/1026/Making-SVG-Accessible)
+* [https://www.w3.org/TR/SVG-access/](https://www.w3.org/TR/SVG-access/)
+* [https://www.filamentgroup.com/lab/bulletproof_icon_fonts.html](https://www.filamentgroup.com/lab/bulletproof_icon_fonts.html)

@@ -1,0 +1,68 @@
+---
+title: Images | Accessibility Guidelines
+---
+<h2 class ='page-title'>Images</h2>
+
+When using images on the web, you must provide an alternate way for a user to understand its function and context. 
+
+### Best Practices
+#### Alt text
+Every image needs an alternative text attribute `alt`. Alt text describes pictorial content in words. The alt attribute helps people using assistive technologies and users of mobile devices with images turned off (to save data, for instance).
+
+* <span class="text-bold">If the image is a link</span>: The alt text describe where the link goes. For example, a logo that links to your home page should have `alt="home page"`.
+* <span class="text-bold">If the image is important to the context of the page</span>: The alt text should contain a concise description of the image that is representative within the context.
+    * The description should NOT include the phrase “image of” or “picture of”. Assistive technologies already do this.
+    * Don’t put line breaks in alt text. It causes suboptimal effects when read by screen readers.
+    * Make sure the description of the image is useful. For example, if the image is your logo your alt should be your company name and not “logo.”
+* <span class="text-bold">If the image is decorative</span>: If the image is purely decorative, or not necessary for understanding the content of the page, use alt=”” to instruct a screen reader to skip it .
+* <span class="text-bold">If the image is a complex graphic</span>: Each needs to handled based upon its context and use. See our below charts and graphs section and/or our <a href='/code/svg'>SVG section</a>.
+
+#### Charts &amp; Graphs
+
+* <span class="text-bold">Color and size</span>: For users who are not blind, ensure there is sufficient color contrast and text size in the chart/graph.
+* <span class="text-bold">Description</span>: Always include a text descriptions of a complex graphic. This description should relay and summarize the information that is visually displayed. 
+* <span class="text-bold">Figure</span>: Use figure and figcaption tags for complex graphs, charts, and other graphics
+    * Ex. from <a href='http://html5doctor.com/the-figure-figcaption-elements/'> HTML5 Doctor</a>:
+
+      ```html
+        <figure>
+          <img src='/macaque.jpg' alt='Monkey in the trees'/>
+          <figcaption> A cheeky macaque, Lower Kintaganban River, Borneo. Original by 
+          <a href ='http://www.flickr.com/photos/rclark/'> Richard Clark </a> 
+          </figcaption>
+        </figure>
+      ```
+
+* <span class="text-bold">Tactile versions</span>: If you truly want to be inclusive as well, you could have tactile versions of graphs/charts available at a published location.
+
+### Examples
+
+<div class="image-grid">
+  <div class="image-item">
+    <img alt="" src="http://s4.wallippo.com/thumbs/100000/geometric-abstract-wallpaper-2-16-10-1f355522032c3c585e95716ea6e13941.jpeg"/>
+    <p>Alt tag: ""</p>
+    <p>This background or decorative image is completely skipped by a screen reader.</p>
+  </div>
+  <div class="image-item">
+    <img alt="Bearded - Home" src="http://www.bearded.com/images/bearded-logo.svg"/>
+    <p>Possible alt tags: "Bearded - Home", "Home", "Bearded Logo"</p>
+    <p>It is a good idea here, when you have a logo on every page of the site, to state the logo name and where it redirects to on the site if clicked on.</p>
+  </div>
+  <div class="image-item">
+    <img alt="Mobile phone web page of cyber security website about eavesdropping." src="http://www.bearded.com/images/phone-1.png"/>
+    <p>Possible alt tags: "Mobile phone web page of cyber security website about eavesdropping", "Mobile web page about cyber security"</p>
+    <p>The extent and detail of your alt text comes down to how much information the image is relaying to sighted readers.  If the image is integral to the content, the alt tag should be equally expressive. </p>
+  </div>
+  <div class="image-item">
+    <img alt="Cat rolled up in a piece of paper" src="http://file.nekogazou.ni-moe.com/Img/1426582542/"/>
+    <p>Possible alt tags: "Cat rolled up in a piece of paper", "Cat burrito," Cute cat picture"</p>
+    <p>Alt tags are also important for sighted readers.  If your image path ever changes, your alt tag will still show up on the page, and no loss of information will occur.</p>
+  </div>
+</div>
+
+
+### Tools &amp; Resources
+* <a href="https://www.searchenginejournal.com/image-alt-text-vs-image-title-whats-the-difference/"> Image Alt Text Vs. Image Title: What’s the Difference?
+* <a href="http://simplyaccessible.com/article/three-pitfalls-text-alternatives/">Three common accessibility pitfalls for developers: text alternatives
+* <a href="https://www.paciellogroup.com/blog/2016/02/short-note-on-use-of-alt-and-the-title-attribute/"> Short note on use of alt=”” and the title attribute
+* <a href='http://www.sabeusa.org/wp-content/uploads/2014/02/A-Guide-to-Making-Documents-Accessible-to-People-Who-are-Blind-or-Visually-Impaired.pdf'>A Guide to Making Documents Accessible to People Who are Blind or Visually Impaired</a>

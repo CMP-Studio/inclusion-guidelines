@@ -1,0 +1,17 @@
+---
+title: Tables | Accessibility Guidelines
+---
+<h2 class ='page-title'>Tables</h2>
+
+Do not use tables for page layout or for information that is not tabular (i.e. information with meaning that is dependent on it being in columns or rows in a grid).
+
+### Best Practices
+
+* <span class="text-bold">Headers</span>: Designate row and column headers with the <th> element, which should never be left empty. Simple tables can have two levels of headers.
+* <span class="text-bold">Scope</span>: The “scope” attribute identifies whether a table header is a column header or row header. Each header cell should have `scope='col'` or `scope='row`'.
+* <span class="text-bold">Complex tables</span>: If you are building a table that has more than two levels of headers, give each header a unique id and each data cell a header attribute, with each related header cell’s id listed.
+* <span class="text-bold">Title</span>: When adding a title to a table, include it in a `<caption>` tag inside of the `<table>` element.
+
+### Tools &amp; Resources
+* <a href='http://webaim.org/techniques/tables/data'>Creating Accessible Tables</a>
+* <a href='https://standards.usa.gov/tables/'>US Standards Tables</a>

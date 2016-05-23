@@ -1,0 +1,139 @@
+---
+title: Accordions | Accessibility Guidelines
+---
+
+## Accordions
+
+Accordions are common design structures used to organize and hide content, so as not to overwhelm the user. Accordions are also web structures that often require JavaScript to show/hide things based on a user click or focus event.
+
+The key to making accordions accessible is to toggle some ARIA properties and states on user click or focus events (e.g. toggle aria-hidden, aria-expanded, etc.).
+
+### Best Practices
+
+The accordion buttons and associated content are set up in an unstructured list here. This, like having navigation links in a list, allows a visually impaired user to know how many accordion elements there are, giving them a better sense of the page and content with which they are dealing.
+
+Additionally, we placed an aria-label on the ul tag to let the user know explicitly that they are dealing with accordions. (The aria-label is set to 'Accordion Control Button Group').
+
+#### Accordion Buttons
+
+* Buttons are used as the accordions so that they are tab-able by keyboard users and accessible to screen readers.
+
+* Each accordion button has a unique 'id' associated with its aria-controls (each button controls this particular id which references the hidden content beneath it).
+
+  - Here, the aria-controls for each button is: `aria-controls='content-{#}'`
+
+* Each button has an `aria-expanded` attribute on it that is toggled between true and false. If `aria-expanded='true'`, the content associated with it is shown, and if `'false'` the content is hidden. (All buttons have `aria-expanded='false'` to start).
+
+#### Accordion Content
+
+* Every content area has an id that corresponds to the aria-controls for each button.
+
+  - The content id's are: `id='#content-{#}'`
+
+* Each content area has an `aria-hidden` attribute that is toggled between true or false. When true, the content is neither visible nor perceivable by screen reader, and assistive technologies will skip this content.  (However, the content areas are also being set between `{display: none;}` and `{display: block;}`, so screen readers will most likely not read the `{display: none;}` content anyways and `aria-hidden` attributes may be unnecessary.
+
+The examples below will show the HTML structure and JavaScript behavior required to make our examples work and explain each part in detail.
+
+```html
+# HTML
+<div class="accordion-example">
+  <ul aria-label="Accordion Control Group Buttons" class="accordion-controls">
+    <li>
+      <button aria-controls="content-1" aria-expanded="false" id="accordion-control-1">Apples</button>
+      <div aria-hidden="true" id="content-1">
+        <p>Apples are a fine fruit often associated with good health, and fewer doctor's appointments.</p>
+        <p>Ex. An apple a day keeps the doctor away.</p>
+      </div>
+    </li>
+
+    <li>
+      <button aria-controls="content-2" aria-expanded="false" id="accordion-control-2">Lemons</button>
+      <div aria-hidden="true" id="content-2">
+        <p>Lemons are good with almost anything, yet are often have a negative connotation when used in conversation.</p>
+        <p>Ex. The bread from the french bakery is normally very good, but the one we bought today was a lemon.</p>
+      </div>
+    </li>
+
+    <li>
+      <button aria-controls="content-3" aria-expanded="false" id="accordion-control-3">Kiwis</button>
+      <div aria-hidden="true" id="content-3">
+        <p>Kiwis are a fun, under-appreciated fruit.</p>
+      </div>
+    </li>
+  </ul>
+</div>
+```
+
+```javascript
+// JavaScript
+var accordionButtons = $('.accordion-controls li button');
+
+function accordionToggle() {
+  $('.accordion-controls li button').on('click', function(e) {
+    $control = $(this);
+
+    accordionContent = $control.attr('aria-controls');
+    checkOthers($control[0]);
+
+    isAriaExp = $control.attr('aria-expanded');
+    newAriaExp = (isAriaExp == "false") ? "true" : "false";
+    $control.attr('aria-expanded', newAriaExp);
+
+    isAriaHid = $('#' + accordionContent).attr('aria-hidden');
+    if (isAriaHid == "true") {
+      $('#' + accordionContent).attr('aria-hidden', "false");
+      $('#' + accordionContent).css('display', 'block');
+    } else {
+      $('#' + accordionContent).attr('aria-hidden', "true");
+      $('#' + accordionContent).css('display', 'none');
+    }
+  });
+};
+
+function checkOthers(elem) {
+  for (var i=0; i<accordionButtons.length; i++) {
+    if (accordionButtons[i] != elem) {
+      if (($(accordionButtons[i]).attr('aria-expanded')) == 'true') {
+        $(accordionButtons[i]).attr('aria-expanded', 'false');
+        content = $(accordionButtons[i]).attr('aria-controls');
+        $('#' + content).attr('aria-hidden', 'true');
+        $('#' + content).css('display', 'none');
+      }
+    }
+  }
+};
+
+//call this function on page load
+accordionToggle();
+```
+
+### Live example
+
+<div class='accordion-example'>
+  <ul class='accordion-controls' aria-label='Accordion Control Group Buttons'>
+    <li>
+      <button aria-controls='content-1' aria-expanded='false' id='accordion-control-1'>Apples</button>
+      <div id='content-1' aria-hidden='true'>
+        <p>Apples are a fine fruit often associated with good health, and fewer doctor's appointments.</p>
+        <p>Ex. An apple a day keeps the doctor away.</p>
+      </div>
+    </li>
+    <li>
+      <button aria-controls='content-2' aria-expanded='false' id='accordion-control-2'>Lemons</button>
+      <div id='content-2' aria-hidden='true'>
+        <p>Lemons are good with almost anything, yet are often have a negative connotation when used in conversation.</p>
+        <p>Ex. The bread from the french bakery is normally very good, but the one we bought today was a lemon.</p>
+      </div>
+    </li>
+    <li>
+      <button aria-controls='content-3' aria-expanded='false' id='accordion-control-3'>Kiwis</button>
+      <div id='content-3' aria-hidden='true'>
+        <p>Kiwis are a fun, under-appreciated fruit.</p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+### More Resources
+
+* [US Standards Accordions](https://standards.usa.gov/accordions/)
