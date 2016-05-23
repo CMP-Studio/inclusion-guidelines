@@ -8,6 +8,7 @@ ARIA attributes are divided into two categories: roles, and states and propertie
 ### ARIA Roles
 
 An ARIA role is added via a `role="<ROLE TYPE>"` attribute, and does not ever change for an element once it is set. There are four categories of ARIA roles:
+
 * landmark
 * document
 * widget
