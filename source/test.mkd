@@ -1,5 +1,5 @@
 ---
-
+title: Modals | Accessibility Guidelines
 ---
 
 # This is a fine heading
@@ -11,3 +11,12 @@ This is a paragraph with a [link](http://studio.carnegiemuseums.org/museums-and-
 <p>Lolloo</p>
 <p>Why</p>
 <h1 class="heading">That's not so bad.</h1>
+
+```html
+<div class="usa-alert usa-alert-error" role="alert">
+  <div class="usa-alert-body">
+    <h3 class="usa-alert-heading">Error/Alert Status</h3>
+    <p class="usa-alert-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+  </div>
+</div>
+```

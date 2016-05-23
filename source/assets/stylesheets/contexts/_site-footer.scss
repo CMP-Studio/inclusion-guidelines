@@ -15,6 +15,14 @@
     line-height: 1em;
   }
 
+  a {
+    color: $background-color-dark;
+    transition: color 0.3s ease-in;
+    &:hover, &:focus {
+      color: lighten($background-color-dark, 7%);
+    }
+  }
+
   .copyright {
     margin-bottom: 2em;
   }
