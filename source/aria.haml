@@ -21,25 +21,49 @@ title: ARIA | Accessibility Guidelines
 %p Landmark ARIA Roles are used to give users of assistive technology a better way to navigate and identify the different parts of a web page.  The different landmark roles you can use are as follows, copied from the #{link_to 'W3C Wiki Page', 'https://www.w3.org/WAI/GL/wiki/Using_ARIA_landmarks_to_identify_regions_of_a_page'}.
 
 %ul
-  %li banner: A region that contains the prime heading or internal title of a page.
-  %li complementary: Any section of the document that supports the main content, yet is separate and meaningful on its own.
-  %li contentinfo: A region that contains information about the parent document such as copyrights and links to privacy statements.
-  %li form: A region of the document that represents a collection of form-associated elements, some of which can represent editable values that can be submitted to a server for processing.
-  %li main: Main content in a document. In almost all cases a page will have only one role="main".
-  %li navigation: A collection of links suitable for use when navigating the document or related documents.
-  %li search: The search tool of a Web document.
-  %li application: A region declared as a web application, as opposed to a web document. (note: The role of application should only be used with caution because it gives a signal to screen reading software to turn off normal web navigation controls. Simple widgets should generally not be given the application role, nor should an entire web page be given the application role, unless it is not to be used at all like a web page, and not without much user testing with assistive technology.)
+  %li 
+    %span.text-bold banner: 
+    A region that contains the prime heading or internal title of a page.
+  %li 
+    %span.text-bold complementary: 
+    Any section of the document that supports the main content, yet is separate and meaningful on its own.
+  %li 
+    %span.text-bold contentinfo: 
+    A region that contains information about the parent document such as copyrights and links to privacy statements.
+  %li 
+    %span.text-bold form: 
+    A region of the document that represents a collection of form-associated elements, some of which can represent editable values that can be submitted to a server for processing.
+  %li 
+    %span.text-bold main: 
+    Main content in a document. In almost all cases a page will have only one role="main".
+  %li 
+    %span.text-bold navigation:
+    A collection of links suitable for use when navigating the document or related documents.
+  %li 
+    %span.text-bold search: 
+    The search tool of a Web document.
+  %li 
+    %span.text-bold application: 
+    A region declared as a web application, as opposed to a web document. (note: The role of application should only be used with caution because it gives a signal to screen reading software to turn off normal web navigation controls. Simple widgets should generally not be given the application role, nor should an entire web page be given the application role, unless it is not to be used at all like a web page, and not without much user testing with assistive technology.)
 
 %h4 Document ARIA Roles
 %p Document roles describe the structure of the content on the page, as opposed to the structure of the actual page, which landmark roles describe. The roles that are starred seem the most commonly used, and useful to think about including in your HTML.
 %ul
-  %li article*: A section of a page that consists of a composition that forms an independent part of a document, page, or site.
+  %li 
+    %span.text-bold article*:
+    A section of a page that consists of a composition that forms an independent part of a document, page, or site.
   %li columnheader
-  %li definition*: A definition of a term or concept.
+  %li 
+    %span.text-bold definition*:
+    A definition of a term or concept.
   %li directory
   %li document
-  %li group*: A set of user interface objects which are not intended to be included in a page summary or table of contents by assistive technologies.
-  %li heading*: A heading for a section of the page.
+  %li 
+    %span.text-bold group*:
+    A set of user interface objects which are not intended to be included in a page summary or table of contents by assistive technologies.
+  %li 
+    %span.text-bold heading*:
+    A heading for a section of the page.
   %li img
   %li list
   %li listitem
@@ -56,11 +80,21 @@ title: ARIA | Accessibility Guidelines
 %h4 Widget ARIA Roles
 %p Widget Roles are used to describe what are often javascript-based interfaces, or more complicated parts of the interface that often act in similar way across all web pages. The roles that are starred seem the most commonly used, and useful to think about including in your HTML.
 %ul
-  %li alert*: A message with important, and usually time-sensitive, information. See related alertdialog and status.
-  %li alertdialog*: A type of dialog that contains an alert message, where initial focus goes to an element within the dialog. See related alert and dialog.
-  %li button*: An input that allows for user-triggered actions when clicked or pressed.
-  %li checkbox*: A checkable input that has three possible values: true, false, or mixed.
-  %li dialog*: A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response. See related alertdialog.
+  %li 
+    %span.text-bold alert*: 
+    A message with important, and usually time-sensitive, information. See related alertdialog and status.
+  %li 
+    %span.text-bold alertdialog*: 
+    A type of dialog that contains an alert message, where initial focus goes to an element within the dialog. See related alert and dialog.
+  %li 
+    %span.text-bold button*: 
+    An input that allows for user-triggered actions when clicked or pressed.
+  %li 
+    %span.text-bold checkbox*: 
+    A checkable input that has three possible values: true, false, or mixed.
+  %li 
+    %span.text-bold dialog*: 
+    A dialog is an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response. See related alertdialog.
   %li gridcell
   %li link
   %li log
@@ -70,14 +104,22 @@ title: ARIA | Accessibility Guidelines
   %li menuitemradio
   %li option
   %li progressbar
-  %li radio*: A checkable input in a group of radio roles, only one of which can be checked at a time.
+  %li 
+    %span.text-bold radio*: 
+    A checkable input in a group of radio roles, only one of which can be checked at a time.
   %li scrollbar
   %li slider
   %li spinbutton
   %li status
-  %li tab*: A grouping label providing a mechanism for selecting the tab content that is to be rendered to the user.
-  %li tabpanel*: A container for the resources associated with a tab, where each tab is contained in a tablist.
-  %li textbox*: Input that allows free-form text as its value.
+  %li 
+    %span.text-bold tab*: 
+    A grouping label providing a mechanism for selecting the tab content that is to be rendered to the user.
+  %li 
+    %span.text-bold tabpanel*: 
+    A container for the resources associated with a tab, where each tab is contained in a tablist.
+  %li 
+    %span.text-bold textbox*: 
+    Input that allows free-form text as its value.
   %li timer
   %li tooltip
   %li treeitem

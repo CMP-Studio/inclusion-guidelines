@@ -37,7 +37,6 @@
   padding-bottom: 0.5em;
 
   ul {
-    background-color: $background-color-subtle;
     padding: 1em 0;
 
     @include breakpoint($bp-nav) {
@@ -50,7 +49,7 @@
     text-align: center;
     padding-top: 1em;
     margin-top: 1em;
-    border-top: 1px solid $border-color;
+    border-top: 1px dotted lighten($text-color, 20%);
 
     @include breakpoint($bp-nav) {
       display: inline-block;
@@ -67,6 +66,9 @@
 }
 
 .primary-navigation {
+  a {
+    color: $background-color;
+  }
   @include breakpoint($bp-nav) {
     ul {
       li {

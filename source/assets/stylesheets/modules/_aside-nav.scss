@@ -19,30 +19,38 @@
 
   .side-nav-item {
     &.active {
-      a {
-        background-color: darken($background-color-subtle, 8%);
+      >a {
+        color: $accent-color;
       }
     }
     a {
       display: none;
-      color: $accent-color;
+      color: $text-color;
       @include breakpoint($bp-sidebar) {
         display: block;
         padding: 0.75em 0.25em;
-        background-color: $background-color-subtle;
         text-decoration: none;
+        border-top: 1px dotted $border-color;
         &:hover, &:focus {
           background-color:darken($background-color-subtle, 13%);
         }
         &.active {
-          background-color: darken($background-color-subtle, 18%); 
         }
       }
+    }
+    > a {
+      font-weight: 700;
     }
   }
   .side-nav-inner-item {
     a {
-      padding-left: 1.5em;
+      border-top: 0 none;
+      font-size: 0.875em;
+      color: $text-color;
+      padding: 0.5em 0.25em;
+      &.active {
+        color: $accent-color;
+      }
     }
   }
 }
