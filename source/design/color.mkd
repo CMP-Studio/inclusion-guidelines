@@ -15,13 +15,13 @@ Find colors that provide maximum contrast, including enough contrast between con
 #### Articles &amp; Guides
 * <a href="http://simplyaccessible.com/article/pitfalls-colour-contrast/">Three common accessibility pitfalls for developers: colour contrast</a>
 * <a href="https://24ways.org/2012/colour-accessibility/">Colour Accessibility</a>
-* <a href'http://a11yproject.com/posts/what-is-color-contrast'>What is Color Contrast?</a>
-* <a href'https://24ways.org/2012/colour-accessibility/'>Colour Accessibility</a>
-* <a href'https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html'>W3C Resize Text</a>
-* <a href'https://standards.usa.gov/visual-style/#colors'>US Standards Colors</a>
+* <a href='http://a11yproject.com/posts/what-is-color-contrast'>What is Color Contrast?</a>
+* <a href='https://24ways.org/2012/colour-accessibility/'>Colour Accessibility</a>
+* <a href='https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html'>W3C Resize Text</a>
+* <a href='https://standards.usa.gov/visual-style/#colors'>US Standards Colors</a>
 
 #### Testing Tools
-* <a href'http://contrast-finder.tanaguru.com/'>Tanaguru Contrast-Finder</a>
-* <a href'http://leaverou.github.io/contrast-ratio/'>Contrast-Ratio Tool</a>
-* <a href'https://www.paciellogroup.com/resources/contrastanalyser/'>Paciello Colour Contrast Anaylser</a>
-* <a href'http://webaim.org/resources/contrastchecker/'>Web AIM Color Contrast Checker</a>
+* <a href='http://contrast-finder.tanaguru.com/'>Tanaguru Contrast-Finder</a>
+* <a href='http://leaverou.github.io/contrast-ratio/'>Contrast-Ratio Tool</a>
+* <a href='https://www.paciellogroup.com/resources/contrastanalyser/'>Paciello Colour Contrast Anaylser</a>
+* <a href='http://webaim.org/resources/contrastchecker/'>Web AIM Color Contrast Checker</a>

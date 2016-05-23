@@ -1,0 +1,31 @@
+---
+title: Third Party Embeds | Accessibility Guidelines
+---
+<h2 class ='page-title'>Third Party Embeds &amp; Social Media</h2>
+
+For any website, as content editors and developers, we end up wanting to link our websites to third party services. Now that social media is so important as a way for people to stay connected to your institution, having twitter, facebook, instagram, and any other number of embeds is a significant way to keep people engaged.
+
+### Best Practices
+#### iFrames
+There is no way to guarantee the accessibility of third party embeds, applications, and widgets.  Make sure to do some research on the website embeds or widgets you are thinking about using and try them out with a screen reader (try Chrome Vox, VoiceOver to name a few free ones).  
+
+Here are few ways you can attempt to provide more accessibility for an iframe or embed you are hoping to use:
+
+* <span class="text-bold">Title attribute</span>: always provide one.
+* <span class="text-bold">Link to site</span>: think about linking to the social media platform, or third party website with clear link text rather than presenting content you know is inaccessible on your website.
+
+#### Twitter embedded timelines
+Twitter has done substantial work to ensure their timelines you can embed are accessible. Perkins school for the blind currently uses their embed.
+
+Learn more <a href='https://dev.twitter.com/web/embedded-timelines
+' title='Link to twitter dev tools for embedding twitter timeline'>here</a>. 
+
+##### Tweeting Accessibly
+* If you are putting a picture or audio in your tweet, write [PIC], [VIDEO], or [AUDIO] at the beginning.
+* Put the main content at the beginning of your tweet and always leave the hashtags for the end (this is the leetspeek stuff that sounds awful for screen reader users).
+
+### Tools &amp; Resources
+* <a href='http://webaim.org/techniques/frames/'>Creating Accessible Frames and Iframes</a>
+* <a href='https://dev.twitter.com/web/embedded-timelines'>Twitter DevTools: Embedded Timelines</a>
+* <a href='http://www.perkins.org/stories/social-media'>Perkins webpage where you can view accessible, embedded twitter feed</a>
+* <a href='https://webtoolkit.govt.nz/guidance/social-media/accessibility-and-social-media/'>Accessibility and social media</a>

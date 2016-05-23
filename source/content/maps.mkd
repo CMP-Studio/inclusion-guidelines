@@ -1,0 +1,36 @@
+---
+title: Maps | Accessibility Guidelines
+---
+<h2 class ='page-title'>Maps</h2>
+
+Maps can present accessibility challenges.
+
+### Best Practices
+
+* <span class="text-bold">Text-based directions</span>: If the map is used to provide directions to a location, make sure to also provide text-based directions.
+* <span class="text-bold">Alt attributes</span>: If you are using a static image for the map, make sure to include an alt tag. Embedded maps, such as Google Maps, should include some sort of label.
+* <span class="text-bold">Multiple locations</span>: If you are using a map to display multiple locations, provide a text list of locations or location links in a text-based link.
+* <span class="text-bold">Color and contrast</span>: If a map includes color coded regions, make sure that there is sufficient contrast between the text and the background, and that color coding is accessible for users with color-deficient vision. A good test is to see if the map is still usable in black and white.
+* <span class="text-bold">Consistency and simplicity</span>: Keep maps consistent and simple in their styling. 
+* <span class="text-bold">3D or tactile version</span>: You may want to have a tactile map available for non-sighted users.
+
+#### ESRI, GIS, and StoryMaps
+These suggestions are specifically geared towards visually impaired users.
+
+* There seems to be no great way, at this moment in time, for visually impaired and blind users to interact with storymaps, ESRI maps, etc. People who use screen readers, however, can interact with tables of data.
+    * <span class="text-bold">Present the data</span>: Most maps you can create on these sites have an accompany set of data. Presenting that data, as an alternative to viewing that map, can be helpful.  
+    * <span class="text-bold">Title and description</span>: However, also always an accompanying text title, and description that details the findings of the map, and how it is laid out.
+    * <span class="text-bold">Audio description</span>: Also think about adding an audio description of the map for users. Just like in a text based description, tell the user about the layout of the map, its purpose, and findings.
+
+#### Google Maps
+An embedded Google Map alone is not screen reader accessible. When using Google Maps, follow these tips:
+
+* Include a street address and zip code to enable Google Map search.
+* Include basic text-based directions.
+* A Google Map is typically embedded within an iFrame. Make sure the iFrame includes a “title” attribute.
+
+### Tools &amp; Resources
+* <a href='http://alistapart.com/article/cssmaps'>A More Accessible Map</a>
+* <a href='https://www.w3.org/WAI/RD/wiki/Accessible_Maps'>W3C Accessible Maps</a>
+* <a href='http://www.accessiq.org/news/news/2015/03/accessibility-tip-making-maps-accessible'>Accessibility tip: Making maps accessible</a>
+* <a href='http://accessibility.psu.edu/images/maps/'> Maps </a>

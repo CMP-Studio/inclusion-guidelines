@@ -17,7 +17,7 @@ An ARIA role is added via a `role="<ROLE TYPE>"` attribute, and does not ever ch
 #### Landmark ARIA Roles
 Much like semantic HTML elements, landmark ARIA Roles are used to give users of assistive technology (AT) a better way to navigate and identify the different parts of a web page.
 
-For many of the roles we have listed on this page, you will notice there are HTML5 elements with the same name, such as `<main>` and the aria landmark `role=main.`'  There is no consensus on this matter, but in our opinion and from our research, using something like:
+For many of the roles we have listed on this page, you will notice there are HTML5 elements with the same name, such as `<main>` and the aria landmark `role='main'`.  There is no consensus on this matter, but in our opinion and from our research, using something like:
 
     <p>`CODE SNIPPET`</p>
 

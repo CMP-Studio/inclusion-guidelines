@@ -17,6 +17,6 @@ Animations with flickers or movement can trigger epileptic seizures.
 * Provide a mechanism to suppress rapid flashes.
 
 ### More Resources
-* <a href'https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html'>Three flashes or below threshold</a>
-* <a href'http://girldevelopit.github.io/gdi-featured-accessibility/class1.html#/27'>Girl Develop It Web Accessibility Slides/Curriculum</a>
+* <a href='https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html'>Three flashes or below threshold</a>
+* <a href='http://girldevelopit.github.io/gdi-featured-accessibility/class1.html#/27'>Girl Develop It Web Accessibility Slides/Curriculum</a>
 <a href='https://github.com/girldevelopit/gdi-featured-accessibility/blob/master/class1.html'> Girl Develop Web Accessibility GitHub Page</a>
