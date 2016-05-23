@@ -1,0 +1,31 @@
+## Keyboard Access
+Your website must be fully accessible via keyboard, meaning that all interactions and information that can be accessed with a mouse, must be accessible with just a keyboard.
+
+To implement this technique, identify all functions on the page. Consider functions performed using both the mouse and keyboard together.
+
+Examples of functionality include:
+* Links
+* Menus
+* Buttons
+* Checkboxes
+* Radio buttons
+* Form fields
+* Drag and drop
+* Text selection
+* Resizing
+* Adding or removing items from a shopping cart
+* Initiating a chat session
+
+### Testing
+Once you have determined functionality, verify that each of the functions identified can be performed using only the keyboard:
+
+1. Using the Tab, Enter, and Spacebar, navigate the page and ensure each input/interaction can be triggered. Make sure you can tab your way back to the address bar.
+2. Ensure rollover/hover interactions (help text, etc.) can be triggered as well (when these happen through a keyboard, they have a focus state).
+3. Make sure the tab order of the page is logical and follows the visual order of elements on the page. This means you should not rearrange the HTML structure of the page with CSS.
+4. Check that the focus is always visible when moving through the page with the tab key.
+5. Make sure you can use and dismiss modal dialog boxes, lightboxes, or other pop-ups through the keyboard use.
+6. Make sure all title tags are available through keyboard access, and that no title tags are exposed only by hovering with the mouse.
+
+### Tools & Resources
+* [Ensuring keyboard control for all functionality](https://www.w3.org/TR/WCAG20-TECHS/G202.html)
+* [Understanding WCAG 2.0 - Keyboard Operation](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html)
