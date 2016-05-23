@@ -32,7 +32,8 @@
         text-decoration: none;
         border-top: 1px dotted $border-color;
         &:hover, &:focus {
-          background-color:darken($background-color-subtle, 13%);
+          background-color:darken($background-color-subtle, 5%);
+          color: $accent-color;
         }
         &.active {
         }
