@@ -1,0 +1,21 @@
+.site-footer  {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+
+  img {
+    padding: 1.3em 0 1.5em 0;
+    display: block;
+    margin: 0 auto;
+  }
+
+  p {
+    color: $background-color-dark;
+    font-size: 0.75em;
+    line-height: 1em;
+  }
+
+  .copyright {
+    margin-bottom: 2em;
+  }
+}
