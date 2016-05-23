@@ -1,0 +1,38 @@
+## Semantic HTML
+
+Structural, semantic HTML is the key starting point toward good accessibility practices.
+
+When a screen reader, or any sort of assistive device scans a web page, it gets information about the Document Object Model (DOM), or the HTML structure of the page. No styles or JavaScript will be read by a screen reader.
+
+Many screen readers have functionality that allows a user to select to read only the headings on the page, or only the links. Giving precedence to the way headings and links are written is a significant way we can make browsing the web easier for these users.
+
+HTML5 introduced several new semantic elements representing logical sections or components of a web app or document. None of the new elements actually “do” anything by themselves, but they provide a nice way for web authors to define various parts of a document, and open the door for user agents and assistive technologies (AT) to use this information to enable alternate ways of viewing and navigating a page.
+
+When we write semantically correct HTML, we're letting the browser know what type of content it's dealing with and how that content relates to other content. By doing this, AT is more easily able to do its job because it has a structure that it can work with. Screen reader software like JAWS or NVDA doesn't just turn text into speech - it can use information in the HTML to list all of the headings on a page, give extra navigation controls to data tables, or announce how many items are in a list, among other things.
+
+### Best Practices
+
+#### Use Container Elements for Layout Only
+
+Elements like `<div>` and `<span>` are for layout only. They're semantically meaningless, they don't have keyboard or touch support in any browser, and they don't communicate anything to the accessibility API.
+
+#### Use Other HTML Elements the Way They're Intended
+
+All of the other HTML elements should be used to tell the browser what functional purpose your content serves. These other HTML elements provide meaning to the browser and AT about what you're saying on your website, so you should choose them based on what the content is - not based on how they look with graphics.
+
+##### HTML elements to structure every page:
+* header
+* nav
+* main
+* article
+* aside
+* footer
+
+#### Headings
+* Use one H1 per page, matching the page title.
+* Do not skip heading levels when increasing, but you can skip levels when decreasing (h1, h2, h3, h2, h3, h4, h2, h3, h4).
+* The headings taken out of context should logically represent the page content for screen readers and users who choose this option as a way to scan the page.
+
+### Tools & Resources
+* [MDN Guide to HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+* ["Three common accessibility pitfalls for developers: information and relationships", Simply Accessible](http://simplyaccessible.com/article/pitfalls-info-relationships/)

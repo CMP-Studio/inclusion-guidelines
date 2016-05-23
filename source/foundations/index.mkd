@@ -1,1 +1,7 @@
-Usability
+## Usability
+
+Web usability, accessibility, and inclusive design go hand in hand. Practices that support accessibility support a good user experience, and vice versa.
+
+This accessibility guide targets best practices not only for connecting with users with disabilities, including people with age-related impairments, but also extend to providing everyone with effective, efficient, and satisfying web experiences.
+
+The way we see it, basic accessibility is a prerequisite for usability.

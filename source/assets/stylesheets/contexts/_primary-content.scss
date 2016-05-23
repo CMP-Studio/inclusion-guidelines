@@ -1,4 +1,11 @@
 .primary-content {
+  a {
+    text-decoration: underline;
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
   h3 {
     margin: 1em 0em 0.25em 0em;
   }
