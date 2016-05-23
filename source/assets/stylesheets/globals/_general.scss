@@ -16,7 +16,7 @@
   // @include container(68.75em);
   // default max-width is 81.25em (1300px)
   @include container;
-  width: 95%;
+  width: 90%;
 }
 
 html {
@@ -71,6 +71,7 @@ p {
 }
 
 ul, ol {
+  margin-bottom: 1em;
   li li {
     font-size: inherit;
   }
@@ -78,9 +79,9 @@ ul, ol {
 
 // In Main Content Area
 
-.primary {
+.primary-content {
   ul, ol {
-    margin: 0 0 0.5em 2em;
+    margin: 0 0 1.5em 2em;
     li {
       margin-bottom: 0.5em;
     }
@@ -170,6 +171,9 @@ img {
 // Other elements
 //////////////////////////////////////
 
+.text-bold {
+  font-weight: 700;
+}
 .screenreader-text {
   @include screenreader-text;
 
