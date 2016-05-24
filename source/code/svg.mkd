@@ -17,7 +17,7 @@ SVG (Scalable Vector Graphics) seems to be the future of web graphics. A vector-
 * If the SVG is decorative, use an empty `alt=''`.
 
 ```html
-  <Code Snippet>
+  <img src='/images/blue-triangle.svg' role='image' alt='Blue Triangle'/>
 ```
 
 #### Inline SVG
@@ -27,8 +27,6 @@ SVG (Scalable Vector Graphics) seems to be the future of web graphics. A vector-
 * The title for an SVG should be brief, much like an alt tag for an image.
 
 * In the SVG tag, include an `aria-labelledby` attribute that points to the title tag.
-
-  - Ex.: `<svg aria-labelledby='title'> <title id='title' lang='en'>Red Rectangle</title> </svg>`
 
 * If there is more than one shape, it can be a good idea to include a title tag for each shape group.
 
@@ -41,7 +39,12 @@ SVG (Scalable Vector Graphics) seems to be the future of web graphics. A vector-
 * If your inline SVG is decorative, however, you do not need to include any of these attributes.
 
 ```html
-  <Code Snippet>
+  <svg aria-labelledby="title">
+    <title id="title" lang="en">Red Rectangle</title>
+      <g>
+        <rect x="0" y="0" width="100" height="50" fill="red" />
+      </g>    
+  </svg>
 ```
 
 <Live Example>
