@@ -4,6 +4,7 @@ Your website must be fully accessible via keyboard, meaning that all interaction
 To implement this technique, identify all functions on the page. Consider functions performed using both the mouse and keyboard together.
 
 Examples of functionality include:
+
 * Links
 * Menus
 * Buttons
