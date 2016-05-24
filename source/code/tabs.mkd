@@ -1,0 +1,124 @@
+---
+title: Tabs | Accessibility Guidelines
+---
+## Tabs
+
+Tabs, which are very similar to accordions, are also common web design structures used to organize and hide content, so as not to overwhelm the user. Tabs also additionally require JavaScript to show/hide things based on a user click or focus event.
+
+The key to making tabs accessible is to toggle some ARIA properties and states on user click or focus events (e.g. toggle `aria-hidden`, `aria-expanded`, etc.).
+
+### Best Practices
+
+Simply Accessible, a web firm which specializes in web accessibility practices, recently released a controversial article about how to make tabs accessible. In it, they note how they are doing things a bit differently than the accepted practices. Here is a summary of how Simply Accessible implements accessible tabs and why:
+
+* Like other examples of navigation and accordions, the tabs and tab panels are arranged in an unordered list structure to give users of AT a better idea of how many tab elements they are dealing with.
+
+* The ARIA `roles` of `tab` and `tablist` are not used because many screen readers did not pick these attributes up when many users requested the links list functionality of their screen readers.
+
+* Messing with tabindex is never advised, and Simply Accessible found that whenever they tried adding `tabindexes` of `-1` to each tab, users were frustrated and preferred to tab between tab elements rather than using arrow keys. (So, in sum, don’t set tabindex for tabs).
+
+#### Tab Controls
+
+* Each tab control link is set up as a link inside an unordered list structure. Using links rather than buttons for tab controls seems to be common practice.
+
+* Each tab control has a unique `id` and `href` which is associated with a tab panel heading `id`.
+
+* Every tab control also has an `aria-selected` attribute that is set to either `true` or `false`. If `true`, the tab control has been clicked or focused on, and the tab panel associated with it should be visible. If `false`, the tab control is not selected and its corresponding tab panel is hidden.
+
+* Each tab link also has a unique `id` associated with its `aria-controls` (each tab controls this particular `id` which references the hidden content beneath it).
+
+* Here, the `aria-controls` for each tab are set to the id’s of the tab panels (`#{name-of-beer}`)
+
+* When a user clicks or focuses on a certain tab control, JavaScript is used to place focus on the first heading in the newly revealed, related tab panel.
+
+#### Tab Panels
+
+* Each tab panel has an `aria-hidden` attribute that is toggled between `true` or `false` based on the `aria-selected` attribute of the tab controls. When `true`, the tab panel is neither visible nor perceivable by screen reader, and assistive technologies will skip over this content. However, the tab panels are also being set between `{display: none;}` and `{display: block;}`, so screen readers will most likely not read the `{display: none;}` content anyways and `aria-hidden` attributes may be unnecessary.
+
+* Each tab panel also has an `aria-labelledby` attribute which seems to be acting in a very similar way to how the `aria-controls` acted in our accordions example.
+  - The `aria-labelledby` attribute is set to the `id` of the corresponding tab control, such as: `aria-labelledby='tab-control-{#}'` to give users of AT a more comprehensive idea of how the tabs and tab panels are linked.
+
+You can also view [the full codepen for Simply Accessible’s example](http://codepen.io/jeffsmith/pen/mPByya/).
+
+We've simplified some of the JavaScript needed to make the Simply Accessible tabs work and have put the result below in an HTML and JavaScript code snippets:
+
+```html
+<div class="tabbed-content">
+  <ul class="tabsList">
+    <li class="current">
+      <a href="#ipa" id="tab-ipa" aria-selected="true">
+        India Pale Ale (IPA)
+      </a>
+    </li>
+
+    <li>
+      <a href="#gueuze" id="tab-gueuze" aria-selected="false">
+        Gueuze
+      </a>
+    </li>
+    <li>
+      <a href="#imperial-stout" id="tab-imperial-stout" aria-selected="false">
+        Imperial Stout
+      </a>
+    </li>
+  </ul>
+
+  <div class="tabPanel" aria-hidden="false" aria-labelledby="tab-ipa" style="display: block;">
+    <h2 id="ipa">India Pale Ale (IPA)</h2>
+  </div>
+
+  <div class="tabPanel" aria-hidden="true" aria-labelledby="tab-gueuze" style="display: none;">
+    <h2 id="gueuze">Gueuze</h2>
+  </div>
+
+  <div class="tabPanel" aria-hidden="true" aria-labelledby="tab-imperial-stout" style="display: none;">
+    <h2 id="imperial-stout">Imperial Stout</h2>
+  </div>
+</div>
+```
+
+```javascript
+  # Where var tabpanel is our revealed tab content
+  # and this allows us to focus in on heading for content navigated to.
+
+  tabPanel.children("h2").attr("tabindex", -1).focus();
+```
+
+<div class="tabbed-content">
+  <ul class="tabs-list">
+    <li class="current">
+      <a aria-controls="#ipa" aria-expanded="" aria-selected="" href="#ipa" id="tab-ipa">
+        India Pale Ale (IPA)
+      </a>
+    </li>
+
+    <li>
+      <a aria-controls="#gueuze" href="#gueuze" id="tab-gueuze">
+        Gueuze
+      </a>
+    </li>
+
+    <li>
+      <a aria-selected="" href="#imperial-stout" id="tab-imperial-stout">
+        Imperial Stout
+      </a>
+    </li>
+  </ul>
+
+  <div aria-labelledby="tab-ipa" class="tab-panel">
+    <h2 id="ipa">India Pale Ale (IPA)</h2>
+  </div>
+  <div aria-hidden="" aria-labelledby="tab-gueuze" class="tab-panel">
+    <h2 id="gueuze">Gueuze</h2>
+  </div>
+  <div aria-hidden="" aria-labelledby="tab-imperial-stout" class="tab-panel">
+    <h2 id="imperial-stout">Imperial Stout</h2>
+  </div>
+</div>
+
+### Tools &amp; Resources
+
+* [Danger! ARIA tabs by Jeff Smith](http://simplyaccessible.com/article/danger-aria-tabs/)
+* [Danger! Testing Accessibility with real people](https://medium.com/@LeonieWatson/danger-testing-accessibility-with-real-people-4515f72db648)
+* [ARIA tabs, UI problems and standards](https://alastairc.ac/2016/05/aria-tabs-ui-problems-and-standards/)
+* [http://blog.ginader.de/dev/jquery/accessible-tabs/](http://blog.ginader.de/dev/jquery/accessible-tabs/)
