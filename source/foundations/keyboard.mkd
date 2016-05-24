@@ -1,5 +1,5 @@
 ---
-title: Keyboard | Accessibility Guidelines
+title: Keyboard Access | Accessibility Guidelines
 ---
 
 ## Keyboard Access

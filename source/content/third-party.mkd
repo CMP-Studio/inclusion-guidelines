@@ -1,13 +1,13 @@
 ---
 title: Third Party Embeds | Accessibility Guidelines
 ---
-<h2 class ='page-title'>Third Party Embeds &amp; Social Media</h2>
+## Third Party Embeds &amp; Social Media
 
 For any website, as content editors and developers, we end up wanting to link our websites to third party services. Now that social media is so important as a way for people to stay connected to your institution, having twitter, facebook, instagram, and any other number of embeds is a significant way to keep people engaged.
 
 ### Best Practices
 #### iFrames
-There is no way to guarantee the accessibility of third party embeds, applications, and widgets.  Make sure to do some research on the website embeds or widgets you are thinking about using and try them out with a screen reader (try Chrome Vox, VoiceOver to name a few free ones).  
+There is no way to guarantee the accessibility of third party embeds, applications, and widgets.  Make sure to do some research on the website embeds or widgets you are thinking about using and try them out with a screen reader (try Chrome Vox, VoiceOver to name a few free ones).
 
 Here are few ways you can attempt to provide more accessibility for an iframe or embed you are hoping to use:
 
@@ -18,7 +18,7 @@ Here are few ways you can attempt to provide more accessibility for an iframe or
 Twitter has done substantial work to ensure their timelines you can embed are accessible. Perkins school for the blind currently uses their embed.
 
 Learn more <a href='https://dev.twitter.com/web/embedded-timelines
-' title='Link to twitter dev tools for embedding twitter timeline'>here</a>. 
+' title='Link to twitter dev tools for embedding twitter timeline'>here</a>.
 
 ##### Tweeting Accessibly
 * If you are putting a picture or audio in your tweet, write [PIC], [VIDEO], or [AUDIO] at the beginning.

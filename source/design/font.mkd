@@ -1,7 +1,7 @@
 ---
 title: Typography | Accessibility Guidelines
 ---
-<h2 class ='page-title'>Typography</h2>
+## Typography
 
 ### Best Practices
 * <span class="text-bold">Alignment</span>: Flush left for each line to make the text easier to read.

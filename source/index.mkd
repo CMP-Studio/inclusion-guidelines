@@ -1,10 +1,10 @@
 ---
 title: Getting Started | Accessibility Guidelines
 ---
-<h2 class='page-title'> Getting Started </h2>
+## Getting Started
 
 The web is a powerful, and increasingly necessary, way of connecting with one another and the world. In order to provide equal access and opportunity to all, we must do our part to make the web accessible to those individuals with visual, auditory, physical, speech, cognitive, and neurological disabilities. According to the <a href='http://www.census.gov/newsroom/releases/archives/facts_for_features_special_editions/cb10-ff13.html'>Census Bureau</a>, 54 million people in the U.S. have a disability, 1.8 million are unable to see printed words, and 16.1 million have a cognitive or mental illness that impedes daily functioning.
 
 This web accessibility guide includes best practices, resources, and practical advice about how to ensure all users have equal access to information and functionality.
 
-These best practices are targeted at helping the Carnegie Museums web team meet WCAG A & AA level standards on all future website creation. 
+These best practices are targeted at helping the Carnegie Museums web team meet WCAG A & AA level standards on all future website creation.

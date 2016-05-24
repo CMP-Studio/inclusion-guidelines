@@ -1,7 +1,7 @@
 ---
 title: Source Material &amp; Resources | Accessibility Guidelines
 ---
-<h2 class="page-title">Source Material &amp; Resources</h2>
+##Source Material &amp; Resources
 
 ### Primary resources
 
@@ -32,5 +32,5 @@ title: Source Material &amp; Resources | Accessibility Guidelines
 * <a href="http://www.seeingeye.org/?referrer=https://www.google.com/">The Seeing Eye Website</a>
 * <a href="http://www.afb.org/default.aspx">THe American Foundation for the Blind</a>
 
-  
+
 

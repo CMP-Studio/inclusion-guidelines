@@ -1,7 +1,7 @@
 ---
 title: Multimedia | Accessibility Guidelines
 ---
-<h2 class ='page-title'>Multimedia</h2>
+## Multimedia
 
 Multimedia is anything that uses audio and video. It’s important to provide ways for everyone to consume that media.
 

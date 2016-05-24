@@ -1,7 +1,7 @@
 ---
 title: Color | Accessibility Guidelines
 ---
-<h2 class ='page-title'>Contrast &amp; Color</h2>
+## Contrast &amp; Color
 
 Find colors that provide maximum contrast, including enough contrast between content and the background, so that text and non-decorative images are legible for anyone with low vision or color deficiencies.
 

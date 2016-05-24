@@ -1,7 +1,7 @@
 ---
 title: Buttons &amp; Links | Accessibility Guidelines
 ---
-<h2 class ='page-title'>Links, Buttons, &amp; Other Clickable Elements</h2>
+## Links, Buttons, &amp; Other Clickable Elements
 
 Make clickable elements large, and put space between them. Avoid clickable page elements that move.
 

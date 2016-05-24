@@ -1,7 +1,7 @@
 ---
 title: Copywriting | Accessibility Guidelines
 ---
-<h2 class ='page-title'>Copywriting</h2>
+## Copywriting
 
 Web accessibility has just as much to do with content as it does with the underlying code and design. These guidelines are suggestions for creating accessible web content.
 
@@ -12,4 +12,4 @@ Web accessibility has just as much to do with content as it does with the underl
 * <span class="text-bold">Page titles</span>: Page titles should be short and descriptive, and should usually match or be similar to the `<h1>`.
 * <span class="text-bold">Organization</span>: Organize content into well-defined groups or chunks, using meaningful headings, bulleted lists, and other visual-semantic organizing schemes. This makes the document's structure as obvious as possible.
 * <span class="text-bold">Key points first</span>: Start the page and each paragraph with the most important points. Don’t bury key information in the middle or bottom.
-* <span class="text-bold">Keep it simple</span>: Use clear, straightforward language and short sentences. 
+* <span class="text-bold">Keep it simple</span>: Use clear, straightforward language and short sentences.

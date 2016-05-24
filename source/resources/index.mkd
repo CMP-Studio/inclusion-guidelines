@@ -1,9 +1,9 @@
 ---
 title: Testing Tools | Accessibility Guidelines
 ---
-<h2 class ='page-title'>Testing Tools</h2>
+## Testing Tools
 
-Here are some tools and practices you can start using to make your websites more accessible for people with hearing, visual, physical, and cognitive disabilities. 
+Here are some tools and practices you can start using to make your websites more accessible for people with hearing, visual, physical, and cognitive disabilities.
 
 ### Best Practices
 #### Ways to test:
