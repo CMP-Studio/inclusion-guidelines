@@ -24,7 +24,7 @@
 
 ;(function(window, document, undefined){
   var tests = [];
-  
+
 
   /**
    *
@@ -73,7 +73,7 @@
     }
   };
 
-  
+
 
   // Fake some of Object.create so we can force non test results to be non "own" properties.
   var Modernizr = function() {};
@@ -83,10 +83,10 @@
   // Overwrite name so constructor name is nicer :D
   Modernizr = new Modernizr();
 
-  
+
 
   var classes = [];
-  
+
 
   /**
    * is returns a boolean if the typeof an obj is exactly type.
@@ -182,7 +182,7 @@
    */
 
   var docElement = document.documentElement;
-  
+
 
   /**
    * A convenience helper to check if the document we are running in is an SVG document
@@ -192,7 +192,7 @@
    */
 
   var isSVG = docElement.nodeName.toLowerCase() === 'svg';
-  
+
 
   /**
    * setClasses takes an array of class names and adds them to the root element
@@ -653,11 +653,11 @@ Detects support for SVG in `<embed>` or `<object>` elements.
    */
 
   var omPrefixes = 'Moz O ms Webkit';
-  
+
 
   var cssomPrefixes = (ModernizrProto._config.usePrefixes ? omPrefixes.split(' ') : []);
   ModernizrProto._cssomPrefixes = cssomPrefixes;
-  
+
 
 
   /**
@@ -691,7 +691,7 @@ Detects support for SVG in `<embed>` or `<object>` elements.
     delete modElem.elem;
   });
 
-  
+
 
   var mStyle = {
     style: modElem.elem.style
@@ -703,7 +703,7 @@ Detects support for SVG in `<embed>` or `<object>` elements.
     delete mStyle.style;
   });
 
-  
+
 
   /**
    * getBody returns the body of a document, or an element that can stand in for
@@ -992,7 +992,7 @@ Detects support for SVG in `<embed>` or `<object>` elements.
 
   var domPrefixes = (ModernizrProto._config.usePrefixes ? omPrefixes.toLowerCase().split(' ') : []);
   ModernizrProto._domPrefixes = domPrefixes;
-  
+
 
   /**
    * fnBind is a super small [bind](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind) polyfill.
@@ -1087,7 +1087,7 @@ Detects support for SVG in `<embed>` or `<object>` elements.
   // Modernizr.testAllProps('boxSizing')
   ModernizrProto.testAllProps = testPropsAll;
 
-  
+
 
   /**
    * testAllProps determines whether a given CSS property is supported in the browser
@@ -1130,7 +1130,7 @@ Detects support for SVG in `<embed>` or `<object>` elements.
     return testPropsAll(prop, undefined, undefined, value, skipValueTest);
   }
   ModernizrProto.testAllProps = testAllProps;
-  
+
 /*!
 {
   "name": "CSS Animations",
@@ -1204,7 +1204,7 @@ Detects whether or not elements can be animated using CSS
   // expose these for the plugin API. Look in the source for how to join() them against your input
   ModernizrProto._prefixes = prefixes;
 
-  
+
 /*!
 {
   "name": "CSS Calc",
@@ -1294,7 +1294,7 @@ Method of allowing calculated values for length units. For example:
    */
 
   var testStyles = ModernizrProto.testStyles = injectElementWithStyles;
-  
+
 /*!
 {
   "name": "CSS :checked pseudo-selector",
@@ -1385,7 +1385,7 @@ Detects support for the Flexible Box Layout model, a.k.a. Flexbox, which allows 
 }
 !*/
 /* DOC
-Detects support for the `flex-wrap` CSS property, part of Flexbox, which isn’t present in all Flexbox implementations (notably Firefox).
+Detects support for the `flex-wrap` CSS property, part of Flexbox, which isn't present in all Flexbox implementations (notably Firefox).
 
 This featured in both the 'tweener' syntax (implemented by IE10) and the 'modern' syntax (implemented by others). This detect will return `true` for either of these implementations, as long as the `flex-wrap` property is supported. So to ensure the modern syntax is supported, use together with `Modernizr.flexbox`:
 

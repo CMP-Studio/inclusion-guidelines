@@ -10,7 +10,7 @@ When a screen reader, or any sort of assistive device scans a web page, it gets 
 
 Many screen readers have functionality that allows a user to select to read only the headings on the page, or only the links. Giving precedence to the way headings and links are written is a significant way we can make browsing the web easier for these users.
 
-HTML5 introduced several new semantic elements representing logical sections or components of a web app or document. None of the new elements actually “do” anything by themselves, but they provide a nice way for web authors to define various parts of a document, and open the door for user agents and assistive technologies (AT) to use this information to enable alternate ways of viewing and navigating a page.
+HTML5 introduced several new semantic elements representing logical sections or components of a web app or document. None of the new elements actually "do" anything by themselves, but they provide a nice way for web authors to define various parts of a document, and open the door for user agents and assistive technologies (AT) to use this information to enable alternate ways of viewing and navigating a page.
 
 When we write semantically correct HTML, we're letting the browser know what type of content it's dealing with and how that content relates to other content. By doing this, AT is more easily able to do its job because it has a structure that it can work with. Screen reader software like JAWS or NVDA doesn't just turn text into speech - it can use information in the HTML to list all of the headings on a page, give extra navigation controls to data tables, or announce how many items are in a list, among other things.
 

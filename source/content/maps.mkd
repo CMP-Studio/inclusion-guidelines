@@ -27,7 +27,7 @@ An embedded Google Map alone is not screen reader accessible. When using Google 
 
 * Include a street address and zip code to enable Google Map search.
 * Include basic text-based directions.
-* A Google Map is typically embedded within an iFrame. Make sure the iFrame includes a “title” attribute.
+* A Google Map is typically embedded within an iFrame. Make sure the iFrame includes a "title" attribute.
 
 ### Tools &amp; Resources
 * <a href='http://alistapart.com/article/cssmaps'>A More Accessible Map</a>

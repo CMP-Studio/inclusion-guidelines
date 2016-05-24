@@ -17,7 +17,7 @@ The major web accessibility issues for users with cognitive disabilities include
 ### Best Practices
 To make the web more accessible for users with cognitive disabilities:
 
-* <span class="text-bold">Minimize cognitive load</span>: Don’t overwhelm the user. Apply a “less is more” approach.  You will never hear someone complain that a user experience is “too easy.”
+* <span class="text-bold">Minimize cognitive load</span>: Don't overwhelm the user. Apply a "less is more" approach.  You will never hear someone complain that a user experience is "too easy."
 * <span class="text-bold">Consistency</span>: Ensure that similar user interface elements and similar interactions produce predictably similar results.
 * <span class="text-bold">Icons</span>: Use common icons to mark important tasks and consider text labels.
 * <span class="text-bold">Typography</span>: Limit the types of font faces in a document. Use only one font, or a very small number of fonts in any single document.

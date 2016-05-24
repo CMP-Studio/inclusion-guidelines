@@ -14,7 +14,7 @@ These best practices have used substantial information from the [US design stand
 
 * A set of input fields within a form should be grouped by fieldset elements if they are related.
 
-* Do not use auto-advance in your form. (This is terrible for people with disabilities -- don’t do it)!
+* Do not use auto-advance in your form. (This is terrible for people with disabilities -- don't do it)!
 
 * Do not rearrange the order of the form, nor inputs, with CSS. (This can cause extreme confusion for screen readers, and their users).
 
@@ -28,21 +28,21 @@ These best practices have used substantial information from the [US design stand
 
 * Every input element in a form should have a related label. It seems from general practice that labels can either precede input elements, or wrap them.
 
-* Your form submission button should have its type=’submit’ and have, like all buttons, a clear, actionable title. Do not use auto-submission after the user has filled out the last input.
+* Your form submission button should have its type='submit' and have, like all buttons, a clear, actionable title. Do not use auto-submission after the user has filled out the last input.
 
-  - Ex. ‘Send Message,’ ‘Submit Message,’ ‘Subscribe.’
+  - Ex. ‘Send Message,' ‘Submit Message,' ‘Subscribe.'
 
 #### Form Inputs
 
 This information applies to all sorts of valid inputs: text inputs, text areas, telephone numbers, address entry, selects, checkboxes, radio buttons, and date inputs (we have specifics on some of these types of inputs below).
 
-* As said above, all form inputs should have a related, unique label that either precedes it, or wraps it. (The label `for` attribute should match the input’s `id` element).
+* As said above, all form inputs should have a related, unique label that either precedes it, or wraps it. (The label `for` attribute should match the input's `id` element).
 
-* If the input is required, put ‘Required,’ ‘(required),’ or ‘*’ within a span in the label
+* If the input is required, put ‘Required,' ‘(required),' or ‘*' within a span in the label
 
-  - Ex. <label for=’name’> First Name <span> (required) </span> </label>
+  - Ex. <label for='name'> First Name <span> (required) </span> </label>
 
-  - Also, within the input, include a required=’’ attribute so that you can use JavaScript form validation. (If you use both the required and aria-required attributes in the input element, oftentimes a screen reader will end up reading required twice which is a bit annoying).
+  - Also, within the input, include a required='' attribute so that you can use JavaScript form validation. (If you use both the required and aria-required attributes in the input element, oftentimes a screen reader will end up reading required twice which is a bit annoying).
 
   - Also, for required inputs, you can include RegEx pattern information, or even max-length of characters in the input attributes, which many screen readers can understand.
 
@@ -56,7 +56,7 @@ This information applies to all sorts of valid inputs: text inputs, text areas, 
 
 * Try not to break numbers into distinct inputs (such as phone numbers, Social Security Numbers, or credit card numbers).
 
-* The US Design Standards advise: ‘For example, use one input for [each] phone number, not three (not one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.’
+* The US Design Standards advise: ‘For example, use one input for [each] phone number, not three (not one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.'
 
 #### Checkboxes, Radio Buttons
 
@@ -65,7 +65,7 @@ However, for a single checkbox, or single radio button, do use a fieldset and le
 
 #### Date input
 
-* The US Design Standards states that for an input which required a month, day, and year,  ‘Three text fields are the easiest way for users to enter most dates.’
+* The US Design Standards states that for an input which required a month, day, and year,  ‘Three text fields are the easiest way for users to enter most dates.'
 
 
 ```html
@@ -154,7 +154,7 @@ CAPTCHAs are not blind-friendly, and are difficult for users with learning disab
 
 Consider an alternative method:
 
-* **Logic questions**: Use a question rather than an image or audio. A sample CAPTCHA question might be, "Which animal is larger, a mouse or a horse?" or "What state is Philadelphia located in?" You can also ask math questions, such as, "What is one plus three?” For high-volume sites, rotate questions, as hackers can develop algorithms to predict questions and answers or hire users to answer CAPTCHA questions. However, user with cognitive disabilities may still have trouble with this approach.
+* **Logic questions**: Use a question rather than an image or audio. A sample CAPTCHA question might be, "Which animal is larger, a mouse or a horse?" or "What state is Philadelphia located in?" You can also ask math questions, such as, "What is one plus three?" For high-volume sites, rotate questions, as hackers can develop algorithms to predict questions and answers or hire users to answer CAPTCHA questions. However, user with cognitive disabilities may still have trouble with this approach.
 
 * **Moderators**: For services with relatively light traffic, you can manually approve access or postings.
 

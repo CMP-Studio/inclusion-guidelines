@@ -16,7 +16,7 @@ On most museum websites, it seems like there are two general types of calendars:
 
 * Think of different ways to clarify how to filter the results for events. Having a heading that clearly states: 'Filter by month,' could really help and then the different links or buttons for months available directly below that.
 
-* Also, make sure you add a proper heading to each result. Many screen readers have the functionality to tell a user what different headings or links are on the page, and the ability to use that function would probably make a user’s experience that much easier.
+* Also, make sure you add a proper heading to each result. Many screen readers have the functionality to tell a user what different headings or links are on the page, and the ability to use that function would probably make a user's experience that much easier.
 
 #### Table Based Calendar
 

@@ -15,7 +15,7 @@ Simply Accessible, a web firm which specializes in web accessibility practices, 
 
 * The ARIA `roles` of `tab` and `tablist` are not used because many screen readers did not pick these attributes up when many users requested the links list functionality of their screen readers.
 
-* Messing with tabindex is never advised, and Simply Accessible found that whenever they tried adding `tabindexes` of `-1` to each tab, users were frustrated and preferred to tab between tab elements rather than using arrow keys. (So, in sum, don’t set tabindex for tabs).
+* Messing with tabindex is never advised, and Simply Accessible found that whenever they tried adding `tabindexes` of `-1` to each tab, users were frustrated and preferred to tab between tab elements rather than using arrow keys. (So, in sum, don't set tabindex for tabs).
 
 #### Tab Controls
 
@@ -27,7 +27,7 @@ Simply Accessible, a web firm which specializes in web accessibility practices, 
 
 * Each tab link also has a unique `id` associated with its `aria-controls` (each tab controls this particular `id` which references the hidden content beneath it).
 
-* Here, the `aria-controls` for each tab are set to the id’s of the tab panels (`#{name-of-beer}`)
+* Here, the `aria-controls` for each tab are set to the id's of the tab panels (`#{name-of-beer}`)
 
 * When a user clicks or focuses on a certain tab control, JavaScript is used to place focus on the first heading in the newly revealed, related tab panel.
 
@@ -38,7 +38,7 @@ Simply Accessible, a web firm which specializes in web accessibility practices, 
 * Each tab panel also has an `aria-labelledby` attribute which seems to be acting in a very similar way to how the `aria-controls` acted in our accordions example.
   - The `aria-labelledby` attribute is set to the `id` of the corresponding tab control, such as: `aria-labelledby='tab-control-{#}'` to give users of AT a more comprehensive idea of how the tabs and tab panels are linked.
 
-You can also view [the full codepen for Simply Accessible’s example](http://codepen.io/jeffsmith/pen/mPByya/).
+You can also view [the full codepen for Simply Accessible's example](http://codepen.io/jeffsmith/pen/mPByya/).
 
 We've simplified some of the JavaScript needed to make the Simply Accessible tabs work and have put the result below in an HTML and JavaScript code snippets:
 

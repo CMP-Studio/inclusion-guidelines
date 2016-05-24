@@ -11,10 +11,10 @@ Every image needs an alternative text attribute `alt`. Alt text describes pictor
 
 * <span class="text-bold">If the image is a link</span>: The alt text describe where the link goes. For example, a logo that links to your home page should have `alt="home page"`.
 * <span class="text-bold">If the image is important to the context of the page</span>: The alt text should contain a concise description of the image that is representative within the context.
-    * The description should NOT include the phrase “image of” or “picture of”. Assistive technologies already do this.
-    * Don’t put line breaks in alt text. It causes suboptimal effects when read by screen readers.
-    * Make sure the description of the image is useful. For example, if the image is your logo your alt should be your company name and not “logo.”
-* <span class="text-bold">If the image is decorative</span>: If the image is purely decorative, or not necessary for understanding the content of the page, use alt=”” to instruct a screen reader to skip it .
+    * The description should NOT include the phrase "image of" or "picture of". Assistive technologies already do this.
+    * Don't put line breaks in alt text. It causes suboptimal effects when read by screen readers.
+    * Make sure the description of the image is useful. For example, if the image is your logo your alt should be your company name and not "logo."
+* <span class="text-bold">If the image is decorative</span>: If the image is purely decorative, or not necessary for understanding the content of the page, use alt="" to instruct a screen reader to skip it .
 * <span class="text-bold">If the image is a complex graphic</span>: Each needs to handled based upon its context and use. See our below charts and graphs section and/or our <a href='/code/svg'>SVG section</a>.
 
 #### Charts &amp; Graphs
@@ -62,7 +62,7 @@ Every image needs an alternative text attribute `alt`. Alt text describes pictor
 
 
 ### Tools &amp; Resources
-* <a href="https://www.searchenginejournal.com/image-alt-text-vs-image-title-whats-the-difference/"> Image Alt Text Vs. Image Title: What’s the Difference?
+* <a href="https://www.searchenginejournal.com/image-alt-text-vs-image-title-whats-the-difference/"> Image Alt Text Vs. Image Title: What's the Difference?
 * <a href="http://simplyaccessible.com/article/three-pitfalls-text-alternatives/">Three common accessibility pitfalls for developers: text alternatives
-* <a href="https://www.paciellogroup.com/blog/2016/02/short-note-on-use-of-alt-and-the-title-attribute/"> Short note on use of alt=”” and the title attribute
+* <a href="https://www.paciellogroup.com/blog/2016/02/short-note-on-use-of-alt-and-the-title-attribute/"> Short note on use of alt="" and the title attribute
 * <a href='http://www.sabeusa.org/wp-content/uploads/2014/02/A-Guide-to-Making-Documents-Accessible-to-People-Who-are-Blind-or-Visually-Impaired.pdf'>A Guide to Making Documents Accessible to People Who are Blind or Visually Impaired</a>

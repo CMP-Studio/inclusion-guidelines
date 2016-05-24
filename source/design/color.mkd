@@ -8,7 +8,7 @@ Find colors that provide maximum contrast, including enough contrast between con
 ### Best Practices
 * <span class="text-bold">Ratio</span>: Text and interactive elements should have a color contrast ratio of at least 4.5:1.
 * <span class="text-bold">Color as indicator</span>: Color should not be the only indicator for interactive elements. For example, underline links on hover, or mark a required field with an asterisk.
-* <span class="text-bold">Color blindness</span>: Red/green color blindness is the most common, so avoid green on red or red on green. (Think especially about avoiding using red and green for “bad” and “good” indicators).
+* <span class="text-bold">Color blindness</span>: Red/green color blindness is the most common, so avoid green on red or red on green. (Think especially about avoiding using red and green for "bad" and "good" indicators).
 
 
 ### More Resources
