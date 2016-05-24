@@ -3,29 +3,9 @@ title: Buttons &amp; Links | Accessibility Guidelines
 ---
 <h2 class ='page-title'>Buttons, Links, &amp; Other Clickable Elements</h2>
 
-
 Make clickable elements large, and put space between them. Avoid clickable page elements that move.
 
 ### Best Practices
-
-#### Buttons
-
-In most cases, for the greatest clarity, use `<button>` elements for clickable areas.
-
-* Avoid using `<div>` or `<img>` tags to create buttons. Screen readers generally won’t know that either is a usable button.
-* If you must use a different HTML element to do the same functionality as a button, use the aria role=’button’ to let screen readers know the area is clickable.
-* You can also use an input for a button (especially used in forms) as long as it has a `type='button'`.
-
-```html
-  <div role='button'>
-    Open Modal
-  </div>
-  #without this role, a screenreader will not tell the user that the div can be clicked on
-```
-
-```html 
-  <input type=’button’> Click me </input>
-```
 
 #### Links
 
@@ -37,7 +17,7 @@ In most cases, for the greatest clarity, use `<button>` elements for clickable a
     * Ex. `<a href=’/blog’ title=’More blog posts by this author’> <img/> </a>`
 
 #### Buttons vs. Links
-Screen readers handle links slightly differently than they do buttons. Pressing the Space key or Enter triggers a button, but pressing the Enter key only triggers a link. 
+Screen readers handle links slightly differently than they do buttons. Pressing the Space key or Enter triggers a button, but pressing the Enter key only triggers a link.
 
 * <span class="text-bold">Clickable actions</span>: Use buttons to signal clickable actions, such as “download,” “sign up,” or “log out.” You may use links for less popular or less important actions. If you want something that looks and acts like a button, try to always use the button element rather than styling a link like a button.
 * <span class="text-bold">JavaScript Trigger</span>: If you want the user to trigger some kind of Javascript functionality by clicking it, use a button.
