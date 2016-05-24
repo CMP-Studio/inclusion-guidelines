@@ -23,7 +23,9 @@ Much like semantic HTML elements, landmark ARIA Roles are used to give users of 
 
 For many of the roles we have listed on this page, you will notice there are HTML5 elements with the same name, such as `<main>` and the aria landmark `role='main'`.  There is no consensus on this matter, but in our opinion and from our research, using something like:
 
-    <p>`CODE SNIPPET`</p>
+```html
+  <nav class=’mobile-nav’ role=’navigation’ aria-label=’Mobile Menu’> List of Links </nav>
+```
 
 while seeming redundant, is actually useful for screen readers. Testing with [Chrome Vox](http://www.chromevox.com/), we found that it wouldn't read the aria-label on this navigation, which is really helpful for giving greater context to visually impaired users, without the `role="navigation"`.
 
