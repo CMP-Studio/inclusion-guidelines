@@ -108,9 +108,11 @@ We've simplified some of the JavaScript needed to make the Simply Accessible tab
   <div aria-labelledby="tab-ipa" class="tab-panel">
     <h2 id="ipa">India Pale Ale (IPA)</h2>
   </div>
+
   <div aria-hidden="" aria-labelledby="tab-gueuze" class="tab-panel">
     <h2 id="gueuze">Gueuze</h2>
   </div>
+
   <div aria-hidden="" aria-labelledby="tab-imperial-stout" class="tab-panel">
     <h2 id="imperial-stout">Imperial Stout</h2>
   </div>

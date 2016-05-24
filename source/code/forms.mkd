@@ -1,0 +1,178 @@
+---
+title: Forms | Accessibility Guidelines
+---
+
+## Forms and Form Validation
+
+On the web, forms are constantly being used to collect information from users: signing up for something, buying something, asking a question, or contacting someone.  Since forms are so commonly used, It is imperative to make forms accessible for all users.
+
+### Best Practices
+
+These best practices have used substantial information from the [US design standards guide](https://standards.usa.gov/form-templates/).
+
+#### Form Layout
+
+* A set of input fields within a form should be grouped by fieldset elements if they are related.
+
+* Do not use auto-advance in your form. (This is terrible for people with disabilities -- don’t do it)!
+
+* Do not rearrange the order of the form, nor inputs, with CSS. (This can cause extreme confusion for screen readers, and their users).
+
+* Ideally, present only one or two inputs per line for users with limited vision who have trouble scanning the screen horizontally.
+
+* Ensure that your color/contrast ratios and typography are accessible.
+
+* Each fieldset should have a legend element (directly under the first fieldset tag) that describes the grouping.
+
+* These practices give screen readers and users of AT more information about the form, allowing them to better fill it out.
+
+* Every input element in a form should have a related label. It seems from general practice that labels can either precede input elements, or wrap them.
+
+* Your form submission button should have its type=’submit’ and have, like all buttons, a clear, actionable title. Do not use auto-submission after the user has filled out the last input.
+
+  - Ex. ‘Send Message,’ ‘Submit Message,’ ‘Subscribe.’
+
+#### Form Inputs
+
+This information applies to all sorts of valid inputs: text inputs, text areas, telephone numbers, address entry, selects, checkboxes, radio buttons, and date inputs (we have specifics on some of these types of inputs below).
+
+* As said above, all form inputs should have a related, unique label that either precedes it, or wraps it. (The label `for` attribute should match the input’s `id` element).
+
+* If the input is required, put ‘Required,’ ‘(required),’ or ‘*’ within a span in the label
+
+  - Ex. <label for=’name’> First Name <span> (required) </span> </label>
+
+  - Also, within the input, include a required=’’ attribute so that you can use JavaScript form validation. (If you use both the required and aria-required attributes in the input element, oftentimes a screen reader will end up reading required twice which is a bit annoying).
+
+  - Also, for required inputs, you can include RegEx pattern information, or even max-length of characters in the input attributes, which many screen readers can understand.
+
+* Do not use placeholder text. Placeholder text poses a variety of accessibility issues (including possible problems with color/contrast, users thinking the form input is already filled out, and placeholder text replacing a form label).
+
+  - Give all the information about what is required to fill out the input in the form label, not the placeholder.
+
+* If you have required inputs, use JavaScript to visually and physically align validation messages with labels for certain input fields (that way, a screen reader will read out the error while reading over the label).
+
+#### Inputs requiring numbers
+
+* Try not to break numbers into distinct inputs (such as phone numbers, Social Security Numbers, or credit card numbers).
+
+* The US Design Standards advise: ‘For example, use one input for [each] phone number, not three (not one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.’
+
+#### Checkboxes, Radio Buttons
+
+* All related checkboxes should be surrounded by a fieldset with a legend tag.  The same goes for a set of related radio buttons.
+However, for a single checkbox, or single radio button, do use a fieldset and legend.
+
+#### Date input
+
+* The US Design Standards states that for an input which required a month, day, and year,  ‘Three text fields are the easiest way for users to enter most dates.’
+
+
+```html
+<form class="form-example" method="post">
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <label for="full-name">
+      Full Name
+      <span class="required">
+        (required)
+      </span>
+
+      <span class="error-message">
+        You must input a real name.
+      </span>
+    </label>
+
+    <input id="full-name" name="full-name" required="" type="text">
+
+    <label for="email">
+      Email
+      <span class="required">
+        (required)
+      </span>
+      <span class="error-message">
+        The email address you entered is not valid.
+      </span>
+    </label>
+
+    <input id="email" name="email" required="" type="email">
+
+    <button type="submit">Submit</button>
+  </fieldset>
+</form>
+```
+
+```css
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+  outline: none;
+}
+```
+
+<form class="form-example" method="post">
+  <fieldset>
+    <legend>Personal Information</legend>
+
+    <label for="full-name">
+      Full Name
+      <span class="required">
+        (required)
+      </span>
+
+      <span class="error-message">
+        You must input a real name.
+      </span>
+    </label>
+
+    <input id="full-name" name="full-name" required="" type="text">
+
+    <label for="email">
+      Email
+      <span class="required">
+        (required)
+      </span>
+      <span class="error-message">
+        The email address you entered is not valid.
+      </span>
+    </label>
+
+    <input id="email" name="email" required="" type="email">
+
+    <button type="submit">Submit</button>
+  </fieldset>
+</form>
+
+#### CAPTCHAs
+
+CAPTCHA forms are implemented to stop spammers and bots from submitting forms, but in doing so, they also deny some human users access.
+
+CAPTCHAs are not blind-friendly, and are difficult for users with learning disabilities like dyslexia.
+
+Consider an alternative method:
+
+* **Logic questions**: Use a question rather than an image or audio. A sample CAPTCHA question might be, "Which animal is larger, a mouse or a horse?" or "What state is Philadelphia located in?" You can also ask math questions, such as, "What is one plus three?” For high-volume sites, rotate questions, as hackers can develop algorithms to predict questions and answers or hire users to answer CAPTCHA questions. However, user with cognitive disabilities may still have trouble with this approach.
+
+* **Moderators**: For services with relatively light traffic, you can manually approve access or postings.
+
+* **Spam detection**: You could use natural language filters to detect spam messages, or watch for activity coming from similar IP addresses. Most major blogging or content management software contains spam filtering capabilities, or can be fitted with a plug-in for this functionality. Many of these filters can automatically delete messages that reach a certain spam threshold, and mark questionable messages for manual moderation.
+
+* **Phone, text, or email verification**: Email verification, where you acknowledge receipt of an email, is a common authentication technique that can be very accessible. Another way is telephone or SMS authentication.
+
+### Tools &amp; Resources
+
+* [Simple inline error message pattern](https://www.paciellogroup.com/blog/2016/01/simple-inline-error-message-pattern/)
+
+* [Data form validation](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation)
+
+* [https://www.paciellogroup.com/blog/2011/02/html5-accessibility-chops-the-placeholder-attribute](https://www.paciellogroup.com/blog/2011/02/html5-accessibility-chops-the-placeholder-attribute)
+
+* [https://standards.usa.gov/form-templates/](https://standards.usa.gov/form-templates/)
+* [https://github.com/filamentgroup/politespace](https://github.com/filamentgroup/politespace)
+
+* [https://standards.usa.gov/form-controls/](https://standards.usa.gov/form-controls/)
+
+* [Text CAPTCHA generates textual CAPTCHAs based on simple logic questions](http://textcaptcha.com)
