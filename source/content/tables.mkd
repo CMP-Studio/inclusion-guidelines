@@ -1,7 +1,7 @@
 ---
 title: Tables | Accessibility Guidelines
 ---
-<h2 class ='page-title'>Tables</h2>
+## Tables
 
 Do not use tables for page layout or for information that is not tabular (i.e. information with meaning that is dependent on it being in columns or rows in a grid).
 

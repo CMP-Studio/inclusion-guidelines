@@ -1,9 +1,9 @@
 ---
 title: Images | Accessibility Guidelines
 ---
-<h2 class ='page-title'>Images</h2>
+## Images
 
-When using images on the web, you must provide an alternate way for a user to understand its function and context. 
+When using images on the web, you must provide an alternate way for a user to understand its function and context.
 
 ### Best Practices
 #### Alt text
@@ -20,15 +20,15 @@ Every image needs an alternative text attribute `alt`. Alt text describes pictor
 #### Charts &amp; Graphs
 
 * <span class="text-bold">Color and size</span>: For users who are not blind, ensure there is sufficient color contrast and text size in the chart/graph.
-* <span class="text-bold">Description</span>: Always include a text descriptions of a complex graphic. This description should relay and summarize the information that is visually displayed. 
+* <span class="text-bold">Description</span>: Always include a text descriptions of a complex graphic. This description should relay and summarize the information that is visually displayed.
 * <span class="text-bold">Figure</span>: Use figure and figcaption tags for complex graphs, charts, and other graphics
     * Ex. from <a href='http://html5doctor.com/the-figure-figcaption-elements/'> HTML5 Doctor</a>:
 
       ```html
         <figure>
           <img src='/macaque.jpg' alt='Monkey in the trees'/>
-          <figcaption> A cheeky macaque, Lower Kintaganban River, Borneo. Original by 
-          <a href ='http://www.flickr.com/photos/rclark/'> Richard Clark </a> 
+          <figcaption> A cheeky macaque, Lower Kintaganban River, Borneo. Original by
+          <a href ='http://www.flickr.com/photos/rclark/'> Richard Clark </a>
           </figcaption>
         </figure>
       ```

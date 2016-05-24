@@ -1,3 +1,7 @@
+---
+title: JavaScript | Accessibility Guidelines
+---
+
 ## JavaScript
 ### JavaScript Accessibility Issues
 JavaScript allows developers to add increased interaction, information processing, and control in web-based content. However, JavaScript can also introduce accessibility issues. These issues may include:

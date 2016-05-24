@@ -1,3 +1,7 @@
+---
+title: ARIA | Accessibility Guidelines
+---
+
 ## ARIA Roles,  States & Properties
 ARIA (Assistive Rich Internet Applications), is a spec from the World Wide Web Consortium (W3C) that was created to improve accessibility of web pages and applications by providing extra information to screen readers via HTML attributes.
 

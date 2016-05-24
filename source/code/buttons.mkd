@@ -1,7 +1,7 @@
 ---
 title: Buttons | Accessibility Guidelines
 ---
-<h2 class ='page-title'>Buttons</h2>
+## Buttons
 
 In most cases, for the greatest clarity, use `<button>` elements for clickable areas.
 

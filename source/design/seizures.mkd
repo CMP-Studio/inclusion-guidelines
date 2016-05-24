@@ -1,7 +1,7 @@
 ---
 title: Seizures | Accessibility Guidelines
 ---
-<h2 class ='page-title'>Flashing Animations and Parallax</h2>
+## Flashing Animations and Parallax
 
 Animations with flickers or movement can trigger epileptic seizures.
 
@@ -10,7 +10,7 @@ Animations with flickers or movement can trigger epileptic seizures.
 * Flashing graphics or animations (i.e. something that flashes more than three times in any one second period).
 * Parallax (scroll jacking).
 
-#### To reduce the risk of seizures: 
+#### To reduce the risk of seizures:
 * Keep motion animations to an absolute minimum.
 * Reduce contract for any flashing content.
 * Avoid fully saturated reds for any flashing content.
