@@ -16,7 +16,9 @@ SVG (Scalable Vector Graphics) seems to be the future of web graphics. A vector-
 
 * If the SVG is decorative, use an empty `alt=''`.
 
-<Code Snippet>
+```html
+  <Code Snippet>
+```
 
 #### Inline SVG
 
@@ -38,7 +40,9 @@ SVG (Scalable Vector Graphics) seems to be the future of web graphics. A vector-
 
 * If your inline SVG is decorative, however, you do not need to include any of these attributes.
 
-<Code Snippet>
+```html
+  <Code Snippet>
+```
 
 <Live Example>
 
