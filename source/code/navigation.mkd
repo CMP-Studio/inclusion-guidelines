@@ -1,9 +1,7 @@
 ---
-title: Code | Accessibility Guidelines
+title: Navigation | Accessibility Guidelines
 ---
-## Code
-
-### Navigation
+## Navigation
 
 Navigation is the way all users find the different pages available on your site. For this reason, it is imperative that navigation is accessible. By their nature, links are tab-able and all keyboard users and screen readers will read them--so, if your navigation is coded with links, a screen reader should find them.
 
@@ -21,7 +19,15 @@ Navigation becomes more complicated when we move to tablet and mobile views. Wit
   - Perkins School for the Blind website, for example, has three sets of navigation and uses an ARIA label and role=’navigation’ for each (the ARIA labels are: ‘Utility Navigation,’ ‘Accessibility Navigation,’ and ‘Main Navigation’).
 
 ```html
-<code><p>snippet here</p></code>
+  <nav class="primary-nav primary-nav--narrow">
+    <ul>
+      <li><a href="/our-work/">Our work</a></li>
+      <li><a href="/articles/">Articles</a></li>
+      <li><a href="/about/">About us</a></li>
+      <li><a href="/events/">Events</a></li>
+      <li class="primary-nav__active"><a href="/contact/">Contact<span class="visuallyhidden"> (current section)</span></a></li>
+    </ul>
+  </nav>
 ```
 
 ##### Mobile Navigation
@@ -36,6 +42,15 @@ Mobile navigation often acts in very similar ways to accordions on websites. For
 * Additionally, if you really want to be specific, you can toggle your button’s text between ‘Open Menu’ and ‘Close Menu’ with JavaScript.
 * Add and toggle an ARIA expanded attribute to your button letting the user know if the content the button controls is expanded or not.
 
+```html
+  <section class="mobile-navigation">
+    <button aria-expanded="false" class="side-nav-trigger">
+      <span class="trigger-status closed">Open</span>
+      Menu
+    </button>
+  </section>
+```
+
 ###### Navigation List (generally hidden)
 
 * This should follow all of the characteristics of the horizontal menu specified above, including that is has a semantic nav tag wrapping a list of links with a `role='navigation'` attribute, and uses an `aria-label` to describe its purpose.
@@ -44,8 +59,16 @@ Mobile navigation often acts in very similar ways to accordions on websites. For
 * If using an `aria-hidden` attribute, toggle this property upon showing and hiding the navigation.
 
 ```html
-<Code Snippets>
+  <nav aria-label="Mobile Accesibility Navigation Dropdown" class="primary-navigation" role="navigation">
+    <ul class="navigation-item-group">
+      <li class="nav-item"><a href="/">Semantic HTML</a></li>
+      <li class="nav-item"><a href="/aria">ARIA</a></li>
+      <li class="nav-item"><a href="/font">Font &amp; Font Size</a></li>
+      <li class="nav-item"><a href="/color">Contrast &amp; Color</a></li>
+    </ul>
+  </nav>
 ```
+
 ### Tools &amp; Resources
 
 * [http://www.perkins.org/](http://www.perkins.org/)

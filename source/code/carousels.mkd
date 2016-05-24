@@ -30,11 +30,9 @@ Much of the following best practices are adapted from Gian Wild's article ["The 
 
 * Tell the user how many slides there are, and where they are in that slideshow.
 
-<Code Snippet from Accessibility Oz Website>
+```<Code Snippet from Accessibility Oz Website> ```
 
 We will include further practices we think can make this example carousel even more accessible. (Making controls accessible to a screen reader?)
-
-<Live Example?>
 
 ### Tools &amp; Resources
 * [http://www.shouldiuseacarousel.com/](http://www.shouldiuseacarousel.com/)
@@ -43,5 +41,3 @@ We will include further practices we think can make this example carousel even m
 * [https://www.sitepoint.com/unbearable-accessible-slideshow/](https://www.sitepoint.com/unbearable-accessible-slideshow/)
 * [http://www.accessibilityoz.com/](http://www.accessibilityoz.com/)
 
-
-

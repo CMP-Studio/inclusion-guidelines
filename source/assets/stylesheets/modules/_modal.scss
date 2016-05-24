@@ -31,3 +31,21 @@
     }
   }
 }
+
+.modal-button {
+  margin-top: 0.5em;
+  width: 10em;
+  max-width: 300px;
+  padding: 0.5em;
+  border-radius: 5px;
+  background-color: darken($background-color-subtle, 3%);
+  font-family: "Merriweather", serif;
+  font-size: 1.2em;
+  color: $accent-color;
+  border: 0 none;
+  &:hover, &:focus {
+    cursor: pointer;
+    color: $background-color;
+    background-color: $accent-color;
+  }
+}

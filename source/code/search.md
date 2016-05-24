@@ -1,7 +1,6 @@
 ---
 title: Search | Accessibility Guidelines
 ---
-
 ## Search Bar
 
 On many websites, search bars or search inputs serve as a way to find results for something on a very large or complex site. They are often used in lieu of extensive navigation as the user attempts to find a quick answer to a very specific query.

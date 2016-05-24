@@ -1,3 +1,7 @@
+---
+title: Keyboard | Accessibility Guidelines
+---
+
 ## Keyboard Access
 Your website must be fully accessible via keyboard, meaning that all interactions and information that can be accessed with a mouse, must be accessible with just a keyboard.
 

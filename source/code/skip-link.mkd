@@ -19,9 +19,16 @@ A skip link is a wonderful, and easy to implement accessibility structure that a
 Format your skip link as follows, allowing a user to skip all navigation and right to the main content:
 
 ```html
-<a id='skip-nav' class='screenreader-text' href='#main-content'>
-  Skip Navigation
-</a>
+  <body>
+    <a id=’skip-nav’ class=’screenreader-text’ href=’#main-content’> 
+      Skip Navigation or Skip to Content
+    </a>
+
+    <main>
+      …Content here…
+    </main>
+
+  </body>
 ```
 
 This screenreader Sass mixin we have created can be used on many things you might like for only users of AT to be able to focus on, and not be seen by sighted users.  The skip link, however, should always have this type of styling.
