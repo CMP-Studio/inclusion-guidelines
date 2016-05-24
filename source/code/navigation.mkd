@@ -7,7 +7,7 @@ Navigation is the way all users find the different pages available on your site.
 
 Navigation becomes more complicated when we move to tablet and mobile views. With the general practice these days being that we condense all navigation to be hidden behind a hamburger icon, we need accessible users to be able to understand what that hamburger's purpose is, and what to expect upon clicking on it.
 
-#### Best Practices
+### Best Practices
 
 ##### Horizontal, Desktop Navigation
 
@@ -16,7 +16,7 @@ Navigation becomes more complicated when we move to tablet and mobile views. Wit
 * Use the semantic nav tag around your unordered list and links with an ARIA role='navigation' attribute.
   - Testing this navigation with Chrome Vox, we found that without an ARIA role attribute, the screen reader would not read any other aria attributes--for this reason, it seems ARIA roles are crucial for screen readers.
 * Optionally, attach an ARIA label attribute to your navigation to give users of AT as much information as possible (especially if there are multiple navigations on your site).
-  - Perkins School for the Blind website, for example, has three sets of navigation and uses an ARIA label and role='navigation' for each (the ARIA labels are: ‘Utility Navigation,' ‘Accessibility Navigation,' and ‘Main Navigation').
+  - Perkins School for the Blind website, for example, has three sets of navigation and uses an ARIA label and role='navigation' for each (the ARIA labels are: 'Utility Navigation,' 'Accessibility Navigation,' and 'Main Navigation').
 
 ```html
   <nav class="primary-nav primary-nav--narrow">
@@ -38,8 +38,8 @@ Mobile navigation often acts in very similar ways to accordions on websites. For
 
 * Use a button tag for your mobile navigation trigger; if you must use another HTML element, ensure that you use ARIA role='button' so screen readers will know it is clickable.
 * If your button has only an image, icon, or vague link text, put an ARIA label on your trigger/hamburger. (Keep in mind that if you use an aria-label, a screen reader will only read the label and not the button text most times).
-* For example, you can have: aria-label='Mobile Navigation Trigger' or ‘Open Menu.'
-* Additionally, if you really want to be specific, you can toggle your button's text between ‘Open Menu' and ‘Close Menu' with JavaScript.
+* For example, you can have: aria-label='Mobile Navigation Trigger' or 'Open Menu.'
+* Additionally, if you really want to be specific, you can toggle your button's text between 'Open Menu' and 'Close Menu' with JavaScript.
 * Add and toggle an ARIA expanded attribute to your button letting the user know if the content the button controls is expanded or not.
 
 ```html
@@ -71,9 +71,11 @@ Mobile navigation often acts in very similar ways to accordions on websites. For
 
 ### Tools &amp; Resources
 
-* [http://www.perkins.org/](http://www.perkins.org/)
-* [http://simplyaccessible.com/](http://simplyaccessible.com/)
-* [https://standards.usa.gov/footers/](https://standards.usa.gov/footers/)
-* [https://seesparkbox.com/foundry/ethically_accessible](https://seesparkbox.com/foundry/ethically_accessible)
+* [US Standards Footers and Mobile Accordion Navigation](https://standards.usa.gov/footers/)
 
-\* For navigation that moves to mobile navigation, with perhaps a `display: none;` nav list, it is actually not commonly accepted to use `aria-hidden` attributes anymore. I asked someone in the a11y slack room, and they told me that "if you're already [applying `display: none;`] to stuff, you generally won't need [`aria-hidden`] anyway."
+#### Live Examples of Accessible Horizontal and Mobile Navigation
+* [Perkins School for the Blind](http://www.perkins.org/)
+* [Simply Accessible Website](http://simplyaccessible.com/)
+* [Ethically Accessible](https://seesparkbox.com/foundry/ethically_accessible)
+
+\* For navigation that moves to mobile navigation, with perhaps a `display: none;` nav list, it is actually not commonly accepted to use `aria-hidden` attributes anymore. We asked someone in the a11y slack room, and they told us that "if you're already [applying `display: none;`] to stuff, you generally won't need [`aria-hidden`] anyway."

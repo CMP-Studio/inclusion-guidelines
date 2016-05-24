@@ -13,6 +13,4 @@ Multimedia is anything that uses audio and video. It's important to provide ways
 * <span class="text-bold">Alerts</span>: Don't rely on sounds to convey information, like an "alert" noise. Even hearing users often have their computers muted.
 
 ### Tools &amp; Resources
-<div class='unsure'>
-  <a href='https://searchcode.com/codesearch/view/86145219/'>Broken Link?</a>
-</div>
+* [Never use auto-play] (https://searchcode.com/codesearch/view/86145219/)

@@ -18,9 +18,9 @@ While it is possible to create accessible Flash content, moving to HTML5 might e
 
 ### Tools &amp; Resources
 
-* [https://www.w3.org/TR/WCAG20-TECHS/flash](https://www.w3.org/TR/WCAG20-TECHS/flash)
+* [Flash Techniques for WCAG 2.0 (W3C)](https://www.w3.org/TR/WCAG20-TECHS/flash)
 
-* [http://webaim.org/techniques/flash/](http://webaim.org/techniques/flash/)
+* [Creating Accessible Flash Content](http://webaim.org/techniques/flash/)
 
-* [http://www.adobe.com/accessibility/products/flash.html](http://www.adobe.com/accessibility/products/flash.html)
+* [Accessibility: Adobe Flash](http://www.adobe.com/accessibility/products/flash.html)
 

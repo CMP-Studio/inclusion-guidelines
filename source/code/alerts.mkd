@@ -28,12 +28,12 @@ Alerts should be used sparingly, and only as needed. A good instance of an alert
 <div class="usa-alert usa-alert-error" role="alert">
   <div class="usa-alert-body">
     <h3 class="usa-alert-heading">Error/Alert Status</h3>
-    <p class="usa-alert-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+    <p class="usa-alert-text">Tickets for this event will only be available for 2 more hours.</p>
   </div>
 </div>
 ```
 
 ### Tools &amp; Resources
-* https://www.w3.org/TR/wai-aria-practices/#aria_ex -common practices keyboard users expect
-* https://www.w3.org/TR/wai-aria/roles#widget_roles
-* https://standards.usa.gov/alerts/
+* [Design Patterns: expected keyboard behaviors (W3C)] (https://www.w3.org/TR/wai-aria-practices/#aria_ex)
+* [Widget Roles (W3C)] (https://www.w3.org/TR/wai-aria/roles#widget_roles)
+* [US Standards Alerts](https://standards.usa.gov/alerts/)

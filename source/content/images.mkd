@@ -62,7 +62,7 @@ Every image needs an alternative text attribute `alt`. Alt text describes pictor
 
 
 ### Tools &amp; Resources
-* <a href="https://www.searchenginejournal.com/image-alt-text-vs-image-title-whats-the-difference/"> Image Alt Text Vs. Image Title: What's the Difference?
-* <a href="http://simplyaccessible.com/article/three-pitfalls-text-alternatives/">Three common accessibility pitfalls for developers: text alternatives
-* <a href="https://www.paciellogroup.com/blog/2016/02/short-note-on-use-of-alt-and-the-title-attribute/"> Short note on use of alt="" and the title attribute
-* <a href='http://www.sabeusa.org/wp-content/uploads/2014/02/A-Guide-to-Making-Documents-Accessible-to-People-Who-are-Blind-or-Visually-Impaired.pdf'>A Guide to Making Documents Accessible to People Who are Blind or Visually Impaired</a>
+* [Image Alt Text Vs. Image Title: What's the Difference?] ("https://www.searchenginejournal.com/image-alt-text-vs-image-title-whats-the-difference/")
+* [Three common accessibility pitfalls for developers: text alternatives] ("http://simplyaccessible.com/article/three-pitfalls-text-alternatives/")
+* [Short note on use of alt="" and the title attribute] ("https://www.paciellogroup.com/blog/2016/02/short-note-on-use-of-alt-and-the-title-attribute/")
+* [A Guide to Making Documents Accessible to People Who are Blind or Visually Impaired] ('http://www.sabeusa.org/wp-content/uploads/2014/02/A-Guide-to-Making-Documents-Accessible-to-People-Who-are-Blind-or-Visually-Impaired.pdf')

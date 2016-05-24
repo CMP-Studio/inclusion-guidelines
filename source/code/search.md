@@ -35,7 +35,9 @@ Search bars can be a way for users of AT to quickly find answers without tabbing
 
 ### Tools &amp; Resources
 
-* [https://standards.usa.gov/search-bar/](https://standards.usa.gov/search-bar/)
-* [http://simplyaccessible.com/](http://simplyaccessible.com/)
-* [http://www.perkins.org/](http://www.perkins.org/)
-* [http://www.freedomscientific.com/](http://www.freedomscientific.com/)
+* [US Standards Search Bar](https://standards.usa.gov/search-bar/)
+
+#### See Live Examples of Search Bars:
+* [Simply Accessible Website](http://simplyaccessible.com/)
+* [Perkins School for the Blind](http://www.perkins.org/)
+* [Freedom Scientific](http://www.freedomscientific.com/)

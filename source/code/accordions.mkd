@@ -35,7 +35,6 @@ Additionally, we placed an aria-label on the ul tag to let the user know explici
 The examples below will show the HTML structure and JavaScript behavior required to make our examples work and explain each part in detail.
 
 ```html
-# HTML
 <div class="accordion-example">
   <ul aria-label="Accordion Control Group Buttons" class="accordion-controls">
     <li>
@@ -65,7 +64,6 @@ The examples below will show the HTML structure and JavaScript behavior required
 ```
 
 ```javascript
-// JavaScript
 var accordionButtons = $('.accordion-controls li button');
 
 function accordionToggle() {
@@ -134,6 +132,6 @@ accordionToggle();
   </ul>
 </div>
 
-### More Resources
+### Tools &amp; Resources
 
 * [US Standards Accordions](https://standards.usa.gov/accordions/)

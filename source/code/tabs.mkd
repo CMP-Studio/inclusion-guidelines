@@ -123,4 +123,4 @@ We've simplified some of the JavaScript needed to make the Simply Accessible tab
 * [Danger! ARIA tabs by Jeff Smith](http://simplyaccessible.com/article/danger-aria-tabs/)
 * [Danger! Testing Accessibility with real people](https://medium.com/@LeonieWatson/danger-testing-accessibility-with-real-people-4515f72db648)
 * [ARIA tabs, UI problems and standards](https://alastairc.ac/2016/05/aria-tabs-ui-problems-and-standards/)
-* [http://blog.ginader.de/dev/jquery/accessible-tabs/](http://blog.ginader.de/dev/jquery/accessible-tabs/)
+* [Accessible Tabs Examples](http://blog.ginader.de/dev/jquery/accessible-tabs/)

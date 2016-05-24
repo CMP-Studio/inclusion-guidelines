@@ -20,3 +20,6 @@ In most cases, for the greatest clarity, use `<button>` elements for clickable a
 ```html
   <input type='button'> Click me </input>
 ```
+### Tools &amp; Resources
+* [US Standards Buttons] (https://standards.usa.gov/buttons/)
+* [Proper Use of Buttons and Links] (http://www.webaxe.org/proper-use-buttons-links/)

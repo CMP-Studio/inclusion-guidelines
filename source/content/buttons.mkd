@@ -24,6 +24,7 @@ Screen readers handle links slightly differently than they do buttons. Pressing 
 * <span class="text-bold">Navigation</span>: If you want a user to navigate to a new page or to a different target on the same page, use an anchor element `<a>`. If there is any kind of href that you can put on that link, use an anchor element - even if you override that behavior with JavaScript.
 
 ### Tools &amp; Resources
-* <a href='https://www.searchenginejournal.com/how-to-use-link-title-attribute-correctly/'>How to Use Link TITLE Attribute Correctly</a>
+* [How to Use Link TITLE Attribute Correctly] ('https://www.searchenginejournal.com/how-to-use-link-title-attribute-correctly/')
+* [Proper Use of Buttons and Links] (http://www.webaxe.org/proper-use-buttons-links/)
 
 

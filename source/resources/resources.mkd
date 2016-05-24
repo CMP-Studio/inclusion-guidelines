@@ -4,33 +4,34 @@ title: Source Material &amp; Resources | Accessibility Guidelines
 ##Source Material &amp; Resources
 
 ### Primary resources
-
-* <a href="https://www.w3.org/WAI/WCAG20/quickref/">W3C Accessibility Guidelines &amp; Requirements</a>
-* <a href="https://standards.usa.gov/getting-started/">US Web Design Standards</a>
+* [W3C Accessibility Guidelines & Requirements](https://www.w3.org/WAI/WCAG20/quickref/) 
+* [US Web Design Standards](https://standards.usa.gov/getting-started/) 
 
 ### Great blogs, articles, and further resources on accessibility
 
-* <a href="http://www.glendathegood.com/blog/?cat=3">Glenda Sims Blog on Accesibility</a>
-* <a href="http://www.deque.com/blog/">The Deque Blog: On Accessibility</a>
-* <a href="https://a11ywins.tumblr.com/">Accessibility Wins: Showcasing accessible user interfaces and tools</a>
-* <a href="http://alistapart.com/topic/accessibility">A List Apart Articles on Accessibility</a>
-* <a href='http://a11yproject.com/'>The a11y project</a>
-* <a href="http://simplyaccessible.com/articles/">Simply Accessible Articles</a>
-* <a href="http://web-a11y.herokuapp.com/">A11y Slack Chatroom</a>
-* <a href="http://a11yproject.com/">The A11y Project</a>
-* <a href="https://webaccessibility.withgoogle.com/resources">Google Accessibility Resources</a>
-* <a href='http://www.bbc.co.uk/guidelines/futuremedia/accessibility/mobile/user-experience'>BBC Mobile Accessibility Guidelines </a>
-* <a href='http://pauljadam.com/#/resources#heading0'>Paul Adam's Favorite Accessibility Resources</a>
-* <a href='http://web-a11y.herokuapp.com/'> Join the a11y slack channel </a>
-* <a href='http://wet-boew.github.io/v4.0-ci/index-en.html'>Web Experience Toolkit: a framework for building accessible sites </a>
-* <a href='https://www.w3.org/WAI/'>Web Accessibility Initiative: web accessibility resources </a>
+* [Glenda Sims Blog on Accesibility](http://www.glendathegood.com/blog/?cat=3) 
+* [The Deque Blog: On Accessibility](http://www.deque.com/blog/) 
+* [Accessibility Wins: Showcasing accessible user interfaces and tools](https://a11ywins.tumblr.com/) 
+* [A List Apart Articles on Accessibility](http://alistapart.com/topic/accessibility)
+* [The a11y project](http://a11yproject.com/) 
+* [Simply Accessible Articles](http://simplyaccessible.com/articles/) 
+* [Accessibility Oz OzWiki] (http://www.accessibilityoz.com/ozwiki/) 
+* [A11y Slack Chatroom](http://web-a11y.herokuapp.com/) 
+* [The A11y Project](http://a11yproject.com/) 
+* [Google Accessibility Resources](https://webaccessibility.withgoogle.com/resources) 
+* [BBC Mobile Accessibility Guidelines](http://www.bbc.co.uk/guidelines/futuremedia/accessibility/mobile/user-experience) 
+* [Paul Adam's Favorite Accessibility Resources](http://pauljadam.com/#/resources#heading0) 
+* [Join the a11y slack channel](http://web-a11y.herokuapp.com/) 
+* [Web Experience Toolkit: a framework for building accessible sites](http://wet-boew.github.io/v4.0-ci/index-en.html) 
+* [Web Accessibility Initiative: web accessibility resources](https://www.w3.org/WAI/) 
 
 ### Sites approved by accesible users
 
-* <a href="http://www.freedomscientific.com/">Freedom Scientific</a>
-* <a href="http://www.perkins.org/">Perkins School for the Blind</a>
-* <a href="http://www.seeingeye.org/?referrer=https://www.google.com/">The Seeing Eye Website</a>
-* <a href="http://www.afb.org/default.aspx">THe American Foundation for the Blind</a>
+* [Freedom Scientific](http://www.freedomscientific.com/) 
+* [Perkins School for the Blind](http://www.perkins.org/) 
+* [The Seeing Eye Website](http://www.seeingeye.org/?referrer=https://www.google.com/) 
+* [The American Foundation for the Blind](http://www.afb.org/default.aspx)
+
 
 
 

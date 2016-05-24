@@ -33,4 +33,4 @@ On most museum websites, it seems like there are two general types of calendars:
 
 ### Tools &amp; Resources
 
-* [https://www.joedolson.com/my-calendar/sample-calendar/](https://www.joedolson.com/my-calendar/sample-calendar/)
+* [Accessible Web Design Calendar](https://www.joedolson.com/my-calendar/sample-calendar/)

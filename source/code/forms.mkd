@@ -30,7 +30,7 @@ These best practices have used substantial information from the [US design stand
 
 * Your form submission button should have its type='submit' and have, like all buttons, a clear, actionable title. Do not use auto-submission after the user has filled out the last input.
 
-  - Ex. ‘Send Message,' ‘Submit Message,' ‘Subscribe.'
+  - Ex. 'Send Message,' 'Submit Message,' 'Subscribe.'
 
 #### Form Inputs
 
@@ -38,7 +38,7 @@ This information applies to all sorts of valid inputs: text inputs, text areas, 
 
 * As said above, all form inputs should have a related, unique label that either precedes it, or wraps it. (The label `for` attribute should match the input's `id` element).
 
-* If the input is required, put ‘Required,' ‘(required),' or ‘*' within a span in the label
+* If the input is required, put 'Required,' '(required),' or '*' within a span in the label
 
   - Ex. <label for='name'> First Name <span> (required) </span> </label>
 
@@ -56,7 +56,7 @@ This information applies to all sorts of valid inputs: text inputs, text areas, 
 
 * Try not to break numbers into distinct inputs (such as phone numbers, Social Security Numbers, or credit card numbers).
 
-* The US Design Standards advise: ‘For example, use one input for [each] phone number, not three (not one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.'
+* The US Design Standards advise: 'For example, use one input for [each] phone number, not three (not one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful.'
 
 #### Checkboxes, Radio Buttons
 
@@ -65,7 +65,7 @@ However, for a single checkbox, or single radio button, do use a fieldset and le
 
 #### Date input
 
-* The US Design Standards states that for an input which required a month, day, and year,  ‘Three text fields are the easiest way for users to enter most dates.'
+* The US Design Standards states that for an input which required a month, day, and year,  'Three text fields are the easiest way for users to enter most dates.'
 
 
 ```html
@@ -168,11 +168,11 @@ Consider an alternative method:
 
 * [Data form validation](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Forms/Data_form_validation)
 
-* [https://www.paciellogroup.com/blog/2011/02/html5-accessibility-chops-the-placeholder-attribute](https://www.paciellogroup.com/blog/2011/02/html5-accessibility-chops-the-placeholder-attribute)
+* [HTML5 Accessibility Chops: the placeholder attribute](https://www.paciellogroup.com/blog/2011/02/html5-accessibility-chops-the-placeholder-attribute)
 
-* [https://standards.usa.gov/form-templates/](https://standards.usa.gov/form-templates/)
+* [US Standards Form Templates](https://standards.usa.gov/form-templates/)
 * [https://github.com/filamentgroup/politespace](https://github.com/filamentgroup/politespace)
 
-* [https://standards.usa.gov/form-controls/](https://standards.usa.gov/form-controls/)
+* [US Standards Form Controls](https://standards.usa.gov/form-controls/)
 
 * [Text CAPTCHA generates textual CAPTCHAs based on simple logic questions](http://textcaptcha.com)

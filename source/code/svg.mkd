@@ -51,6 +51,6 @@ SVG (Scalable Vector Graphics) seems to be the future of web graphics. A vector-
 
 ### Tools &amp; Resources
 
-* [http://thenewcode.com/1026/Making-SVG-Accessible](http://thenewcode.com/1026/Making-SVG-Accessible)
-* [https://www.w3.org/TR/SVG-access/](https://www.w3.org/TR/SVG-access/)
-* [https://www.filamentgroup.com/lab/bulletproof_icon_fonts.html](https://www.filamentgroup.com/lab/bulletproof_icon_fonts.html)
+* [Making SVG Accessible](http://thenewcode.com/1026/Making-SVG-Accessible)
+* [Accessibility Features of SVG (W3C)](https://www.w3.org/TR/SVG-access/)
+* [Bulletproof Accessible Icon Fonts](https://www.filamentgroup.com/lab/bulletproof_icon_fonts.html)

@@ -17,22 +17,22 @@ Here are some tools and practices you can start using to make your websites more
 
 ### Testing Tools
 #### Browser Extension Tools
-* <a href="http://khan.github.io/tota11y/">tota11y: an accessibility visualization toolkit</a>
-* <a href="http://pa11y.org/">pa11y: your automated accessibility testing pal</a>
-* <a href="http://accessibility-bookmarklets.org/">Highlight accessibility features of web pages</a>
-* <a href="http://wave.webaim.org/extension/">Wave Accessibility Chrome Extension</a>
-* <a href='http://accessibility-bookmarklets.org/'> Accessibility Bookmarks: Highlight accessibility features of web pages </a>
-* <a href="http://www.chromevox.com/">Chrome Vox Screenreader Extension</a>
-* <a href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en">Accessibility Developer Tools</a>
+* [tota11y: an accessibility visualization toolkit](http://khan.github.io/tota11y/)
+* [pa11y: your automated accessibility testing pal](http://pa11y.org/) 
+* [Highlight accessibility features of web pages](http://accessibility-bookmarklets.org/) 
+* [Wave Accessibility Chrome Extension](http://wave.webaim.org/extension/) 
+* [Accessibility Bookmarks: Highlight accessibility features of web pages](http://accessibility-bookmarklets.org/) 
+* [Chrome Vox Screenreader Extension](http://www.chromevox.com/) 
+* [Accessibility Developer Tools](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en) 
 
 #### Color, Contrast, &amp; Accessible Design Tools
-* <a href="http://leaverou.github.io/contrast-ratio/">Contrast Ratio Tool</a>
-* <a href='http://webaim.org/resources/designers/'> Web Accessibility Tips for Designers</a>
-* <a href='http://contrast-finder.tanaguru.com/'>Tanaguru Contrast-Finder</a>
-* <a href='https://www.paciellogroup.com/resources/contrastanalyser/'>Paciello Colour Contrast Anaylser</a>
-* <a href='http://webaim.org/resources/contrastchecker/'>Web AIM Color Contrast Checker</a>
+* [Contrast Ratio Tool](http://leaverou.github.io/contrast-ratio/) 
+* [Web Accessibility Tips for Designers](http://webaim.org/resources/designers/)
+* [Tanaguru Contrast-Finder](http://contrast-finder.tanaguru.com/) 
+* [Paciello Colour Contrast Anaylser](https://www.paciellogroup.com/resources/contrastanalyser/) 
+* [Web AIM Color Contrast Checker](http://webaim.org/resources/contrastchecker/) 
 
 #### General Tools &amp; More Resources
-* <a href='http://webaim.org/services/certification/'> WebAim: Free Accessible Web Site Certification</a>
-* <a href='http://www.bbc.co.uk/guidelines/futuremedia/accessibility/mobile/how-to-test'>BBC: Mobile Accessibility Guidelines and Ways to Test</a>
+* [Web AIM: Free Accessible Web Site Certification](http://webaim.org/services/certification/) 
+* [BBC: Mobile Accessibility Guidelines and Ways to Test](http://www.bbc.co.uk/guidelines/futuremedia/accessibility/mobile/how-to-test)
 

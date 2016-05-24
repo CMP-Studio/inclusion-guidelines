@@ -25,7 +25,7 @@ Learn more <a href='https://dev.twitter.com/web/embedded-timelines
 * Put the main content at the beginning of your tweet and always leave the hashtags for the end (this is the leetspeek stuff that sounds awful for screen reader users).
 
 ### Tools &amp; Resources
-* <a href='http://webaim.org/techniques/frames/'>Creating Accessible Frames and Iframes</a>
-* <a href='https://dev.twitter.com/web/embedded-timelines'>Twitter DevTools: Embedded Timelines</a>
-* <a href='http://www.perkins.org/stories/social-media'>Perkins webpage where you can view accessible, embedded twitter feed</a>
-* <a href='https://webtoolkit.govt.nz/guidance/social-media/accessibility-and-social-media/'>Accessibility and social media</a>
+* [Creating Accessible Frames and Iframes ]('http://webaim.org/techniques/frames/')
+* [Twitter DevTools: Embedded Timelines] ('https://dev.twitter.com/web/embedded-timelines')
+* [Perkins webpage where you can view accessible, embedded twitter feed] ('http://www.perkins.org/stories/social-media')
+* [Accessibility and social media] ('https://webtoolkit.govt.nz/guidance/social-media/accessibility-and-social-media/')
