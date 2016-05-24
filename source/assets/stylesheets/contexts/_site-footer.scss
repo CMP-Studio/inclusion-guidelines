@@ -10,16 +10,16 @@
   }
 
   p {
-    color: $background-color-dark;
+    color: $background-color-light;
     font-size: 0.75em;
     line-height: 1em;
   }
 
   a {
-    color: $background-color-dark;
+    color: $background-color-light;
     transition: color 0.3s ease-in;
     &:hover, &:focus {
-      color: lighten($background-color-dark, 7%);
+      color: lighten($background-color-light, 7%);
     }
   }
 
