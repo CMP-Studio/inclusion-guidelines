@@ -91,7 +91,7 @@ However, for a single checkbox, or single radio button, do use a fieldset and le
       <span class="required">
         (required)
       </span>
-      <span class="error-message">
+      <span class="error-message" role='alert' aria-live='polite'>
         The email address you entered is not valid.
       </span>
     </label>

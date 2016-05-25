@@ -1,3 +1,15 @@
+@keyframes jumpBorder {
+  0%  {
+    box-shadow: 0 0 0 0px $accent-color;
+  }
+  60% {
+    box-shadow: 0 0 0 2.5px $accent-color;
+  }
+  100% {
+    box-shadow: 0 0 0 1.5px $accent-color;
+  }
+}
+
 .modal-wrapper {
   display: none;
   @include breakpoint($bp-l) {
@@ -37,15 +49,17 @@
   width: 10em;
   max-width: 300px;
   padding: 0.5em;
-  border-radius: 5px;
+  border-radius: 50px;
   background-color: darken($background-color-subtle, 3%);
   font-family: "Merriweather", serif;
   font-size: 1.2em;
   color: $accent-color;
-  border: 0 none;
+  border: 7px solid $background-color;
+  transition: background-color 0.3s ease-in, color 0.3s ease-in;
   &:hover, &:focus {
     cursor: pointer;
     color: $background-color;
     background-color: $accent-color;
+    animation: jumpBorder 0.3s ease-in 1 0.1s forwards; 
   }
 }
