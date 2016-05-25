@@ -1,28 +1,28 @@
 ---
 title: Color | Accessibility Guidelines
 ---
-## Contrast &amp; Color
+## Contrast & Color
 
 Find colors that provide maximum contrast, including enough contrast between content and the background, so that text and non-decorative images are legible for anyone with low vision or color deficiencies.
 
 ### Best Practices
-* <span class="text-bold">Ratio</span>: Text and interactive elements should have a color contrast ratio of at least 4.5:1.
-* <span class="text-bold">Color as indicator</span>: Color should not be the only indicator for interactive elements. For example, underline links on hover, or mark a required field with an asterisk.
-* <span class="text-bold">Color blindness</span>: Red/green color blindness is the most common, so avoid green on red or red on green. (Think especially about avoiding using red and green for "bad" and "good" indicators).
+* **Ratio:** Text and interactive elements should have a color contrast ratio of at least 4.5:1.
+* **Color as indicator:** Color should not be the only indicator for interactive elements. For example, underline links on hover, or mark a required field with an asterisk.
+* **Color blindness:** Red/green color blindness is the most common, so avoid green on red or red on green. (Think especially about avoiding using red and green for "bad" and "good" indicators).
 
 
 ### Tools &amp; Resources
 #### Articles &amp; Guides
-* [Three common accessibility pitfalls for developers: colour contrast](http://simplyaccessible.com/article/pitfalls-colour-contrast/) 
-* [Colour Accessibility](https://24ways.org/2012/colour-accessibility/) 
-* [What is Color Contrast?](http://a11yproject.com/posts/what-is-color-contrast) 
-* [Colour Accessibility](https://24ways.org/2012/colour-accessibility/) 
-* [W3C Resize Text](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html) 
-* [US Standards Colors](https://standards.usa.gov/visual-style/#colors) 
+* [Three common accessibility pitfalls for developers: colour contrast](http://simplyaccessible.com/article/pitfalls-colour-contrast/)
+* [Colour Accessibility](https://24ways.org/2012/colour-accessibility/)
+* [What is Color Contrast?](http://a11yproject.com/posts/what-is-color-contrast)
+* [Colour Accessibility](https://24ways.org/2012/colour-accessibility/)
+* [W3C Resize Text](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html)
+* [US Standards Colors](https://standards.usa.gov/visual-style/#colors)
 
 
 #### Testing Tools
-* [Tanaguru Contrast-Finder](http://contrast-finder.tanaguru.com/) 
-* [Contrast-Ratio Tool](http://leaverou.github.io/contrast-ratio/) 
-* [Paciello Colour Contrast Anaylser](https://www.paciellogroup.com/resources/contrastanalyser/) 
+* [Tanaguru Contrast-Finder](http://contrast-finder.tanaguru.com/)
+* [Contrast-Ratio Tool](http://leaverou.github.io/contrast-ratio/)
+* [Paciello Colour Contrast Anaylser](https://www.paciellogroup.com/resources/contrastanalyser/)
 * [Web AIM Color Contrast Checker](http://webaim.org/resources/contrastchecker/)
