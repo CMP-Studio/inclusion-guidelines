@@ -25,7 +25,7 @@ Examples of functionality include:
 Once you have determined functionality, verify that each of the functions identified can be performed using only the keyboard:
 
 1. Using the Tab, Enter, and Spacebar, navigate the page and ensure each input/interaction can be triggered. Make sure you can tab your way back to the address bar.
-2. Ensure rollover/hover interactions (help text, etc.) can be triggered as well (when these happen through a keyboard, they have a focus state).
+2. Ensure `hover` interactions (help text, etc.) can be triggered as well. When these happen through a keyboard, they have a `focus` state instead of `hover`.
 3. Make sure the tab order of the page is logical and follows the visual order of elements on the page. This means you should not rearrange the HTML structure of the page with CSS.
 4. Check that the focus is always visible when moving through the page with the tab key.
 5. Make sure you can use and dismiss modal dialog boxes, lightboxes, or other pop-ups through the keyboard use.

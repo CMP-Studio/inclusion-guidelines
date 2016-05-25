@@ -9,9 +9,9 @@ A skip link is a wonderful, and easy to implement accessibility structure that a
 
 ### Best Practices
 
-* This skip link should go right after the body tag, (it should be the first thing a keyboard user would tab to on your web page).
+* This skip link should go right after the `body` tag, (it should be the first thing a keyboard user would tab to on your web page).
 * Hide the skip link from sighted users -- styling the link tag with what is typically called and classified as 'screenreader-text' -- which only appears when focused on by tabbing to it or using other AT.
-* Include a href that links to the main content of the web page.  Often you will want to have an href such as href='main-content.'
+* Include a `href` that links to the main content of the web page.  Often you will want to have an `href` such as `href='#main-content`.'
 * Include clear link text so that users of AT know exactly what clicking on the skip link will do:
   - For example: "Skip Navigation" or "Skip to Content"
 
@@ -24,7 +24,7 @@ Format your skip link as follows, allowing a user to skip all navigation and rig
       Skip Navigation or Skip to Content
     </a>
 
-    <main>
+    <main id='main-content'>
       …Content here…
     </main>
 

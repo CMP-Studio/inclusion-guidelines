@@ -9,11 +9,11 @@ Search bars can be a way for users of AT to quickly find answers without tabbing
 
 ### Best Practices
 
-* Refer back to the forms and form validation section to get the best practices for forms, labels, and inputs.
-* A search bar should be set up in a form as paired label and input.
+* Refer back to the [forms and form validation](/code/forms) section to get the best practices for `form`, `label`, and `input` elements.
+* A search bar should be set up in a `form` as paired `label` and `input`.
 * Using a submit button to search decreases the number of keystrokes necessary to use the form.
-* Always include an ARIA `role='search'` somewhere on the form/fieldset.
-* Also, always include the word 'search' in the label somewhere (you can visually hide it, though) and also in the submit button.
+* Always include an ARIA `role='search'` somewhere on the form or fieldset.
+* Also, always include the word 'search' in the label somewhere (you can visually hide it, though) andalso in the submit button.
 * For the search input, you could technically use the `type='search'`, but the following accessible websites use `type='text'` instead:
   - Perkins School for the Blind
   - Freedom Scientific

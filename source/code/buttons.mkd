@@ -7,7 +7,7 @@ In most cases, for the greatest clarity, use `<button>` elements for clickable a
 
 ### Best Practices
 * Avoid using `<div>` or `<img>` tags to create buttons. Screen readers generally won't know that either is a usable button.
-* If you must use a different HTML element to do the same functionality as a button, use the aria role='button' to let screen readers know the area is clickable.
+* If you must use a different HTML element to do the same functionality as a button, use the aria `role='button'` to let screen readers know the area is clickable.
 * You can also use an input for a button (especially used in forms) as long as it has a `type='button'`.
 
 ```html
