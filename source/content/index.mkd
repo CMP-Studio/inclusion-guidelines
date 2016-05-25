@@ -7,8 +7,8 @@ Web accessibility has just as much to do with content as it does with the underl
 
 ### Best Practices
 * <span class="text-bold">All caps</span>: Limit or eliminate the use of italics or ALL CAPS to improve readability.
-* <span class="text-bold">Acronyms</span>: Expand unknown acronyms/abbreviations at first instance.
-* <span class="text-bold">Leetspeek</span>: Be careful with words that use numbers as letters, such as a11y, which most visual readers will read as "ally' but a screen reader will read as 'a + 1 + 1 + y'.
+* <span class="text-bold">Acronyms</span>: Expand unknown acronyms/abbreviations at their first instance.
+* <span class="text-bold">Leetspeek</span>: Be careful with words that use numbers as letters, such as a11y, which most visual readers will read as 'ally' but a screen reader will read as 'a + 1 + 1 + y'.
 * <span class="text-bold">Page titles</span>: Page titles should be short and descriptive, and should usually match or be similar to the `<h1>`.
 * <span class="text-bold">Organization</span>: Organize content into well-defined groups or chunks, using meaningful headings, bulleted lists, and other visual-semantic organizing schemes. This makes the document's structure as obvious as possible.
 * <span class="text-bold">Key points first</span>: Start the page and each paragraph with the most important points. Don't bury key information in the middle or bottom.

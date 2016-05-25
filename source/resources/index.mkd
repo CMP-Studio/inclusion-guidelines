@@ -12,7 +12,7 @@ Here are some tools and practices you can start using to make your websites more
 * <span class="text-bold">No mouse</span>: many users with limited mobility can only interact with the screen via keyboard. Other users use a mouse, but have trouble with fine motor control. Try using only your keyboard to navigate the website you are working. (Utilize the Tab, Enter, Space, and Arrow Keys).
 * <span class="text-bold">No sight</span>: test your website with a screenreader. Chrome Vox, JAWS, VoiceOver, NVDA are all acceptable.
 * <span class="text-bold">Low or tunnel vision</span>: try zooming in on your designs to see how they look when enlarged. Additionally, use some of the color and contrast tools we have linked to in order to make sure all of your ratios are adequate.
-* <span class="text-bold">Cognitive disability</span>: Design and write your websites simply, consistently, and clearly. See our section on cognitive disabilities for more information.
+* <span class="text-bold">Cognitive disability</span>: Design and write your websites simply, consistently, and clearly. See our section on <a href='/content/cognitive/'>cognitive disabilities</a> for more information.
 
 
 ### Testing Tools

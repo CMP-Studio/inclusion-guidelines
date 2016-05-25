@@ -9,19 +9,19 @@ Make clickable elements large, and put space between them. Avoid clickable page 
 
 #### Links
 
-* <span class="text-bold">Link text</span>: Make the link text describe its purpose and destination. If you are linking to something from an image or icon, supply a title attribute to give people who use screen readers some context.
-* <span class="text-bold">New window or tab</span>: If a link opens a new tab, or takes the user out of the current format or application, that action should be indicated by the link text. It can be disorienting to users – especially those with cognitive, sight, or mobility problems – to unexpectedly open an item in a new format or application.
-* <span class="text-bold">Link styling</span>: Links should look like links. All links should be underlined at least, and users should be able to identify links without relying on color alone.
-* <span class="text-bold">Navigation</span>: Users should be able to tab to navigate between links, and active a link by pressing "Enter" on the keyboard. They should be able to activate hover and focus states with both a mouse and a keyboard.
-* <span class="text-bold">Title attribute</span>: If the link is surrounding an image or another element, provide a title attribute in your a tag that says where the link will redirect the user. However, do not rely on this method too thoroughly, since some screen readers will not read the a tag title attribute.
+* <span class="text-bold">Link text</span>: Make the link text describe its purpose and destination. 
+* <span class="text-bold">New window or tab</span>: If a link opens a new tab, or takes the user out of the current website or application, that should be indicated by the link text. It can be disorienting to users – especially those with cognitive, visual, or mobility problems – to unexpectedly click a link and be brought to a new format or application.
+* <span class="text-bold">Link styling</span>: Links should look like links. At least, all links should be underlined, and users should be able to identify links without relying on color alone.
+* <span class="text-bold">Navigation</span>: Users should be able to use their Tab key to navigate between links, and activate a link by pressing Enter on the keyboard. They should be able to activate hover and focus states with both a mouse and a keyboard.
+* <span class="text-bold">Title attribute</span>: If you are linking to something from an image or icon, supply a title attribute on the link to give people who use screen readers some context as to where it will redirect the user. However, do not rely on this method too thoroughly, since some screen readers will not read the a tag title attribute.
     * Ex. `<a href='/blog' title='More blog posts by this author'> <img/> </a>`
 
 #### Buttons vs. Links
-Screen readers handle links slightly differently than they do buttons. Pressing the Space key or Enter triggers a button, but pressing the Enter key only triggers a link.
+Screen readers handle links slightly differently than they do buttons. All links and buttons are tab-able, but pressing the Space key or Enter triggers a button, whereas pressing the Enter key only triggers a link. 
 
-* <span class="text-bold">Clickable actions</span>: Use buttons to signal clickable actions, such as "download," "sign up," or "log out." You may use links for less popular or less important actions. If you want something that looks and acts like a button, try to always use the button element rather than styling a link like a button.
-* <span class="text-bold">JavaScript Trigger</span>: If you want the user to trigger some kind of Javascript functionality by clicking it, use a button.
-* <span class="text-bold">Navigation</span>: If you want a user to navigate to a new page or to a different target on the same page, use an anchor element `<a>`. If there is any kind of href that you can put on that link, use an anchor element - even if you override that behavior with JavaScript.
+* <span class="text-bold">Clickable actions</span>: Use buttons to signal clickable actions, such as "download," "sign up," or "log out." You may use links for less popular or less important actions. You may use links for less popular, or less important actions. If you want something that looks and acts like a button, though, try to always use the button element rather than styling a link to look like a button.
+* <span class="text-bold">JavaScript Trigger</span>: If you want the user to trigger some kind of JavaScript behavior by clicking an element, use a button.
+* <span class="text-bold">Navigation</span>: If you want a user to navigate to a new page or to a different target on the same page, use an anchor element `<a>`.
 
 ### Tools &amp; Resources
 * [How to Use Link TITLE Attribute Correctly] ('https://www.searchenginejournal.com/how-to-use-link-title-attribute-correctly/')

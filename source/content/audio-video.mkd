@@ -7,10 +7,10 @@ Multimedia is anything that uses audio and video. It's important to provide ways
 
 ### Best Practices
 
-* <span class="text-bold">Auto-play</span>: Don't auto-play videos and audio. People using screen-readers navigate by listening, so any sound playing when the page loads will interfere. The sound should be initiated by an action initiated by the user after they reach the page. If your web page does automatically play audio for more than 3 seconds, provide a mechanism to pause or stop the audio.
-* <span class="text-bold">Closed captioning and descriptions</span>: Provide captions or transcripts for audio and video. Anything said in the media must be said in the captioning, and vice versa. Any information displayed visually should be available by audio.
+* <span class="text-bold">Auto-play</span>: Don’t auto-play videos and audio. People using screen readers navigate by listening, so any sound playing when the page loads will interfere with their experience. Audio or video should only be initiated by an action taken by the user. If your web page does automatically play audio for more than 3 seconds, provide a mechanism to pause or stop the audio.
+* <span class="text-bold">Closed captioning and descriptions</span>: Provide captions or transcripts for audio and video. Anything said in multimedia must be said in the captioning, and vice versa. Any information displayed solely visually should also be available in audio or text form.
 * <span class="text-bold">Timestamping and keyboard</span>: All video controls should be accessible via the keyboard, including time stamp information.
-* <span class="text-bold">Alerts</span>: Don't rely on sounds to convey information, like an "alert" noise. Even hearing users often have their computers muted.
+* <span class="text-bold">Alerts</span>: Don’t rely on sounds to convey information, like an "alert" noise. Even users who have good hearing often have their computers muted.
 
 ### Tools &amp; Resources
 * [Never use auto-play] (https://searchcode.com/codesearch/view/86145219/)
