@@ -5,7 +5,7 @@ title: Navigation | Accessibility Guidelines
 
 Navigation is the way all users find the different pages available on your site. For this reason, it is imperative that navigation is accessible. By their nature, links are tab-able and all keyboard users and screen readers will read them--so, if your navigation is coded with links, a screen reader should find them.
 
-Navigation becomes more complicated when we move to tablet and mobile views. With the general practice these days being that we condense all navigation to be hidden behind a hamburger icon, we need accessible users to be able to understand what that hamburger's purpose is, and what to expect upon clicking on it.
+Navigation becomes more complicated when we move to tablet and mobile views. With the general practice these days being that we condense all navigation to be hidden behind a "menu" icon, we need users to be able to understand what that menu icon's purpose is, and what to expect upon clicking on it.
 
 ### Best Practices
 
@@ -13,10 +13,10 @@ Navigation becomes more complicated when we move to tablet and mobile views. Wit
 
 * Code your navigation using link tags.
 * Put your links within an unordered list structure so that a screen reader will read out how many things are in the list to give visually impaired the most information possible about the content's of the navigation.
-* Use the semantic nav tag around your unordered list and links with an ARIA role='navigation' attribute.
-  - Testing this navigation with Chrome Vox, we found that without an ARIA role attribute, the screen reader would not read any other aria attributes--for this reason, it seems ARIA roles are crucial for screen readers.
+* Use the semantic `<nav>` tag around your unordered list and links with an ARIA `role="navigation"` attribute.
+  - Testing this navigation with [Chrome Vox](http://www.chromevox.com/), we found that without an ARIA role attribute, the screen reader would not read any other ARIA attributes--for this reason, it seems ARIA roles are crucial for screen readers.
 * Optionally, attach an ARIA label attribute to your navigation to give users of AT as much information as possible (especially if there are multiple navigations on your site).
-  - Perkins School for the Blind website, for example, has three sets of navigation and uses an ARIA label and role='navigation' for each (the ARIA labels are: 'Utility Navigation,' 'Accessibility Navigation,' and 'Main Navigation').
+  - [Perkins School for the Blind website](http://www.perkins.org/), for example, has three sets of navigation and uses an ARIA label and `role="navigation"` for each (the ARIA labels are: 'Utility Navigation,' 'Accessibility Navigation,' and 'Main Navigation').
 
 ```html
   <nav class="primary-nav primary-nav--narrow">
@@ -36,9 +36,9 @@ Mobile navigation often acts in very similar ways to accordions on websites. For
 
 ######  Mobile Trigger, Hamburger Button
 
-* Use a button tag for your mobile navigation trigger; if you must use another HTML element, ensure that you use ARIA role='button' so screen readers will know it is clickable.
+* Use a button tag for your mobile navigation trigger; if you must use another HTML element, ensure that you use ARIA `role="button"` so screen readers will know it is clickable.
 * If your button has only an image, icon, or vague link text, put an ARIA label on your trigger/hamburger. (Keep in mind that if you use an aria-label, a screen reader will only read the label and not the button text most times).
-* For example, you can have: aria-label='Mobile Navigation Trigger' or 'Open Menu.'
+* For example, you can have: `aria-label='Mobile Navigation Trigger'` or `'Open Menu'`
 * Additionally, if you really want to be specific, you can toggle your button's text between 'Open Menu' and 'Close Menu' with JavaScript.
 * Add and toggle an ARIA expanded attribute to your button letting the user know if the content the button controls is expanded or not.
 

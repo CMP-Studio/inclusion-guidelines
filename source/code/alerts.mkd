@@ -6,7 +6,7 @@ title: Alerts | Accessibility Guidelines
 
 Alerts are often boxes of text that can pop up on a web page or be present during a certain time period. Alerts can be very similar to modals, in that they prompt a user to do some action.  Additionally, alerts are good for informing a user of time sensitive information (e.g. the tickets in their cart will be expiring soon).
 
-Alerts should be used sparingly, and only as needed. A good instance of an alert is if a user tried to use a form and inputs incorrect information -- an alert can pop up at the top of the form and help them understand why their input is incorrect. (This does not replace doing inline form validation--see our forms section for more).
+Alerts should be used sparingly, and only as needed. A good instance of an alert is if a user tried to use a form and inputs incorrect information -- an alert can pop up at the top of the form and help them understand why their input is incorrect. (This does not replace doing inline form validation--see our [forms section](/code/forms) for more).
 
 ### Best Practices
 
@@ -22,7 +22,7 @@ Alerts should be used sparingly, and only as needed. A good instance of an alert
 
 * For an alert that is not time sensitive, but that contains an important prompt or piece of information for the user, use ARIA `role='alertdialog'`. (The definition of the ARIA `role='dialog'` is: "an application window that is designed to interrupt the current processing of an application in order to prompt the user to enter information or require a response").
 
-* Alerts should not be visually hidden if they are not being used. If you do not want a screen reader to pick up an alert, use the `aria-hidden='true'` attribute and/or `{display: none;}`.
+* Alerts should not be visually hidden if they are not being used. If you do not want a screen reader to pick up an alert, use the `aria-hidden='true'` HTML attribute and/or `{display: none;}` in your CSS.
 
 ```html
 <div class="usa-alert usa-alert-error" role="alert">

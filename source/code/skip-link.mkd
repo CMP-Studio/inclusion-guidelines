@@ -3,16 +3,16 @@ title: Skip Link | Accessibility Guidelines
 ---
 ## Skip Link
 
-A skip (navigation) link provides a way for users of AT to skip what can often be many navigation links. (Think about having to tab through the entire Amazon dropdown navigation, that has links nested in links, before you even reached the search bar or any relevant content--that would be frustrating, right?!)
+A skip (navigation) link provides a way for users of assistive technology to skip what can often be many navigation links. (Think about having to tab through the entire Amazon dropdown navigation, that has links nested in links, before you even reached the search bar or any relevant content--that would be frustrating, right?!)
 
 A skip link is a wonderful, and easy to implement accessibility structure that allows users to immediately access pertinent content.
 
 ### Best Practices
 
 * This skip link should go right after the body tag, (it should be the first thing a keyboard user would tab to on your web page).
-* Hide the skip link from sighted users -- styling the link tag with what is typically called and classified as 'screenreader-text' -- which only appears when focused on by tabbing to it or using other AT.
-* Include a href that links to the main content of the web page.  Often you will want to have an href such as href='main-content.'
-* Include clear link text so that users of AT know exactly what clicking on the skip link will do:
+* Hide the skip link from sighted users -- styling the link tag with what is typically called and classified as 'screenreader-text' -- which only appears when focused on by tabbing to it or using other assistive technology.
+* Include a href that links to the main content of the web page.  Often you will want to have an href such as `href='main-content'`.
+* Include clear link text so that users of assistive technology know exactly what clicking on the skip link will do:
   - For example: "Skip Navigation" or "Skip to Content"
 
 
@@ -31,7 +31,7 @@ Format your skip link as follows, allowing a user to skip all navigation and rig
   </body>
 ```
 
-This screenreader Sass mixin we have created can be used on many things you might like for only users of AT to be able to focus on, and not be seen by sighted users.  The skip link, however, should always have this type of styling.
+This screenreader Sass mixin we have created can be used on many things you might like for only users of assistive technology to be able to focus on, and not be seen by sighted users.  The skip link, however, should always have this type of styling.
 
 ```scss
 .screenreader-text {

@@ -5,11 +5,11 @@ title: Search | Accessibility Guidelines
 
 On many websites, search bars or search inputs serve as a way to find results for something on a very large or complex site. They are often used in lieu of extensive navigation as the user attempts to find a quick answer to a very specific query.
 
-Search bars can be a way for users of AT to quickly find answers without tabbing through the navigation or reading all the content of a web page. Making a skip link to your site's search bar may even be advisable if that is a way you can simplify the experience of accessible users.
+Search bars can be a way for users of assistive technology to quickly find answers without tabbing through the navigation or reading all the content of a web page. Making a skip link to your site's search bar may even be advisable if that is a way you can simplify the experience of accessible users.
 
 ### Best Practices
 
-* Refer back to the forms and form validation section to get the best practices for forms, labels, and inputs.
+* Refer back to the [forms and form validation](/code/forms) section to get the best practices for forms, labels, and inputs.
 * A search bar should be set up in a form as paired label and input.
 * Using a submit button to search decreases the number of keystrokes necessary to use the form.
 * Always include an ARIA `role='search'` somewhere on the form/fieldset.
