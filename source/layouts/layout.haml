@@ -31,15 +31,30 @@
 
     = partial "partials/_site-header"
 
-    - if not current_resource.data.is_different
-      %main.main-content{role: 'main'}
-        .container.accesibility-content
-          = partial "partials/_aside-nav"
-          .primary-content{:id => "content"}
-            = yield
-    - else
-      =yield
-      
+    %main.main-content{role: 'main'}
+      .container.accesibility-content
+        = partial "partials/_aside-nav"
+        .primary-content{:id => "content"}
+          = yield
+
+    - if current_resource.data.include_modal
+      :plain
+        <div class='modal-wrapper' aria-hidden='true' aria-describedby='modalDescription' role='dialog'>
+          <div class='modal-content'>
+            <div class='screenreader-text' id='modalDescription'>
+              This is a dialog window which overlays the main content of the page. The modal begins with a heading 1 called &quot;Interesting Modal Title&quot;. Pressing the Close Modal button at the bottom of the modal will close the modal and bring you back to where you were on the page.
+            </div>
+            <h1 id='modaltitle' tabindex='0'>
+              Interesting Modal Title
+            </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut maxime voluptatibus fuga odit dignissimos quo quia dolor ipsam aliquid, at dicta incidunt numquam eius provident. Ratione, alias quaerat laborum dolor.
+            </p>
+            <button class='close-modal'> Close Modal</button>
+          </div>
+        </div>
+
+
     = partial "partials/_site-footer"
 
     = javascript_include_tag 'all.js'

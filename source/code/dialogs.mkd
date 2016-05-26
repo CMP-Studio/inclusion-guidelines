@@ -1,0 +1,171 @@
+---
+title: Modals | Accessibility Guidelines
+include_modal: true
+modal_content: "
+  <div class='modal-wrapper' aria-hidden='true' aria-describedby='modalDescription' role='dialog'>
+  <div class='modal-content'>
+    <div class='screenreader-text' id='modalDescription'>
+      This is a dialog window which overlays the main content of the page. The modal begins with a heading 1 called &quot;Interesting Modal Title&quot;. Pressing the Close Modal button at the bottom of the modal will close the modal and bring you back to where you were on the page.
+    </div>
+    <h1 id='modaltitle' tabindex='0'>
+      Interesting Modal Title
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut maxime voluptatibus fuga odit dignissimos quo quia dolor ipsam aliquid, at dicta incidunt numquam eius provident. Ratione, alias quaerat laborum dolor.
+    </p>
+    <button class='close-modal'> Close Modal</button>
+  </div>
+</div>"
+---
+
+## Modals (Dialog Windows)
+
+Generally, modals are pieces of text that pop up inside of the main web page window, prompting you to an action or giving you a reminder. Modals should be used sparingly. Much like alerts, they disrupt the flow of what a user is doing if they cannot control the opening of a modal. If the user can control the opening and closing of the modal with buttons, that is a much better alternative.
+
+UX Movement notes that modals should be used
+
+> when there are steps the user needs to do before the task can be completed. Using a modal window instead of a full page allows users to maintain the context of their task".
+> -Anthony, 03/23/11
+
+### Best Practices
+
+The following best practices discuss an instance where, when the modal is open, a screen reader cannot interact with the modal overlay and the main content behind the modal--only the modal itself.
+
+This is adapted from [The Incredible Accessible Modal Window](https://accessibility.oit.ncsu.edu/training/aria/modal-window/version-3/).
+
+#### Page layout and button-controlled modal
+
+* For a modal that effectively overlays all the other main content on the page and does not allow a screen reader interact with the main content behind the modal -- you should have two main sections within your `body` tag: one for your main content and one for your modal.
+
+  - Example layout:
+
+  ```html
+  <body>
+    <main>
+      …all content for page other than modal…
+      <button> Activate Modal </button>
+    </main>
+    <div class='modal'>
+      <Modal Content>
+    </div>
+  </body>
+  ```
+
+* From the example layout above, you can see we have also included a button within the main content which will activate the modal.
+
+* Upon clicking the modal-activating button, all the main content should get an `aria-hidden='true'` attribute so that a screen reader will no longer read any of the content. Additionally, the modal should get an `aria-hidden='false'` and go from having `{display: none;}` to `{display: block;}`.
+
+#### Modal
+
+* After the modal `aria-hidden` attribute has been set to false and it's display value is set to block, there are a few more steps we need to take to make sure a user can only interact with the modal while it is open.
+
+* Setting the main content to `aria-hidden='true'` tells the screen reader to stop reading the content there, but does not prevent a user from tabbing around the main content (so a user could be tabbing around the main content with an `aria-hidden='true'` without getting any audio feedback which would be very frustrating).
+
+* Give the modal an ARIA `aria-describedby` attribute which will be linked to the `id` of some visually hidden text which describes the modal's function, and how to exit it. A screen reader will read this information upon being focused on the modal.
+
+  - Ex.
+  ```html
+  <div class='modalWrapper' aria-describedby='modalDescription'>
+    <div class='modal-content'>
+      <div class='screenreader-text' id='modalDescription'>
+      This is a dialog window which overlays the main content of the page. The modal begins with a heading 1 called &quot;Interesting Modal Title&quot;. Pressing the Close Modal button at the bottom of the modal will close the modal and bring you back to where you were on the page.
+      </div>
+      <More content>
+    </div>
+  </div>
+  ```
+
+#### Setting Focus with jQuery
+
+* When a user clicks the 'Open Modal' button then, we need to actively set their focus to the modal with JavaScript, and if they ever tab outside the modal, we need to set the focus back on the modal.
+
+* Using jQuery `.focus()` function, we can set focus to any tab-able elements (such as links, inputs, and buttons which by their nature, are already tab-able).
+
+* If we would like to set the user's focus on a heading inside the modal, though, (an inherently non-tab-able element) we need to mess with tabindex a bit.
+
+  - Altering the inherent `tabindex` of elements is not advised, but for this example, we really want a user be focused to the top of the modal, which is generally a heading.
+
+* If you give any HTML element `tabindex='0'`, it will fall into the natural tab order of keyboard users and screen readers.
+So, give your heading a `tabindex='0'` so we can focus on it with jQuery.
+
+  - Ex. `<h3 tabindex='0'> Modal Heading </h3>`
+
+* Additionally, we will create a jQuery function which will watch for the user to tab outside the modal, and immediately focus them back in on the modal, or the close button inside the modal.
+
+* Lastly, upon clicking the 'Close' button inside the modal, we set the user's focus back to modal-activating button inside the main content so they are brought back to the same place on the page as where they began.
+
+We adapted these code snippets and live example from [The Incredible Accessible Modal Window](https://accessibility.oit.ncsu.edu/training/aria/modal-window/version-3/) website.
+
+```html
+<div id="mainPage" aria-hidden="true" role="main">
+  # where all main content for rest of page is.
+</div>
+
+<div id='modal' aria-hidden='false' aria-labelledby='modalTitle' aria-describedby='modalDescription' role='dialog'>
+  <div id='modalDescription' class='screen-reader-offscreen'>Beginning of dialog window. It begins with a heading 1 called &quot;Registration Form&quot;. Escape will cancel and close the window. This form does not collect any actual information.</div>
+
+  <h1 id='modalTitle' tabindex='0'>Registration Form</h1>
+  <p>These are the onscreen instructions that are not attached explicitly to a focusable element. Can screen reader users read this text with the virtual cursor?</p>
+
+  <button id='modalCloseButton' class="modalCloseButton" title='Close registration form'>
+    <img id='cancel' src='x.png' alt='close the registration form'>
+  </button>
+</div>
+```
+
+
+```javascript
+var $modalTrigger = $('.modal-button'),
+$modalContent = $('.modal-content'),
+$modalWrapper = $('.modal-wrapper'),
+$modalClose = $('.close-modal'),
+$modalTitle = $('#modalTitle');
+$mainContent = $('.main-content');
+
+function setModalButton() {
+  $modalTrigger.on("click", function(e){
+    $mainContent.attr('aria-hidden', 'true');
+    $modalWrapper.attr('aria-hidden', 'false');
+    $modalWrapper.css('display', 'block');
+    $modalTitle.focus();
+    deflectFocus();
+  });
+};
+
+function setModalClose() {
+  $modalClose.on("click", function(e){
+    $modalWrapper.attr('aria-hidden', 'true');
+    $modalWrapper.css('display', 'none');
+    $mainContent.attr('aria-hidden', 'false');
+    $modalTrigger.focus();
+    $mainContent.off('.modalOpen');
+  });
+};
+
+function deflectFocus() {
+  $mainContent.on('focusin.modalOpen', function(e) {
+    $modalClose.focus();
+  });
+};
+
+setModalButton();
+setModalClose();
+```
+
+### Live Example
+
+<button class='modal-button'> Open Modal </button>
+
+## Tools &amp; Resources
+
+* [Design Patterns: expected keyboard behaviors (W3C)](https://www.w3.org/TR/wai-aria-practices/#aria_ex)
+
+* [The Incredible Accessible Modal Window](https://accessibility.oit.ncsu.edu/training/aria/modal-window/version-3/)
+
+* [ARIA Dialog Example (Modal)](http://accessibility.athena-ict.com/aria/examples/dialog.shtml)
+
+* [Best Practices for Modal Windows](http://uxmovement.com/forms/best-practices-for-modal-windows/)
+
+* [Making Elements Focusable with Tabindex](http://snook.ca/archives/accessibility_and_usability/elements_focusable_with_tabindex)
+
+* [US Web Design Standards: Alerts](https://standards.usa.gov/alerts/)
