@@ -1,5 +1,5 @@
 ---
-title: Seizures | Accessibility Guidelines
+title: Animations | Accessibility Guidelines
 ---
 ## Flashing Animations and Parallax
 
@@ -12,7 +12,7 @@ Animations with flickers or movement can trigger epileptic seizures.
 
 #### To reduce the risk of seizures:
 * Keep motion animations to an absolute minimum.
-* Reduce contract for any flashing content.
+* Reduce contrast for any flashing content.
 * Avoid fully saturated reds for any flashing content.
 * Provide a mechanism to suppress rapid flashes.
 

@@ -10,11 +10,18 @@ Make clickable elements large, and put space between them. Avoid clickable page 
 #### Links
 
 * **Link text**: Make the link text describe its purpose and destination. If you are linking to something from an image or icon, supply a title attribute to give people who use screen readers some context.
-* **New window or tab**: If a link opens a new tab, or takes the user out of the current format or application, that action should be indicated by the link text. It can be disorienting to users – especially those with cognitive, sight, or mobility problems – to unexpectedly open an item in a new format or application.
-* **Link styling**: Links should look like links. All links should be underlined at least, and users should be able to identify links without relying on color alone.
-* **Navigation**: Users should be able to tab to navigate between links, and active a link by pressing "Enter" on the keyboard. They should be able to activate hover and focus states with both a mouse and a keyboard.
-* **Title attribute**: If the link is surrounding an image or another element, provide a title attribute in your a tag that says where the link will redirect the user. However, do not rely on this method too thoroughly, since some screen readers will not read the a tag title attribute.
-    * Ex. `<a href='/blog' title='More blog posts by this author'> <img/> </a>`
+* **Link styling**: To clearly indicate links, underline them when possible. There should be some visual state change other than color when hovering or focusing on links. Do not rely on color or color changes alone to indicate links.
+* **Navigation**: Users should be able to tab to navigate between links, and active a link by pressing "Enter" on the keyboard. They should be able to activate hover and focus states with either a mouse or a keyboard.
+* **Linked Images**: Images that are used as the link text for a link should have especially descriptive alt text, as it will be used as the link text for the link by screenreaders. The text of the image's alt attribute, followed by the word "link" will be announced as the link text for the link.
+* **New window or tab**: If a link opens a new tab, or takes the user out of the current format or application, that action should be indicated by the link text. It can be disorienting to users – especially those with cognitive, sight, or mobility problems – to unexpectedly open an item in a new format or application. Indicate either via contextual text near the links, or (preferably) with very clear link text, where links lead, and how they will open. If you need to add contextual text to the link text, consider using a nested tag that is visually hidden for sighted users. An example is given below.
+
+```html
+Check out these
+<a target='_blank' href='searchresults.com'>
+  Search results!
+  <span class='screenreader-text'>(Link opens in a new tab)</span>
+</a>
+```
 
 #### Buttons vs. Links
 Screen readers handle links slightly differently than they do buttons. All links and buttons are tab-able, but pressing the Space key or Enter triggers a button, whereas pressing the Enter key only triggers a link.
@@ -24,7 +31,6 @@ Screen readers handle links slightly differently than they do buttons. All links
 * **Navigation**: If you want a user to navigate to a new page or to a different target on the same page, use an anchor element `<a>`.
 
 ### Tools &amp; Resources
-* [How to Use Link TITLE Attribute Correctly] ('https://www.searchenginejournal.com/how-to-use-link-title-attribute-correctly/')
+* [How to Use Link TITLE Attribute Correctly] (https://www.searchenginejournal.com/how-to-use-link-title-attribute-correctly/)
 * [Proper Use of Buttons and Links] (http://www.webaxe.org/proper-use-buttons-links/)
-
 

@@ -5,7 +5,7 @@ title: Keyboard Access | Accessibility Guidelines
 ## Keyboard Access
 Your website must be fully accessible via keyboard, meaning that all interactions and information that can be accessed with a mouse, must be accessible with just a keyboard.
 
-To implement this technique, identify all functions on the page. Consider functions performed using both the mouse and keyboard together.
+To [implement](http://google.com "google this") this technique, identify all functions on the page. Consider functions performed using both the mouse and keyboard together.
 
 Examples of functionality include:
 
@@ -29,7 +29,6 @@ Once you have determined functionality, verify that each of the functions identi
 3. Make sure the tab order of the page is logical and follows the visual order of elements on the page. This means you should not rearrange the HTML structure of the page with CSS.
 4. Check that the focus is always visible when moving through the page with the tab key.
 5. Make sure you can use and dismiss modal dialog boxes, lightboxes, or other pop-ups through the keyboard use.
-6. Make sure all title tags are available through keyboard access, and that no title tags are exposed only by hovering with the mouse.
 
 ### Tools & Resources
 * [Ensuring keyboard control for all functionality](https://www.w3.org/TR/WCAG20-TECHS/G202.html)
