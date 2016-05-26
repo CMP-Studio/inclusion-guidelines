@@ -7,7 +7,7 @@ modal_content: "
     <div class='screenreader-text' id='modalDescription'>
       This is a dialog window which overlays the main content of the page. The modal begins with a heading 1 called &quot;Interesting Modal Title&quot;. Pressing the Close Modal button at the bottom of the modal will close the modal and bring you back to where you were on the page.
     </div>
-    <h1 id='modaltitle' tabindex='0'>
+    <h1 id='modal-title' tabindex='0'>
       Interesting Modal Title
     </h1>
     <p>

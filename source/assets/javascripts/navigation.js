@@ -138,6 +138,9 @@ function getPathName() {
   }
 };
 
-getPathName();
-toggleUtilityMenu();
-toggleMenu();
+
+$(document).ready(function(){
+  getPathName();
+  toggleUtilityMenu();
+  toggleMenu();
+});

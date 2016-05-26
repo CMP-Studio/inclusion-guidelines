@@ -2,7 +2,7 @@ var $modalTrigger = $('.modal-button'),
     $modalContent = $('.modal-content'),
     $modalWrapper = $('.modal-wrapper'),
     $modalClose = $('.close-modal'),
-    $modalTitle = $('#modalTitle');
+    $modalTitle = $('#modal-title');
     $mainContent = $('.main-content');
 
 function setModalButton() {
@@ -26,10 +26,15 @@ function setModalClose() {
 };
 
 function deflectFocus() {
+  console.log('this is working 1');
   $mainContent.on('focusin.modalOpen', function(e) {
+    console.log('this is working 2');
     $modalClose.focus();
+
   });
 };
 
-setModalButton();
-setModalClose();
+$(document).ready(function(){
+  setModalButton();
+  setModalClose();
+});

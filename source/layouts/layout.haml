@@ -31,14 +31,14 @@
 
     = partial "partials/_site-header"
 
+    - if current_resource.data.include_modal
+      = current_resource.data.modal_content
+
     %main.main-content{role: 'main'}
       .container.accesibility-content
         = partial "partials/_aside-nav"
         .primary-content{:id => "content"}
           = yield
-
-    - if current_resource.data.include_modal
-      = current_resource.data.modal_content
 
     = partial "partials/_site-footer"
 
