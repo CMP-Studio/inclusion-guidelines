@@ -41,7 +41,7 @@ The different landmark roles you can use are as follows, copied from the [W3C Wi
 * **application:** A region declared as a web application, as opposed to a web document. (note: The role of application should only be used with caution because it gives a signal to screen reading software to turn off normal web navigation controls. Simple widgets should generally not be given the application role, nor should an entire web page be given the application role, unless it is not to be used at all like a web page, and not without much user testing with assistive technology.)
 
 #### Document ARIA Roles
-Document roles describe the structure of the content on the page, as opposed to the structure of the whole page, which landmark roles describe. The roles that are starred are the ones we think are the most common document aria roles, and the ones which are useful to think about including in your HTML.
+Document roles describe the structure of the content on the page, as opposed to the structure of the whole page, which landmark roles describe. The roles in bold are the ones we think are the most common document aria roles, and the ones which are useful to think about including in your HTML.
 
 * **article:** A section of a page that consists of a composition that forms an independent part of a document, page, or site.
 * columnheader

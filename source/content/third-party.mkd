@@ -7,12 +7,12 @@ For any website, as content editors and developers, we end up wanting to link ou
 
 ### Best Practices
 #### iFrames
-There is no way to guarantee the accessibility of third party embeds, applications, and widgets.  Make sure to do some research on the website embeds or widgets you are thinking about using and try them out with a screen reader (try Chrome Vox, VoiceOver to name a few free ones) and your keyboard.
+There is no way to guarantee the accessibility of third party embeds, applications, and widgets.  Make sure to do some research on the website embeds or widgets you are thinking about using and try them out with a screen reader (try Chrome Vox or VoiceOver as free options), and your keyboard.
 
 Here are few ways you can attempt to provide more accessibility for an iFrame or embed you are hoping to use:
 
-* <span class="text-bold">Title attribute</span>: always provide one.
-* <span class="text-bold">Link to site</span>: think about linking to the social media platform, or third party website with clear link text rather than presenting content you know is inaccessible on your website.
+* **Title attribute**: always provide one.
+* **Link to site**: think about linking to the social media platform, or third party website with clear link text rather than presenting content you know is inaccessible on your website.
 
 #### Twitter embedded timelines
 Twitter has done substantial work to ensure their timelines you can embed are accessible. Perkins school for the blind currently uses their embed.

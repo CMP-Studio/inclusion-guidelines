@@ -12,7 +12,7 @@ These best practices have used substantial information from the [US design stand
 
 #### Form Layout
 
-* A set of input fields within a form should be grouped by fieldset elements if they are related.
+* A set of `input` fields within a form should be grouped by `fieldset` elements if they are related.
 
 * Do not use auto-advance in your form. (This is terrible for people with disabilities -- don't do it)!
 
@@ -22,11 +22,11 @@ These best practices have used substantial information from the [US design stand
 
 * Ensure that your color/contrast ratios and typography are accessible.
 
-* Each fieldset should have a legend element (directly under the first fieldset tag) that describes the grouping.
+* Each `fieldset` should have a `legend` element (directly under the first `fieldset` tag) that describes the grouping.
 
 * These practices give screen readers and users of AT more information about the form, allowing them to better fill it out.
 
-* Every input element in a form should have a related label. It seems from general practice that labels can either precede input elements, or wrap them.
+* Every `input` element in a `form` should have a related `label`. It seems from general practice that `label` elements can either precede `input` elements, or wrap them.
 
 * Your form submission button should have `type="submit"` and have, like all buttons, a clear, actionable title. Do not use auto-submission after the user has filled out the last input.
 
@@ -34,15 +34,15 @@ These best practices have used substantial information from the [US design stand
 
 #### Form Inputs
 
-This information applies to all sorts of valid inputs: text inputs, text areas, telephone numbers, address entry, selects, checkboxes, radio buttons, and date inputs (we have specifics on some of these types of inputs below).
+This information applies to all sorts of valid inputs: text inputs, `textarea` elements, telephone numbers, address entry, `select` elements, checkboxes, radio buttons, and date inputs (we have specifics on some of these types of inputs below).
 
-* As said above, all form inputs should have a related, unique label that either precedes it, or wraps it. (The label `for` attribute should match the input's `id` element).
+* All form inputs should have a related, unique `label` that either precedes it, or wraps it. The label `for` attribute should match its input's `id` element, regardless of whether it wraps the element or not.
 
-* If the input is required, put "Required", "(required)", or "*" within a span in the label
+* If the input is required, put "Required", "(required)", or "*" within a `span` in the label
 
   - Ex. `<label for="name">First Name <span>(required)</span></label>`
 
-  - Also, within the input, include a `required=""` attribute so that you can use JavaScript form validation. (If you use both the `required` and `aria-required` attributes in the input element, oftentimes a screen reader will end up reading required twice which is a bit annoying).
+  - Also, within the `input`, include a `required=''` attribute so that you can use JavaScript form validation. (If you use both the `required` and `aria-required` attributes in the `input` element, oftentimes a screen reader will end up reading required twice which is a bit annoying).
 
   - Also, for required inputs, you can include regular expression pattern information, or even `max-length` of characters in the input attributes, which many screen readers can understand.
 
@@ -60,8 +60,8 @@ This information applies to all sorts of valid inputs: text inputs, text areas, 
 
 #### Checkboxes, Radio Buttons
 
-* All related checkboxes should be surrounded by a fieldset with a legend tag.  The same goes for a set of related radio buttons.
-However, for a single checkbox, or single radio button, do use a fieldset and legend.
+* All related checkboxes should be surrounded by a `fieldset` with a `legend` tag.  The same goes for a set of related radio buttons.
+However, for a single checkbox, or single radio button, do use a `fieldset` and `legend`.
 
 #### Date input
 

@@ -24,9 +24,9 @@ SVG (Scalable Vector Graphics) seems to be the future of web graphics. A vector-
 
 * In the output XML for the SVG, include a title tag directly below the svg tag.
 
-* The title for an SVG should be brief, much like an alt tag for an image.
+* The `<title>` tag for an SVG should be brief, much like an `alt` attribute for an image.
 
-* In the SVG tag, include an `aria-labelledby` attribute that points to the title tag.
+* In the SVG tag, include an `aria-labelledby` attribute that points to the `<title>` tag.
 
 * If there is more than one shape, it can be a good idea to include a title tag for each shape group.
 
@@ -43,7 +43,7 @@ SVG (Scalable Vector Graphics) seems to be the future of web graphics. A vector-
     <title id="title" lang="en">Red Rectangle</title>
       <g>
         <rect x="0" y="0" width="100" height="50" fill="red" />
-      </g>    
+      </g>
   </svg>
 ```
 

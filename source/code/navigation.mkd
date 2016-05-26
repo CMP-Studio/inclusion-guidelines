@@ -12,11 +12,14 @@ Navigation becomes more complicated when we move to tablet and mobile views. Wit
 ##### Horizontal, Desktop Navigation
 
 * Code your navigation using link tags.
-* Put your links within an unordered list structure so that a screen reader will read out how many things are in the list to give visually impaired the most information possible about the content's of the navigation.
-* Use the semantic `<nav>` tag around your unordered list and links with an ARIA `role="navigation"` attribute.
-  - Testing this navigation with [Chrome Vox](http://www.chromevox.com/), we found that without an ARIA role attribute, the screen reader would not read any other ARIA attributes--for this reason, it seems ARIA roles are crucial for screen readers.
-* Optionally, attach an ARIA label attribute to your navigation to give users of AT as much information as possible (especially if there are multiple navigations on your site).
-  - [Perkins School for the Blind website](http://www.perkins.org/), for example, has three sets of navigation and uses an ARIA label and `role="navigation"` for each (the ARIA labels are: 'Utility Navigation,' 'Accessibility Navigation,' and 'Main Navigation').
+
+* Put your links within an unordered list structure so that a screen reader will read out how many things are in the list to give visually impaired useres the most information possible about the contents of the navigation.
+
+* Use the semantic `<nav>` tag around your unordered list and links with an ARIA `role='navigation'` attribute.
+  - Testing this navigation with Chrome Vox, we found that without an ARIA `role` attribute, the screen reader would not read any other aria attributes--for this reason, it seems ARIA roles are crucial for screen readers.
+
+* Optionally, attach an `aria-label` attribute to your navigation to give users of AT as much information as possible (especially if there are multiple navigations on your site).
+  - [Perkins School for the Blind website](http://www.perkins.org/), for example, has three sets of navigation and uses an `aria-label` and `role='navigation'` for each (the ARIA labels are: 'Utility Navigation,' 'Accessibility Navigation,' and 'Main Navigation').
 
 ```html
   <nav class="primary-nav primary-nav--narrow">
@@ -36,11 +39,11 @@ Mobile navigation often acts in very similar ways to accordions on websites. For
 
 ######  Mobile Trigger, Hamburger Button
 
-* Use a button tag for your mobile navigation trigger; if you must use another HTML element, ensure that you use ARIA `role="button"` so screen readers will know it is clickable.
-* If your button has only an image, icon, or vague link text, put an ARIA label on your trigger/hamburger. (Keep in mind that if you use an aria-label, a screen reader will only read the label and not the button text most times).
-* For example, you can have: `aria-label='Mobile Navigation Trigger'` or `'Open Menu'`
+* Use a `button` tag for your mobile navigation trigger; if you must use another HTML element, ensure that you use the ARIA attribute `role='button'` so screen readers will know it is clickable.
+* If your button has only an image, icon, or vague link text, put an `aria-label` on your trigger/hamburger. (Keep in mind that if you use an `aria-label`, a screen reader will only read the label and not the button text most times).
+* For example, you can have: `aria-label='Mobile Navigation Trigger'` or 'Open Menu.'
 * Additionally, if you really want to be specific, you can toggle your button's text between 'Open Menu' and 'Close Menu' with JavaScript.
-* Add and toggle an ARIA expanded attribute to your button letting the user know if the content the button controls is expanded or not.
+* Add and toggle an `aria-expanded` attribute to your button letting the user know if the content the button controls is expanded or not.
 
 ```html
   <section class="mobile-navigation">
@@ -53,7 +56,7 @@ Mobile navigation often acts in very similar ways to accordions on websites. For
 
 ###### Navigation List (generally hidden)
 
-* This should follow all of the characteristics of the horizontal menu specified above, including that is has a semantic nav tag wrapping a list of links with a `role='navigation'` attribute, and uses an `aria-label` to describe its purpose.
+* This should follow all of the characteristics of the horizontal menu specified above, including that is has a semantic `nav` tag wrapping a list of links with a `role='navigation'` attribute, and uses an `aria-label` to describe its purpose.
 * If you have your navigation hidden on mobile views, use: `{display: none;}` so that screen readers can also not read it (if you use `{visibility: hidden;}`, screen readers can still sometimes read that).
 * Additionally, you can use an ARIA `aria-hidden='true'` attribute to ensure screen readers will not be reading your hidden content, though this is often unnecessary if you are using `{display: none;}`*.
 * If using an `aria-hidden` attribute, toggle this property upon showing and hiding the navigation.
@@ -78,4 +81,4 @@ Mobile navigation often acts in very similar ways to accordions on websites. For
 * [Simply Accessible Website](http://simplyaccessible.com/)
 * [Ethically Accessible](https://seesparkbox.com/foundry/ethically_accessible)
 
-\* For navigation that moves to mobile navigation, with perhaps a `display: none;` nav list, it is actually not commonly accepted to use `aria-hidden` attributes anymore. We asked someone in the a11y slack room, and they told us that "if you're already [applying `display: none;`] to stuff, you generally won't need [`aria-hidden`] anyway."
+\* For navigation that moves to mobile navigation, with perhaps a `display: none;` nav list, it is actually not commonly accepted to use `aria-hidden` attributes anymore. We asked someone in the a11y slack room, and they told us that "if you're already [applying `display: none;`] to elements, you generally won't need [`aria-hidden`] anyway."
