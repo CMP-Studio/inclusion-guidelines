@@ -67,6 +67,9 @@
         cursor: pointer;
         background-color: lighten($footer-color, 8%);
       }
+      .icon-expand {
+        float: right;
+      }
     }
 
     &:first-of-type {
@@ -127,7 +130,9 @@
 
 .side-nav-trigger {
   display: block;
-  border: 1px solid $background-color;
+  border: none;
+  font-family: "Merriweather", serif;
+  font-size:0.8em;
   background-color: transparent;
   color: $background-color;
   padding: 0em;

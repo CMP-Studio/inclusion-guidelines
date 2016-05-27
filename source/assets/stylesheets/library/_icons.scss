@@ -1,0 +1,26 @@
+@mixin icon-base {
+  background-size: contain;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  vertical-align: middle;
+  margin-right: 0.25em;
+
+  .no-object-fit & {
+    background-size: 100% 100%;
+  }
+}
+
+%icon-base {
+  @include icon-base;
+}
+
+$icons:
+expand,
+menu;
+
+@each $icon in $icons {
+  .icon-#{$icon} {
+    @extend %icon-base;
+  }
+}
