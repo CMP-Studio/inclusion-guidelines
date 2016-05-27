@@ -75,7 +75,7 @@ However, for a single checkbox, or single radio button, do use a `fieldset` and 
 
 * The US Design Standards states that for an input which required a month, day, and year, "Three text fields are the easiest way for users to enter most dates."
 
-
+### Code Snippets
 ```html
 <form class="form-example" method="post">
   <fieldset>
@@ -88,26 +88,139 @@ However, for a single checkbox, or single radio button, do use a `fieldset` and 
       </span>
 
       <span class="error-message">
-        You must input a real name.
+          You must input a real name.
       </span>
-    </label>
 
-    <input id="full-name" name="full-name" required="" type="text">
+      <input id="full-name" name="full-name" required="" type="text">
+
+    </label>
 
     <label for="email">
       Email
       <span class="required">
         (required)
       </span>
+
       <span class="error-message">
         The email address you entered is not valid.
       </span>
+
+      <input id="email" name="email" required="" type="email">
+
     </label>
 
-    <input id="email" name="email" required="" type="email">
-
-    <button type="submit">Submit</button>
   </fieldset>
+
+  <fieldset>
+    <legend>Credit Card Information</legend>
+
+    <label for="cc">
+      Credit Card Number
+      <span class="required">
+        (required)
+      </span>
+
+      <span class="error-message">
+          Your credit card number should be all numbers.
+      </span>
+
+      <input id="cc" name="cc" required="" type="text" minlength='13' maxlength='20' pattern='\s*[0-9]+-?\s*[0-9]+-?\s*[0-9]+-?\s*[0-9]+-?\s*'>
+
+    </label>
+  </fieldset>
+
+  <fieldset>
+    <label for='text-comments'>
+      Please leave your comments or questions here
+      <span class="required">
+        (required)
+      </span>
+
+      <span class="error-message">
+        Please give us a little more information about your inquiry.
+      </span>
+
+      <textarea id='text-comments' required=''></textarea>
+    </label>
+  </fieldset>  
+
+  <fieldset>
+    <legend id='legend' tabindex='0'>Can we add you to our email mailing list? <span class="required">(required)</span></legend>
+
+    <ul>
+      <li>
+        <label for="yes">
+          <span class="error-message">
+            Please select yes or no.    
+          </span>
+
+          <input id="yes" required="" type="radio" name="answers" value="yes">
+        
+          Yes
+        </label> 
+      </li>
+      <li>
+        <label for="no">            
+          <input id="no" type="radio" name="answers" value="no">
+
+          No
+        </label> 
+      </li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+    <legend id='legend' tabindex='0'>Which topics interest you? <span class="required">(required)</span></legend>
+
+    <ul>
+      <li>
+        <label for="science">
+          <span class="error-message">
+            Please select at least one category.    
+          </span>
+
+          <input id="science" required="" type="checkbox" name="categories" value="science">
+
+          Science
+        </label> 
+      </li>
+      <li>
+        <label for="children-programs">
+          <input id="children-programs" required="" type="checkbox" name="categories" value="children-programs">
+
+          Programs for Children
+        </label> 
+      </li>
+      <li>
+        <label for="new-events">
+          <input id="new-events" required="" type="checkbox" name="categories" value="new-events">
+
+          New Events
+        </label> 
+      </li>
+    </ul>
+  </fieldset>
+
+  <fieldset>
+    <legend> Choose from the following:</legend>
+    <label for="options">Dropdown label
+      <span class="required">
+        (required)
+      </span>
+
+      <span class="error-message">
+        Please choose one of the following options.
+      </span>
+      <select name="options" id="options" required=''>
+        <option value=''> Select </option>
+        <option value="value1">Option A</option>
+        <option value="value2">Option B</option>
+        <option value="value3">Option C</option>
+      </select>
+    </label>
+  </fieldset>
+
+  <button class='form-example-submit' type="submit">Submit Form</button>
 </form>
 ```
 
@@ -166,7 +279,7 @@ $(document).ready(function(){
   handleFormSubmission();
 });
 ```
-#### Live Example
+### Live Example
 
 <div class=constrained-form>
   <form class="form-example" method="post">
@@ -204,6 +317,24 @@ $(document).ready(function(){
     </fieldset>
 
     <fieldset>
+      <legend>Credit Card Information</legend>
+
+      <label for="cc">
+        Credit Card Number
+        <span class="required">
+          (required)
+        </span>
+
+        <span class="error-message">
+            Your credit card number should be all numbers.
+        </span>
+
+        <input id="cc" name="cc" required="" type="text" minlength='13' maxlength='20' pattern='\s*[0-9]+-?\s*[0-9]+-?\s*[0-9]+-?\s*[0-9]+-?\s*'>
+
+      </label>
+    </fieldset>
+
+    <fieldset>
       <label for='text-comments'>
         Please leave your comments or questions here
         <span class="required">
@@ -228,16 +359,48 @@ $(document).ready(function(){
               Please select yes or no.    
             </span>
 
+            <input id="yes" required="" type="radio" name="answers" value="yes">
+          
             Yes
-
-            <input id="yes" required="" type="radio" name="positive" value="yes">
           </label> 
         </li>
         <li>
-          <label for="no">
+          <label for="no">            
+            <input id="no" type="radio" name="answers" value="no">
+
             No
-            
-            <input id="no" type="radio" name="positive" value="no">
+          </label> 
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend id='legend' tabindex='0'>Which topics interest you? <span class="required">(required)</span></legend>
+
+      <ul>
+        <li>
+          <label for="science">
+            <span class="error-message">
+              Please select at least one category.    
+            </span>
+
+            <input id="science" required="" type="checkbox" name="categories" value="science">
+
+            Science
+          </label> 
+        </li>
+        <li>
+          <label for="children-programs">
+            <input id="children-programs" required="" type="checkbox" name="categories" value="children-programs">
+
+            Programs for Children
+          </label> 
+        </li>
+        <li>
+          <label for="new-events">
+            <input id="new-events" required="" type="checkbox" name="categories" value="new-events">
+
+            New Events
           </label> 
         </li>
       </ul>
