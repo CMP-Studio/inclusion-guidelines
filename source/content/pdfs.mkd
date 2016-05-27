@@ -9,7 +9,7 @@ PDFs can be a convenient way to deliver print documents online, but they remain 
 To make PDFs more accessible, consider these recommendations:
 
 * <span class="text-bold">Text-based information</span>: In many cases the information in the PDFs can be converted to HTML content.
-* <span class="text-bold">Alternative formats</span>: Consider posting the file in another format, such as Microsoft Word or PowerPoint.
+* <span class="text-bold">Alternative formats</span>: Consider posting the file in additional formats, such as Microsoft Word or PowerPoint.
 * <span class="text-bold">If a PDF is mandated</span>: Generate a "tagged" PDF from a document source whenever possible. The specific method of doing so will vary on the original file format and the operating system. If you cannot generate an accessible PDF, use the repair tools in Adobe Acrobat to ensure accessibility.
 * <span class="text-bold">Link language</span>: Alert users when a link goes to a PDF file, e.g. "Meeting Minutes (PDF)".
 * <span class="text-bold">Scanning</span>: If possible, scan material with an OCR (optical character recognition) scanner, which converts a scanned image of text to an actual text file, rather than a series of inaccessible images.

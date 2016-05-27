@@ -4,7 +4,7 @@ title: SVG | Accessibility Guidelines
 
 ## SVG
 
-SVG (Scalable Vector Graphics) seems to be the future of web graphics. A vector-based, XML formatted image, SVGs are not dependent on resolution and are easily re-sized without degradation.  SVGs can be easily manipulated and animated with CSS and/or JavaScript.  SVG is thus great for responsive design and decreases page load time (as opposed to using JPG, JPEG, PNG, etc.). While SVG is not entirely supported by some IE browsers and Android/Windows phone native browsers, all points to the fact that it will be soon.
+SVG (Scalable Vector Graphics) seems to be the future of web graphics. A vector-based, XML formatted image, SVGs are not dependent on resolution and are easily re-sized without degradation.  SVGs can be easily manipulated and animated with CSS and/or JavaScript.  SVG is thus great for responsive design and decreases page load time (as opposed to using JPG, JPEG, PNG, etc.). While SVG is not entirely supported by some IE browsers and Android/Windows phone native browsers, indications are that it likely will be soon.
 
 ### Best Practices
 

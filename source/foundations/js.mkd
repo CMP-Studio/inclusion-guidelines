@@ -20,7 +20,7 @@ JavaScript is sometimes used to create visual interface elements that do not aff
 Such uses of JavaScript do not need additional accessibility features incorporated because important content is not displayed or functionality introduced by such scripting.
 
 ### JavaScript Reliance
-It is a common misconception that people with disabilities don't have or 'do' JavaScript, and thus, that it's acceptable to have inaccessible scripted interfaces, so long as it is accessible with JavaScript disabled. A 2012 survey by WebAIM of screen reader users found that 98.6% of respondents had JavaScript enabled. The numbers are even higher for users with low vision or motor disabilities. In short, people with disabilities will experience scripting, so scripted content must be made natively accessible.
+It is a common misconception that people with disabilities don't have JavaScript, and thus, that it's acceptable to have inaccessible scripted interfaces, so long as it is accessible with JavaScript disabled. A 2012 survey by WebAIM of screen reader users found that 98.6% of respondents had JavaScript enabled. The numbers are even higher for users with low vision or motor disabilities. In short, people with disabilities will experience scripting, so scripted content must be made natively accessible.
 
 Accessibility guidelines also require scripted interfaces to be accessible. While WCAG 1.0 from 1999 required that pages be functional and accessible with scripting disabled, WCAG 2.0 and all other modern guidelines allow you to require JavaScript, but the scripted content or interactions must be compliant with the guidelines.
 
