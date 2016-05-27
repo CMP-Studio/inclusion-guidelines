@@ -136,8 +136,8 @@ function handleFormSubmission(){
 
 
     $form = $(this).parents('form');
-    $inputs = $form.find('input[required]');
-
+    $inputs = $form.find('input[required], textarea[required], select[required]');
+      
     $inputs.each(function(index, input){
       errorMessageSelector = 'label[for="' + $(input).attr('id') + '"] .error-message';
       $form.find(errorMessageSelector).removeAttr('aria-live');
@@ -166,62 +166,82 @@ $(document).ready(function(){
   handleFormSubmission();
 });
 ```
+#### Live Example
 
+<div class=constrained-form>
+  <form class="form-example" method="post">
+    <fieldset>
+      <legend>Personal Information</legend>
 
-<form class="form-example" method="post">
-  <fieldset>
-    <legend>Personal Information</legend>
+      <label for="full-name">
+        Full Name
+        <span class="required">
+          (required)
+        </span>
 
-    <label for="full-name">
-      Full Name
-      <span class="required">
-        (required)
-      </span>
+        <span class="error-message">
+            You must input a real name.
+        </span>
 
-      <span class="error-message">
-          You must input a real name.
-      </span>
+        <input id="full-name" name="full-name" required="" type="text">
 
-      <input id="full-name" name="full-name" required="" type="text">
+      </label>
 
-    </label>
+      <label for="email">
+        Email
+        <span class="required">
+          (required)
+        </span>
 
-    <label for="email">
-      Email
-      <span class="required">
-        (required)
-      </span>
+        <span class="error-message">
+          The email address you entered is not valid.
+        </span>
 
-      <span class="error-message">
-        The email address you entered is not valid.
-      </span>
+        <input id="email" name="email" required="" type="email">
 
-      <input id="email" name="email" required="" type="email">
+      </label>
 
-    </label>
+    </fieldset>
 
-  </fieldset>
+    <fieldset>
+      <label for='text-comments'>
+        Please leave your comments or questions here
+        <span class="required">
+          (required)
+        </span>
 
-  <fieldset">
+        <span class="error-message">
+          Please give us a little more information about your inquiry.
+        </span>
 
-    <legend id='legend'>Can we add you to our email mailing list?<span class="required">(required)</span></legend>
+        <textarea id='text-comments' required=''></textarea>
+      </label>
+    </fieldset>  
 
-    <ul class="">
-      <li>
-        <label for="yes">
-          Yes
+    <fieldset>
+      <legend id='legend' tabindex='0'>Can we add you to our email mailing list? <span class="required">(required)</span></legend>
 
-          <input id="yes" required="" type="checkbox" name="positive" value="yes">
-        </label> 
-      </li>
-      <li>
-        <label for="no">
-          No
-          
-          <input id="no" required="" type="checkbox" name="positive" value="no">
-        </label> 
-      </li>
-    </ul>
+      <ul>
+        <li>
+          <label for="yes">
+            <span class="error-message">
+              Please select yes or no.    
+            </span>
+
+            Yes
+
+            <input id="yes" required="" type="radio" name="positive" value="yes">
+          </label> 
+        </li>
+        <li>
+          <label for="no">
+            No
+            
+            <input id="no" type="radio" name="positive" value="no">
+          </label> 
+        </li>
+      </ul>
+    </fieldset>
 
     <fieldset>
       <legend> Choose from the following:</legend>
@@ -230,21 +250,21 @@ $(document).ready(function(){
           (required)
         </span>
 
-         <span class="error-message">
+        <span class="error-message">
           Please choose one of the following options.
         </span>
         <select name="options" id="options" required=''>
+          <option value=''> Select </option>
           <option value="value1">Option A</option>
           <option value="value2">Option B</option>
           <option value="value3">Option C</option>
         </select>
       </label>
-    <fieldset>
+    </fieldset>
 
-  </fieldset>
-
-  <button type="submit">Submit Form</button>
-</form>
+    <button class='form-example-submit' type="submit">Submit Form</button>
+  </form>
+</div>
 
 #### CAPTCHAs
 

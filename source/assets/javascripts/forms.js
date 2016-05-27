@@ -1,5 +1,5 @@
 function handleFormSubmission(){
-  $('.form-example input').on('keyup', function(e){
+  $('.form-example input, .form-example select, .form-example textarea').on('keyup', function(e){
     $(this).addClass('edited');
   });
 
@@ -9,7 +9,7 @@ function handleFormSubmission(){
 
 
     $form = $(this).parents('form');
-    $inputs = $form.find('input[required]');
+    $inputs = $form.find('input[required], textarea[required], select[required]');
 
     $inputs.each(function(index, input){
       errorMessageSelector = 'label[for="' + $(input).attr('id') + '"] .error-message';
@@ -18,7 +18,7 @@ function handleFormSubmission(){
       error.css('display', 'none');
 
       if(!input.validity.valid){
-        error.css('display', 'inline-block');
+        error.css('display', 'block');
         shouldPrevent = true;        
         errorList.push(error);
         

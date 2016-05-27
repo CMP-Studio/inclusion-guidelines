@@ -126,12 +126,18 @@ cite {
   }
 
   ul {
-    list-style: disc;
+    list-style-type: disc;
     margin-top: 0.5em;
   }
 
   ol {
-    list-style: decimal;
+    list-style-type: decimal;
+  }
+
+  form {
+    ul li, ol li {
+      list-style-type: none;
+    }
   }
 }
 

@@ -8,6 +8,7 @@ input[type=submit] {
 input[type="submit"],
 button[type="submit"] {
   @include button-form;
+  margin-bottom: 1.2em;
 }
 
 input[type="search"],
@@ -17,7 +18,8 @@ input[type="text"],
 input[type="tel"],
 input[type="number"],
 input[type="url"],
-textarea {
+textarea, 
+select {
   display: block;
   margin-top: 0.25em;
   margin-bottom: 0.5em;
@@ -31,17 +33,17 @@ textarea {
   border: 1px $border-color solid;
 }
 
-input.edited {
+input.edited, textarea.edited, select.edited {
   &:invalid {
     box-shadow: 0 0 5px 1px red;
   }
 }
 
-input:valid {
+input:valid, textarea:valid, select:valid {
   box-shadow: 0 0 5px 1px lightgreen;
 }
 
-input:focus:invalid {
+input:focus:invalid, textarea:focus:invalid, select:focus:invalid {
   outline: none;
 }
 
@@ -49,13 +51,11 @@ input:focus:invalid {
   color: red;
   font-style: italic;
   display: none;
-}
+} 
 
 select {
   height: 3em;
   line-height: 2.5em;
-  border: 1px solid $border-color;
-  width: 100%;
 }
 
 form label {
