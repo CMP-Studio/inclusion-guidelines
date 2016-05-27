@@ -16,7 +16,7 @@ These best practices have used substantial information from the [US design stand
 
 * Do not use auto-advance in your form. (This is terrible for people with disabilities -- don't do it)!
 
-* Do not rearrange the order of the form, nor inputs, with CSS. (This can cause extreme confusion for screen readers, and their users).
+* Do not rearrange the order of the form, or inputs, with CSS. (This can cause extreme confusion for screen readers, and their users).
 
 * Ideally, present only one or two inputs per line for users with limited vision who have trouble scanning the screen horizontally.
 
@@ -26,7 +26,9 @@ These best practices have used substantial information from the [US design stand
 
 * These practices give screen readers and users of AT more information about the form, allowing them to better fill it out.
 
-* Every `input` element in a `form` should have a related `label`. It seems from general practice that `label` elements can either precede `input` elements, or wrap them.
+* Every `input` element in a `form` should have a related `label`. You can either have a hybrid `label`, which is recommended for accessibility, or an explicit `label`.
+    * **Hybrid labels**: These are labels which surround their associated input.
+    * **Explicit labels**: These are labels which precede or are adjacent to their corresponding input.
 
 * Your form submission button should have `type="submit"` and have, like all buttons, a clear, actionable title. Do not use auto-submission after the user has filled out the last input.
 
@@ -36,13 +38,15 @@ These best practices have used substantial information from the [US design stand
 
 This information applies to all sorts of valid inputs: text inputs, `textarea` elements, telephone numbers, address entry, `select` elements, checkboxes, radio buttons, and date inputs (we have specifics on some of these types of inputs below).
 
-* All form inputs should have a related, unique `label` that either precedes it, or wraps it. The label `for` attribute should match its input's `id` element, regardless of whether it wraps the element or not.
+* All form inputs should have a related, unique `label` that either wraps it, or precedes it. The label `for` attribute should match its input's `id` element, regardless of whether it wraps the element or not.
 
-* If the input is required, put "Required", "(required)", or "*" within a `span` in the label
+* Try to give all inputs a `type=''` attribute (types include email, tel, text, submit, etc.). When supported by a browser, they improve the experience of all users.
+
+* If the input is required, put "Required" or "(required)" within a `span` in the label. Consider not using "*" to indicate required inputs as it is often not read by screen readers.
 
   - Ex. `<label for="name">First Name <span>(required)</span></label>`
 
-  - Also, within the `input`, include a `required=''` attribute so that you can use JavaScript form validation. (If you use both the `required` and `aria-required` attributes in the `input` element, oftentimes a screen reader will end up reading required twice which is a bit annoying).
+  - Also, within the `input`, include an HTML5 `required=''` attribute so that you can use JavaScript form validation. (If you use both the HTML5 `required` and `aria-required` attributes in the `input` element, a screen reader will end up reading "required" twice, which is a bit annoying).
 
   - Also, for required inputs, you can include regular expression pattern information, or even `max-length` of characters in the input attributes, which many screen readers can understand.
 
@@ -62,6 +66,10 @@ This information applies to all sorts of valid inputs: text inputs, `textarea` e
 
 * All related checkboxes should be surrounded by a `fieldset` with a `legend` tag.  The same goes for a set of related radio buttons.
 However, for a single checkbox, or single radio button, do use a `fieldset` and `legend`.
+
+#### Select inputs
+
+* Selects are by far the most cognitively and technically challenging input. Consider using another input, such as a checkbox or radio button instead.
 
 #### Date input
 
@@ -91,7 +99,7 @@ However, for a single checkbox, or single radio button, do use a `fieldset` and 
       <span class="required">
         (required)
       </span>
-      <span class="error-message" role='alert' aria-live='polite'>
+      <span class="error-message">
         The email address you entered is not valid.
       </span>
     </label>
@@ -104,8 +112,10 @@ However, for a single checkbox, or single radio button, do use a `fieldset` and 
 ```
 
 ```css
-input:invalid {
-  box-shadow: 0 0 5px 1px red;
+input.edited {
+  &:invalid {
+    box-shadow: 0 0 5px 1px red;
+  }
 }
 
 input:focus:invalid {
@@ -116,19 +126,29 @@ JavaScript validation with jQuery:
 
 ```javascript
 function handleFormSubmission(){
+  $('.form-example input').on('keyup', function(e){
+    $(this).addClass('edited');
+  });
+
   $('.form-example [type="submit"]').on('click.formValidation', function(e){
     shouldPrevent = false;
+    errorList = [];
+
 
     $form = $(this).parents('form');
     $inputs = $form.find('input[required]');
 
     $inputs.each(function(index, input){
       errorMessageSelector = 'label[for="' + $(input).attr('id') + '"] .error-message';
+      $form.find(errorMessageSelector).removeAttr('aria-live');
       error = $form.find(errorMessageSelector);
+      error.css('display', 'none');
 
       if(!input.validity.valid){
         error.css('display', 'inline-block');
-        shouldPrevent = true;
+        shouldPrevent = true;        
+        errorList.push(error);
+        
       }
       else {
         error.css('display', 'none');
@@ -137,10 +157,14 @@ function handleFormSubmission(){
 
     if(!$form[0].checkValidity()){
       e.preventDefault();
+      errorList[0].attr('aria-live', 'assertive');
     }
   });
 }
-handleFormSubmission();
+
+$(document).ready(function(){
+  handleFormSubmission();
+});
 ```
 
 
@@ -155,26 +179,71 @@ handleFormSubmission();
       </span>
 
       <span class="error-message">
-        You must input a real name.
+          You must input a real name.
       </span>
-    </label>
 
-    <input id="full-name" name="full-name" required="" type="text">
+      <input id="full-name" name="full-name" required="" type="text">
+
+    </label>
 
     <label for="email">
       Email
       <span class="required">
         (required)
       </span>
+
       <span class="error-message">
         The email address you entered is not valid.
       </span>
+
+      <input id="email" name="email" required="" type="email">
+
     </label>
 
-    <input id="email" name="email" required="" type="email">
-
-    <button type="submit">Submit</button>
   </fieldset>
+
+  <fieldset">
+
+    <legend id='legend'>Can we add you to our email mailing list?<span class="required">(required)</span></legend>
+
+    <ul class="">
+      <li>
+        <label for="yes">
+          Yes
+
+          <input id="yes" required="" type="checkbox" name="positive" value="yes">
+        </label> 
+      </li>
+      <li>
+        <label for="no">
+          No
+          
+          <input id="no" required="" type="checkbox" name="positive" value="no">
+        </label> 
+      </li>
+    </ul>
+
+    <fieldset>
+      <legend> Choose from the following:</legend>
+      <label for="options">Dropdown label
+        <span class="required">
+          (required)
+        </span>
+
+         <span class="error-message">
+          Please choose one of the following options.
+        </span>
+        <select name="options" id="options" required=''>
+          <option value="value1">Option A</option>
+          <option value="value2">Option B</option>
+          <option value="value3">Option C</option>
+        </select>
+      </label>
+    <fieldset>
+
+  </fieldset>
+
+  <button type="submit">Submit Form</button>
 </form>
 
 #### CAPTCHAs
@@ -194,6 +263,10 @@ Consider an alternative method:
 * **Phone, text, or email verification**: Email verification, where you acknowledge receipt of an email, is a common authentication technique that can be very accessible. Another way is telephone or SMS authentication.
 
 ### Tools &amp; Resources
+
+* [Jim Allan's Slides on Accessible Forms (really helpful!!)] (http://www.tsbvi.edu/web/forms/1-welcome.html)
+
+* [Jim Allan's Recommended Resources to Making More Accessible Forms] (http://www.tsbvi.edu/web/forms/11-resources.html)
 
 * [Simple inline error message pattern](https://www.paciellogroup.com/blog/2016/01/simple-inline-error-message-pattern/)
 
