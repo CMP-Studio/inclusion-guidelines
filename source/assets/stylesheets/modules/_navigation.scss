@@ -37,18 +37,14 @@
   padding-bottom: 0.5em;
 
   ul {
-    padding: 1em 0;
-
+    margin-bottom: 0;
     @include breakpoint($bp-nav) {
       background-color: inherit;
       padding: 0;
     }
   }
 
-  li {
-    text-align: center;
-    padding-top: 1em;
-    margin-top: 1em;
+  .nav-item {
     border-top: 1px dotted lighten($text-color, 20%);
 
     @include breakpoint($bp-nav) {
@@ -57,11 +53,35 @@
       text-align: left;
     }
 
+    button {
+      background-color: $footer-color;
+      width: 100%;
+      padding: 1em;
+      margin:0;
+      font-size: 1em;
+      font-weight: 300;
+      font-family: "Merriweather", serif;
+      color: $background-color;
+      border: none;
+      &:hover, &:focus {
+        cursor: pointer;
+        background-color: lighten($footer-color, 8%);
+      }
+    }
+
     &:first-of-type {
-      padding-top: 0;
+      padding-top: 1em;
       margin-top: 0;
       border-top: 0 none;
     }
+
+    ul {
+      display: none;
+    }
+  }
+
+  .nav-inner-item {
+    padding: 0.25em;
   }
 }
 
@@ -107,9 +127,9 @@
 
 .side-nav-trigger {
   display: block;
-  border: 1px solid $text-color-subtle;
+  border: 1px solid $background-color;
   background-color: transparent;
-  color: $text-color-subtle;
+  color: $background-color;
   padding: 0em;
   margin-top: 1.3em;
   margin-bottom: 0.25em;

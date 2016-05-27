@@ -3,7 +3,8 @@ var $menuTrigger = $('.side-nav-trigger'),
     $primaryMenu = $('.primary-navigation'),
     $utilityTrigger = $('.utility-trigger'),
     $utilityMenu = $('.utility-navigation'),
-    asideNavList = $('.side-nav .side-nav-inner-item a');
+    asideNavList = $('.side-nav .side-nav-inner-item a'),
+    accordionNavButtons = $('.navigation-item-group li button');
 
 function toggleTriggerClass() {
   if (!$menuTrigger.hasClass('is-active')) {
@@ -139,8 +140,45 @@ function getPathName() {
 };
 
 
+function accordionNavToggle() {
+  $('.navigation-item-group li button').on('click', function(e) {
+    $control = $(this);
+
+    accordionContent = $control.attr('aria-controls');
+    checkChildren($control[0]);
+
+    isAriaExp = $control.attr('aria-expanded');
+    newAriaExp = (isAriaExp == "false") ? "true" : "false";
+    $control.attr('aria-expanded', newAriaExp);
+
+    isAriaHid = $('#' + accordionContent).attr('aria-hidden');
+    if (isAriaHid == "true") {
+      $('#' + accordionContent).attr('aria-hidden', "false");
+      $('#' + accordionContent).css('display', 'block');
+    } else {
+      $('#' + accordionContent).attr('aria-hidden', "true");
+      $('#' + accordionContent).css('display', 'none');
+    }
+  });
+};
+
+function checkChildren(elem) {  
+  for (var i=0; i<accordionNavButtons.length; i++) {
+    if (accordionNavButtons[i] != elem) {
+      if (($(accordionNavButtons[i]).attr('aria-expanded')) == 'true') {
+        $(accordionNavButtons[i]).attr('aria-expanded', 'false');
+        content = $(accordionNavButtons[i]).attr('aria-controls');
+        $('#' + content).attr('aria-hidden', 'true');
+        $('#' + content).css('display', 'none');
+      }
+    }
+  }
+};
+
+
 $(document).ready(function(){
   getPathName();
   toggleUtilityMenu();
   toggleMenu();
+  accordionNavToggle();
 });
