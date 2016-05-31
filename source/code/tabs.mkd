@@ -65,15 +65,15 @@ We've simplified some of the JavaScript needed to make the Simply Accessible tab
     </li>
   </ul>
 
-  <div aria-hidden='false' aria-labelledby="tab-ipa" class="tab-panel current"  id="ipa" role='tabpanel'>
+  <div aria-labelledby="tab-ipa" class="tab-panel current"  id="ipa" role='tabpanel'>
     <h2>India Pale Ale (IPA)</h2>
   </div>
 
-  <div aria-hidden="true" aria-labelledby="tab-gueuze" class="tab-panel hidden" role='tabpanel' id="gueuze">
+  <div aria-labelledby="tab-gueuze" class="tab-panel hidden" role='tabpanel' id="gueuze">
     <h2>Gueuze</h2>
   </div>
 
-  <div aria-hidden="true" aria-labelledby="tab-imperial-stout" class="tab-panel hidden" id="imperial-stout" role='tabpanel'>
+  <div aria-labelledby="tab-imperial-stout" class="tab-panel hidden" id="imperial-stout" role='tabpanel'>
     <h2>Imperial Stout</h2>
   </div>
 </div>
@@ -140,6 +140,9 @@ $(function(){
       'aria-selected': 'true'
     }).addClass('selected').focus();
 
+    $($tabs.get(index)).parent().siblings().removeClass('current');
+    $($tabs.get(index)).parent().addClass('current');
+
     $($($tabs.get(index)).attr('href')).addClass('current');
   };
 });
@@ -166,15 +169,15 @@ $(function(){
     </li>
   </ul>
 
-  <div aria-hidden='false' aria-labelledby="tab-ipa" class="tab-panel current"  id="ipa" role='tabpanel'>
+  <div aria-labelledby="tab-ipa" class="tab-panel current"  id="ipa" role='tabpanel'>
     <h2>India Pale Ale (IPA)</h2>
   </div>
 
-  <div aria-hidden="true" aria-labelledby="tab-gueuze" class="tab-panel hidden" role='tabpanel' id="gueuze">
+  <div aria-labelledby="tab-gueuze" class="tab-panel hidden" role='tabpanel' id="gueuze">
     <h2>Gueuze</h2>
   </div>
 
-  <div aria-hidden="true" aria-labelledby="tab-imperial-stout" class="tab-panel hidden" id="imperial-stout" role='tabpanel'>
+  <div aria-labelledby="tab-imperial-stout" class="tab-panel hidden" id="imperial-stout" role='tabpanel'>
     <h2>Imperial Stout</h2>
   </div>
 </div>

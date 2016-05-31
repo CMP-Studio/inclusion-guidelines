@@ -58,6 +58,9 @@ $(function(){
       'aria-selected': 'true'
     }).addClass('selected').focus();
 
+    $($tabs.get(index)).parent().siblings().removeClass('current');
+    $($tabs.get(index)).parent().addClass('current');
+
     $($($tabs.get(index)).attr('href')).addClass('current');
   };
 });
