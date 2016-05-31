@@ -222,6 +222,8 @@ img {
   @include screenreader-text;
 
   &:focus {
+    margin-top: 2em;
+    font-size: 1.2em;
     color: $background-color;
     display: inline-block;
     height: auto;

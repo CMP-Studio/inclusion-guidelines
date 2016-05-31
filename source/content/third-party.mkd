@@ -3,7 +3,7 @@ title: Third Party Embeds | Accessibility Guidelines
 ---
 ## Third Party Embeds &amp; Social Media
 
-For any website, as content editors and developers, we end up wanting to link our websites to third party services. Now that social media is such an important way for people to stay connected to your institution, having twitter, facebook, instagram, and any other number of social embeds on your website is often seen as a significant way to keep people engaged.  However, the accessibility of many of these embeds is suspect.  Do your research and test out embeds/iFrames with screen readers and keyboard-only navigating.  Ultimately, you can only ensure that the content on your own website is accessible, so be careful using third party embeds.
+For any website, as content editors and developers, we end up wanting to link our websites to third party services. Now that social media is such an important way for people to stay connected to your institution, having twitter, facebook, instagram, and any other number of social embeds on your website is often seen as a significant way to keep people engaged.  However, the accessibility of many of these embeds is not a given.  Do your research and test out embeds/iFrames with screen readers and keyboard-only navigating.  Ultimately, you can only ensure that the content on your own website is accessible, so be careful using third party embeds.
 
 ### Best Practices
 #### iFrames
