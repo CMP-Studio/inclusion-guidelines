@@ -62,7 +62,7 @@ Mobile navigation often acts in very similar ways to accordions on websites. For
 * If using an `aria-hidden` attribute, toggle this property upon showing and hiding the navigation.
 
 ```html
-  <nav aria-label="Mobile Accesibility Navigation Dropdown" class="primary-navigation" role="navigation">
+  <nav aria-label="Mobile Accessibility Navigation Dropdown" class="primary-navigation" role="navigation">
     <ul class="navigation-item-group">
       <li class="nav-item"><a href="/">Semantic HTML</a></li>
       <li class="nav-item"><a href="/aria">ARIA</a></li>

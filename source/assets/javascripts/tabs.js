@@ -1,26 +1,63 @@
-function switchTabs(){
-  // $('.tabbed-content .tabs-list a').on('click', function(event){
-  //   target = $(this);
+$(function(){
+  var index = 0;
+  var $tabs = $('a.tab');
 
-  //   allTabs = $('.tab-panel');
+  $tabs.bind(
+  {
+    keydown: function(ev){
+      var LEFT_ARROW = 37;
+      var UP_ARROW = 38;
+      var RIGHT_ARROW = 39;
+      var DOWN_ARROW = 40;
 
-  //   tabPanel = $($(target).attr('href')).parent();
+      var k = ev.which || ev.keyCode;
 
-  //   // unhide hidden things
-  //   tabPanel.attr('aria-hidden', false);
-  //   $(target).parents('li').addClass('current');
+      if (k >= LEFT_ARROW && k <= DOWN_ARROW){
+        if (k == LEFT_ARROW || k == UP_ARROW){
+          if (index > 0) {
+            index--;
+          }
+          else {
+            index = $tabs.length - 1;
+          }
+        }
 
+        else if (k == RIGHT_ARROW || k == DOWN_ARROW){
+          if (index < ($tabs.length - 1)){
+            index++;
+          }
+          else {
+            index = 0;
+          }
+        }
 
+        $($tabs.get(index)).click();
+        ev.preventDefault();
+      }
+    },
 
-  //   // hide everything else
-  //   allTabs.not(tabPanel).each(function(index, elem){
-  //     $(elem).attr('aria-hidden', true);
-  //     $(elem).removeClass('current');
-  //   })
+    click: function(ev){
+      index = $.inArray(this, $tabs.get());
+      setFocus();
+      ev.preventDefault();
+    }
+  });
 
-  // });
-}
+  var setFocus = function(){
+    $tabs.attr(
+    {
+      tabindex: '-1',
+      'aria-selected': 'false'
+    }).removeClass('selected');
 
-$(document).ready(function(){
-  switchTabs();
+    $('.tab-panel').removeClass('current');
+
+    $($tabs.get(index)).attr(
+    {
+      tabindex: '0',
+      'aria-selected': 'true'
+    }).addClass('selected').focus();
+
+    $($($tabs.get(index)).attr('href')).addClass('current');
+  };
 });

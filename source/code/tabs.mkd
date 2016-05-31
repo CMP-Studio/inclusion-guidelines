@@ -46,7 +46,7 @@ We've simplified some of the JavaScript needed to make the Simply Accessible tab
 <div class="tabbed-content">
   <ul class="tabsList">
     <li class="current">
-      <a href="#ipa" id="tab-ipa" aria-selected="true">
+      <a href="#ipa" id="tab-ipa" aria-selected="true" class='selected'>
         India Pale Ale (IPA)
       </a>
     </li>
@@ -56,7 +56,7 @@ We've simplified some of the JavaScript needed to make the Simply Accessible tab
         Gueuze
       </a>
     </li>
-    <li>
+    <li class='last'>
       <a href="#imperial-stout" id="tab-imperial-stout" aria-selected="false">
         Imperial Stout
       </a>
@@ -85,42 +85,41 @@ We've simplified some of the JavaScript needed to make the Simply Accessible tab
 ```
 
 <div class="tabbed-content">
-  <ul class="tabs-list">
-    <li class="current">
-      <a aria-controls="#ipa" aria-expanded="" aria-selected="" href="#ipa" id="tab-ipa">
+  <ul class="tabs-list" role='tablist'>
+    <li class="current" role='presentation'>
+      <a aria-controls="ipa" aria-hidden="false" aria-selected="true" href="#ipa" id="tab-ipa" role='tab' class='tab selected'>
         India Pale Ale (IPA)
       </a>
     </li>
 
-    <li>
-      <a aria-controls="#gueuze" href="#gueuze" id="tab-gueuze">
+    <li role='presentation'>
+      <a aria-controls="gueuze" href="#gueuze" aria-selected='false' id="tab-gueuze" role='tab' tabindex='-1' class='tab'>
         Gueuze
       </a>
     </li>
 
-    <li>
-      <a aria-selected="" href="#imperial-stout" id="tab-imperial-stout">
+    <li role='presentation' class='last'>
+      <a aria-controls='imperial-stout' aria-selected="false" href="#imperial-stout" id="tab-imperial-stout" role='tab' tabindex='-1' class='tab'>
         Imperial Stout
       </a>
     </li>
   </ul>
 
-  <div aria-labelledby="tab-ipa" class="tab-panel">
-    <h2 id="ipa">India Pale Ale (IPA)</h2>
+  <div aria-hidden='false' aria-labelledby="tab-ipa" class="tab-panel current"  id="ipa" role='tabpanel'>
+    <h2>India Pale Ale (IPA)</h2>
   </div>
 
-  <div aria-hidden="" aria-labelledby="tab-gueuze" class="tab-panel">
-    <h2 id="gueuze">Gueuze</h2>
+  <div aria-hidden="true" aria-labelledby="tab-gueuze" class="tab-panel hidden" role='tabpanel' id="gueuze">
+    <h2>Gueuze</h2>
   </div>
 
-  <div aria-hidden="" aria-labelledby="tab-imperial-stout" class="tab-panel">
-    <h2 id="imperial-stout">Imperial Stout</h2>
+  <div aria-hidden="true" aria-labelledby="tab-imperial-stout" class="tab-panel hidden" id="imperial-stout" role='tabpanel'>
+    <h2>Imperial Stout</h2>
   </div>
 </div>
 
 ### Tools &amp; Resources
 
-* [Danger! ARIA tabs by Jeff Smith](http://simplyaccessible.com/article/danger-aria-tabs/)
 * [Danger! Testing Accessibility with real people](https://medium.com/@LeonieWatson/danger-testing-accessibility-with-real-people-4515f72db648)
 * [ARIA tabs, UI problems and standards](https://alastairc.ac/2016/05/aria-tabs-ui-problems-and-standards/)
 * [Accessible Tabs Examples](http://blog.ginader.de/dev/jquery/accessible-tabs/)
