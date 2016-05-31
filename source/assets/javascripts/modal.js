@@ -11,7 +11,9 @@ function setModalButton() {
     $modalWrapper.attr('aria-hidden', 'false');
     $modalWrapper.css('display', 'block');
     $modalTitle.focus();
-    deflectFocus();
+    deflectMainFocus();
+    deflectFooterFocus();
+    deflectHeaderFocus();
   });
 };
 
@@ -25,14 +27,26 @@ function setModalClose() {
   });
 };
 
-function deflectFocus() {
-  console.log('this is working 1');
+function deflectMainFocus() {
   $mainContent.on('focusin.modalOpen', function(e) {
-    console.log('this is working 2');
     $modalClose.focus();
 
   });
 };
+
+function deflectFooterFocus() {
+  $('.site-footer').on('focusin.modalOpen', function(e) {
+    $modalClose.focus();
+  });
+};
+
+function deflectHeaderFocus() {
+  $('.site-header').on('focusin.modalOpen', function(e) {
+    $modalClose.focus();
+  });
+};
+
+
 
 $(document).ready(function(){
   setModalButton();
