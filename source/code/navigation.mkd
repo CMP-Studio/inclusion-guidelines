@@ -47,7 +47,7 @@ Mobile navigation often acts in very similar ways to accordions on websites. For
 
 ```html
   <section class="mobile-navigation">
-    <button aria-expanded="false" class="side-nav-trigger">
+    <button aria-expanded="false" class="side-nav-trigger" aria-label="Mobile Navigation Button">
       <span class="trigger-status closed">Open</span>
       Menu
     </button>
@@ -71,6 +71,22 @@ Mobile navigation often acts in very similar ways to accordions on websites. For
     </ul>
   </nav>
 ```
+### Live Example
+<section class="other-mobile-navigation">
+  <button aria-expanded="false" class="other-trigger" aria-label="Mobile Navigation Button">
+    <span class="other-trigger-status closed">Open</span>
+    Menu
+  </button>
+</section>
+
+<nav aria-label="Mobile Accesibility Navigation Dropdown" class="other-primary-navigation" role="navigation">
+  <ul class="navigation-item-group">
+    <li class="nav-item"><a href="/">Semantic HTML</a></li>
+    <li class="nav-item"><a href="/aria">ARIA</a></li>
+    <li class="nav-item"><a href="/font">Font &amp; Font Size</a></li>
+    <li class="nav-item"><a href="/color">Contrast &amp; Color</a></li>
+  </ul>
+</nav>
 
 ### Tools &amp; Resources
 

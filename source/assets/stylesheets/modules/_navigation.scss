@@ -172,3 +172,47 @@
     }
   }
 }
+
+////Live nav example
+
+.other-trigger {
+  margin-left: 4em;
+  margin-top: 1.2em;
+  background-color: $footer-color;
+  color: $background-color;
+  font-family: "Merriweather", serif;
+  font-size: 0.8em;
+  border: 0 none;
+  padding: 1.1em;
+  transition: background-color 0.3s ease-in;
+  &:hover, &:focus {
+    background-color: lighten($footer-color, 7%);
+    cursor: pointer;
+  }
+}
+
+.other-primary-navigation {
+  display: none;
+  ul li {
+    list-style: none;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    a {
+      display: block;
+      padding: 0.5em;
+      text-decoration: none;
+      background-color: $background-color-subtle;
+      max-width: 250px;
+      border-top: 1px dotted lighten($text-color, 20%);
+      transition: background-color 0.3s ease-in;
+      &:hover, &:focus {
+        background-color: darken($background-color-subtle, 6%);
+      }
+    }
+    &:first-of-type {
+      a {
+        border: 0 none;
+      }
+    }
+  }
+}

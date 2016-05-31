@@ -76,6 +76,10 @@ However, for a single checkbox, or single radio button, do use a `fieldset` and 
 * The US Design Standards states that for an input which required a month, day, and year, "Three text fields are the easiest way for users to enter most dates."
 
 ### Code Snippets
+Below we have supplied the code for a variety of accessible form inputs. There are many ways to use jQuery/JavaScript to make your forms accessible, and through testing and research, we have found our own unique solution below. 
+
+Our solution takes advantage of the jQuery <code>.validity.valid</code>, and applying an <code>aria-live='assertive'</code> attribute to the first new error message on the form. (The error message must be dynamically added for this aria-live message to be read).  Also, we have found that if there are multiple aria-live regions, a screen reader will only read the last one on the page, so you really only ever want one aria-live region on a page.
+
 ```html
 <form class="form-example" method="post">
   <fieldset>
