@@ -32,7 +32,7 @@ html {
     margin: 0 auto 0 auto;
   }
 
-  .accesibility-content {
+  .accessibility-content {
      @include breakpoint ($bp-sidebar) {
       display: flex;
     }
@@ -100,7 +100,7 @@ blockquote {
     @include breakpoint($bp-l) {
       position: absolute;
       margin-bottom: -0.5em;
-      top: 0; 
+      top: 0;
       left: 0.25em;
     }
   }

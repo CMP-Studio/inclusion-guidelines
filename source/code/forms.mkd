@@ -146,7 +146,7 @@ Our solution takes advantage of the jQuery <code>.validity.valid</code>, and app
 
       <textarea id='text-comments' required=''></textarea>
     </label>
-  </fieldset>  
+  </fieldset>
 
   <fieldset>
     <legend id='legend' tabindex='0'>Can we add you to our email mailing list? <span class="required">(required)</span></legend>
@@ -155,20 +155,20 @@ Our solution takes advantage of the jQuery <code>.validity.valid</code>, and app
       <li>
         <label for="yes">
           <span class="error-message">
-            Please select yes or no.    
+            Please select yes or no.
           </span>
 
           <input id="yes" required="" type="radio" name="answers" value="yes">
-        
+
           Yes
-        </label> 
+        </label>
       </li>
       <li>
-        <label for="no">            
+        <label for="no">
           <input id="no" type="radio" name="answers" value="no">
 
           No
-        </label> 
+        </label>
       </li>
     </ul>
   </fieldset>
@@ -180,27 +180,27 @@ Our solution takes advantage of the jQuery <code>.validity.valid</code>, and app
       <li>
         <label for="science">
           <span class="error-message">
-            Please select at least one category.    
+            Please select at least one category.
           </span>
 
           <input id="science" required="" type="checkbox" name="categories" value="science">
 
           Science
-        </label> 
+        </label>
       </li>
       <li>
         <label for="children-programs">
           <input id="children-programs" required="" type="checkbox" name="categories" value="children-programs">
 
           Programs for Children
-        </label> 
+        </label>
       </li>
       <li>
         <label for="new-events">
           <input id="new-events" required="" type="checkbox" name="categories" value="new-events">
 
           New Events
-        </label> 
+        </label>
       </li>
     </ul>
   </fieldset>
@@ -229,16 +229,15 @@ Our solution takes advantage of the jQuery <code>.validity.valid</code>, and app
 ```
 
 ```css
-input.edited {
-  &:invalid {
-    box-shadow: 0 0 5px 1px red;
-  }
+input.edited:invalid {
+  box-shadow: 0 0 5px 1px red;
 }
 
 input:focus:invalid {
   outline: none;
 }
 ```
+
 JavaScript validation with jQuery:
 
 ```javascript
@@ -254,7 +253,7 @@ function handleFormSubmission(){
 
     $form = $(this).parents('form');
     $inputs = $form.find('input[required], textarea[required], select[required]');
-      
+
     $inputs.each(function(index, input){
       errorMessageSelector = 'label[for="' + $(input).attr('id') + '"] .error-message';
       $form.find(errorMessageSelector).removeAttr('aria-live');
@@ -263,9 +262,9 @@ function handleFormSubmission(){
 
       if(!input.validity.valid){
         error.css('display', 'inline-block');
-        shouldPrevent = true;        
+        shouldPrevent = true;
         errorList.push(error);
-        
+
       }
       else {
         error.css('display', 'none');
@@ -351,7 +350,7 @@ $(document).ready(function(){
 
         <textarea id='text-comments' required=''></textarea>
       </label>
-    </fieldset>  
+    </fieldset>
 
     <fieldset>
       <legend id='legend' tabindex='0'>Can we add you to our email mailing list? <span class="required">(required)</span></legend>
@@ -360,20 +359,20 @@ $(document).ready(function(){
         <li>
           <label for="yes">
             <span class="error-message">
-              Please select yes or no.    
+              Please select yes or no.
             </span>
 
             <input id="yes" required="" type="radio" name="answers" value="yes">
-          
+
             Yes
-          </label> 
+          </label>
         </li>
         <li>
-          <label for="no">            
+          <label for="no">
             <input id="no" type="radio" name="answers" value="no">
 
             No
-          </label> 
+          </label>
         </li>
       </ul>
     </fieldset>
@@ -385,27 +384,27 @@ $(document).ready(function(){
         <li>
           <label for="science">
             <span class="error-message">
-              Please select at least one category.    
+              Please select at least one category.
             </span>
 
             <input id="science" required="" type="checkbox" name="categories" value="science">
 
             Science
-          </label> 
+          </label>
         </li>
         <li>
           <label for="children-programs">
             <input id="children-programs" required="" type="checkbox" name="categories" value="children-programs">
 
             Programs for Children
-          </label> 
+          </label>
         </li>
         <li>
           <label for="new-events">
             <input id="new-events" required="" type="checkbox" name="categories" value="new-events">
 
             New Events
-          </label> 
+          </label>
         </li>
       </ul>
     </fieldset>
