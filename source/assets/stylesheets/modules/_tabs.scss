@@ -1,0 +1,44 @@
+.accessibility-content {
+
+  .tabbed-content {
+    @include divider-top;
+    @include divider-bottom;
+
+    .tabs-list {
+      @include reset-list;
+      display: inline-block;
+
+      li {
+        @include column(4);
+        border: 1px solid $border-color;
+
+        &.last {
+          @include last;
+        }
+
+        &.current {
+          background-color: $highlight-color;
+        }
+
+        &:hover, &:focus {
+          background-color: $highlight-color-hover;
+        }
+
+        .tab {
+          display: inline-block;
+          padding: 1em 1.2em;
+          text-align: center;
+          height: 100%;
+        }
+      }
+    }
+
+    .tab-panel {
+      display: none;
+
+      &.current {
+        display: block;
+      }
+    }
+  }
+}
