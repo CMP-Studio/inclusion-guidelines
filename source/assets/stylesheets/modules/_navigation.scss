@@ -38,10 +38,16 @@
 
   ul {
     margin-bottom: 0;
+    text-align: center;
     @include breakpoint($bp-nav) {
       background-color: inherit;
       padding: 0;
     }
+  }
+
+  a:active,
+  a:focus {
+    color: $accent-color;
   }
 
   .nav-item {
@@ -51,6 +57,20 @@
       display: inline-block;
       @include divider-none;
       text-align: left;
+    }
+    ul {
+      padding-bottom:0.75em;
+      padding-top:0.75em;
+      background-color: darken($text-color, 10%);
+    }
+    .nav-inner-item {
+      margin-right: 20px;
+
+      a {
+        display:inline-block;
+        padding: 0.35em 0.35em 0.5em 0.35em;
+        margin-bottom: 0.2em;
+      }
     }
 
     button {
@@ -81,10 +101,6 @@
     ul {
       display: none;
     }
-  }
-
-  .nav-inner-item {
-    padding: 0.25em;
   }
 }
 
