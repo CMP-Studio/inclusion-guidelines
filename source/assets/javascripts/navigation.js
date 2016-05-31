@@ -4,7 +4,10 @@ var $menuTrigger = $('.side-nav-trigger'),
     $utilityTrigger = $('.utility-trigger'),
     $utilityMenu = $('.utility-navigation'),
     asideNavList = $('.side-nav .side-nav-inner-item a'),
-    accordionNavButtons = $('.navigation-item-group li button');
+    accordionNavButtons = $('.navigation-item-group li button'),
+    $otherTrigger = $('.other-trigger'),
+    $otherTriggerWord = $('.other-trigger-status'),
+    $otherMenu = $('.other-primary-navigation');
 
 function toggleTriggerClass() {
   if (!$menuTrigger.hasClass('is-active')) {
@@ -70,6 +73,70 @@ function resetMenuTrigger() {
   }
 };
 
+function toggleOtherTriggerClass() {
+  if (!$otherTrigger.hasClass('is-active')) {
+    $otherTrigger.addClass('is-active');
+    $otherTrigger.attr("aria-expanded","true");
+  } else {
+    $otherTrigger.removeClass('is-active');
+    $otherTrigger.attr("aria-expanded","false");
+  }
+};
+
+function toggleOtherTriggerWord() {
+  if ($otherTriggerWord.hasClass('closed')) {
+    $otherTriggerWord.removeClass('closed');
+    $otherTriggerWord.addClass('open');
+    $otherTriggerWord.html('Close');
+  } else {
+    $otherTriggerWord.removeClass('open');
+    $otherTriggerWord.addClass('closed');
+    $otherTriggerWord.html('Open');
+  }
+};
+
+function toggleOtherMenuClass() {
+  if (!$otherMenu.hasClass('is-visible')) {
+    $otherMenu.addClass('is-visible');
+    $otherMenu.focus();
+  } else {
+    $otherMenu.removeClass('is-visible');
+  }
+};
+
+function toggleOtherMenu() {
+  $otherTrigger.on("click", function(e){
+    toggleOtherTriggerClass();
+    toggleOtherMenuClass();
+    toggleOtherTriggerWord();
+    $otherMenu.slideToggle("fast");
+  });
+};
+
+function resetOtherMenu() {
+  if (!$otherMenu.hasClass('is-visible')) {
+    $otherMenu.removeAttr('style');
+  } else {
+    $otherMenu.removeClass('is-visible').removeAttr('style');
+  }
+};
+
+function resetOtherMenuTrigger() {
+  if (!$otherTrigger.hasClass('is-active')) {
+    return
+  } else {
+    $otherTrigger.removeClass('is-active');
+  }
+};
+
+function toggleUtilityTriggerClass() {
+  if (!$utilityTrigger.hasClass('is-active')) {
+    $utilityTrigger.addClass('is-active');
+  } else {
+    $utilityTrigger.removeClass('is-active');
+  }
+};
+
 function toggleUtilityTriggerClass() {
   if (!$utilityTrigger.hasClass('is-active')) {
     $utilityTrigger.addClass('is-active');
@@ -126,6 +193,8 @@ jRes.addFunc({
     resetUtilityMenu();
     resetMenu();
     resetMenuTrigger();
+    resetOtherMenu();
+    resetOtherMenuTrigger();
   }
 });
 
@@ -180,5 +249,6 @@ $(document).ready(function(){
   getPathName();
   toggleUtilityMenu();
   toggleMenu();
+  toggleOtherMenu();
   accordionNavToggle();
 });
