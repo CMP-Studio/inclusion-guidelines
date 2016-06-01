@@ -147,7 +147,7 @@ $(function(){
   };
 });
 ```
-
+### Live Example
 <div class="tabbed-content">
   <ul class="tabs-list" role='tablist'>
     <li class="current" role='presentation'>

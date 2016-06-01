@@ -63,7 +63,7 @@ This is adapted from [The Incredible Accessible Modal Window](https://accessibil
 
 * Give the modal an ARIA `aria-describedby` attribute which will be linked to the `id` of some visually hidden text which describes the modal's function, and how to exit it. A screen reader will read this information upon being focused on the modal.
 
-  - Ex.
+  - Example:
   ```html
   <div class='modalWrapper' aria-describedby='modalDescription'>
     <div class='modal-content'>
@@ -88,7 +88,7 @@ This is adapted from [The Incredible Accessible Modal Window](https://accessibil
 * If you give any HTML element `tabindex='0'`, it will fall into the natural tab order of keyboard users and screen readers.
 So, give your heading a `tabindex='0'` so we can focus on it with jQuery.
 
-  - Ex. `<h3 tabindex='0'> Modal Heading </h3>`
+  - Example: `<h3 tabindex='0'> Modal Heading </h3>`
 
 * Additionally, we will create a jQuery function which will watch for the user to tab outside the modal, and immediately focus them back in on the modal, or the close button inside the modal.
 

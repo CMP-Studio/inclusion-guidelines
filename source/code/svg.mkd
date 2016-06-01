@@ -14,10 +14,14 @@ SVG (Scalable Vector Graphics) appear to be the future of web graphics. As a vec
 
 * Additionally, since SVG is new type of image format, you must also include an ARIA `role='image'` since some screen readers will skip over the alt tag for SVGs without that `role` (specifically iOS VoiceOver).
 
-* If the SVG is decorative, use an empty `alt=''`.
-
 ```html
   <img src='/images/blue-triangle.svg' role='image' alt='Blue Triangle'/>
+```
+
+* If the SVG is decorative, use an empty `alt=''`. If you do not, a screenreader will read the source tag which sounds awful.
+
+```html
+<img src="/assets/images/frequent-flyer.svg" alt='' role='image'/>
 ```
 
 #### Inline SVG
