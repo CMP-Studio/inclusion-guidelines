@@ -9,7 +9,11 @@ PDFs can be a convenient way to deliver print documents online, but they remain 
 To make PDFs more accessible, consider these recommendations:
 
 * <span class="text-bold">Text-based information</span>: In many cases the information in the PDFs can be converted to HTML content.
-* <span class="text-bold">Alternative formats</span>: Consider posting the file in additional formats, such as Microsoft Word or PowerPoint.
+* <span class="text-bold">Alternative formats</span>: Consider posting the file in additional formats, such as Microsoft Word or PowerPoint. If you choose to use Microsoft Word, here a few quick tips from [Media Access Australia](http://www.mediaaccess.org.au/digitalaccessibilityservices/seven-simple-tips-for-smart-word-doc-accessibility/):
+    * **Use .docx**
+    * **Use headings 1-6**
+    * **Create alt text**: Right click the image you want, and select 'Alt Text.'
+    * **Use the "Check Accessibility" option**: You can find this in Microsoft Word under File > Info > Check Issues > Check Accessibility.
 * <span class="text-bold">If a PDF is mandated</span>: Generate a "tagged" PDF from a document source whenever possible. The specific method of doing so will vary on the original file format and the operating system. If you cannot generate an accessible PDF, use the repair tools in Adobe Acrobat to ensure accessibility.
 * <span class="text-bold">Link language</span>: Alert users when a link goes to a PDF file, e.g. "Meeting Minutes (PDF)".
 * <span class="text-bold">Scanning</span>: If possible, scan material with an OCR (optical character recognition) scanner, which converts a scanned image of text to an actual text file, rather than a series of inaccessible images.
@@ -19,6 +23,12 @@ Here are some resources if you want to repair PDFs to be accessible to all users
 
 * [Common Look] ('http://commonlook.com/')
 * [Adobe Acrobat Accessibility Guides] ('http://www.adobe.com/accessibility/products/acrobat/training.html')
+
+Here are some resources for creating accessible Word documents.
+
+* [Seven simple tips for smart Word doc accessibility](http://www.mediaaccess.org.au/digitalaccessibilityservices/seven-simple-tips-for-smart-word-doc-accessibility/)
+* [ADOD: Authoring Techniques for Accessible Office Documents: Microsoft Word 2010](http://adod.idrc.ocad.ca/word2010)
+* [Rules used by the Microsoft Word Accessibility Checker](https://support.office.com/en-us/article/Rules-used-by-the-Accessibility-Checker-651e08f2-0fc3-4e10-aaca-74b4a67101c1)
 
 Here are some PDF authoring tools that provide accessibility support and create tagged PDFs.
 

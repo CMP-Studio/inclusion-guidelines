@@ -14,7 +14,7 @@ Every image needs an alternative text attribute `alt`. Alt text describes pictor
     * The description should NOT include the phrase "image of" or "picture of". Assistive technologies already do this.
     * Don't put line breaks in alt text. It causes suboptimal effects when read by screen readers.
     * Make sure the description of the image is useful. For example, if the image is your logo your alt should be your company name and not "logo."
-* **If the image is decorative**: If the image is purely decorative, or not necessary for understanding the content of the page, use an empty tag (`alt=""`) to instruct a screen reader to skip it.
+* **If the image is decorative**: If the image is purely decorative, or not necessary for understanding the content of the page, use an empty tag (`alt=""`) to instruct a screen reader to skip it. If you do not, a screenreader will read the source tag which sounds awful.
 * **If the image is a complex graphic**: Each needs to handled based upon its context and use. See our below charts and graphs section and/or our <a href='/code/svg'>SVG section</a>.
 
 #### Charts &amp; Graphs
@@ -23,7 +23,7 @@ Every image needs an alternative text attribute `alt`. Alt text describes pictor
 * **Description**: Always include a text descriptions of a complex graphic. This description should relay and summarize the information that is visually displayed.
 * **Figure**: Use `figure` and `figcaption` tags for complex graphs, charts, and other graphics
 
-    * Ex. from <a href='http://html5doctor.com/the-figure-figcaption-elements/'> HTML5 Doctor</a>:
+    * Example: from <a href='http://html5doctor.com/the-figure-figcaption-elements/'> HTML5 Doctor</a>:
 
       ```html
         <figure>
@@ -40,7 +40,7 @@ Every image needs an alternative text attribute `alt`. Alt text describes pictor
 
 <div class="image-grid">
   <div class="image-item">
-    <img alt="" src="http://s4.wallippo.com/thumbs/100000/geometric-abstract-wallpaper-2-16-10-1f355522032c3c585e95716ea6e13941.jpeg"/>
+    <img src="http://s4.wallippo.com/thumbs/100000/geometric-abstract-wallpaper-2-16-10-1f355522032c3c585e95716ea6e13941.jpeg"/>
     <p>Alt tag: ""</p>
     <p>This background, or decorative image is completely skipped by a screen reader because it has an empty alt tag.</p>
   </div>
@@ -67,3 +67,4 @@ Every image needs an alternative text attribute `alt`. Alt text describes pictor
 * [Three common accessibility pitfalls for developers: text alternatives] ("http://simplyaccessible.com/article/three-pitfalls-text-alternatives/")
 * [Short note on use of alt="" and the title attribute] ("https://www.paciellogroup.com/blog/2016/02/short-note-on-use-of-alt-and-the-title-attribute/")
 * [A Guide to Making Documents Accessible to People Who are Blind or Visually Impaired] ('http://www.sabeusa.org/wp-content/uploads/2014/02/A-Guide-to-Making-Documents-Accessible-to-People-Who-are-Blind-or-Visually-Impaired.pdf')
+* [When should alt text be blank?](http://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/)

@@ -12,5 +12,5 @@ title: Typography | Accessibility Guidelines
 
 ### Tools &amp; Resources
 * [US Standards Text Accessibility] (https://standards.usa.gov/visual-style/#text-accessibility)
-* [What is Color Contrast?](http://a11yproject.com/posts/what-is-color-contrast)
 * [W3C Resize Text] (https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html)
+

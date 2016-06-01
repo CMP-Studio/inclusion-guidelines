@@ -14,10 +14,8 @@ Find colors that provide maximum contrast, including enough contrast between con
 ### Tools &amp; Resources
 #### Articles &amp; Guides
 * [Three common accessibility pitfalls for developers: colour contrast](http://simplyaccessible.com/article/pitfalls-colour-contrast/)
-* [Colour Accessibility](https://24ways.org/2012/colour-accessibility/)
 * [What is Color Contrast?](http://a11yproject.com/posts/what-is-color-contrast)
 * [Colour Accessibility](https://24ways.org/2012/colour-accessibility/)
-* [W3C Resize Text](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-scale.html)
 * [US Standards Colors](https://standards.usa.gov/visual-style/#colors)
 
 

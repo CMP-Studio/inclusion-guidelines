@@ -41,7 +41,7 @@ The examples below will show the HTML structure and JavaScript behavior required
       <button aria-controls="content-1" aria-expanded="false" id="accordion-control-1">Apples</button>
       <div aria-hidden="true" id="content-1">
         <p>Apples are a fine fruit often associated with good health, and fewer doctor's appointments.</p>
-        <p>Ex. An apple a day keeps the doctor away.</p>
+        <p>Example. An apple a day keeps the doctor away.</p>
       </div>
     </li>
 
@@ -49,7 +49,7 @@ The examples below will show the HTML structure and JavaScript behavior required
       <button aria-controls="content-2" aria-expanded="false" id="accordion-control-2">Lemons</button>
       <div aria-hidden="true" id="content-2">
         <p>Lemons are good with almost anything, yet are often have a negative connotation when used in conversation.</p>
-        <p>Ex. The bread from the french bakery is normally very good, but the one we bought today was a lemon.</p>
+        <p>Example. The bread from the french bakery is normally very good, but the one we bought today was a lemon.</p>
       </div>
     </li>
 
@@ -113,14 +113,14 @@ accordionToggle();
       <button aria-controls='content-1' aria-expanded='false' id='accordion-control-1'>Apples</button>
       <div id='content-1' aria-hidden='true'>
         <p>Apples are a fine fruit often associated with good health, and fewer doctor's appointments.</p>
-        <p>Ex. An apple a day keeps the doctor away.</p>
+        <p>Example: An apple a day keeps the doctor away.</p>
       </div>
     </li>
     <li>
       <button aria-controls='content-2' aria-expanded='false' id='accordion-control-2'>Lemons</button>
       <div id='content-2' aria-hidden='true'>
         <p>Lemons are good with almost anything, yet are often have a negative connotation when used in conversation.</p>
-        <p>Ex. The bread from the french bakery is normally very good, but the one we bought today was a lemon.</p>
+        <p>Example: The bread from the french bakery is normally very good, but the one we bought today was a lemon.</p>
       </div>
     </li>
     <li>

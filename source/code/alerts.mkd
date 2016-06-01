@@ -14,7 +14,7 @@ Alerts should be used sparingly, and only as needed. A good instance of an alert
 
 * Use polite language in the alert.
 
-  - Ex. Please include a valid email address, making sure that you use '@.'
+  - Example: Please include a valid email address, making sure that you use '@.'
 
 * Think about allowing the alert to be dismissed if possible. This means making an accessible button with a clear 'Close' or 'Cancel' functionality.
 
