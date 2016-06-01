@@ -18,3 +18,11 @@
 .constrained-form {
   margin: 1.5em 0;
 }
+
+.map-embed {
+  max-width: 100%;
+  margin-bottom: 2.0em;
+  iframe {
+    max-width: 100%;
+  }
+}
