@@ -1,30 +1,26 @@
 .accessibility-content {
 
   .tabbed-content {
-    @include divider-top;
-    @include divider-bottom;
 
     .tabs-list {
       @include reset-list;
-      display: inline-block;
+      margin:0;
+      display: flex;
 
       li {
-        @include column(4);
-        border: 1px solid $border-color;
+        text-align: center;
+        @include column(2);
+        border-top: 1px solid $border-color;
+        border-left: 1px solid $border-color;
+        border-right: 1px solid $border-color;
+        margin-bottom: 0;
 
         &.last {
           @include last;
         }
 
-        &.current {
-          background-color: $highlight-color-hover;
-          a {
-            color: $background-color;
-          }
-        }
-
-        &:hover, &:focus {
-          background-color: $highlight-color;
+        &.current, &:hover, &:focus {
+          background-color: $accent-color;
           a {
             color: $background-color;
           }
@@ -42,6 +38,8 @@
 
     .tab-panel {
       display: none;
+      padding: 1em;
+      border: 1px solid $border-color;
 
       &.current {
         display: block;

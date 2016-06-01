@@ -151,34 +151,37 @@ $(function(){
 <div class="tabbed-content">
   <ul class="tabs-list" role='tablist'>
     <li class="current" role='presentation'>
-      <a aria-controls="ipa" aria-hidden="false" aria-selected="true" href="#ipa" id="tab-ipa" role='tab' class='tab selected'>
-        India Pale Ale (IPA)
+      <a aria-controls="apples" aria-hidden="false" aria-selected="true" href="#apples" id="tab-apples" role='tab' class='tab selected'>
+        Apples
       </a>
     </li>
 
     <li role='presentation'>
-      <a aria-controls="gueuze" href="#gueuze" aria-selected='false' id="tab-gueuze" role='tab' tabindex='-1' class='tab'>
-        Gueuze
+      <a aria-controls="bananas" href="#bananas" aria-selected='false' id="tab-bananas" role='tab' tabindex='-1' class='tab'>
+        Bananas
       </a>
     </li>
 
     <li role='presentation' class='last'>
-      <a aria-controls='imperial-stout' aria-selected="false" href="#imperial-stout" id="tab-imperial-stout" role='tab' tabindex='-1' class='tab'>
-        Imperial Stout
+      <a aria-controls='pears' aria-selected="false" href="#pears" id="tab-pears" role='tab' tabindex='-1' class='tab'>
+        Pears
       </a>
     </li>
   </ul>
 
-  <div aria-labelledby="tab-ipa" class="tab-panel current"  id="ipa" role='tabpanel'>
-    <h2>India Pale Ale (IPA)</h2>
+  <div aria-labelledby="tab-apples" class="tab-panel current"  id="apples" role='tabpanel'>
+    <h2>Apples</h2>
+    <p> Lorem ipsum dolor sit amet, urna class vestibulum tincidunt atque, habitasse sit wisi erat dapibus. Vitae curae natoque a, donec nulla conubia in mollis. Sapien pede in tortor, lectus neque vitae in et, vitae aliquam eget orci at, non turpis faucibus id morbi. Elit tempor turpis donec inceptos, fringilla arcu sollicitudin ligula magna, sed justo viverra lacus erat, vestibulum id in justo nulla. Viverra dui leo donec, aptent deserunt nostra magnis lobortis, id ultrices ac aenean, interdum vestibulum rhoncus phasellus libero.</p>
   </div>
 
-  <div aria-labelledby="tab-gueuze" class="tab-panel hidden" role='tabpanel' id="gueuze">
-    <h2>Gueuze</h2>
+  <div aria-labelledby="tab-bananas" class="tab-panel hidden" role='tabpanel' id="bananas">
+    <h2>Bananas</h2>
+    <p>Lorem ipsum dolor sit amet, urna class vestibulum tincidunt atque, habitasse sit wisi erat dapibus. Vitae curae natoque a, donec nulla conubia in mollis. Sapien pede in tortor, lectus neque vitae in et, vitae aliquam eget orci at, non turpis faucibus id morbi. Elit tempor turpis donec inceptos, fringilla arcu sollicitudin ligula magna, sed justo viverra lacus erat, vestibulum id in justo nulla. Viverra dui leo donec, aptent deserunt nostra magnis lobortis, id ultrices ac aenean, interdum vestibulum rhoncus phasellus libero.</p>
   </div>
 
-  <div aria-labelledby="tab-imperial-stout" class="tab-panel hidden" id="imperial-stout" role='tabpanel'>
-    <h2>Imperial Stout</h2>
+  <div aria-labelledby="tab-pears" class="tab-panel hidden" id="pears" role='tabpanel'>
+    <h2>Pears</h2>
+    <p>Lorem ipsum dolor sit amet, urna class vestibulum tincidunt atque, habitasse sit wisi erat dapibus. Vitae curae natoque a, donec nulla conubia in mollis. Sapien pede in tortor, lectus neque vitae in et, vitae aliquam eget orci at, non turpis faucibus id morbi. Elit tempor turpis donec inceptos, fringilla arcu sollicitudin ligula magna, sed justo viverra lacus erat, vestibulum id in justo nulla. Viverra dui leo donec, aptent deserunt nostra magnis lobortis, id ultrices ac aenean, interdum vestibulum rhoncus phasellus libero.</p>
   </div>
 </div>
 
