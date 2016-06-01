@@ -18,7 +18,7 @@ Navigation becomes more complicated when we move to tablet and mobile views. Wit
 * Use the semantic `<nav>` tag around your unordered list and links with an ARIA `role='navigation'` attribute.
   - Testing this navigation with Chrome Vox, we found that without an ARIA `role` attribute, the screen reader would not read any other aria attributes--for this reason, it seems ARIA roles are crucial for screen readers.
 
-* Optionally, attach an `aria-label` attribute to your navigation to give users of AT as much information as possible (especially if there are multiple navigations on your site).
+* Optionally, attach an `aria-label` attribute to your navigation to give users of assistive technology as much information as possible (especially if there are multiple navigations on your site).
   - [Perkins School for the Blind website](http://www.perkins.org/), for example, has three sets of navigation and uses an `aria-label` and `role='navigation'` for each (the ARIA labels are: 'Utility Navigation,' 'Accessibility Navigation,' and 'Main Navigation').
 
 ```html
@@ -92,9 +92,9 @@ Mobile navigation often acts in very similar ways to accordions on websites. For
 
 * [US Standards Footers and Mobile Accordion Navigation](https://standards.usa.gov/footers/)
 
-#### Live Examples of Accessible Horizontal and Mobile Navigation
+### Other Live Examples of Accessible Horizontal and Mobile Navigation
 * [Perkins School for the Blind](http://www.perkins.org/)
 * [Simply Accessible Website](http://simplyaccessible.com/)
 * [Ethically Accessible](https://seesparkbox.com/foundry/ethically_accessible)
 
-\* For navigation that moves to mobile navigation, with perhaps a `display: none;` nav list, it is actually not commonly accepted to use `aria-hidden` attributes anymore. We asked someone in the a11y slack room, and they told us that "if you're already [applying `display: none;`] to elements, you generally won't need [`aria-hidden`] anyway."
+\* For navigation that moves to mobile navigation, with perhaps a `display: none;` nav list, it is actually not commonly accepted to use `aria-hidden` attributes anymore. We asked someone in the [a11y slack room](http://web-a11y.herokuapp.com/), and they told us that "if you're already [applying `display: none;`] to elements, you generally won't need [`aria-hidden`] anyway."

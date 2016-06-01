@@ -1,7 +1,7 @@
 ---
 title: Third Party Embeds | Accessibility Guidelines
 ---
-## Third Party Embeds &amp; Social Media
+## Third Party Embeds, Downloads, &amp; Social Media
 
 For any website, as content editors and developers, we end up wanting to link our websites to third party services. Now that social media is such an important way for people to stay connected to your institution, having twitter, facebook, instagram, and any other number of social embeds on your website is often seen as a significant way to keep people engaged.  However, the accessibility of many of these embeds is not a given.  Do your research and test out embeds/iFrames with screen readers and keyboard-only navigating.  Ultimately, you can only ensure that the content on your own website is accessible, so be careful using third party embeds.
 
@@ -17,15 +17,76 @@ Here are few ways you can attempt to provide more accessibility for an iFrame or
 #### Twitter embedded timelines
 Twitter has done substantial work to ensure their timelines you can embed are accessible. Perkins school for the blind currently uses their embed.
 
-Learn more <a href='https://dev.twitter.com/web/embedded-timelines
-' title='Link to twitter dev tools for embedding twitter timeline'>here</a>.
+Learn more about <a href='https://dev.twitter.com/web/embedded-timelines
+' title='Link to twitter dev tools for embedding twitter timeline'>Twitter dev tools for embedding a timeline here</a>.
 
+#### Google Docs
+Google Docs are accessible by default, and can also be created, edited, and commented on in an accessible way. The first step to accessibly creating, editing, or commenting on a Google Docs file is [enabling screen reader support](https://support.google.com/docs/answer/6282736). Once screen reader support has been enabled, users can perform the same basic actions in Google Docs, Google Sheets, and Google Slides. See "[Get started in Docs editors with a screen reader](https://support.google.com/docs/answer/6239410)" for more information on using Google Docs files in an accessible way.
+
+### Social Media Accessibility Status
+The following pros and cons of accessibility for the most popular social media: Facebook, Twitter, Instagram, and YouTube are adapted from [Media Access](http://www.mediaaccess.org.au/web/social-media-for-people-with-a-disability). Media Access released 'ground-breaking research' in 2012 on social media which the US government then incorporated into its social media policy. Media Access has since updated their findings in February 2016.  The source links for this content can be found below in Tools &amp; Resources.
+
+Keep in mind that by its nature, social media is content that is created and added by users--users who have varying levels of awareness of accessibility. When a user uploads a picture and fails to add alternative text to it, they have made their content inaccessible. When a user uploads a video and does not provide captions or a transcript, they have made their content inaccessible. 
+
+#### Facebook
+[Media Access](http://www.mediaaccess.org.au/web/social-media/facebook) writes that
+> "through 2008 and 2009, Facebook worked in conjunction with the American Foundation for the Blind to improve the accessibility of Facebook."
+
+Facebook's accessibility has thus become much better in recent years by working with the American Foundation for the Blind and their own dedicated accessibility team. Media Access still found, however, that the Facebook mobile site and Facebook mobile apps tended to be more accessible.
+
+Media Access also states that Facebook has started employing image recognition to create alternative text for images. Media Access further details:
+> "The AAT [Automated alternative text] is able to identify features such as the number of people in a photo, their facial expressions, weather and objects, providing alternative text examples such as 'three people smiling next to a car'. While helpful, the feature is currently only available for English users of the iOS app."
+
+##### Facebooking Accessibly
+* **Alternative text**: Include specific, and detailed alternative text for any images.
+* **Text transcript/captions**: Add a text transcript in the comments or caption if there is a video.
+
+#### Twitter
+Twitter, like Facebook, now has a dedicated accessibility team and has improved the overall accessibility of their website, mobile website, and apps a lot in the past few years. To make Twitter more accessible, it is really up to users to supply accessible content. See below for best practices on tweeting accessibly.
 ##### Tweeting Accessibly
-* If you are putting a picture or audio in your tweet, respectively write [PIC], [VIDEO], or [AUDIO] at the beginning.
-* Put the main content at the beginning of your tweet and always leave the hashtags for the end (this is the leetspeek stuff that sounds awful for screen reader users).
+* If you are putting a picture or audio in your tweet, write [PIC], [VIDEO], or [AUDIO] at the beginning.
+* **Image description in mobile apps**: Also, if you are using the iOS or Android mobile app, you can supply an actual image description for a photo.
+* **Content first**: Put the main content at the beginning of your tweet and always leave the hashtags for the end (this is the leetspeek stuff that sounds awful for screen reader users).
+* **CamelCase hashtags**: When using hashtags, use CamelCase (many screen readers have an easier time with CamelCase vs no case).
+
+#### Instagram
+Instagram is owned by Facebook and thus has a similar accessibility status. Instagram works well with VoiceOver and Android's TalkBack. However, since content on Instagram is user-supplied, when people fail to create alternative text for their picture, or captions for their video content, it becomes inaccessible.
+
+##### Instagramming Accessibly
+* **Alternative text**: Include specific, and detailed alternative text for any images.
+* **Text transcript/captions**: Add a text transcript in the comments or caption if there is a video.
+
+#### YouTube
+YouTube has had issues with keyboard access on their website since it first came out. While keyboard access is improved now, it may still be difficult for some users to navigate the site with solely their keyboard. Since launching, YouTube has also increased their efforts to caption videos. When you upload a video now, you have the option to caption it using a Google service which uses voice recognition software to incorporate captions into the video approximately 24 hours later.
+
+##### Making a YouTube Video Accessible (these captions are often, inaccurate, however).
+* **Suggest using the YouTube app**: it has received better accessibility ratings.
+* **Use a YouTube portal**: these are sites that have been created which allow users to access the videos using keyboard shortcuts.
+   * [Accessible YouTube](http://cs.unc.edu/~gb/Accessible-YouTube/)
+   * [Access YouTube](http://accessyoutube.org.uk/)
+* **Request audio captioning, or make captions yourself**: when you upload a video, make sure to always either select the Google captioning option, or use some of the following software to make captions yourself:
+    * [Amara video/caption editing tool](http://www.amara.org/en/)
 
 ### Tools &amp; Resources
 * [Creating Accessible Frames and Iframes ]('http://webaim.org/techniques/frames/')
 * [Twitter DevTools: Embedded Timelines] ('https://dev.twitter.com/web/embedded-timelines')
+* [Google Docs: Work in Docs with a screen reader] (https://support.google.com/docs/topic/6239407?hl=en&ref_topic=6039805)
 * [Perkins webpage where you can view accessible, embedded twitter feed] ('http://www.perkins.org/stories/social-media')
 * [Accessibility and social media] ('https://webtoolkit.govt.nz/guidance/social-media/accessibility-and-social-media/')
+* [LinkedIn Accessibility Status by Media Access](http://www.mediaaccess.org.au/web/social-media/linkedin)
+* [Blogging Platforms (WordPress) Accessibility Status by Media Access](http://www.mediaaccess.org.au/web/social-media/blogging)
+* [Skype Accessibility Status by Media Access](http://www.mediaaccess.org.au/web/social-media/skype)
+
+#### Facebook
+* [Facebook Accessibility Status by Media Access](http://www.mediaaccess.org.au/web/social-media/facebook)
+* [How to add captions to Facebook video] (https://www.facebook.com/help/261764017354370)
+
+#### Twitter
+* [Twitter Accessibility Status by Media Access](http://www.mediaaccess.org.au/web/social-media/twitter)
+
+#### Instagram
+* [Accessibility Status by Media Access](http://www.mediaaccess.org.au/web/social-media/instagram)
+* [Tommy Edison on Instagram](https://www.youtube.com/watch?v=P1e7ZCKQfMA)
+
+#### YouTube
+* [YouTube Accessibility Status by Media Access](http://www.mediaaccess.org.au/web/social-media/youtube)

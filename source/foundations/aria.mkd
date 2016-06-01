@@ -19,7 +19,7 @@ An ARIA role is added via a `role="<ROLE TYPE>"` attribute, and does not ever ch
 * abstract
 
 #### Landmark ARIA Roles
-Much like semantic HTML elements, landmark ARIA Roles are used to give users of assistive technology (AT) a better way to navigate and identify the different parts of a web page.
+Much like semantic HTML elements, landmark ARIA Roles are used to give users of assistive technology a better way to navigate and identify the different parts of a web page.
 
 For many of the roles we have listed on this page, you will notice there are HTML5 elements with the same name, such as `<main>` and the aria landmark `role='main'`.  There is no consensus on this matter, but in our opinion and from our research, using something like:
 
@@ -114,7 +114,7 @@ While there are 35 aria properties and states the W3C defines and which you can 
 * [aria-hidden (state)](https://www.w3.org/TR/wai-aria/states_and_properties#aria-hidden): Indicates that the element and all of its descendants are not visible or perceivable to any user as implemented by the author. See related aria-disabled.
 * [aria-invalid (state)](https://www.w3.org/TR/wai-aria/states_and_properties#aria-invalid): Indicates the entered value does not conform to the format expected by the application.
 * [aria-label](https://www.w3.org/TR/wai-aria/states_and_properties#aria-label): Defines a string value that labels the current element. See related aria-labelledby.
-  - According to a Google Accessibility tutorial, it is not always practical or desirable to have visible labels for all of your objects. For example, there might only be enough space in your toolbar for a printer icon without a visible "Print" label. In cases like this, you should use the aria-label attribute to provide text labels so that users of screen readers and other adaptive technologies can understand what the object is used for.
+  - According to a [Google Accessibility tutorial](https://webaccessibility.withgoogle.com/course), it is not always practical or desirable to have visible labels for all of your objects. For example, there might only be enough space in your toolbar for a printer icon without a visible "Print" label. In cases like this, you should use the aria-label attribute to provide text labels so that users of screen readers and other adaptive technologies can understand what the object is used for.
   - In cases where we use an X, or X as a close button, it is especially important to have an aria label of "Close button" as a screen reader will otherwise read 'multiplication' or 'X' to its user.
 * [aria-labelledby](https://www.w3.org/TR/wai-aria/states_and_properties#aria-labelledby): Identifies the element (or elements) that labels the current element. See related aria-label and aria-describedby.
 * [aria-live](https://www.w3.org/TR/wai-aria/states_and_properties#aria-live): Indicates that an element is dynamic, changing, and will be updated, and describes the types of updates the user can expect from the live region.
