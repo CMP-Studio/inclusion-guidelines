@@ -30,7 +30,7 @@ An embedded Google Map alone is not screen reader accessible. When using Google 
 * A Google Map is typically embedded within an iFrame. Make sure the iFrame includes a <code>title</code> attribute.
 
 ### Tools &amp; Resources
-* [A More Accessible Map] ('http://alistapart.com/article/cssmaps')
-* [W3C Accessible Maps] ('https://www.w3.org/WAI/RD/wiki/Accessible_Maps')
-* [Accessibility tip: Making maps accessible] ('http://www.accessiq.org/news/news/2015/03/accessibility-tip-making-maps-accessible')
-* [Maps] ('http://accessibility.psu.edu/images/maps/')
+* [A More Accessible Map] http://alistapart.com/article/cssmap)
+* [W3C Accessible Maps] https://www.w3.org/WAI/RD/wiki/Accessible_Map)
+* [Accessibility tip: Making maps accessible] (http://www.accessiq.org/news/news/2015/03/accessibility-tip-making-maps-accessible)
+* [Maps] (http://accessibility.psu.edu/images/maps/)

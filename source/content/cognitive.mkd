@@ -27,4 +27,4 @@ To make the web more accessible for users with cognitive disabilities:
 
 
 ### Tools &amp; Resources
-* [Cognitive Accessibility 101 - Part 1: What is Cognitive Accessibility] ('http://jkg3.com/Journal/cognitive-accessibility-101-part-1-what-is-cognitive-accessibility')
+* [Cognitive Accessibility 101 - Part 1: What is Cognitive Accessibility] (http://jkg3.com/Journal/cognitive-accessibility-101-part-1-what-is-cognitive-accessibility)
