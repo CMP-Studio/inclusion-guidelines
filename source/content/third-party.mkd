@@ -17,8 +17,8 @@ Here are few ways you can attempt to provide more accessibility for an iFrame or
 #### Twitter embedded timelines
 Twitter has done substantial work to ensure their timelines you can embed are accessible. Perkins school for the blind currently uses their embed.
 
-Learn more <a href='https://dev.twitter.com/web/embedded-timelines
-' title='Link to twitter dev tools for embedding twitter timeline'>here</a>.
+Learn more about <a href='https://dev.twitter.com/web/embedded-timelines
+' title='Link to twitter dev tools for embedding twitter timeline'>Twitter dev tools for embedding a timeline here</a>.
 
 ##### Tweeting Accessibly
 * If you are putting a picture or audio in your tweet, respectively write [PIC], [VIDEO], or [AUDIO] at the beginning.

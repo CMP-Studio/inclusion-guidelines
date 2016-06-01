@@ -1,10 +1,10 @@
 ---
-title: SVG | Accessibility Guidelines
+title: SVG &amp; Icon Fonts | Accessibility Guidelines
 ---
 
 ## SVG
 
-SVG (Scalable Vector Graphics) seems to be the future of web graphics. A vector-based, XML formatted image, SVGs are not dependent on resolution and are easily re-sized without degradation.  SVGs can be easily manipulated and animated with CSS and/or JavaScript.  SVG is thus great for responsive design and decreases page load time (as opposed to using JPG, JPEG, PNG, etc.). While SVG is not entirely supported by some IE browsers and Android/Windows phone native browsers, indications are that it likely will be soon.
+SVG (Scalable Vector Graphics) appear to be the future of web graphics. As a vector-based, XML formatted image, SVGs are not dependent on resolution and are easily re-sized without degradation.  SVGs can be easily manipulated and animated with CSS and/or JavaScript.  SVG is thus great for responsive design and decreases page load time (as opposed to using JPG, JPEG, PNG, etc.). While SVG is not entirely supported by some IE browsers and Android/Windows phone native browsers, indications are that it likely will be soon.
 
 ### Best Practices
 
@@ -30,7 +30,7 @@ SVG (Scalable Vector Graphics) seems to be the future of web graphics. A vector-
 
 * If there is more than one shape, it can be a good idea to include a title tag for each shape group.
 
-* Including a `<desc>` tag (description), in addition to a title tag, is very helpful for users of AT.
+* Including a `<desc>` tag (description), in addition to a title tag, is very helpful for users of assistive technology.
 
 * On his site, Dudley Storey writes that '`<desc>` is a longer description of the SVG element, containing its purpose or design.'
 
@@ -49,8 +49,29 @@ SVG (Scalable Vector Graphics) seems to be the future of web graphics. A vector-
 
 <Live Example>
 
+## Icon Fonts
+Icons can convey a large amount of information without having to express what you mean in words. To make sure icon fonts are accessible to all your users, though, think about the following:
+
+### Best Practices 
+* **Icon is purely decorative**: If your icon is purely decorative, include a <code> aria-hidden='true'</code> attribute.
+* **Icon is important contextually**: Include a <code>title</code> attribute, and a styled screen reader text span.
+
+```html
+  <i class="fa fa-bicycle" aria-hidden="true" title="Time to destination by bike"></i>
+  <span class="screenreader-text">Time to destination by bike:</span>
+```
+
+```html
+  <span class='screenreader-text'>
+    <span class="icon-star" aria-hidden="true"></span>
+    Favorite
+  </span>
+```
+
 ### Tools &amp; Resources
 
+* [Ten Reasons we switched from an icon font to SVG] (http://ianfeather.co.uk/ten-reasons-we-switched-from-an-icon-font-to-svg/)
 * [Making SVG Accessible](http://thenewcode.com/1026/Making-SVG-Accessible)
 * [Accessibility Features of SVG (W3C)](https://www.w3.org/TR/SVG-access/)
 * [Bulletproof Accessible Icon Fonts](https://www.filamentgroup.com/lab/bulletproof_icon_fonts.html)
+* [Font Awesome Accessibility] (http://fontawesome.io/accessibility/)

@@ -9,7 +9,7 @@ Search bars can be a way for users of assistive technology to quickly find answe
 
 ### Best Practices
 
-* Refer back to the [forms and form validation](/code/forms) section to get the best practices for `form`, `label`, and `input` elements.
+* Refer back to the [forms and form validation section](/code/forms) to get the best practices for `form`, `label`, and `input` elements.
 * A search bar should be set up in a `form` as paired `label` and `input`.
 
 * Using a submit button to search decreases the number of keystrokes necessary to use the form.
@@ -38,7 +38,7 @@ Search bars can be a way for users of assistive technology to quickly find answe
 
 * [US Standards Search Bar](https://standards.usa.gov/search-bar/)
 
-#### See Live Examples of Search Bars:
+#### See Live Examples of Accessible Search Bars:
 * [Simply Accessible Website](http://simplyaccessible.com/)
 * [Perkins School for the Blind](http://www.perkins.org/)
 * [Freedom Scientific](http://www.freedomscientific.com/)

@@ -10,19 +10,19 @@ When a screen reader, or any sort of assistive device scans a web page, it gets 
 
 Many screen readers have functionality that allows a user to select to read only the headings on the page, or only the links. Giving precedence to the way headings and links are written is a significant way we can make browsing the web easier for these users.
 
-HTML5 introduced several new semantic elements representing logical sections or components of a web app or document. None of the new elements actually "do" anything by themselves, but they provide a nice way for web authors to define various parts of a document, and open the door for user agents and assistive technologies (AT) to use this information to enable alternate ways of viewing and navigating a page.
+HTML5 introduced several new semantic elements representing logical sections or components of a web app or document. None of the new elements actually "do" anything by themselves, but they provide a nice way for web authors to define various parts of a document, and open the door for user agents and assistive technologies to use this information to enable alternate ways of viewing and navigating a page.
 
-When we write semantically correct HTML, we're letting the browser know what type of content it's dealing with and how that content relates to other content. By doing this, AT is more easily able to do its job because it has a structure that it can work with. Screen reader software like JAWS or NVDA doesn't just turn text into speech - it can use information in the HTML to list all of the headings on a page, give extra navigation controls to data tables, or announce how many items are in a list, among other things.
+When we write semantically correct HTML, we're letting the browser know what type of content it's dealing with and how that content relates to other content. By doing this, assistive technology is more easily able to do its job because it has a structure that it can work with. Screen reader software like JAWS or NVDA doesn't just turn text into speech - it can use information in the HTML to list all of the headings on a page, give extra navigation controls to data tables, or announce how many items are in a list, among other things.
 
 ### Best Practices
 
 #### Use Container Elements for Layout Only
 
-Elements like `<div>` and `<span>` are for layout only. They're semantically meaningless, they don't have keyboard or touch support in any browser, and they don't communicate anything to the accessibility API.
+Elements like `<div>` and `<span>` are for layout only. They're semantically meaningless, they don't have keyboard or touch support in any browser, and they don't communicate anything to the accessibility API.  For example, never use a `div` or `span` for a button when you could use a semantically meaningful `button` element.
 
 #### Use Other HTML Elements the Way They're Intended
 
-All of the other HTML elements should be used to tell the browser what functional purpose your content serves. These other HTML elements provide meaning to the browser and AT about what you're saying on your website, so you should choose them based on what the content is - not based on how they look with graphics.
+All of the other HTML elements should be used to tell the browser what functional purpose your content serves. These other HTML elements provide meaning to the browser and assistive technology about what you're saying on your website, so you should choose them based on what the content is - not based on how they look with graphics.
 
 ##### HTML elements to structure every page:
 * header

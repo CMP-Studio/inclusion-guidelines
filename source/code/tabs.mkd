@@ -11,7 +11,7 @@ The key to making tabs accessible is to toggle some ARIA properties and states o
 
 Simply Accessible, a web firm which specializes in web accessibility practices, recently released a controversial article about how to make tabs accessible. In it, they note how they are doing things a bit differently than the accepted practices. Here is a summary of how Simply Accessible implements accessible tabs and why:
 
-* Like other examples of navigation and accordions, the tabs and tab panels are arranged in an unordered list structure to give users of AT a better idea of how many tab elements they are dealing with.
+* Like other examples of navigation and accordions, the tabs and tab panels are arranged in an unordered list structure to give users of assistive technology a better idea of how many tab elements they are dealing with.
 
 * The ARIA `roles` of `tab` and `tablist` are not used because many screen readers did not pick these attributes up when many users requested the links list functionality of their screen readers.
 
@@ -36,7 +36,7 @@ Simply Accessible, a web firm which specializes in web accessibility practices, 
 * Each tab panel has an `aria-hidden` attribute that is toggled between `true` or `false` based on the `aria-selected` attribute of the tab controls. When `true`, the tab panel is neither visible nor perceivable by screen reader, and assistive technologies will skip over this content. However, the tab panels are also being set between `{display: none;}` and `{display: block;}`, so screen readers will most likely not read the `{display: none;}` content anyways and `aria-hidden` attributes may be unnecessary.
 
 * Each tab panel also has an `aria-labelledby` attribute which seems to be acting in a very similar way to how the `aria-controls` acted in our accordions example.
-  - The `aria-labelledby` attribute is set to the `id` of the corresponding tab control, such as: `aria-labelledby='tab-control-{#}'` to give users of AT a more comprehensive idea of how the tabs and tab panels are linked.
+  - The `aria-labelledby` attribute is set to the `id` of the corresponding tab control, such as: `aria-labelledby='tab-control-{#}'` to give users of assistive technology a more comprehensive idea of how the tabs and tab panels are linked.
 
 You can also view [the full codepen for Simply Accessible's example](http://codepen.io/jeffsmith/pen/mPByya/).
 
@@ -189,4 +189,7 @@ $(function(){
 
 * [Danger! Testing Accessibility with real people](https://medium.com/@LeonieWatson/danger-testing-accessibility-with-real-people-4515f72db648)
 * [ARIA tabs, UI problems and standards](https://alastairc.ac/2016/05/aria-tabs-ui-problems-and-standards/)
+
+### Other Live Examples of Accessible Tabs
 * [Accessible Tabs Examples](http://blog.ginader.de/dev/jquery/accessible-tabs/)
+* [NVDA Accessible Tabs Example] (http://www.nvaccess.org/)

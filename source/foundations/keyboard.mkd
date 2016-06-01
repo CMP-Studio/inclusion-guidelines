@@ -5,7 +5,7 @@ title: Keyboard Access | Accessibility Guidelines
 ## Keyboard Access
 Your website must be fully accessible via keyboard, meaning that all interactions and information that can be accessed with a mouse, must be accessible with just a keyboard.
 
-To [implement](http://google.com "google this") this technique, identify all functions on the page. Consider functions performed using both the mouse and keyboard together.
+To implement this technique, identify all functions on the page. Consider functions performed using both the mouse and keyboard together.
 
 Examples of functionality include:
 

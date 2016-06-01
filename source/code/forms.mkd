@@ -24,7 +24,7 @@ These best practices have used substantial information from the [US design stand
 
 * Each `fieldset` should have a `legend` element (directly under the first `fieldset` tag) that describes the grouping.
 
-* These practices give screen readers and users of AT more information about the form, allowing them to better fill it out.
+* These practices give screen readers and users of assistive technology more information about the form, allowing them to better fill it out.
 
 * Every `input` element in a `form` should have a related `label`. You can either have a hybrid `label`, which is recommended for accessibility, or an explicit `label`.
     * **Hybrid labels**: These are labels which surround their associated input.
@@ -466,3 +466,8 @@ Consider an alternative method:
 * [US Standards Form Controls](https://standards.usa.gov/form-controls/)
 
 * [Text CAPTCHA generates textual CAPTCHAs based on simple logic questions](http://textcaptcha.com)
+
+### Other Live Examples of Accessible Forms
+* [NVDA Donation Form] (http://www.nvaccess.org/donate/)
+* [Perkins School for the Blind Email Sign-up Form] (http://support.perkins.org/site/PageServer?pagename=reg_form_email)
+* [Simply Accessible Contact Form] (http://simplyaccessible.com/contact/)

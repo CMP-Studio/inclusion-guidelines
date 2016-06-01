@@ -22,7 +22,7 @@ modal_content: "
 
 Generally, modals are pieces of text that pop up inside of the main web page window, prompting you to an action or giving you a reminder. Modals should be used sparingly. Much like alerts, they disrupt the flow of what a user is doing if they cannot control the opening of a modal. If the user can control the opening and closing of the modal with buttons, that is a much better alternative.
 
-UX Movement notes that modals should be used
+[UX Movement](http://uxmovement.com/forms/best-practices-for-modal-windows/) notes that modals should be used
 
 > when there are steps the user needs to do before the task can be completed. Using a modal window instead of a full page allows users to maintain the context of their task".
 > -Anthony, 03/23/11
@@ -160,12 +160,13 @@ setModalClose();
 
 * [Design Patterns: expected keyboard behaviors (W3C)](https://www.w3.org/TR/wai-aria-practices/#aria_ex)
 
-* [The Incredible Accessible Modal Window](https://accessibility.oit.ncsu.edu/training/aria/modal-window/version-3/)
-
-* [ARIA Dialog Example (Modal)](http://accessibility.athena-ict.com/aria/examples/dialog.shtml)
-
 * [Best Practices for Modal Windows](http://uxmovement.com/forms/best-practices-for-modal-windows/)
 
 * [Making Elements Focusable with Tabindex](http://snook.ca/archives/accessibility_and_usability/elements_focusable_with_tabindex)
 
 * [US Web Design Standards: Alerts](https://standards.usa.gov/alerts/)
+
+### Other Live Examples of Accessible Modals
+* [The Incredible Accessible Modal Window](https://accessibility.oit.ncsu.edu/training/aria/modal-window/version-3/)
+
+* [ARIA Dialog Example (Modal)](http://accessibility.athena-ict.com/aria/examples/dialog.shtml)
