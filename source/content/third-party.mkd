@@ -1,7 +1,7 @@
 ---
 title: Third Party Embeds | Accessibility Guidelines
 ---
-## Third Party Embeds &amp; Social Media
+## Third Party Embeds, Downloads, &amp; Social Media
 
 For any website, as content editors and developers, we end up wanting to link our websites to third party services. Now that social media is such an important way for people to stay connected to your institution, having twitter, facebook, instagram, and any other number of social embeds on your website is often seen as a significant way to keep people engaged.  However, the accessibility of many of these embeds is not a given.  Do your research and test out embeds/iFrames with screen readers and keyboard-only navigating.  Ultimately, you can only ensure that the content on your own website is accessible, so be careful using third party embeds.
 
@@ -19,6 +19,9 @@ Twitter has done substantial work to ensure their timelines you can embed are ac
 
 Learn more about <a href='https://dev.twitter.com/web/embedded-timelines
 ' title='Link to twitter dev tools for embedding twitter timeline'>Twitter dev tools for embedding a timeline here</a>.
+
+#### Google Docs
+Google Docs are accessible by default, and can also be created, edited, and commented on in an accessible way. The first step to accessibly creating, editing, or commenting on a Google Docs file is [enabling screen reader support](https://support.google.com/docs/answer/6282736). Once screen reader support has been enabled, users can perform the same basic actions in Google Docs, Google Sheets, and Google Slides. See "[Get started in Docs editors with a screen reader](https://support.google.com/docs/answer/6239410)" for more information on using Google Docs files in an accessible way.
 
 ### Social Media Accessibility Status
 The following pros and cons of accessibility for the most popular social media: Facebook, Twitter, Instagram, and YouTube are adapted from [Media Access](http://www.mediaaccess.org.au/web/social-media-for-people-with-a-disability). Media Access released 'ground-breaking research' in 2012 on social media which the US government then incorporated into its social media policy. Media Access has since updated their findings in February 2016.  The source links for this content can be found below in Tools &amp; Resources.
@@ -67,6 +70,7 @@ YouTube has had issues with keyboard access on their website since it first came
 ### Tools &amp; Resources
 * [Creating Accessible Frames and Iframes ]('http://webaim.org/techniques/frames/')
 * [Twitter DevTools: Embedded Timelines] ('https://dev.twitter.com/web/embedded-timelines')
+* [Google Docs: Work in Docs with a screen reader] (https://support.google.com/docs/topic/6239407?hl=en&ref_topic=6039805)
 * [Perkins webpage where you can view accessible, embedded twitter feed] ('http://www.perkins.org/stories/social-media')
 * [Accessibility and social media] ('https://webtoolkit.govt.nz/guidance/social-media/accessibility-and-social-media/')
 * [LinkedIn Accessibility Status by Media Access](http://www.mediaaccess.org.au/web/social-media/linkedin)
