@@ -1,7 +1,7 @@
 ---
 title: Third Party Embeds | Accessibility Guidelines
 ---
-## Third Party Embeds &amp; Social Media
+## Third Party Embeds, Downloads, &amp; Social Media
 
 For any website, as content editors and developers, we end up wanting to link our websites to third party services. Now that social media is such an important way for people to stay connected to your institution, having twitter, facebook, instagram, and any other number of social embeds on your website is often seen as a significant way to keep people engaged.  However, the accessibility of many of these embeds is not a given.  Do your research and test out embeds/iFrames with screen readers and keyboard-only navigating.  Ultimately, you can only ensure that the content on your own website is accessible, so be careful using third party embeds.
 
@@ -24,8 +24,12 @@ Learn more about <a href='https://dev.twitter.com/web/embedded-timelines
 * If you are putting a picture or audio in your tweet, respectively write [PIC], [VIDEO], or [AUDIO] at the beginning.
 * Put the main content at the beginning of your tweet and always leave the hashtags for the end (this is the leetspeek stuff that sounds awful for screen reader users).
 
+#### Google Docs
+Google Docs are accessible by default, and can also be created, edited, and commented on in an accessible way. The first step to accessibly creating, editing, or commenting on a Google Docs file is [enabling screen reader support](https://support.google.com/docs/answer/6282736). Once screen reader support has been enabled, users can perform the same basic actions in Google Docs, Google Sheets, and Google Slides. See "[Get started in Docs editors with a screen reader](https://support.google.com/docs/answer/6239410)" for more information on using Google Docs files in an accessible way.
+
 ### Tools &amp; Resources
-* [Creating Accessible Frames and Iframes ]('http://webaim.org/techniques/frames/')
-* [Twitter DevTools: Embedded Timelines] ('https://dev.twitter.com/web/embedded-timelines')
-* [Perkins webpage where you can view accessible, embedded twitter feed] ('http://www.perkins.org/stories/social-media')
-* [Accessibility and social media] ('https://webtoolkit.govt.nz/guidance/social-media/accessibility-and-social-media/')
+* [Creating Accessible Frames and Iframes ](http://webaim.org/techniques/frames/)
+* [Twitter DevTools: Embedded Timelines] (https://dev.twitter.com/web/embedded-timelines)
+* [Google Docs: Work in Docs with a screen reader] (https://support.google.com/docs/topic/6239407?hl=en&ref_topic=6039805)
+* [Perkins webpage where you can view accessible, embedded twitter feed] (http://www.perkins.org/stories/social-media)
+* [Accessibility and social media] (https://webtoolkit.govt.nz/guidance/social-media/accessibility-and-social-media/)
