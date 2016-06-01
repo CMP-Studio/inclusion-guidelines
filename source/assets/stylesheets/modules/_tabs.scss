@@ -9,7 +9,7 @@
 
       li {
         text-align: center;
-        @include column(2);
+        @include column(4);
         border-top: 1px solid $border-color;
         border-left: 1px solid $border-color;
         border-right: 1px solid $border-color;
@@ -38,11 +38,11 @@
 
     .tab-panel {
       display: none;
-      padding: 1em;
-      border: 1px solid $border-color;
 
       &.current {
         display: block;
+        padding: 1em;
+        border: 1px solid $border-color;
       }
     }
   }
