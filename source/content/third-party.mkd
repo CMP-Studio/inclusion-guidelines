@@ -68,11 +68,11 @@ YouTube has had issues with keyboard access on their website since it first came
     * [Amara video/caption editing tool](http://www.amara.org/en/)
 
 ### Tools &amp; Resources
-* [Creating Accessible Frames and Iframes ]('http://webaim.org/techniques/frames/')
-* [Twitter DevTools: Embedded Timelines] ('https://dev.twitter.com/web/embedded-timelines')
+* [Creating Accessible Frames and Iframes ](http://webaim.org/techniques/frames/)
+* [Twitter DevTools: Embedded Timelines] (https://dev.twitter.com/web/embedded-timelines)
 * [Google Docs: Work in Docs with a screen reader] (https://support.google.com/docs/topic/6239407?hl=en&ref_topic=6039805)
-* [Perkins webpage where you can view accessible, embedded twitter feed] ('http://www.perkins.org/stories/social-media')
-* [Accessibility and social media] ('https://webtoolkit.govt.nz/guidance/social-media/accessibility-and-social-media/')
+* [Perkins webpage where you can view accessible, embedded twitter feed] (http://www.perkins.org/stories/social-media)
+* [Accessibility and social media] (https://webtoolkit.govt.nz/guidance/social-media/accessibility-and-social-media/)
 * [LinkedIn Accessibility Status by Media Access](http://www.mediaaccess.org.au/web/social-media/linkedin)
 * [Blogging Platforms (WordPress) Accessibility Status by Media Access](http://www.mediaaccess.org.au/web/social-media/blogging)
 * [Skype Accessibility Status by Media Access](http://www.mediaaccess.org.au/web/social-media/skype)

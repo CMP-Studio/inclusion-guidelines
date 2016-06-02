@@ -21,8 +21,8 @@ To make PDFs more accessible, consider these recommendations:
 ### Tools &amp; Resources
 Here are some resources if you want to repair PDFs to be accessible to all users.
 
-* [Common Look] ('http://commonlook.com/')
-* [Adobe Acrobat Accessibility Guides] ('http://www.adobe.com/accessibility/products/acrobat/training.html')
+* [Common Look] (http://commonlook.com/)
+* [Adobe Acrobat Accessibility Guides] (http://www.adobe.com/accessibility/products/acrobat/training.html)
 
 Here are some resources for creating accessible Word documents.
 

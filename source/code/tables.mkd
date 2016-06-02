@@ -13,5 +13,6 @@ Do not use tables for page layout or for information that is not tabular (i.e. i
 * <span class="text-bold">Title</span>: When adding a title to a table, include it in a `<caption>` tag inside of the `<table>` element.
 
 ### Tools &amp; Resources
-* [Creating Accessible Tables] ('http://webaim.org/techniques/tables/data')
-* [US Standards Tables] ('https://standards.usa.gov/tables/')
+
+* [Creating Accessible Tables](http://webaim.org/techniques/tables/data)
+* [US Standards Tables](https://standards.usa.gov/tables/)

@@ -6,15 +6,15 @@ title: Calendars | Accessibility Guidelines
 
 On most museum websites, it seems like there are two general types of calendars:
 
-1. An inline list generated view of events which you can filter by clicking on a month (which generally is a link).
+1. An inline list generated view of events which you can filter by clicking on a month (which generally is a link or button).
 
-2. A table-based calendar that filters by clicking on a certain day or month.
+2. A table-based calendar that filters events by clicking on a certain day or month.
 
 ### Best Practices
 
 #### Inline Calendar
 
-* Think of different ways to clarify how to filter the results for events. Having a heading that clearly states: 'Filter by month,' could really help and then the different links or buttons for months available directly below that.
+* Sometimes a table might not be the best option for users of all abilities to filter for a date or time period. Consider instead having a heading that clearly states: 'Filter by month,' and then the different buttons to filter by month or week available directly below that.
 
 * Also, make sure you add a proper heading to each result. Many screen readers have the functionality to tell a user what different headings or links are on the page, and the ability to use that function would probably make a user's experience that much easier.
 

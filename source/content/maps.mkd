@@ -3,24 +3,24 @@ title: Maps | Accessibility Guidelines
 ---
 ## Maps
 
-Maps can present accessibility challenges.
+Road maps can present accessibility challenges. In this section, we are addressing best practices for road maps. Floor plans present a different set of challenges, and can best be handled by in-person assistance.
 
 ### Best Practices
 
-* <span class="text-bold">Text-based directions</span>: If the map is used to provide directions to a location, make sure to also provide text-based directions.
-* <span class="text-bold">Alt attributes</span>: If you are using a static image for the map, make sure to include a descriptive alt tag. Embedded maps, such as Google Maps, should include some sort of label.
-* <span class="text-bold">Multiple locations</span>: If you are using a map to display multiple locations, provide a text list of locations.
-* <span class="text-bold">Color and contrast</span>: If a map includes color coded regions, make sure that there is sufficient contrast between the text and the background, and that color coding is accessible for users with color-deficient vision. A good test is to see if the map is still usable in black and white.
-* <span class="text-bold">Consistency and simplicity</span>: Keep maps consistent and simple in their styling.
-* <span class="text-bold">3D or tactile version</span>: You may want to have a tactile map available for non-sighted users.
+* **Text-based directions:** If the map is used to provide directions to a location, make sure to also provide text-based directions.
+* **Alt attributes:** If you are using a static image for the map, make sure to include a descriptive alt tag. Embedded maps, such as Google Maps, should include some sort of label.
+* **Multiple locations:** If you are using a map to display multiple locations, provide a text list of locations.
+* **Color and contrast:** If a map includes color coded regions, make sure that there is sufficient contrast between the text and the background, and that color coding is accessible for users with color-deficient vision. A good test is to see if the map is still usable in black and white.
+* **Consistency and simplicity:** Keep maps consistent and simple in their styling.
+* **3D or tactile version:** You may want to have a tactile map available for non-sighted users.
 
 #### ESRI, GIS, and StoryMaps
 These suggestions are specifically geared towards visually impaired users.
 
 * There seems to be no great way, at this moment in time, for visually impaired and blind users to interact with ESRI maps, StoryMaps, etc. People who use screen readers, however, can interact with tables of data.
-    * <span class="text-bold">Present the data</span>: Most maps you can create on ESRI, StoryMapsJS, CartoDB, etc. have an accompany set of tabular data you can view and alter. Presenting that data, as an alternative to viewing that map, can be helpful. 
-    * <span class="text-bold">Title and description</span>: Always include an accompanying title, and description of the map that details the findings, and how it is laid out.
-    * <span class="text-bold">Audio description</span>: Think about adding an audio description of the map for users. Just like in a text-based description, tell the user about the layout of the map, its purpose, and findings.
+    * **Present the data:** Most maps you can create on ESRI, StoryMapsJS, CartoDB, etc. have an accompany set of tabular data you can view and alter. Presenting that data, as an alternative to viewing that map, can be helpful.
+    * **Title and description:** Always include an accompanying title, and description of the map that details the findings, and how it is laid out.
+    * **Audio description:** Think about adding an audio description of the map for users. Just like in a text-based description, tell the user about the layout of the map, its purpose, and findings.
 
 #### Google Maps
 An embedded Google Map alone is not screen reader accessible. When using Google Maps, follow these tips:
@@ -29,8 +29,17 @@ An embedded Google Map alone is not screen reader accessible. When using Google 
 * Include basic, text-based directions.
 * A Google Map is typically embedded within an iFrame. Make sure the iFrame includes a <code>title</code> attribute.
 
+#### Embedded Google Map Example:
+In the example below, we've embedded a Google Map, but we're setting it off with a descriptive heading which is also linked to the Google Maps site. A screen reader should announce that the heading is a link, and if the user chooses, they will be taken to the Google Maps site. On mobile devices with the Google Maps app installed, users should be automatically prompted as to whether or not they'd like to open the link in their Google Maps app. A survey of users relying on screen reader software shows that those users rely heavily on map applications such as Google Maps.
+
+##### [Carnegie Museum & Library Location](https://www.google.com/maps?ll=40.443325,-79.950485&z=16&t=m&hl=en-US&gl=US&mapclient=embed&cid=4136382053310121540):
+<div class="map-embed">
+  <iframe title="Carnegie Museum & Library" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.4432784382084!2d-79.95267328414492!3d40.44332487936197!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f2265ce2f431%3A0x3967618fded9c644!2sCarnegie+Museums+of+Pittsburgh!5e0!3m2!1sen!2sus!4v1464813647433" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
 ### Tools &amp; Resources
-* [A More Accessible Map] ('http://alistapart.com/article/cssmaps')
-* [W3C Accessible Maps] ('https://www.w3.org/WAI/RD/wiki/Accessible_Maps')
-* [Accessibility tip: Making maps accessible] ('http://www.accessiq.org/news/news/2015/03/accessibility-tip-making-maps-accessible')
-* [Maps] ('http://accessibility.psu.edu/images/maps/')
+
+* [A More Accessible Map](http://alistapart.com/article/cssmap)
+* [W3C Accessible Maps](https://www.w3.org/WAI/RD/wiki/Accessible_Map)
+* [Accessibility tip: Making maps accessible](http://www.accessiq.org/news/news/2015/03/accessibility-tip-making-maps-accessible)
+* [Maps](http://accessibility.psu.edu/images/maps/)

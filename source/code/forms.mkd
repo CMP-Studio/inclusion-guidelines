@@ -32,7 +32,7 @@ These best practices have used substantial information from the [US design stand
 
 * Your form submission button should have `type="submit"` and have, like all buttons, a clear, actionable title. Do not use auto-submission after the user has filled out the last input.
 
-  - Ex. "Send Message", "Submit Message", "Subscribe"
+  - Example: "Send Message", "Submit Message", "Subscribe"
 
 #### Form Inputs
 
@@ -44,7 +44,7 @@ This information applies to all sorts of valid inputs: text inputs, `textarea` e
 
 * If the input is required, put "Required" or "(required)" within a `span` in the label. Consider not using "*" to indicate required inputs as it is often not read by screen readers.
 
-  - Ex. `<label for="name">First Name <span>(required)</span></label>`
+  - Example: `<label for="name">First Name <span>(required)</span></label>`
 
   - Also, within the `input`, include an HTML5 `required=''` attribute so that you can use JavaScript form validation. (If you use both the HTML5 `required` and `aria-required` attributes in the `input` element, a screen reader will end up reading "required" twice, which is a bit annoying).
 
@@ -149,7 +149,7 @@ Our solution takes advantage of the jQuery <code>.validity.valid</code>, and app
   </fieldset>
 
   <fieldset>
-    <legend id='legend' tabindex='0'>Can we add you to our email mailing list? <span class="required">(required)</span></legend>
+    <legend id='legend-1' tabindex='0'>Can we add you to our email mailing list? <span class="required">(required)</span></legend>
 
     <ul>
       <li>
@@ -174,7 +174,7 @@ Our solution takes advantage of the jQuery <code>.validity.valid</code>, and app
   </fieldset>
 
   <fieldset>
-    <legend id='legend' tabindex='0'>Which topics interest you? <span class="required">(required)</span></legend>
+    <legend id='legend-2' tabindex='0'>Which topics interest you? <span class="required">(required)</span></legend>
 
     <ul>
       <li>
@@ -353,7 +353,7 @@ $(document).ready(function(){
     </fieldset>
 
     <fieldset>
-      <legend id='legend' tabindex='0'>Can we add you to our email mailing list? <span class="required">(required)</span></legend>
+      <legend id='legend-1' tabindex='0'>Can we add you to our email mailing list? <span class="required">(required)</span></legend>
 
       <ul>
         <li>
@@ -378,7 +378,7 @@ $(document).ready(function(){
     </fieldset>
 
     <fieldset>
-      <legend id='legend' tabindex='0'>Which topics interest you? <span class="required">(required)</span></legend>
+      <legend id='legend-2' tabindex='0'>Which topics interest you? <span class="required">(required)</span></legend>
 
       <ul>
         <li>
