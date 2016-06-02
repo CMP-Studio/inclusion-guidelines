@@ -4,8 +4,7 @@
 
     .tabs-list {
       @include reset-list;
-      margin:0;
-      display: flex;
+      margin: 0;
 
       li {
         text-align: center;
@@ -40,6 +39,7 @@
       display: none;
 
       &.current {
+        clear: both;
         display: block;
         padding: 1em;
         border: 1px solid $border-color;
