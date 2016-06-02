@@ -4,7 +4,7 @@ title: Alerts | Accessibility Guidelines
 
 ## Alerts
 
-Alerts are often boxes of text that can pop up on a web page or be present during a certain time period. Alerts can be very similar to modals, in that they prompt a user to do some action.  Additionally, alerts are good for informing a user of time sensitive information (e.g. the tickets in their cart will be expiring soon).
+Alerts are often boxes of text that can pop up on a web page or be present during a certain time period. Alerts can be very similar to modals, in that they prompt a user to take some action.  Additionally, alerts are good for informing a user of time sensitive information (e.g. the tickets in their cart will be expiring soon).
 
 Alerts should be used sparingly, and only as needed. A good instance of an alert is if a user tried to use a form and inputs incorrect information -- an alert can pop up at the top of the form and help them understand why their input is incorrect. (This does not replace doing inline form validation--see our [forms section](/code/forms) for more).
 

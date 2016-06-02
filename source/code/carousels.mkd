@@ -6,7 +6,8 @@ title: Carousels | Accessibility Guidelines
 
 Carousels are all over the web. Websites often use them to promote a few different pieces of content as a center piece. However, research has been done which shows users don't really interact with carousels, or if they do, they only interact/see the first slide. Oftentimes, carousels are simply a way to compromise on what is the most important piece of content for the page--allowing you to promote multiple. different things.
 
-In terms of accessibility, carousels really aren't great. To a visually impaired person, they are rapidly changing images which are controlled by an often arbitrary or non-existent set of buttons. If these images are presenting the most important content on your website, consider using something that's not relaying content through an image.
+In terms of accessibility, carousels are not ideal and pose some issues. To a visually impaired person, they are rapidly changing images which are controlled by an often arbitrary or non-existent set of buttons. If these images are presenting the most important content on your website, consider using something that's not relaying content through an image.
+
 
 ### Best Practice
 
@@ -20,7 +21,7 @@ Many of the following best practices are adapted from Gian Wild's article ["The 
 
 * Provide an alternative to the content in the slideshow (especially the content that is on slides other than the first).
 
-* Give elements in a slideshow a clear focus order (meaning you will either make the html fall in the correct order, or add different tabindex values to dictate the tabbing order).
+* Give elements in a slideshow a clear focus order (meaning you will either make the html fall in the correct order, or add different tab index values to dictate the tabbing order).
 
 * Include 5 or fewer elements in the carousel (suggested by Nielsen Norman Group).
 

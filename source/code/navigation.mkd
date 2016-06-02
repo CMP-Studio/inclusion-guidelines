@@ -3,7 +3,7 @@ title: Navigation | Accessibility Guidelines
 ---
 ## Navigation
 
-Navigation is the way all users find the different pages available on your site. For this reason, it is imperative that navigation is accessible. By their nature, links are tab-able and all keyboard users and screen readers will read them--so, if your navigation is coded with links, a screen reader should find them.
+Navigation is the way users find and traverse the different pages available on your site. For this reason, it is imperative that navigation is accessible. By their nature, links are tab-able and all keyboard users and screen readers will read them--so, if your navigation is coded with links, a screen reader should find them.
 
 Navigation becomes more complicated when we move to tablet and mobile views. With the general practice these days being that we condense all navigation to be hidden behind a "menu" icon, we need users to be able to understand what that menu icon's purpose is, and what to expect upon clicking on it.
 
@@ -13,7 +13,7 @@ Navigation becomes more complicated when we move to tablet and mobile views. Wit
 
 * Code your navigation using link tags.
 
-* Put your links within an unordered list structure so that a screen reader will read out how many things are in the list to give visually impaired useres the most information possible about the contents of the navigation.
+* Put your links within an unordered list structure so that a screen reader will read out how many things are in the list to give visually impaired users the most information possible about the contents of the navigation.
 
 * Use the semantic `<nav>` tag around your unordered list and links with an ARIA `role='navigation'` attribute.
   - Testing this navigation with Chrome Vox, we found that without an ARIA `role` attribute, the screen reader would not read any other aria attributes--for this reason, it seems ARIA roles are crucial for screen readers.
@@ -35,7 +35,7 @@ Navigation becomes more complicated when we move to tablet and mobile views. Wit
 
 ##### Mobile Navigation
 
-Mobile navigation often acts in very similar ways to accordions on websites. For further information, you can also look to the accordion section.
+Mobile navigation often acts in very similar ways to accordions on websites. For further information, you can also look to the [accordion section](/code/accordions).
 
 ######  Mobile Trigger, Hamburger Button
 
@@ -43,7 +43,7 @@ Mobile navigation often acts in very similar ways to accordions on websites. For
 * If your button has only an image, icon, or vague link text, put an `aria-label` on your trigger/hamburger. (Keep in mind that if you use an `aria-label`, a screen reader will only read the label and not the button text most times).
 * For example, you can have: `aria-label='Mobile Navigation Trigger'` or 'Open Menu.'
 * Additionally, if you really want to be specific, you can toggle your button's text between 'Open Menu' and 'Close Menu' with JavaScript.
-* Add and toggle an `aria-expanded` attribute to your button letting the user know if the content the button controls is expanded or not.
+* Add and toggle an `aria-expanded` attribute to your button letting the user know if the content the button controls are expanded or not.
 
 ```html
   <section class="mobile-navigation">
@@ -57,9 +57,9 @@ Mobile navigation often acts in very similar ways to accordions on websites. For
 ###### Navigation List (generally hidden)
 
 * This should follow all of the characteristics of the horizontal menu specified above, including that is has a semantic `nav` tag wrapping a list of links with a `role='navigation'` attribute, and uses an `aria-label` to describe its purpose.
-* If you have your navigation hidden on mobile views, use: `{display: none;}` so that screen readers can also not read it (if you use `{visibility: hidden;}`, screen readers can still sometimes read that).
+* If you have your navigation hidden on mobile views, use: `{display: none;}` so that screen readers can not read it (if you use `{visibility: hidden;}`, screen readers can still sometimes read that).
 * Additionally, you can use an ARIA `aria-hidden='true'` attribute to ensure screen readers will not be reading your hidden content, though this is often unnecessary if you are using `{display: none;}`*.
-* If using an `aria-hidden` attribute, toggle this property upon showing and hiding the navigation.
+* If using an `aria-hidden` attribute, you should toggle this property upon showing and hiding the navigation.
 
 ```html
   <nav aria-label="Mobile Accessibility Navigation Dropdown" class="primary-navigation" role="navigation">

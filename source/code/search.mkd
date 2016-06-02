@@ -9,12 +9,12 @@ Search bars can be a way for users of assistive technology to quickly find answe
 
 ### Best Practices
 
-* Refer back to the [forms and form validation section](/code/forms) to get the best practices for `form`, `label`, and `input` elements.
+* Refer to the [forms and form validation section](/code/forms) to get the best practices for `form`, `label`, and `input` elements.
 * A search bar should be set up in a `form` as paired `label` and `input`.
 
 * Using a submit button to search decreases the number of keystrokes necessary to use the form.
 * Always include an ARIA `role='search'` somewhere on the form or fieldset.
-* Also, always include the word 'search' in the label somewhere (you can visually hide it, though) andalso in the submit button.
+* Also, always include the word 'search' in the label somewhere (you can visually hide it, though) and in the submit button.
 * For the search input, you could technically use the `type='search'`, but the following accessible websites use `type='text'` instead:
   - Perkins School for the Blind
   - Freedom Scientific
