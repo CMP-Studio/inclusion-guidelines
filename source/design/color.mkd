@@ -10,6 +10,150 @@ Find colors that provide maximum contrast, including enough contrast between con
 * **Color as indicator:** Color should not be the only indicator for interactive elements. For example, underline links on hover, or mark a required field with an asterisk.
 * **Color blindness:** Red/green color blindness is the most common, so avoid green on red or red on green. (Think especially about avoiding using red and green for "bad" and "good" indicators).
 
+<div class="usa-grid-full usa-color-outline">
+  <div class="usa-width-one-half">
+    <div class="usa-color-text usa-color-text-primary-darkest">
+      #112e51 on #ffffff
+    </div>
+    <div class="usa-color-text usa-color-text-primary-darker">
+      #205493 on #ffffff
+    </div>
+    <div class="usa-color-text usa-color-text-primary">
+      #0071bc on #ffffff
+    </div>
+    <div class="usa-color-text usa-color-text-cool-blue-light">
+      cool-blue-light on #ffffff
+    </div>
+    <div class="usa-color-text usa-color-text-primary-alt-darkest">
+      #046b99 on #ffffff
+    </div>
+    <div class="usa-color-text usa-color-text-green">
+      green on #ffffff
+    </div>
+    <div class="usa-color-text usa-color-text-visited">
+      visited on #ffffff
+    </div>
+  </div>
+  <div class="usa-width-one-half usa-end-row">
+    <div class="usa-color-text usa-color-text-gray-dark">
+      #212121#212121 on #ffffff
+    </div>
+    <div class="usa-color-text usa-color-text-gray-dark">
+      #323a45 on #ffffff
+    </div>
+    <div class="usa-color-text usa-color-text-gray">
+      gray on #ffffff
+    </div>
+    <div class="usa-color-text usa-color-text-gray-warm-dark">
+      gray-warm-dark on #ffffff
+    </div>
+    <div class="usa-color-text usa-color-text-secondary-darkest">
+      #981b1e on #ffffff
+    </div>
+    <div class="usa-color-text usa-color-text-secondary-dark">
+      #cd2026 on #ffffff
+    </div>
+    <div class="usa-color-text usa-color-text-secondary">
+      #e31c3d on #ffffff
+    </div>
+  </div>
+</div>
+
+
+<div class="usa-grid-full">
+  <div class="usa-width-one-half">
+    <div class="usa-color-text usa-color-base usa-color-text-white">
+     #ffffff on #212121#212121
+    </div>
+    <div class="usa-color-text usa-color-gray-warm-dark usa-color-text-white">
+      #ffffff on gray-warm-dark
+    </div>
+    <div class="usa-color-text usa-color-gray-dark usa-color-text-white">
+      #ffffff on #323a45
+    </div>
+    <div class="usa-color-text usa-color-gray usa-color-text-white">
+      #ffffff on gray
+    </div>
+    <div class="usa-color-text usa-color-primary-darkest usa-color-text-white">
+      #ffffff on #112e51
+    </div>
+    <div class="usa-color-text usa-color-primary-darker usa-color-text-white">
+      #ffffff on #205493
+    </div>
+    <div class="usa-color-text usa-color-primary usa-color-text-white">
+      #ffffff on #0071bc
+    </div>
+    <div class="usa-color-text usa-color-cool-blue-light usa-color-text-white">
+      #ffffff on cool-blue-light
+    </div>
+    <div class="usa-color-text usa-color-primary-alt-darkest usa-color-text-white">
+      #ffffff on #046b99
+    </div>
+    <div class="usa-color-text usa-color-primary-alt-dark">
+      #212121 on #00a6d2
+    </div>
+    <div class="usa-color-text usa-color-primary-alt">
+      #212121 on #02bfe7
+    </div>
+    <div class="usa-color-text usa-color-green usa-color-text-white">
+      #ffffff on green
+    </div>
+    <div class="usa-color-text usa-color-green-light">
+      #212121 on green-light
+    </div>
+    <div class="usa-color-text usa-color-gold">
+      #212121 on gold
+    </div>
+    <div class="usa-color-text usa-color-gold-light">
+      #212121 on gold-light
+    </div>
+    <div class="usa-color-text usa-color-secondary-darkest usa-color-text-white">
+      #ffffff on #981b1e
+    </div>
+    <div class="usa-color-text usa-color-secondary-dark usa-color-text-white">
+      #ffffff on #cd2026
+    </div>
+    <div class="usa-color-text usa-color-secondary usa-color-text-white">
+      #ffffff on #e31c3d
+    </div>
+  </div>
+  <div class="usa-width-one-half usa-end-row">
+    <div class="usa-color-text usa-color-gray-light">
+      #212121 on #aeb0b5
+    </div>
+    <div class="usa-color-text usa-color-gray-lighter">
+      #212121 on gray-lighter
+    </div>
+    <div class="usa-color-text usa-color-gray-warm-light">
+      #212121 on gray-warm-light
+    </div>
+    <div class="usa-color-text usa-color-cool-blue-lighter">
+      #212121 on cool-blue-lighter
+    </div>
+    <div class="usa-color-text usa-color-cool-blue-lightest">
+      #212121 on cool-blue-lightest
+    </div>
+    <div class="usa-color-text usa-color-primary-alt-lightest">
+      #212121 on #e1f3f8
+    </div>
+    <div class="usa-color-text usa-color-green-lighter">
+      #212121 on green-lighter
+    </div>
+    <div class="usa-color-text usa-color-green-lightest">
+      #212121 on green-lightest
+    </div>
+    <div class="usa-color-text usa-color-gold-lighter">
+      #212121 on gold-lighter
+    </div>
+    <div class="usa-color-text usa-color-gold-lightest">
+      #212121 on gold-lightest
+    </div>
+    <div class="usa-color-text usa-color-secondary-lightest">
+      #212121 on #f9dede
+    </div>
+  </div>
+</div>
+
 
 ### Tools &amp; Resources
 #### Articles &amp; Guides
