@@ -3,7 +3,7 @@ title: PDFs | Accessibility Guidelines
 ---
 ## PDFs
 
-PDFs can be a convenient way to deliver print documents online, but they remain a challenge to make accessible. Avoid or minimize using PDF files as a sole source of online information because of the difficulty and cost of making PDF files accessible.
+PDFs can be a convenient way to deliver print documents online, but they remain a challenge to make accessible. As a result you should avoid or minimize using PDF files as a sole source of online information.
 
 ### Best Practices
 To make PDFs more accessible, consider these recommendations:
