@@ -38,7 +38,7 @@ In the example below, we've embedded a Google Map, but we're setting it off with
 </div>
 
 ### Tools &amp; Resources
-* [A More Accessible Map] http://alistapart.com/article/cssmap)
-* [W3C Accessible Maps] https://www.w3.org/WAI/RD/wiki/Accessible_Map)
+* [A More Accessible Map] (http://alistapart.com/article/cssmap)
+* [W3C Accessible Maps] (https://www.w3.org/WAI/RD/wiki/Accessible_Map)
 * [Accessibility tip: Making maps accessible] (http://www.accessiq.org/news/news/2015/03/accessibility-tip-making-maps-accessible)
 * [Maps] (http://accessibility.psu.edu/images/maps/)
