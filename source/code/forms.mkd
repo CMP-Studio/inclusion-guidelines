@@ -4,7 +4,7 @@ title: Forms | Accessibility Guidelines
 
 ## Forms and Form Validation
 
-On the web, forms are constantly being used to collect information from users: signing up for something, buying something, asking a question, or contacting someone.  Since forms are so commonly used, It is imperative to make forms accessible for all users.
+On the web, forms are constantly being used to collect information from users: signing up for something, buying something, asking a question, or contacting someone.  Since forms are so commonly used, it is imperative to make forms accessible for all users.
 
 ### Best Practices
 

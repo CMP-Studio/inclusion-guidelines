@@ -10,7 +10,7 @@ Be careful when using carousels. Use them for their intended purpose -- to displ
 
 > "[I]f you are using a carousel in the hopes that people will see a variety of content, know that some people will only see the first frame or none at all. So ensure that important content is also placed mindfully in the [Information Architecture] and on another page of your site. Consider using a static carousel or hero image instead of a rotating one. And in any carousel's navigation, ensure the buttons and links are clear, large enough to decipher and click, and the selected frame's button appears selected".
 
-In terms of accessibility, carousels really aren't great. To a visually impaired person, they are rapidly changing images which are controlled by an often arbitrary or non-existent set of buttons. If these images are presenting the most important content on your website, consider using something, well, more accessible, and that's not relaying content through an image.
+In terms of accessibility, carousels really aren't great. To a visually impaired person, they are rapidly changing images which are controlled by an often arbitrary or non-existent set of buttons. If these images are presenting the most important content on your website, consider using something more accessible that's not relaying content through an image.
 
 ### Best Practice
 
@@ -24,7 +24,7 @@ Many of the following best practices are adapted from Gian Wild's article ["The 
 
 * Provide an alternative to the content in the slideshow (especially the content that is on slides other than the first).
 
-* Give elements in a slideshow a clear focus order (meaning you will either make the html fall in the correct order, or add different tabindex values to dictate the tabbing order).
+* Give elements in a slideshow a clear focus order (meaning you will either make the html fall in the correct order, or add different tab index values to dictate the tabbing order).
 
 * Include 5 or fewer elements in the carousel (suggested by Nielsen Norman Group).
 
