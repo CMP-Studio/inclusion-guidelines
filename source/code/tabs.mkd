@@ -7,74 +7,64 @@ Tabs, which are very similar to accordions, are also common web design structure
 
 The key to making tabs accessible is to toggle some ARIA properties and states on user click or focus events (e.g. toggle `aria-hidden`, `aria-expanded`, etc.).
 
-### Best Practices
-
-Simply Accessible, a web firm which specializes in web accessibility practices, recently released a controversial article about how to make tabs accessible. In it, they note how they are doing things a bit differently than the accepted practices. Here is a summary of how Simply Accessible implements accessible tabs and why:
-
-* Like other examples of navigation and accordions, the tabs and tab panels are arranged in an unordered list structure to give users of assistive technology a better idea of how many tab elements they are dealing with.
-
-* The ARIA `roles` of `tab` and `tablist` are not used because many screen readers did not pick these attributes up when many users requested the links list functionality of their screen readers.
-
-* Messing with tabindex is never advised, and Simply Accessible found that whenever they tried adding `tabindexes` of `-1` to each tab, users were frustrated and preferred to tab between tab elements rather than using arrow keys. (So, in sum, don't set tabindex for tabs).
+Tabbed content usually consist of two main parts. First, the tabs themselves that control the visibility of some area of content. Second, the content controlled by the tabs. In general, we refer to the first tab control as tabs, and the second as tab panels.
 
 #### Tab Controls
 
 * Each tab control link is set up as a link inside an unordered list structure. Using links rather than buttons for tab controls seems to be common practice.
 
-* Each tab control has a unique `id` and `href` which is associated with a tab panel heading `id`.
+* Each tab control has a unique `id` and `href` which is associated with a tab panel's `id`.
 
-* Every tab control also has an `aria-selected` attribute that is set to either `true` or `false`. If `true`, the tab control has been clicked or focused on, and the tab panel associated with it should be visible. If `false`, the tab control is not selected and its corresponding tab panel is hidden.
+* Every tab control has an `aria-selected` attribute that is set to either `true` or `false`. If `true`, the tab control has been clicked or focused on, and the tab panel associated with it should be visible. If `false`, the tab control is not selected and its corresponding tab panel is hidden.
 
-* Each tab link also has a unique `id` associated with its `aria-controls` (each tab controls this particular `id` which references the hidden content beneath it).
+* Each tab link also references its tab panel's `id` with its `aria-controls` attribute.
 
-* Here, the `aria-controls` for each tab are set to the id's of the tab panels (`#{name-of-beer}`)
-
-* When a user clicks or focuses on a certain tab control, JavaScript is used to place focus on the first heading in the newly revealed, related tab panel.
+* Here, the `aria-controls` for each tab are set to the `id`s of the tab panels (`#{name-of-fruit}`)
 
 #### Tab Panels
 
-* Each tab panel has an `aria-hidden` attribute that is toggled between `true` or `false` based on the `aria-selected` attribute of the tab controls. When `true`, the tab panel is neither visible nor perceivable by screen reader, and assistive technologies will skip over this content. However, the tab panels are also being set between `{display: none;}` and `{display: block;}`, so screen readers will most likely not read the `{display: none;}` content anyways and `aria-hidden` attributes may be unnecessary.
+* A css class is toggled when the active tab changes focus, so that when a panel should not be visible, `display: none;` is applied to the panel, and when it should be visible, `display: block;` is applied instead. When a panel has `display: none;` applied, the tab panel is neither visible nor perceivable by screen reader, and assistive technologies will skip over this content.
 
-* Each tab panel also has an `aria-labelledby` attribute which seems to be acting in a very similar way to how the `aria-controls` acted in our accordions example.
-  - The `aria-labelledby` attribute is set to the `id` of the corresponding tab control, such as: `aria-labelledby='tab-control-{#}'` to give users of assistive technology a more comprehensive idea of how the tabs and tab panels are linked.
+* Each tab panel also has an `aria-labelledby` attribute which serves a similar purpose to how the `aria-controls` acted in our accordions example.
+  - The `aria-labelledby` attribute is set to the `id` of the corresponding tab control, such as: `aria-labelledby='tab-{#}'` to give users of assistive technology a more comprehensive idea of how the tabs and tab panels are linked.
 
-You can also view [the full codepen for Simply Accessible's example](http://codepen.io/jeffsmith/pen/mPByya/).
-
-We've simplified some of the JavaScript needed to make the Simply Accessible tabs work and have put the result below in an HTML and JavaScript code snippets:
+We've annotated some of the JavaScript needed to make the tabs work and have put the result below in an HTML and JavaScript code snippets:
 
 ```html
-
 <div class="tabbed-content">
   <ul class="tabs-list" role='tablist'>
     <li class="current" role='presentation'>
-      <a aria-controls="ipa" aria-hidden="false" aria-selected="true" href="#ipa" id="tab-ipa" role='tab' class='tab selected'>
-        India Pale Ale (IPA)
+      <a aria-controls="apples" aria-hidden="false" aria-selected="true" href="#apples" id="tab-apples" role='tab' class='tab selected'>
+        Apples
       </a>
     </li>
 
     <li role='presentation'>
-      <a aria-controls="gueuze" href="#gueuze" aria-selected='false' id="tab-gueuze" role='tab' tabindex='-1' class='tab'>
-        Gueuze
+      <a aria-controls="bananas" href="#bananas" aria-selected='false' id="tab-bananas" role='tab' tabindex='-1' class='tab'>
+        Bananas
       </a>
     </li>
 
     <li role='presentation' class='last'>
-      <a aria-controls='imperial-stout' aria-selected="false" href="#imperial-stout" id="tab-imperial-stout" role='tab' tabindex='-1' class='tab'>
-        Imperial Stout
+      <a aria-controls='pears' aria-selected="false" href="#pears" id="tab-pears" role='tab' tabindex='-1' class='tab'>
+        Pears
       </a>
     </li>
   </ul>
 
-  <div aria-labelledby="tab-ipa" class="tab-panel current"  id="ipa" role='tabpanel'>
-    <h2>India Pale Ale (IPA)</h2>
+  <div aria-labelledby="tab-apples" class="tab-panel current"  id="apples" role='tabpanel'>
+    <h2>Apples</h2>
+    <p> Lorem ipsum dolor sit amet, urna class vestibulum tincidunt atque, habitasse sit wisi erat dapibus. Vitae curae natoque a, donec nulla conubia in mollis. Sapien pede in tortor, lectus neque vitae in et, vitae aliquam eget orci at, non turpis faucibus id morbi. Elit tempor turpis donec inceptos, fringilla arcu sollicitudin ligula magna, sed justo viverra lacus erat, vestibulum id in justo nulla. Viverra dui leo donec, aptent deserunt nostra magnis lobortis, id ultrices ac aenean, interdum vestibulum rhoncus phasellus libero.</p>
   </div>
 
-  <div aria-labelledby="tab-gueuze" class="tab-panel hidden" role='tabpanel' id="gueuze">
-    <h2>Gueuze</h2>
+  <div aria-labelledby="tab-bananas" class="tab-panel hidden" role='tabpanel' id="bananas">
+    <h2>Bananas</h2>
+    <p>Lorem ipsum dolor sit amet, urna class vestibulum tincidunt atque, habitasse sit wisi erat dapibus. Vitae curae natoque a, donec nulla conubia in mollis. Sapien pede in tortor, lectus neque vitae in et, vitae aliquam eget orci at, non turpis faucibus id morbi. Elit tempor turpis donec inceptos, fringilla arcu sollicitudin ligula magna, sed justo viverra lacus erat, vestibulum id in justo nulla. Viverra dui leo donec, aptent deserunt nostra magnis lobortis, id ultrices ac aenean, interdum vestibulum rhoncus phasellus libero.</p>
   </div>
 
-  <div aria-labelledby="tab-imperial-stout" class="tab-panel hidden" id="imperial-stout" role='tabpanel'>
-    <h2>Imperial Stout</h2>
+  <div aria-labelledby="tab-pears" class="tab-panel hidden" id="pears" role='tabpanel'>
+    <h2>Pears</h2>
+    <p>Lorem ipsum dolor sit amet, urna class vestibulum tincidunt atque, habitasse sit wisi erat dapibus. Vitae curae natoque a, donec nulla conubia in mollis. Sapien pede in tortor, lectus neque vitae in et, vitae aliquam eget orci at, non turpis faucibus id morbi. Elit tempor turpis donec inceptos, fringilla arcu sollicitudin ligula magna, sed justo viverra lacus erat, vestibulum id in justo nulla. Viverra dui leo donec, aptent deserunt nostra magnis lobortis, id ultrices ac aenean, interdum vestibulum rhoncus phasellus libero.</p>
   </div>
 </div>
 ```
@@ -86,6 +76,8 @@ $(function(){
 
   $tabs.bind(
   {
+    // on keydown,
+    // determine which tab to select
     keydown: function(ev){
       var LEFT_ARROW = 37;
       var UP_ARROW = 38;
@@ -94,30 +86,39 @@ $(function(){
 
       var k = ev.which || ev.keyCode;
 
+      // if the key pressed was an arrow key
       if (k >= LEFT_ARROW && k <= DOWN_ARROW){
+        // move left one tab for left and up arrows
         if (k == LEFT_ARROW || k == UP_ARROW){
           if (index > 0) {
             index--;
           }
+          // unless you are on the first tab,
+          // in which case select the last tab.
           else {
             index = $tabs.length - 1;
           }
         }
 
+        // move right one tab for right and down arrows
         else if (k == RIGHT_ARROW || k == DOWN_ARROW){
           if (index < ($tabs.length - 1)){
             index++;
           }
+          // unless you're at the last tab,
+          // in which case select the first one
           else {
             index = 0;
           }
         }
 
+        // trigger a click event on the tab to move to
         $($tabs.get(index)).click();
         ev.preventDefault();
       }
     },
 
+    // just make the clicked tab the selected one
     click: function(ev){
       index = $.inArray(this, $tabs.get());
       setFocus();
@@ -126,28 +127,38 @@ $(function(){
   });
 
   var setFocus = function(){
+    // undo tab control selected state,
+    // and make them not selectable with the tab key
+    // (all tabs)
     $tabs.attr(
     {
       tabindex: '-1',
       'aria-selected': 'false'
     }).removeClass('selected');
 
+    // hide all tab panels.
     $('.tab-panel').removeClass('current');
 
+    // make the selected tab the selected one, shift focus to it
     $($tabs.get(index)).attr(
     {
       tabindex: '0',
       'aria-selected': 'true'
     }).addClass('selected').focus();
 
+    // handle parent <li> current class (for coloring the tabs)
     $($tabs.get(index)).parent().siblings().removeClass('current');
     $($tabs.get(index)).parent().addClass('current');
 
+    // add a current class also to the tab panel
+    // controlled by the clicked tab
     $($($tabs.get(index)).attr('href')).addClass('current');
   };
 });
 ```
+
 ### Live Example
+
 <div class="tabbed-content">
   <ul class="tabs-list" role='tablist'>
     <li class="current" role='presentation'>
