@@ -62,18 +62,18 @@ This is adapted from [The Incredible Accessible Modal Window](https://accessibil
 * Setting the main content to `aria-hidden='true'` tells the screen reader to stop reading the content there, but does not prevent a user from tabbing around the main content (so a user could be tabbing around the main content with an `aria-hidden='true'` without getting any audio feedback which would be very frustrating).
 
 * Give the modal an ARIA `aria-describedby` attribute which will be linked to the `id` of some visually hidden text which describes the modal's function, and how to exit it. A screen reader will read this information upon being focused on the modal.
+  * Example:
 
-  - Example:
-  ```html
-  <div class='modalWrapper' aria-describedby='modalDescription'>
-    <div class='modal-content'>
-      <div class='screenreader-text' id='modalDescription'>
-      This is a dialog window which overlays the main content of the page. The modal begins with a heading 1 called &quot;Interesting Modal Title&quot;. Pressing the Close Modal button at the bottom of the modal will close the modal and bring you back to where you were on the page.
-      </div>
-      <More content>
+```html
+<div class='modalWrapper' aria-describedby='modalDescription'>
+  <div class='modal-content'>
+    <div class='screenreader-text' id='modalDescription'>
+    This is a dialog window which overlays the main content of the page. The modal begins with a heading 1 called &quot;Interesting Modal Title&quot;. Pressing the Close Modal button at the bottom of the modal will close the modal and bring you back to where you were on the page.
     </div>
+    <More content>
   </div>
-  ```
+</div>
+```
 
 #### Setting Focus with jQuery
 
