@@ -24,7 +24,7 @@ It is a common misconception that people with disabilities don't have JavaScript
 
 Accessibility guidelines also require scripted interfaces to be accessible. While WCAG 1.0 from 1999 required that pages be functional and accessible with scripting disabled, WCAG 2.0 and all other modern guidelines allow you to require JavaScript, but the scripted content or interactions must be compliant with the guidelines.
 
-It is important to keep in mind, however, that some users do disable JavaScript or may be using technologies that don't support or fully support scripting. If your web page or application requires scripting, ensure that you account for users without JavaScript. While this does not necessarily mean that all functionality must work without scripting (though this would clearly be optimal), if it does not work without scripting, you must avoid a confusing or non-functional presentation that may appear to function, but does not because of lack of JavaScript support.
+It is important to keep in mind, however, that some users do disable JavaScript or may be using technologies that don't support or fully support scripting. If your web page or application requires scripting, ensure that you account for users without JavaScript.
 
 ### Tools & Resources
 * [WebAIM - Accessible JavaScript](http://webaim.org/techniques/javascript/)
