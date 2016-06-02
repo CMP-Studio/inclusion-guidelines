@@ -13,6 +13,16 @@
     list-style-type: disc;
     margin-left: 1em;
   }
+
+  .image-grid {
+    .image-item {
+      @include divider-top;
+      padding-top: 1.4em;
+      img {
+        margin: 0.5em 0em;
+      }
+    }
+  }
 }
 
 .constrained-form {

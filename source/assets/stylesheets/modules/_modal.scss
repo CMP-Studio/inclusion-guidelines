@@ -27,6 +27,7 @@
 
   .modal-content {
     background-color: $background-color;
+    z-index: 100;
     padding: 2em;
     position: fixed;
     height: 100%;
