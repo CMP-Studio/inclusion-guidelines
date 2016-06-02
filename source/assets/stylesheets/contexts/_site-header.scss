@@ -11,8 +11,13 @@
       @include heading-2;
       padding-top: 0.5em;
     }
+
     a {
       color: $background-color;
+
+      &:hover, &:focus {
+        color: $background-color;
+      }
     }
   }
 
