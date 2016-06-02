@@ -1,12 +1,12 @@
 // typographic mixins and extends
 
 @mixin copy-face {
-  font-family: 'Merriweather', georgia, "Times New Roman", times, serif;
+  font-family: 'merriweather', georgia, "Times New Roman", times, serif;
   font-weight: 300;
 }
 
 @mixin title-face {
-  font-family: 'Merriweather', "helvetica neue", helvetica, sans-serif;
+  font-family: 'merriweather', "helvetica neue", helvetica, sans-serif;
   font-weight: 700;
 }
 
