@@ -9,7 +9,7 @@ When using images on the web, you must provide an alternate way for users to und
 #### Alt text
 Every image needs an alternative text attribute `alt`. Alt text describes pictorial content in words. The alt attribute greatly helps people using assistive technologies and users of mobile devices with images turned off (to save data, for instance)
 
-* **If the image is a link**: The alt text describe where the link goes. For example, a logo that links to your home page should have `alt="home page"` or `alt="CMP Logo - home page"`.
+* **If the image is a link**: The alt text describe where the link goes. For example, a logo that links to your home page should have `alt="home page"` or `alt="Carnegie Museums of Pittsburgh logo - home page"`.
 * **If the image is important to the context of the page**: The alt text should contain a concise description of the image that is representative within the context.
     * The description should NOT include the phrase "image of" or "picture of". Assistive technologies already do this.
     * Don't put line breaks in alt text. It causes suboptimal effects when read by screen readers.

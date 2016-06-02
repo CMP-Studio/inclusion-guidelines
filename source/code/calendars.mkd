@@ -20,7 +20,7 @@ On most museum websites, it seems like there are two general types of calendars:
 
 #### Table Based Calendar
 
-* Refer to our table section for best practices.
+* Refer to our [table section](/code/tables) for best practices.
 
 * Think about if your calendar can be presented differently, and if a table truly is the best way for users of all abilities, to select a date or time period.
 
