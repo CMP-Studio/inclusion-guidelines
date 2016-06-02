@@ -20,7 +20,7 @@ To make the web more accessible for users with cognitive disabilities:
 * <span class="text-bold">Minimize cognitive load</span>: Don't overwhelm the user. Apply a "less is more" approach.  You will never hear someone complain that a user experience is "too easy."
 * <span class="text-bold">Consistency</span>: Ensure that similar user interface elements and similar interactions produce predictably similar results.
 * <span class="text-bold">Icons</span>: Use common icons to mark important tasks and consider adding text labels as well.
-* <span class="text-bold">Typography</span>: Limit the types of font faces in a document. Use only one font, or a very small number of fonts in any single document.
+* <span class="text-bold">Typography</span>: Limit the number of typefaces in a document. If possible, use only one or two tyepfaces and utilize varying weights if need be. This will help with performance and readability. 
 * <span class="text-bold">Timing</span>: Allow the user sufficient time to access and interact with the content. If you have timed content (forms, image galleries, etc.) provide controls, or allow users to request more time.
 * <span class="text-bold">Forms</span>: Ask users to confirm choices. Use shorter, multi-step forms for complex interactions, rather than lengthy, all-in-one forms.
 * <span class="text-bold">Feedback</span>: Provide prompts, feedback, and validations to let users know if they made the correct choice and to help them get back on track when they error.
