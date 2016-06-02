@@ -18,6 +18,9 @@
     .image-item {
       @include divider-top;
       padding-top: 1.4em;
+      img {
+        margin: 0.5em 0em;
+      }
     }
   }
 }
