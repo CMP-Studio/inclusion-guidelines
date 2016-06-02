@@ -3,9 +3,9 @@ title: Skip Link | Accessibility Guidelines
 ---
 ## Skip Link
 
-A skip (navigation) link provides a way for users of assistive technology to skip what can often be many navigation links. (Think about having to tab through the entire Amazon dropdown navigation, that has links nested in links, before you even reached the search bar or any relevant content--that would be frustrating, right?!)
+A skip (navigation) link provides a way for users of assistive technology to skip what can often be many navigation links. For example, think about having to tab through the entire Amazon dropdown navigation, that has links nested in links, before you even reached the search bar or any relevant content: that is the problem that a skip link solves for keyboard or screen reader users.
 
-A skip link is a wonderful, and easy to implement accessibility structure that allows users to immediately access pertinent content.
+A skip link is a wonderful, and easy to implement accessibility structure that allows users to have immediate access to pertinent content.
 
 ### Best Practices
 
