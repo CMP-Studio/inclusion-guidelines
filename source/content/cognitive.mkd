@@ -3,7 +3,7 @@ title: Cognitive Disabilities | Accessibility Guidelines
 ---
 ## Cognitive Disabilities
 
-According to the US Census Bureau, 14.3 million Americans age 15 and over have a mental disability. This includes Alzheimer's disease, senility or dementia, intellectual and learning disabilities, attention deficit hyperactivity disorder (ADHD), and autism or autism-spectrum disorders.
+According to the 2010 <a href='http://www.census.gov/prod/2012pubs/p70-131.pdf'>US Census Bureau</a>, 15.2 million American adults have difficulty with cognitive, mental, or emotional functioning. This includes people with Alzheimer's disease, senility or dementia, intellectual and learning disabilities, attention deficit hyperactivity disorder (ADHD), and autism or autism-spectrum disorders.
 
 Web accessibility is often considered in terms of visual, auditory, and physical disabilities, but for a truly accessible web we must take all users – including those with cognitive disabilities – into account.
 

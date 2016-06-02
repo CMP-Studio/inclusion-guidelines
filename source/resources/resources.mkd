@@ -12,6 +12,7 @@ title: Source Material &amp; Resources | Accessibility Guidelines
 * [Glenda Sims Blog on Accessibility](http://www.glendathegood.com/blog/?cat=3)
 * [The Deque Blog: On Accessibility](http://www.deque.com/blog/)
 * [Accessibility Wins: Showcasing accessible user interfaces and tools](https://a11ywins.tumblr.com/)
+* [Americans with Disabilities: 2010 Report](http://www.census.gov/prod/2012pubs/p70-131.pdf)
 * [ADA Title III Blog: News &amp; Insights] (http://www.adatitleiii.com/)
 * [Information and Technical Assistance on the Americans with Disability Act] (http://www.ada.gov/access-technology/)
 * [A List Apart Articles on Accessibility](http://alistapart.com/topic/accessibility)

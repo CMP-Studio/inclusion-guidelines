@@ -13,4 +13,6 @@ Multimedia is anything that uses audio and video. It's important to provide ways
 * <span class="text-bold">Alerts</span>: Don’t rely on sounds to convey information, like an "alert" noise. Even users who have good hearing often have their computers muted.
 
 ### Tools &amp; Resources
-* [Never use auto-play] (https://searchcode.com/codesearch/view/86145219/)
+* [Captions, Transcripts, and Audio Descriptions] (http://webaim.org/techniques/captions/)
+* [Autoplay is bad for all users] (http://www.punkchip.com/autoplay-is-bad-for-all-users/)
+* [Why Autoplay is an accessibility issue] (https://www.abilitynet.org.uk/blog/why-autoplay-accessibility-issue)
