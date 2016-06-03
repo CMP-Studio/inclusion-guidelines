@@ -5,47 +5,53 @@ title: Tabs | Accessibility Guidelines
 
 Tabs, which are very similar to accordions, are also common web design structures used to organize and hide content, so as not to overwhelm the user. Tabs also additionally require JavaScript to show/hide things based on a user click or focus event.
 
-The key to making tabs accessible is to toggle some ARIA properties and states on user click or focus events (e.g. toggle `aria-hidden`, `aria-expanded`, etc.).
+The key to making tabs accessible is to toggle CSS display properties and some ARIA states on user click or focus events (e.g. toggle `aria-selected`, `tabindex`, and `display:none/block;` and/or `aria-hidden='true/false'`).
 
-Tabbed content usually consist of two main parts. First, the tabs themselves that control the visibility of some area of content. Second, the content controlled by the tabs. In general, we refer to the first tab control as tabs, and the second as tab panels.
+### Best Practices
+
+Tabbed content usually consist of two main parts. First, they consist of the tabs themselves that control the visibility of some area of content below. Second is the content controlled by the tabs. In general, we refer to the former as tabs, and the latter as tab panels.
 
 #### Tab Controls
 
-* Each tab control link is set up as a link inside an unordered list structure. Using links rather than buttons for tab controls seems to be common practice.
+* Each tab control is set up as a link inside an unordered list structure. The unordered list should have an aria `role='tablist'`. Using links rather than buttons for tab controls seems to be common practice, though we could see an argument made for making tab controls buttons instead.
+
+* All the tab controls have an aria `role='tab'`.
 
 * Each tab control has a unique `id` and `href` which is associated with a tab panel's `id`.
 
-* Every tab control has an `aria-selected` attribute that is set to either `true` or `false`. If `true`, the tab control has been clicked or focused on, and the tab panel associated with it should be visible. If `false`, the tab control is not selected and its corresponding tab panel is hidden.
+* Each tab link also has a unique `aria-controls` attribute which references its tab panel's `id` (`{name-of-fruit}`).
 
-* Each tab link also references its tab panel's `id` with its `aria-controls` attribute.
+* Every tab control has an `aria-selected` attribute that is set to either `true` or `false`. If `true`, the tab control has been clicked or focused on, and the tab panel associated with it should be visible. If `false`, the tab control is not selected, and its corresponding tab panel is hidden.
 
-* Here, the `aria-controls` for each tab are set to the `id`s of the tab panels (`#{name-of-fruit}`)
+* Also, for the tab controls that are not currently selected, we place `tabindex='-1'` on them to take them out of the tab order.  If there are 10-12 tab controls on your web page, user's of assistive technology will now not have to tab through all of them to reach the content in the tab panel.
 
 #### Tab Panels
 
-* A css class is toggled when the active tab changes focus, so that when a panel should not be visible, `display: none;` is applied to the panel, and when it should be visible, `display: block;` is applied instead. When a panel has `display: none;` applied, the tab panel is neither visible nor perceivable by screen reader, and assistive technologies will skip over this content.
+* A CSS class of `.hidden` or `.current` is toggled on each tab panel when the active tab control changes focus, so that when a panel should be hidden, `display: none;` is applied to the panel, and when it should be visible, `display: block;` is applied instead. When a panel has `display: none;` applied, the tab panel is neither visible nor perceivable by screen reader, and assistive technologies will skip over this content.
+
+* All the tab panels have an aria `role='tabpanel'`.
 
 * Each tab panel also has an `aria-labelledby` attribute which serves a similar purpose to how the `aria-controls` acted in our accordions example.
   - The `aria-labelledby` attribute is set to the `id` of the corresponding tab control, such as: `aria-labelledby='tab-{#}'` to give users of assistive technology a more comprehensive idea of how the tabs and tab panels are linked.
 
-We've annotated some of the JavaScript needed to make the tabs work and have put the result below in an HTML and JavaScript code snippets:
+For details on what we've done with JavaScript to make the tabs work, see the comments/annotations we have made within the JS code snippet itself.
 
 ```html
 <div class="tabbed-content">
   <ul class="tabs-list" role='tablist'>
-    <li class="current" role='presentation'>
-      <a aria-controls="apples" aria-hidden="false" aria-selected="true" href="#apples" id="tab-apples" role='tab' class='tab selected'>
+    <li class="current">
+      <a aria-controls="apples"  aria-selected="true" href="#apples" id="tab-apples" role='tab' class='tab selected'>
         Apples
       </a>
     </li>
 
-    <li role='presentation'>
+    <li>
       <a aria-controls="bananas" href="#bananas" aria-selected='false' id="tab-bananas" role='tab' tabindex='-1' class='tab'>
         Bananas
       </a>
     </li>
 
-    <li role='presentation' class='last'>
+    <li class='last'>
       <a aria-controls='pears' aria-selected="false" href="#pears" id="tab-pears" role='tab' tabindex='-1' class='tab'>
         Pears
       </a>
@@ -161,19 +167,19 @@ $(function(){
 
 <div class="tabbed-content">
   <ul class="tabs-list" role='tablist'>
-    <li class="current" role='presentation'>
-      <a aria-controls="apples" aria-hidden="false" aria-selected="true" href="#apples" id="tab-apples" role='tab' class='tab selected'>
+    <li class="current">
+      <a aria-controls="apples"  aria-selected="true" href="#apples" id="tab-apples" role='tab' class='tab selected'>
         Apples
       </a>
     </li>
 
-    <li role='presentation'>
+    <li>
       <a aria-controls="bananas" href="#bananas" aria-selected='false' id="tab-bananas" role='tab' tabindex='-1' class='tab'>
         Bananas
       </a>
     </li>
 
-    <li role='presentation' class='last'>
+    <li class='last'>
       <a aria-controls='pears' aria-selected="false" href="#pears" id="tab-pears" role='tab' tabindex='-1' class='tab'>
         Pears
       </a>

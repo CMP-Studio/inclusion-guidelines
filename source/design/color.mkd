@@ -11,7 +11,10 @@ Find colors that provide maximum contrast, including enough contrast between con
 * **Color blindness:** Red/green color blindness is the most common, so avoid green on red or red on green. (Think especially about avoiding using red and green for "bad" and "good" indicators).
 
 ### Live Example
-From the [US Standards Website:](https://standards.usa.gov/visual-style/)
+From the [US Standards Website:](https://standards.usa.gov/visual-style/):
+> "WCAG (Web Content Accessibility Guidelines) ensure that content is accessible by everyone, regardless of disability or user device. To meet these standards, text and interactive elements should have a color contrast ratio of at least 4.5:1. This ensures that viewers who cannot see the full color spectrum are able to read the text."
+
+> "The options below offer color palette combinations that fall within the range of Section 508 compliant foreground/background color contrast ratios."
 
 <div class="usa-grid-full usa-color-outline">
   <h4>Colors on a white background</h4>

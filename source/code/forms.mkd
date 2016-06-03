@@ -2,7 +2,7 @@
 title: Forms | Accessibility Guidelines
 ---
 
-## Forms and Form Validation
+## Forms, Form Validation, and CAPTCHAs
 
 On the web, forms are constantly being used to collect information from users: signing up for something, buying something, asking a question, or contacting someone.  Since forms are so commonly used, it is imperative to make forms accessible for all users.
 
@@ -60,12 +60,13 @@ This information applies to all sorts of valid inputs: text inputs, `textarea` e
 
 * Try not to break numbers into distinct inputs (such as phone numbers, Social Security Numbers, or credit card numbers).
 
-* The US Design Standards advise: "For example, use one input for [each] phone number, not three (not one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful."
+    * The US Design Standards advise: "For example, use one input for [each] phone number, not three (not one for area code, one for local code, and one for number). Each field needs to be labeled for a screen reader and the labels for fields broken into segments are often not meaningful."
 
 #### Checkboxes, Radio Buttons
 
-* All related checkboxes should be surrounded by a `fieldset` with a `legend` tag.  The same goes for a set of related radio buttons.
-However, for a single checkbox, or single radio button, do use a `fieldset` and `legend`.
+* All related checkboxes should be surrounded by unordered list and a `fieldset` with a `legend` tag.  The same goes for a set of related radio buttons. However, for a single checkbox, or single radio button, do use a `fieldset` and `legend`.
+
+* Since the only label associated with a checkbox or radio button is the option itself - e.g. 'Yes,' 'No,' 'Banana,' it is important to associate the option with a legend `id` (the legend could be: 'Would you like to be on our mailing list?'). Place an `aria-labelledby='{id of legend element}'` on the label or the unordered list surrounding a set of related checkboxes/radio buttons. Also, place an aria `role='radiogroup'` or `role='group'` on the surrounding element as well. View our code snippets below for further details.
 
 #### Select inputs
 
@@ -78,7 +79,7 @@ However, for a single checkbox, or single radio button, do use a `fieldset` and 
 ### Code Snippets
 Below we have supplied the code for a variety of accessible form inputs. There are many ways to use jQuery/JavaScript to make your forms accessible, and through testing and research, we have found our own unique solution below.
 
-Our solution takes advantage of the jQuery <code>.validity.valid</code>, and applying an <code>aria-live='assertive'</code> attribute to the first new error message on the form. (The error message must be dynamically added for this aria-live message to be read).  Also, we have found that if there are multiple aria-live regions, a screen reader will only read the last one on the page, so you really only ever want one aria-live region on a page.
+Our solution takes advantage of the jQuery <code>.validity.valid</code>, and applying an <code>aria-live='assertive'</code> attribute to the first new error message on the form. (The error message must be dynamically added for this aria-live message to be read).  Also, we have found that if there are multiple aria-live regions, a screen reader will only read the last one on the page, so there should really only be one aria-live region ever on a page.
 
 ```html
 <form class="form-example" method="post">
@@ -149,9 +150,9 @@ Our solution takes advantage of the jQuery <code>.validity.valid</code>, and app
   </fieldset>
 
   <fieldset>
-    <legend id='legend-1' tabindex='0'>Can we add you to our email mailing list? <span class="required">(required)</span></legend>
+    <legend id='legend-1'>Can we add you to our email mailing list? <span class="required">(required)</span></legend>
 
-    <ul>
+    <ul aria-labelledby='legend-1' role='radiogroup'>
       <li>
         <label for="yes">
           <span class="error-message">
@@ -174,9 +175,9 @@ Our solution takes advantage of the jQuery <code>.validity.valid</code>, and app
   </fieldset>
 
   <fieldset>
-    <legend id='legend-2' tabindex='0'>Which topics interest you? <span class="required">(required)</span></legend>
+    <legend id='legend-2'>Which topics interest you? <span class="required">(required)</span></legend>
 
-    <ul>
+    <ul aria-labelledby='legend-2' role='group'>
       <li>
         <label for="science">
           <span class="error-message">
@@ -206,8 +207,7 @@ Our solution takes advantage of the jQuery <code>.validity.valid</code>, and app
   </fieldset>
 
   <fieldset>
-    <legend> Choose from the following:</legend>
-    <label for="options">Dropdown label
+    <label for="options">Choose from the following:
       <span class="required">
         (required)
       </span>
@@ -353,9 +353,9 @@ $(document).ready(function(){
     </fieldset>
 
     <fieldset>
-      <legend id='legend-1' tabindex='0'>Can we add you to our email mailing list? <span class="required">(required)</span></legend>
+      <legend id='legend-1'>Can we add you to our email mailing list? <span class="required">(required)</span></legend>
 
-      <ul>
+      <ul aria-labelledby='legend-1' role='radiogroup'>
         <li>
           <label for="yes">
             <span class="error-message">
@@ -378,9 +378,9 @@ $(document).ready(function(){
     </fieldset>
 
     <fieldset>
-      <legend id='legend-2' tabindex='0'>Which topics interest you? <span class="required">(required)</span></legend>
+      <legend id='legend-2'>Which topics interest you? <span class="required">(required)</span></legend>
 
-      <ul>
+      <ul aria-labelledby='legend-2' role='group'>
         <li>
           <label for="science">
             <span class="error-message">
@@ -410,8 +410,7 @@ $(document).ready(function(){
     </fieldset>
 
     <fieldset>
-      <legend> Choose from the following:</legend>
-      <label for="options">Dropdown label
+      <label for="options">Choose from the following:
         <span class="required">
           (required)
         </span>
@@ -450,7 +449,7 @@ Consider an alternative method:
 
 ### Tools &amp; Resources
 
-* [Jim Allan's Slides on Accessible Forms (really helpful!!)] (http://www.tsbvi.edu/web/forms/1-welcome.html)
+* [Jim Allan's Slides on Accessible Forms (really helpful!)] (http://www.tsbvi.edu/web/forms/index.html)
 
 * [Jim Allan's Recommended Resources to Making More Accessible Forms] (http://www.tsbvi.edu/web/forms/11-resources.html)
 
