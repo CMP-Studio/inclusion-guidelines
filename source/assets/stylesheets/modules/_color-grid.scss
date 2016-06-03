@@ -1,0 +1,14 @@
+.usa-grid-full {
+  margin-top: 1.5em;
+  @include pie-clearfix;
+  div {
+    border: 1px solid $border-color;
+    margin: 0.25em 0em;
+    padding: 1em;
+    font-weight: bold;
+    @include breakpoint($bp-s) {
+      @include column(6);
+      @include last-col2;
+    }
+  }
+}
