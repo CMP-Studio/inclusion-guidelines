@@ -1,0 +1,13 @@
+---
+title: Copywriting | Accessibility Guidelines
+---
+## Copywriting
+
+### Best Practices
+* **All caps:** Limit or eliminate the use of italics or ALL CAPS to improve readability.
+* **Acronyms:** Expand unknown acronyms/abbreviations at their first instance.
+* **Leetspeek:** Be careful with words that use numbers as letters, such as a11y, which most visual readers will read as 'ally' but a screen reader will read as 'a + 1 + 1 + y'.
+* **Page titles:** Page titles should be short and descriptive, and should usually match or be similar to the `<h1>`.
+* **Organization:** Organize content into well-defined groups or chunks, using meaningful headings, bulleted lists, and other visual-semantic organizing schemes. This makes the document's structure as obvious as possible.
+* **Key points first:** Start the page and each paragraph with the most important points. Don't bury key information in the middle or bottom.
+* **Keep it simple:** Use clear, straightforward language and short sentences.
