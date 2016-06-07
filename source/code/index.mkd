@@ -2,3 +2,7 @@
 title: Overview | Accessibility Guidelines
 ---
 ## Overview
+
+Many users of assistive technologies only interact with the semantic HTML and aria attributes of your DOM. For this reason, you must ensure that your HTML and JavaScript is well written and accessible. 
+
+This section details how to create accessible code for many common DOM elements, and JavaScript behaviors, and also includes numerous other resources where you can see more live examples and information on a certain topic.
