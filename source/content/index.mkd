@@ -1,15 +1,15 @@
 ---
-title: Copywriting | Accessibility Guidelines
+title: Content Overview | Accessibility Guidelines
 ---
-## Copywriting
+## Overview
 
 Web accessibility has just as much to do with content as it does with the underlying code and design. These guidelines are suggestions for creating accessible web content.
 
-### Best Practices
-* <span class="text-bold">All caps</span>: Limit or eliminate the use of italics or ALL CAPS to improve readability.
-* <span class="text-bold">Acronyms</span>: Expand unknown acronyms/abbreviations at their first instance.
-* <span class="text-bold">Leetspeek</span>: Be careful with words that use numbers as letters, such as a11y, which most visual readers will read as 'ally' but a screen reader will read as 'a + 1 + 1 + y'.
-* <span class="text-bold">Page titles</span>: Page titles should be short and descriptive, and should usually match or be similar to the `<h1>`.
-* <span class="text-bold">Organization</span>: Organize content into well-defined groups or chunks, using meaningful headings, bulleted lists, and other visual-semantic organizing schemes. This makes the document's structure as obvious as possible.
-* <span class="text-bold">Key points first</span>: Start the page and each paragraph with the most important points. Don't bury key information in the middle or bottom.
-* <span class="text-bold">Keep it simple</span>: Use clear, straightforward language and short sentences.
+* **[Copywriting:](copywriting)** Write clear, meaningfully organized copy, and be careful with using caps and acronyms.
+* **[Links, Buttons & Other Clickable Elements:](buttons)** Make clickable elements large and put space between them. Know when to use a link rather than a button, and vice versa. Make sure your link or button text describes its purpose and destination.
+* **[Images:](images)** Always provide alt text for visual content, and provide descriptions for charts and graphs.
+* **[Multimedia:](audio-video)** Include captions or transcripts for audio and video, and don’t auto-play multimedia.
+* **[Maps:](maps)** Provide text-based directions if a map is used to give directions to a location. When embedding a Google Map, follow the provided tips to make it accessible for screen readers.
+* **[PDFs & Alternatives:](pdfs)** Consider an alternative format to a PDF, including converting it to HTML content.
+* **[Third Party Embeds:](third-party)** Be careful using third party embeds, including iFrames and social media.
+* **[Cognitive Disabilities:](cognitive)** For users with cognitive disabilities, keep your user experience consistent and clear, with shorter, multi-step forms rather than complex interactions.
