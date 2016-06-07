@@ -1,4 +1,8 @@
 ---
-title: Overview | Accessibility Guidelines
+title: Design Overview | Accessibility Guidelines
 ---
 ## Overview
+
+When designing an accessible website, it's important to be mindful of typographic choices, contrast & color choices, and animations & parallax scrolling effects.
+
+In this section, we discuss best practices for each of these topics, and we provide links to tools and resources to help designers make their sites more accessible to their audiences.
