@@ -1,7 +1,7 @@
 ---
-title: Getting Started | Accessibility Guidelines
+title: Overview | Accessibility Guidelines
 ---
-## Getting Started
+## Overview
 
 The web is a powerful, and increasingly necessary, way of connecting with one another and the world. In order to provide equal access and opportunity to all, we must do our part to make the web accessible to those individuals with visual, auditory, physical, speech, cognitive, and neurological disabilities. According to the 2010 <a href='http://www.census.gov/prod/2012pubs/p70-131.pdf'>US Census Bureau</a>, 56.7 million people in the U.S. have a disability. Of the adult population with disabilities, 3.3% have difficulty seeing, 3.1% expeience difficulty hearing, and 4.4% have a cognitive or mental disability that impedes daily functioning.
 
