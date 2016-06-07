@@ -1,18 +1,46 @@
 .site-footer  {
   margin: 0 auto;
   display: block;
-  text-align: center;
+  @include pie-clearfix;
 
   img {
-    padding: 1.3em 0 1.5em 0;
+    margin: 1.3em auto;
+  }
+
+  .innovation-driven {
     display: block;
-    margin: 0 auto;
+    @include breakpoint($bp-l) {
+      @include column(3);
+    }
+  }
+
+  .innovation-logo {
+    padding: 1.3em 0em;
   }
 
   p {
     color: $background-color-light;
     font-size: 0.75em;
     line-height: 1em;
+  }
+
+  .information {
+    display: block;
+    text-align: center;
+    @include breakpoint($bp-l) {
+      text-align: left;
+      padding-top: 3em;
+      @include column(5);
+    }
+  }
+
+  .bearded-built {
+    padding-top: 1.3em;
+    max-height: 170px;
+    @include breakpoint($bp-l) {
+      @include column(4);
+      @include last;
+    }
   }
 
   a {
@@ -24,6 +52,7 @@
   }
 
   .copyright {
+    clear: both;
     margin-bottom: 2em;
   }
 }
