@@ -1,19 +1,23 @@
 ---
 title: Overview | Accessibility Guidelines
 ---
-## Overview
+## Statement about Accessibility For All
 
-The web is a powerful, and increasingly necessary, way of connecting with one another and the world. In order to provide equal access and opportunity to all, we must do our part to make the web accessible to those individuals with visual, auditory, physical, speech, cognitive, and neurological disabilities. According to the 2010 <a href='http://www.census.gov/prod/2012pubs/p70-131.pdf'>US Census Bureau</a>, 56.7 million people in the U.S. have a disability. Of the adult population with disabilities, 3.3% have difficulty seeing, 3.1% expeience difficulty hearing, and 4.4% have a cognitive or mental disability that impedes daily functioning.
+Carnegie Museums of Pittsburgh welcomes all visitors, both on-site and online. We work to assist visitors with disabilities in obtaining reasonable and appropriate accommodations, and in supporting equal access to services, programs, and activities.
+
+### About this Guide
+
+The web is a powerful, and increasingly necessary, way of connecting with one another and the world. In order to provide equal access and opportunity to all, we must do our part to make the web accessible to those individuals with visual, auditory, physical, speech, cognitive, and neurological disabilities. According to the [2010 US Census Bureau report](http://www.census.gov/prod/2012pubs/p70-131.pdf), 56.7 million people in the U.S. have a disability. Of the adult population with disabilities, 3.3% have difficulty seeing, 3.1% experience difficulty hearing, and 4.4% have a cognitive or mental disability that impedes daily functioning.
 
 Accessibility cannot be an afterthought for websites. You should build accessibility into your team's workflow and consider it at each step of the way.
 
 We have focused our accessibility guide on making the web experiences of people with the following disabilities better.
 
-* <span class="text-bold">No hearing</span>: Most deaf or hard-of-hearing people have limited difficulty with web accessibility; however, audio and video should have captions or text-based scripts for them.
-* <span class="text-bold">No mouse</span>: Many users with limited mobility can only interact with the screen via keyboard. Other users use a mouse, but have trouble with fine motor control.
-* <span class="text-bold">No sight</span>: These users can only interact with a website via screenreader.
-* <span class="text-bold">Low or tunnel vision</span>: These users often employ zoom tools to enlarge the text on the page.
-* <span class="text-bold">Cognitive disability</span>: tThis includes people with Alzheimer’s disease, senility or dementia, intellectual and learning disabilities, attention deficit hyperactivity disorder (ADHD), and autism or autism-spectrum disorders.
+* **No hearing:** Most deaf or hard-of-hearing people have limited difficulty with web accessibility; however, audio and video should have captions or text-based scripts for them.
+* **No mouse:** Many users with limited mobility can only interact with the screen via keyboard. Other users use a mouse, but have trouble with fine motor control.
+* **No sight:** These users can only interact with a website via screenreader.
+* **Low or tunnel vision:** These users often employ zoom tools to enlarge the text on the page.
+* **Cognitive disability:** This includes people with Alzheimer's disease, senility or dementia, intellectual and learning disabilities, attention deficit hyperactivity disorder (ADHD), and autism or autism-spectrum disorders.
 
 This web accessibility guide includes best practices, resources, and practical advice about how to ensure all users have equal access to information and functionality.
 
