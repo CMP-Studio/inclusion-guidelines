@@ -40,7 +40,6 @@
 
 set :relative_links, true
 activate :directory_indexes
-activate :patterns
 activate :syntax, :line_numbers => true
 
 # Reload the browser automatically whenever files change
