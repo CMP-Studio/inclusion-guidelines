@@ -1,8 +1,7 @@
 .container
   %footer.site-footer
-    .innovation-driven 
-      %img{:src => "../assets/images/innovation-studio-footer.png", :alt => "Innovation Studio Logo", :class => 'innovation-logo'}/
     .information
+      = image_tag('/assets/images/innovation-studio-text.svg', alt: 'Innovation Studio Logo', class: 'innovation-logo')
       %address
         %p Carnegie Museums of Pittsburgh
         %p Innovation Studio
@@ -12,6 +11,4 @@
         %a{:href => "mailto:accessibility@carnegiemuseums.org", :title => 'Email Innovation Studios'} accessibility@carnegiemuseums.org
       %p
         %a{:href => "http://www.carnegiemuseums.org/interior.php?pageID=100"} Privacy Policy
-    %img{:src => "../assets/images/Built-By-Bearded.svg", :role => 'image', :alt => "Built by Bearded Logo", :class => 'bearded-built'}/
-    %p.copyright
-      Copyright #{Date.today.year.to_s}. All rights reserved.
+    = image_tag('/assets/images/built-by-bearded.svg', alt: 'Built by Bearded logo', class: 'bearded-built')

@@ -2,8 +2,10 @@
   .container
     %a{:href => "#content", :id => "skip-nav", :class => "screenreader-text"} Skip to Content
 
+    = image_tag('/assets/images/innovation-studio-text.svg', alt: 'Innovation Studio Logo', class: 'innovation-logo-head')
+
     %h1.site-name
-      %a{:href => "/"} Accessibility Guide <span class=screenreader-text> Foundations - Overview</span>
+      %a{:href => "/"} Web Accessibility Guidelines <span class=screenreader-text> Foundations - Overview</span>
 
     %section.mobile-navigation
       %button.side-nav-trigger{ :"aria-expanded" => "false"}

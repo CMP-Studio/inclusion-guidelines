@@ -1,5 +1,6 @@
 .site-header {
   @include pie-clearfix;
+  padding: 1.0em 0;
 
   .site-name {
     @include heading-4;
@@ -18,6 +19,16 @@
       &:hover, &:focus {
         color: $background-color;
       }
+    }
+  }
+
+  .innovation-logo-head {
+    max-width: 250px;
+    width: 100%;
+    margin: 0 auto 0.5em auto;
+    @include breakpoint($bp-sidebar) {
+      float: right;
+      margin: 0.5em 0 0 0;
     }
   }
 
