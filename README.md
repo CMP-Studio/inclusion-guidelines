@@ -1,7 +1,14 @@
-# Inclusion Guidelines
+# Carnegie Museum of Pittsburgh Inclusion Guidelines
+
+Carnegie Museums of Pittsburgh welcomes all visitors, both on-site and online. We work to assist visitors with disabilities in obtaining reasonable and appropriate accommodations, and in supporting equal access to services, programs, and activities.
+
+This web accessibility guide includes best practices, resources, and practical advice about how to ensure all users have equal access to information and functionality. These best practices are targeted at helping the Carnegie Museums web team meet WCAG A & AA level standards on all future website creation.
+
+This project is a collaboration between the [Innovation Studio](http://studio.carnegiemuseums.org) at Carnegie Museums of Pittsburgh and [Bearded](http://bearded.com), and it is our goal to have these formalized web accessibility guidelines scale outward to become the comprehensive inclusion handbook for our museums.
+
 ## A Middleman Project Template with Stubble Integration.
 
-This is an opinionated [Middleman](http://middlemanapp.com) template to get the team at [Bearded](http://bearded.com) building static sites quickly.
+This is an opinionated [Middleman](http://middlemanapp.com) template to get the team at Bearded building static sites quickly.
 
 It encourages third-party asset management via [Bower](http://bower.io), and includes a default `bower.json` file.
 
