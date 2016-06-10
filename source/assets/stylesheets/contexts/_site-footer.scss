@@ -8,6 +8,7 @@
     margin: 0 auto 1.0em auto;
     max-width: 200px;
     width: 100%;
+    padding-bottom: 0.75em;
     @include breakpoint($bp-l) {
       margin: 0 0 1.0em 0;
     }
@@ -28,7 +29,14 @@
       text-align: left;
     }
     p {
-      padding: 0 0.5em;
+      line-height: 0.75em;
+    }
+    a {
+	    text-decoration: underline;
+    }
+    a hover {
+	    color: #ffffff;
+	    text-decoration: underline;
     }
   }
 

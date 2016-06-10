@@ -2,10 +2,10 @@
   .container
     = link_to 'Skip to Content', '#content', :id => 'skip-nav', :class => 'screenreader-text'
 
-    = image_tag('/assets/images/innovation-studio-text.svg', alt: 'Innovation Studio Logo', class: 'innovation-logo-head')
+    = link_to image_tag('/assets/images/innovation-studio-text.svg', alt: 'Innovation Studio Logo', class: 'innovation-logo-head'), 'http://studio.carnegiemuseums.org'
 
     %h1.site-name
-      = link_to '/' do
+      = link_to '/web-accessibility' do
         Web Accessibility Guidelines
         %span.screenreader-text
           Foundations - Overview

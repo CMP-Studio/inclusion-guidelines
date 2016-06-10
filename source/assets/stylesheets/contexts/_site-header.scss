@@ -1,6 +1,7 @@
 .site-header {
   @include pie-clearfix;
   padding: 1.0em 0;
+  background-color: #DE492F;
 
   .site-name {
     @include heading-4;
