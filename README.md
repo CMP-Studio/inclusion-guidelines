@@ -1,4 +1,6 @@
-# Carnegie Museum of Pittsburgh Inclusion Guidelines
+# Carnegie Museums of Pittsburgh 
+
+## Inclusion Guidelines
 
 Carnegie Museums of Pittsburgh welcomes all visitors, both on-site and online. We work to assist visitors with disabilities in obtaining reasonable and appropriate accommodations, and in supporting equal access to services, programs, and activities.
 
