@@ -8,7 +8,9 @@
         %p 4400 Forbes Avenue
         %p Pittsburgh, PA 15213
       %p
-        %a{:href => "mailto:accessibility@carnegiemuseums.org", :title => 'Email Innovation Studios'} accessibility@carnegiemuseums.org
+        = link_to 'accessibility@carnegiemuseums.org', "mailto:accessibility@carnegiemuseums.org", :title => 'Email Innovation Studios'
+
       %p
-        %a{:href => "http://www.carnegiemuseums.org/interior.php?pageID=100"} Privacy Policy
+        = link_to 'Privacy Policy', 'http://www.carnegiemuseums.org/interior.php?pageID=100'
+
     = image_tag('/assets/images/built-by-bearded.svg', alt: 'Built by Bearded logo', class: 'bearded-built')
