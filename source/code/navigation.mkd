@@ -46,12 +46,80 @@ Mobile navigation often acts in very similar ways to accordions on websites. For
 * Add and toggle an `aria-expanded` attribute to your button letting the user know if the content the button controls are expanded or not.
 
 ```html
-  <section class="mobile-navigation">
-    <button aria-expanded="false" class="side-nav-trigger" aria-label="Mobile Navigation Button">
-      <span class="trigger-status closed">Open</span>
+  <section class="other-mobile-navigation">
+    <button aria-expanded="false" class="other-trigger" aria-label="Mobile Navigation Button">
+      <span class='icon-menu'></span>
+      <span class="other-trigger-status screenreader-text closed">Open</span>
       Menu
     </button>
   </section>
+```
+
+```javascript
+  var $otherTrigger = $('.other-trigger'),
+      $otherTriggerWord = $('.other-trigger-status'),
+      $otherMenu = $('.other-primary-navigation');
+
+  function toggleOtherTriggerClass() {
+    if (!$otherTrigger.hasClass('is-active')) {
+      $otherTrigger.addClass('is-active');
+      $otherTrigger.attr("aria-expanded","true");
+    } else {
+      $otherTrigger.removeClass('is-active');
+      $otherTrigger.attr("aria-expanded","false");
+    }
+  };
+
+  function toggleOtherTriggerWord() {
+    if ($otherTriggerWord.hasClass('closed')) {
+      $otherTriggerWord.removeClass('closed');
+      $otherTriggerWord.addClass('open');
+      $otherTriggerWord.html('Close');
+    } else {
+      $otherTriggerWord.removeClass('open');
+      $otherTriggerWord.addClass('closed');
+      $otherTriggerWord.html('Open');
+    }
+  };
+
+  function toggleOtherMenuClass() {
+    if (!$otherMenu.hasClass('is-visible')) {
+      $otherMenu.addClass('is-visible');
+      $otherMenu.focus();
+    } else {
+      $otherMenu.removeClass('is-visible');
+    }
+  };
+
+  function toggleOtherMenu() {
+    $otherTrigger.on("click", function(e){
+      toggleOtherTriggerClass();
+      toggleOtherMenuClass();
+      toggleOtherTriggerWord();
+      $otherMenu.slideToggle("fast");
+    });
+  };
+
+  function resetOtherMenu() {
+    if (!$otherMenu.hasClass('is-visible')) {
+      $otherMenu.removeAttr('style');
+    } else {
+      $otherMenu.removeClass('is-visible').removeAttr('style');
+    }
+  };
+
+  function resetOtherMenuTrigger() {
+    if (!$otherTrigger.hasClass('is-active')) {
+      return
+    } else {
+      $otherTrigger.removeClass('is-active');
+    }
+  };
+
+  //call this function on page load
+  $(document).ready(function(){
+    toggleOtherMenu();
+  });
 ```
 
 ###### Navigation List (generally hidden)
@@ -74,7 +142,8 @@ Mobile navigation often acts in very similar ways to accordions on websites. For
 ### Live Example
 <section class="other-mobile-navigation">
   <button aria-expanded="false" class="other-trigger" aria-label="Mobile Navigation Button">
-    <span class="other-trigger-status closed">Open</span>
+    <span class='icon-menu'></span>
+    <span class="other-trigger-status screenreader-text closed">Open</span>
     Menu
   </button>
 </section>

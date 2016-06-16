@@ -12,8 +12,8 @@
     display: inline-block;
     float: left;
     @include breakpoint($bp-xs) {
-      padding-top: 1em;
-      @include heading-4;
+      padding-top: 1.4em;
+      @include heading-5;
     }
 
     @include breakpoint($bp-xxl) {
