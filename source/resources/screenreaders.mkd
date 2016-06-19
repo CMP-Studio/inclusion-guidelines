@@ -19,10 +19,10 @@ Here is a brief guide on how to use three screenreaders: Chrome Vox, NVDA, and i
 * `Tab` + `Shift` = Jump to previous focusable item
 
 #### More Complex
-* `Chrome Vox` + `N` = `H` = Jump to next heading
-* `Chrome Vox` + `P` = `H` = Jump to previous heading
-* `Chrome Vox` + `N` = `L` = Jump to next link
-* `Chrome Vox` + `P` = `L` = Jump to previous link
+* `Chrome Vox` + `N` + `H` = Jump to next heading
+* `Chrome Vox` + `P` + `H` = Jump to previous heading
+* `Chrome Vox` + `N` + `L` = Jump to next link
+* `Chrome Vox` + `P` + `L` = Jump to previous link
 
 ### NVDA Short Cuts
 * `Insert` = NVDA Key
