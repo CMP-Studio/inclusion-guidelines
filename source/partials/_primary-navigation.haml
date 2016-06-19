@@ -1,103 +1,103 @@
 %nav.primary-navigation{role: "navigation", :"aria-label" => "Mobile Navigation Accordions"}
+  .container
+    %ul.navigation-item-group
+      %li.nav-item
+        %button{:'aria-controls'=>'dropdown-1', :'aria-expanded'=>'false', :id=>'nav-control-1'}
+          Foundations
+          %span.icon-expand
+        %ul{:id => 'dropdown-1', :'aria-hidden'=>'true'}
+          %li.nav-inner-item
+            = link_to 'Overview', '/index.html'
+          %li.nav-inner-item
+            = link_to 'Usability', '/foundations/index.html'
+          %li.nav-inner-item
+            = link_to 'Semantic HTML', '/foundations/semantic.html'
+          %li.nav-inner-item
+            = link_to 'ARIA', '/foundations/aria.html'
+          %li.nav-inner-item
+            = link_to 'JavaScript', '/foundations/js.html'
+          %li.nav-inner-item
+            = link_to 'Keyboard', '/foundations/keyboard.html'
+      %li.nav-item
+        %button{:'aria-controls'=>'dropdown-2', :'aria-expanded'=>'false', :id=>'nav-control-2'}
+          Design
+          %span.icon-expand
+        %ul{:id => 'dropdown-2', :'aria-hidden'=>'true'}
+          %li.nav-inner-item
+            = link_to 'Overview', '/design/index.html'
+          %li.nav-inner-item
+            = link_to 'Typography', '/design/font.html'
+          %li.nav-inner-item
+            = link_to 'Contrast & Color', '/design/color.html'
+          %li.nav-inner-item
+            = link_to 'Animations & Parallax', '/design/animations.html'
+      %li.nav-item
+        %button{:'aria-controls'=>'dropdown-3', :'aria-expanded'=>'false', :id=>'nav-control-3'}
+          Code
+          %span.icon-expand
+        %ul{:id => 'dropdown-3', :'aria-hidden'=>'true'}
+          %li.nav-inner-item
+            = link_to 'Overview', '/code/index.html'
+          %li.nav-inner-item
+            = link_to 'Buttons', '/code/buttons.html'
+          %li.nav-inner-item
+            = link_to 'Search', '/code/search.html'
+          %li.nav-inner-item
+            = link_to 'Tables', '/code/tables.html'
+          %li.nav-inner-item
+            = link_to 'Alerts', '/code/alerts.html'
+          %li.nav-inner-item
+            = link_to 'Calendars', '/code/calendars.html'
+          %li.nav-inner-item
+            = link_to 'SVG &amp; Icon Fonts', "/code/svg.html"
+          %li.nav-inner-item
+            = link_to  'Carousels', "/code/carousels.html"
+          %li.nav-inner-item
+            = link_to  'Skip Link', "/code/skip-link.html"
+          %li.nav-inner-item
+            = link_to  'Navigation', "/code/navigation.html"
+          %li.nav-inner-item
+            = link_to  'Forms &amp; Form Validation', "/code/forms.html"
+          %li.nav-inner-item
+            = link_to  'Accordions', "/code/accordions.html"
+          %li.nav-inner-item
+            = link_to  'Tabs', "/code/tabs.html"
+          %li.nav-inner-item
+            = link_to  'Modals', "/code/dialogs.html"
+          %li.nav-inner-item
+            = link_to  "Flash", "/code/flash.html"
 
-  %ul.navigation-item-group
-    %li.nav-item
-      %button{:'aria-controls'=>'dropdown-1', :'aria-expanded'=>'false', :id=>'nav-control-1'}
-        Foundations
-        %span.icon-expand
-      %ul{:id => 'dropdown-1', :'aria-hidden'=>'true'}
-        %li.nav-inner-item
-          = link_to 'Overview', '/'
-        %li.nav-inner-item
-          = link_to 'Usability', '/foundations/index.html'
-        %li.nav-inner-item
-          = link_to 'Semantic HTML', '/foundations/semantic.html'
-        %li.nav-inner-item
-          = link_to 'ARIA', '/foundations/aria.html'
-        %li.nav-inner-item
-          = link_to 'JavaScript', '/foundations/js.html'
-        %li.nav-inner-item
-          = link_to 'Keyboard', '/foundations/keyboard.html'
-    %li.nav-item
-      %button{:'aria-controls'=>'dropdown-2', :'aria-expanded'=>'false', :id=>'nav-control-2'}
-        Design
-        %span.icon-expand
-      %ul{:id => 'dropdown-2', :'aria-hidden'=>'true'}
-        %li.nav-inner-item
-          = link_to 'Design', '/design/index.html'
-        %li.nav-inner-item
-          = link_to 'Typography', '/design/font.html'
-        %li.nav-inner-item
-          = link_to 'Contrast & Color', '/design/color.html'
-        %li.nav-inner-item
-          = link_to 'Animations & Parallax', '/design/animations.html'
-    %li.nav-item
-      %button{:'aria-controls'=>'dropdown-3', :'aria-expanded'=>'false', :id=>'nav-control-3'}
-        Code
-        %span.icon-expand
-      %ul{:id => 'dropdown-3', :'aria-hidden'=>'true'}
-        %li.nav-inner-item
-          = link_to 'Code', '/code/index.html'
-        %li.nav-inner-item
-          = link_to 'Code', '/code/buttons.html'
-        %li.nav-inner-item
-          = link_to 'Search', '/code/search.html'
-        %li.nav-inner-item
-          = link_to 'Tables', '/code/tables.html'
-        %li.nav-inner-item
-          = link_to 'Alerts', '/code/alerts.html'
-        %li.nav-inner-item
-          = link_to 'Calendars', '/code/calendars.html'
-        %li.nav-inner-item
-          = link_to 'SVG &amp; Icon Fonts', "/code/svg.html"
-        %li.nav-inner-item
-          = link_to  'Carousels', "/code/carousels.html"
-        %li.nav-inner-item
-          = link_to  'Skip Link', "/code/skip-link.html"
-        %li.nav-inner-item
-          = link_to  'Navigation', "/code/navigation.html"
-        %li.nav-inner-item
-          = link_to  'Forms &amp; Form Validation', "/code/forms.html"
-        %li.nav-inner-item
-          = link_to  'Accordions', "/code/accordions.html"
-        %li.nav-inner-item
-          = link_to  'Tabs', "/code/tabs.html"
-        %li.nav-inner-item
-          = link_to  'Modals', "/code/dialogs.html"
-        %li.nav-inner-item
-          = link_to  "Flash", "/code/flash.html"
-
-    %li.nav-item
-      %button{:'aria-controls'=>'dropdown-4', :'aria-expanded'=>'false', :id=>'nav-control-4'}
-        Content
-        %span.icon-expand
-      %ul{:id => 'dropdown-4', :'aria-hidden'=>'true'}
-        %li.nav-inner-item
-          = link_to  'Overview', "/content.html"
-        %li.nav-inner-item
-          = link_to  'Copywriting', "/content/copywriting.html"
-        %li.nav-inner-item
-          = link_to  'Links &amp; Buttons', "/content/buttons.html"
-        %li.nav-inner-item
-          = link_to  'Images', "/content/images.html"
-        %li.nav-inner-item
-          = link_to  'Multimedia', "/content/audio-video.html"
-        %li.nav-inner-item
-          = link_to  'Maps', "/content/maps.html"
-        %li.nav-inner-item
-          = link_to  'PDFs &amp; Alternatives', "/content/pdfs.html"
-        %li.nav-inner-item
-          = link_to  'Third Party Embeds', "/content/third-party.html"
-        %li.nav-inner-item
-          = link_to  'Cognitive Disabilities', "/content/cognitive.html"
-    %li.nav-item
-      %button{:'aria-controls'=>'dropdown-5', :'aria-expanded'=>'false', :id=>'nav-control-5'}
-        Resources
-        %span.icon-expand
-      %ul{:id => 'dropdown-5', :'aria-hidden'=>'true'}
-        %li.nav-inner-item
-          = link_to  'Testing Tools', "/resources.html"
-        %li.nav-inner-item
-          = link_to  'How to: Screenreaders', "/resources/screenreaders.html"
-        %li.nav-inner-item
-          = link_to  'Source Material &amp; Resources', "/resources/resources.html"
+      %li.nav-item
+        %button{:'aria-controls'=>'dropdown-4', :'aria-expanded'=>'false', :id=>'nav-control-4'}
+          Content
+          %span.icon-expand
+        %ul{:id => 'dropdown-4', :'aria-hidden'=>'true'}
+          %li.nav-inner-item
+            = link_to  'Overview', "/content/index.html"
+          %li.nav-inner-item
+            = link_to  'Copywriting', "/content/copywriting.html"
+          %li.nav-inner-item
+            = link_to  'Links &amp; Buttons', "/content/buttons.html"
+          %li.nav-inner-item
+            = link_to  'Images', "/content/images.html"
+          %li.nav-inner-item
+            = link_to  'Multimedia', "/content/audio-video.html"
+          %li.nav-inner-item
+            = link_to  'Maps', "/content/maps.html"
+          %li.nav-inner-item
+            = link_to  'PDFs &amp; Alternatives', "/content/pdfs.html"
+          %li.nav-inner-item
+            = link_to  'Third Party Embeds', "/content/third-party.html"
+          %li.nav-inner-item
+            = link_to  'Cognitive Disabilities', "/content/cognitive.html"
+      %li.nav-item
+        %button{:'aria-controls'=>'dropdown-5', :'aria-expanded'=>'false', :id=>'nav-control-5'}
+          Resources
+          %span.icon-expand
+        %ul{:id => 'dropdown-5', :'aria-hidden'=>'true'}
+          %li.nav-inner-item
+            = link_to  'Testing Tools', "/resources/index.html"
+          %li.nav-inner-item
+            = link_to  'How to: Screenreaders', "/resources/screenreaders.html"
+          %li.nav-inner-item
+            = link_to  'Source Material &amp; Resources', "/resources/resources.html"
