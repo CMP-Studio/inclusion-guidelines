@@ -1,7 +1,7 @@
 ---
 title: Overview | Accessibility Guidelines
 ---
-## Statement about Accessibility For All
+## Statement About Accessibility For All
 
 Carnegie Museums of Pittsburgh welcomes all visitors, both on-site and online. We work to assist visitors with disabilities in obtaining reasonable and appropriate accommodations, and in supporting equal access to services, programs, and activities.
 
@@ -21,4 +21,4 @@ We have focused our accessibility guide on making the web experiences of people 
 
 This web accessibility guide includes best practices, resources, and practical advice about how to ensure all users have equal access to information and functionality.
 
-These best practices are targeted at helping the Carnegie Museums web team meet WCAG A & AA level standards on all future website creation.
+These best practices are targeted at helping the Carnegie Museums of Pittsburgh web team meet WCAG A & AA level standards on all future website creation.
