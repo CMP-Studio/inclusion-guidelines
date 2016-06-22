@@ -45,13 +45,13 @@ Every image needs an alternative text attribute `alt`. Alt text describes pictor
     <p>This background, or decorative image is completely skipped by a screen reader because it has an empty alt tag.</p>
   </div>
   <div class="image-item">
-    <img alt="Bearded - Home" src="http://www.bearded.com/images/bearded-logo.svg"/>
-    <p>Possible alt tags: "Bearded - Home", "Home", "Bearded Logo"</p>
+    <img alt="Innovation Studio - Home" src="http://studio.carnegiemuseums.org/wp-content/uploads/2015/07/Logo-Header-Retina.png"/>
+    <p>Possible alt tags: "Innovation Studio - Home", "Home", "Innovation Studio Logo"</p>
     <p>It is a good idea here, when you have a logo on every page of the site, to state the logo name/brand and where it redirects to on the site if clicked on.</p>
   </div>
   <div class="image-item">
-    <img alt="Mobile phone web page of cyber security website about eavesdropping." src="http://www.bearded.com/images/phone-1.png"/>
-    <p>Possible alt tags: "Mobile phone web page of cyber security website about eavesdropping", "Mobile web page about cyber security"</p>
+    <img alt="Mobile phone web page of Carnegie Museums of Art and Natural History." src="http://studio.carnegiemuseums.org/wp-content/uploads/2016/06/web-guide-200.png"/>
+    <p>Possible alt tags: "Mobile phone web page of Carnegie Museums of Art and Natural History.", "Mobile web page about Carnegie Museums"</p>
     <p>The extent and detail of your alt text comes down to how much information the image is relaying to sighted readers.  If the image is integral to the content, the alt text should be equally expressive. </p>
   </div>
   <div class="image-item">
@@ -68,3 +68,4 @@ Every image needs an alternative text attribute `alt`. Alt text describes pictor
 * [Short note on use of alt="" and the title attribute] (https://www.paciellogroup.com/blog/2016/02/short-note-on-use-of-alt-and-the-title-attribute/)
 * [A Guide to Making Documents Accessible to People Who are Blind or Visually Impaired] (http://www.sabeusa.org/wp-content/uploads/2014/02/A-Guide-to-Making-Documents-Accessible-to-People-Who-are-Blind-or-Visually-Impaired.pdf)
 * [When should alt text be blank?](http://osric.com/chris/accidental-developer/2012/01/when-should-alt-text-be-blank/)
+* [Alternative Text Best Practices from WebAIM](http://webaim.org/techniques/alttext/)
