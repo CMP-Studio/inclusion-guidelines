@@ -44,7 +44,7 @@ These suggestions are specifically geared towards visually impaired users.
 ### Tools &amp; Resources
 
 * [A More Accessible Map](http://alistapart.com/article/cssmaps)
-* [Web Dragon: Making maps accessible. Why is theis map here?](http://www.webdragon.com.au/main-site/welcome/making-maps-accessible.-why-is-this-map-here;storyId,8171)
-* [W3C Accessible Maps](https://www.w3.org/WAI/RD/wiki/Accessible_Map)
+* [Web Dragon: Making maps accessible. Why is this map here?](http://www.webdragon.com.au/main-site/welcome/making-maps-accessible.-why-is-this-map-here;storyId,8171)
+* [W3C Accessible Maps](https://www.w3.org/WAI/RD/wiki/Accessible_Maps)
 * [Accessibility tip: Making maps accessible](http://www.accessiq.org/news/news/2015/03/accessibility-tip-making-maps-accessible)
-* [Maps](http://accessibility.psu.edu/images/maps/)
+* [Maps for Directions (with Google Maps)](http://accessibility.psu.edu/images/maps/)
