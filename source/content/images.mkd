@@ -45,18 +45,18 @@ Every image needs an alternative text attribute `alt`. Alt text describes pictor
     <p>This background, or decorative image is completely skipped by a screen reader because it has an empty alt tag.</p>
   </div>
   <div class="image-item">
-    <img alt="Innovation Studio - Home" src="http://studio.carnegiemuseums.org/wp-content/uploads/2015/07/Logo-Header-Retina.png"/>
+    <img alt="Innovation Studio - Home" src="/assets/images/Logo-Header-Retina.png"/>
     <p>Possible alt tags: "Innovation Studio - Home", "Home", "Innovation Studio Logo"</p>
     <p>It is a good idea here, when you have a logo on every page of the site, to state the logo name/brand and where it redirects to on the site if clicked on.</p>
   </div>
   <div class="image-item">
-    <img alt="Mobile phone web page of Carnegie Museums of Art and Natural History." src="http://studio.carnegiemuseums.org/wp-content/uploads/2016/06/web-guide-200.png"/>
-    <p>Possible alt tags: "Mobile phone web page of Carnegie Museums of Art and Natural History.", "Mobile web page about Carnegie Museums"</p>
+    <img alt="Mobile phone web page of Carnegie Museums of Art and Natural History." src="/assets/images/web-guide.png"/>
+    <p>Possible alt tags: "Mobile phone web page of Carnegie Museums of Art and Natural History", "Mobile web page about Carnegie Museums"</p>
     <p>The extent and detail of your alt text comes down to how much information the image is relaying to sighted readers.  If the image is integral to the content, the alt text should be equally expressive. </p>
   </div>
   <div class="image-item">
     <img alt="Cat rolled up in a piece of paper" src="http://file.nekogazou.ni-moe.com/Img/1426582542/"/>
-    <p>Possible alt tags: "Cat rolled up in a piece of paper", "Cat burrito," Cute cat picture"</p>
+    <p>Possible alt tags: "Cat rolled up in a piece of paper", "Cat burrito", "Cute cat picture"</p>
     <p>Alt tags are also important for sighted readers.  If your image path ever changes, your alt tag will still show up on the page, and no loss of information will occur.</p>
   </div>
 </div>
