@@ -4,7 +4,7 @@
 
 Carnegie Museums of Pittsburgh welcomes all visitors, both on-site and online. We work to assist visitors with disabilities in obtaining reasonable and appropriate accommodations, and in supporting equal access to services, programs, and activities.
 
-This [web accessibility guide](http://studio.carnegiemuseums.org/web-accessibility) includes best practices, resources, and practical advice about how to ensure all users have equal access to information and functionality. These best practices are targeted at helping the Carnegie Museums of Pittsburgh web team meet WCAG A & AA level standards on all future website creation.
+This [web accessibility guide](http://web-accessibility.carnegiemuseums.org) includes best practices, resources, and practical advice about how to ensure all users have equal access to information and functionality. These best practices are targeted at helping the Carnegie Museums of Pittsburgh web team meet WCAG A & AA level standards on all future website creation.
 
 This project is a collaboration between the [Innovation Studio](http://studio.carnegiemuseums.org) at Carnegie Museums of Pittsburgh and [Bearded](http://bearded.com), and it is our goal to scale these formalized web accessibility guidelines outward to become the comprehensive inclusion handbook for our museums.
 
